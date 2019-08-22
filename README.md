@@ -2,7 +2,7 @@ Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 ===
 
 Michael Bosik
-http://michaelbosik-a1.glitch.me
+http://a1-michaelbosik.glitch.me
 
 This project shows ...
 
