@@ -1,0 +1,47 @@
+html, body{
+    background-color: #f6f6f6;
+    text-align: center;
+}
+
+body{
+    width: 75%;
+    margin:0 auto;
+    text-align: center;
+}
+
+h1, h2, p, li, a{
+    font-family: 'Roboto Mono';
+    color: #420000;
+}
+
+h1{
+    font-size: 40px;
+}
+
+h2{
+    font-size: 35px;
+}
+
+p, li{
+    font-size: 20px;
+}
+
+ul {
+    text-align: center;
+    list-style-position: inside;
+}
+
+div{
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #d4d7dd;
+    transition: 0.25s ease-in;
+}
+
+div:hover{
+    background-color: #eae9e9;
+    transition: 0.25s ease-in;
+}
