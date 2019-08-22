@@ -1,8 +1,6 @@
 Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 
 
-Sample Readme (delete the above when you're ready to submit, and modify the below so with your links and descriptions)
----
 
 Justin Kreiselman
 https://a1-kreiselman.glitch.me
