@@ -8,3 +8,6 @@ This project shows ...
 
 ## Technical Achievements
 - **Basic Understanding**: Using HTML, Git, Glitch
+
+## Design Achievements
+- **Basic Understanding**: CSS
