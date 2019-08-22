@@ -5,7 +5,7 @@ Sample Readme (delete the above when you're ready to submit, and modify the belo
 ---
 
 Justin Kreiselman
-http://kreiselman-a1.glitch.me
+https://a1-kreiselman.glitch.me
 
 This project shows the basic deployment of a web application using Git, GitHub and Glitch. This project is a warm up excercise 
 
