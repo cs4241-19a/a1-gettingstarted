@@ -1,0 +1,27 @@
+@font-face {
+    font-family: KaushanScript;
+    src: url("http://reneborner.de/assets/KaushanScript-Regular.ttf")
+}
+
+body {
+    background-color: black;
+    width: 90%;
+}
+
+h1 {
+    color: lightgray;
+    font-weight: bold;
+    font-size: 5vw;
+    text-align: center;
+}
+
+h2 {
+    color: lightgray;
+    font-weight: bold;
+    font-size: 3vw;
+}
+
+p,li {
+    color: gray;
+    font-size: 2vw;
+}
