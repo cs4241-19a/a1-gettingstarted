@@ -3,6 +3,7 @@
 
 * {
   box-sizing: border-box;
+  background-color: #edeff0;
 }
 
 body {
@@ -12,7 +13,9 @@ body {
 
 h1 {
   font-style: italic;
-  color: #373fff;
+  color: black;
+  border-style: solid;
+  padding: 5px;
 }
 
 .bold {
@@ -33,7 +36,7 @@ button {
 }
 
 button:hover {
-  background-color: yellow;
+  background-color: white;
 }
 
 button:active {
