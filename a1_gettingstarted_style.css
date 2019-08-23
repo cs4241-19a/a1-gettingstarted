@@ -1,0 +1,90 @@
+@charset "utf-8";
+body {
+	
+	background-image: url("background_02.jpg");
+	background-repeat: repeat-x;
+	background-color: #000;
+}
+.mainText{
+    margin-top: 114px;
+}
+.highlight{
+	margin-top: 101px;
+}
+.intro{
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+    font-size: 20px;
+    color: #FFFFFF;
+    border: 1px solid #858585;
+    margin-left: auto;
+    margin-right: auto;
+	width: :80%;
+    background-color: #1E2424;
+	background-image: linear-gradient(#1E2424, #345959);
+    text-align: left;
+    padding: 8px;
+}
+.experiences{
+    border: 1px solid #858585;
+    margin-left: auto;
+    margin-right: auto;
+	width: :80%;
+    background-color: #2E4545;
+    padding: 8px;
+}
+.education{
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+    font-size: 20px;
+    color: #FFFFFF;
+    border: 1px solid #858585;
+    margin-left: auto;
+    margin-right: auto;
+	width: :80%;
+    background-color: #273434;
+    padding: 8px;}
+.workExperience{
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+    font-size: 20px;
+    color: #FFFFFF;
+    border: 1px solid #858585;
+    margin-left: auto;
+    margin-right: auto;
+	width: :80%;
+    background-color: #345959;
+	background-image: linear-gradient(#345959, #1E2424);
+    padding: 8px;
+}
+.seeThrough{
+	background: #FFFFFF;
+    opacity: 0.39;
+}
+h1 {
+    font-family: carter-one;
+    font-variant: small-caps;
+    text-shadow: 16px 5px 14px #CDF3DC;
+    font-size: 58px;
+    color: #B62CAD;
+    text-align: center;
+    font-style: italic;
+    font-weight: 400;
+}
+h2{
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+    font-size: 17px;
+    color: #FFFFFF;
+	text-align: center;
+    
+}
+h3{
+	text-decoration: underline;
+	text-align: center;
+}
+a{
+	color: aliceblue;
+}
+p{
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+    text-align: center;
+    color: aliceblue;
+    font-size: 18px;
+}
