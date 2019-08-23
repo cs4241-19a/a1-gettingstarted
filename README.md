@@ -13,4 +13,5 @@ Then the server must handle that request by returning the corresponding file.
 
 ### Design Achievements
 - **Re-vamped Apple's Design Philosophy**: Shown in `style.css`, the code...
-- **Basic Styling**: Shown in `style.css`, there is a background image and font change.
+- **Basic Styling**: Shown in `style.css`, I added a background image and font change.
+- **Sweet Alert**: Shown in `index.html`, I added a sweet alert using script.
