@@ -1,9 +1,15 @@
 {
-  "name": "cr-4241-simple-glitch",
-  "version": "0.1.0",
-  "description": "WPI CS 4241 first assignment",
-  "author": "Charlie Roberts",
+  "name": "a19-cs4241",
+  "version": "0.0.1",
+  "description": "A simple Node app built on Express, instantly up and running.",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "engines": {
+    "node": "8.x"
   }
 }

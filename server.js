@@ -1,21 +1,12 @@
-const http = require('http'),
-      fs   = require('fs'),
-      port = 3000
+const express = require('express');
+const app = express();
 
-let file
-fs.readFile( './index.html', function( err, content ) {
-  file = content
-})
+app.use(express.static('public'));
 
-const server = http.createServer( function( request,response ) {
-  switch( request.url ) {
-    case '/':
-      response.end( file, 'utf-8' )
-      break
-    default:
-      response.end( '404 Error: File Not Found' )
-  }
-})
+app.get('/', function(request, response) {
+  response.sendFile(__dirname + '/index.html');
+});
 
-server.listen( process.env.PORT || port )
-
+const listener = app.listen(process.env.PORT | 3000, function() {
+  console.log('Your app is listening on port ' + listener.address().port);
+});
