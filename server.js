@@ -1,20 +1,39 @@
-const http = require('http'),
-      fs   = require('fs'),
-      port = 3000
+const http = require('http');
+const fs = require('fs');
 
-let file
-fs.readFile( './index.html', function( err, content ) {
-  file = content
+let htmlFile
+fs.readFile('./index.html', function (err, data) {
+  if (err) throw err
+  htmlFile = data
 })
 
-const server = http.createServer( function( request,response ) {
-  switch( request.url ) {
-    case '/':
-      response.end( file, 'utf-8')
+let cssFile
+fs.readFile('./style.css', function (err, data) {
+  if (err) throw err
+  cssFile = data
+})
+
+let imgFile
+fs.readFile('./Savin-NY-Website-Background-Web.jpg', function (err, data) {
+  if (err) throw err
+  imgFile = data
+})
+
+const server = http.createServer(function (request, response) {
+  switch (request.url) {
+    case "/Savin-NY-Website-Background-Web.jpg":
+      response.writeHead(200, { "Content-Type": "text/html" })
+      response.write(imgFile)
+      break
+    case "/style.css":
+      response.writeHead(200, { "Content-Type": "text/css" })
+      response.write(cssFile)
       break
     default:
-      response.end( '404 Error: File Not Found')
+      response.writeHead(200, { "Content-Type": "text/html" });
+      response.write(htmlFile);
   }
+  response.end()
 })
 
-server.listen( process.env.PORT || port )
+server.listen(3000);
