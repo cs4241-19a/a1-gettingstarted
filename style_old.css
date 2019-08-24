@@ -1,0 +1,60 @@
+.mainText{
+    z-index: auto;
+    font-family: Arial;
+    font-size: 16px;
+    color: white;
+    font-weight: normal;
+    language: en-US;
+    vertical-align: top;
+}
+.aboutMe{
+    position: absolute;
+    z-index: 4;
+    left: 54px;
+    top: 319px;
+    width: 550px;
+}
+.mediaText{
+	z-index: auto;
+	font-family:Arial;
+	font-size: 14px;
+	color:white;
+	font-weight:normal;
+	language:en-US;
+	vertical-align:top;
+}
+.media{
+    position: absolute;
+    z-index: 4;
+    left: 54px;
+    top: 555px;
+    width: 500px;
+}
+.education{
+    position: absolute;
+    z-index: 4;
+    left: 54px;
+    top: 916px;
+    width: 500px;
+}
+h3{
+    z-index: auto;
+    font-family: Arial;
+    font-size: 12px;
+    color: white;
+    font-weight: normal;
+    language: en-US;
+    vertical-align: top;	
+}
+ul{
+	z-index: auto;
+    font-family: Arial;
+    font-size: 12px;
+    color: white;
+    font-weight: normal;
+    language: en-US;
+    vertical-align: top;
+}
+a{
+	color: aliceblue;
+}
