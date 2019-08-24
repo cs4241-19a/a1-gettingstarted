@@ -2,7 +2,7 @@ Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 ===
 
 James Kajon
-http://a1-charlieroberts.glitch.me
+https://jameskajon-a1-gettingstarted.glitch.me
 
 This site displays some information about me and my experience as a CS student.
 
