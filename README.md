@@ -62,16 +62,16 @@ If you need a Git/GitHub refreseher, see [GitHub Bootcamp](https://help.github.c
 Sample Readme (delete the above when you're ready to submit, and modify the below so with your links and descriptions)
 ---
 
-Charlie Roberts
+James Kajon
 http://a1-charlieroberts.glitch.me
 
-This project shows ...
+This site displays some information about me and my experience as a CS student.
 
 ## Technical Achievements
-- **Proved P=NP**: Using a combination of...
-- **Solved AI**: ...
+- **Used FontAwesome**: I imported FontAwesome and used their icons as bullets in my ul elements.
+- **Upgraded server.js**: I edited server.js to include accurate status codes and to also serve my css file, a background image, and also a favicon.
 
 ### Design Achievements
-- **Re-vamped Apple's Design Philosophy**: Shown in `style.css`, the code...
-
+- **Used custom bullets**: I used FontAwesome icons to convey meaning with bullets. Bullets distinguished between completed and current classes.
+- **Added Background**: I added a background image and solid background with minor opacity.
 
