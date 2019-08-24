@@ -1,3 +1,84 @@
-p {
-    color: red;
+h1 {
+    font-size: 4.5em;
+    color: darkslategray;
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter";
+    letter-spacing: 2px;
+    pointer-events: none;
+    font-weight: 500;
+    border: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+.typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid salmon; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation:
+            typing 2.5s steps(40, end),
+            blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: salmon; }
+}
+
+.typewriter {
+    display: inline-flex;
+}
+
+.name {
+    height: 100px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background-color: lightcyan;
+    min-width: 1190px;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url(/bg/4.jpg);
+    /* Set a specific height */
+    height: 190px;
+    padding-top: 400px;
+    padding-bottom: 400px;
+    padding-left: 250px;
+    padding-right: 250px;
+
+    min-width: 1190px;
+
+    margin: -10px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax1 {
+    /* The image used */
+    background-image: url(/bg/2.jpg);
+
+    margin: -10px;
+
+
+    /* Set a specific height */
+    height: 710px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
