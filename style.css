@@ -1,4 +1,6 @@
+
 /* Background */
+
 body {
 	background-color:#e0e0e0;
 	margin-top: 0px;
@@ -7,6 +9,7 @@ body {
 }
 
 /* Header bar */
+
 header {
 	text-align: center;
 	background-color: #002B36;	
@@ -50,17 +53,25 @@ section, .section_column_text{
 #subheader {
 	font-size:36px;
 	text-align:center;
+	max-width:50%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:30px;
+	margin-bottom:30px;
 }
 
 /* Bottom Table */
+
 table, th, td {
 	border: 1px solid black;
 	text-align:center;
+	table-layout:auto;
 }
 
 table {
-	width: 50%;
 	border-collapse: collapse;
+	margin-top:5px;
+	margin-bottom:5px;
 }
 
 th {
