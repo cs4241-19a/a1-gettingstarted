@@ -1,9 +1,0 @@
-{
-  "restart": {
-    "include": [
-      ".jsx$",
-      ".js$"
-    ]
-  },
-  "throttle": 100
-}
