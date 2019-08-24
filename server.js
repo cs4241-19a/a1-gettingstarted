@@ -6,7 +6,11 @@ let file
 fs.readFile( './index.html', function( err, content ) {
   file = content
 })
-
+let style
+//test
+fs.readFile( './style.css', function( err, content ) {
+  style = content
+})
 let ken
 fs.readFile( './ken.jpeg', function( err, content ) {
   ken = content
@@ -68,6 +72,9 @@ const server = http.createServer( function( request,response ) {
       break
     case '/test.png':
       response.end( test, 'utf-8')
+      break
+    case '/style.css':
+      response.end( style, 'utf-8')
       break
     default:
       response.end( '404 Error: File Not Found')
