@@ -1,0 +1,20 @@
+
+body {
+    background-image: url("public/assets/images/Rubin Campus Center-locations-500x300.jpg");
+    background-size: cover;
+    resize: both;
+    overflow: scroll;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content {
+    background-color: antiquewhite;
+    opacity: 0.95;
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+
+.content * {
+    opacity: 1;
+}
