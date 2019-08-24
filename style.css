@@ -1,0 +1,30 @@
+/* CSS files add styling rules to your content */
+
+#header_container{
+    height: 0;
+}
+.banner{
+    background-color: #ff8320;
+    float:left;
+}
+
+#icon{
+    width:25%;
+}
+
+#logo{
+    width:75%;
+}
+img{
+    margin-left:0; margin-right:auto;
+}
+
+body {
+    font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+    margin: 2em;
+    color: #054749;
+}
+
+h1 {
+    color: #002eff;
+}
