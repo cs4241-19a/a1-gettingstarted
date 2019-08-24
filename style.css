@@ -1,10 +1,61 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    margin-top: -25px;
+    margin-bottom: 0;
+    margin-left: -10px;
+    margin-right: -10px;
+    font-family: 'Source Code Pro', 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.navbar.solid {
+    background-color: salmon;
+}
+
+ul {
+    margin: 0;
+    list-style-type: none;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #d0d0d0;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-decoration: none;
+}
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+    color: white;
+}
+
+
 h1 {
     font-size: 4.5em;
     color: darkslategray;
     font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter";
     letter-spacing: 2px;
     pointer-events: none;
-    font-weight: 500;
+    font-weight: 900;
     border: 0px;
     margin: 0px;
     text-align: center;
@@ -41,7 +92,7 @@ h1 {
     height: 100px;
     padding-top: 40px;
     padding-bottom: 20px;
-    background-color: lightcyan;
+    background-color: #ededed;
     min-width: 1190px;
 }
 
@@ -49,7 +100,7 @@ h1 {
     /* The image used */
     background-image: url(/bg/4.jpg);
     /* Set a specific height */
-    height: 190px;
+    height: 180px;
     padding-top: 400px;
     padding-bottom: 400px;
     padding-left: 250px;
