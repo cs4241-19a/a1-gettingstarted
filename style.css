@@ -5,5 +5,23 @@ body {
 
 h1 {
   font-style: italic;
-  color: #fcba03;
+  color: #598f39;
+}
+
+#ul1 {
+  border: 1px solid #373fff;
+  padding: 25px;
+  margin: 10px;
+}
+
+#ul2 {
+  border: 1px solid #fcba03;
+  padding: 25px;
+  margin: 10px;
+}
+
+#ul3 {
+  border: 1px solid #ed0cc4;
+  padding: 25px;
+  margin: 10px;
 }
