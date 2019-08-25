@@ -1,0 +1,42 @@
+body {
+    background-color: azure;
+}
+h1, h2{
+    color: crimson;
+    border: 10px solid black;
+    font-family: impact;
+    font-size: 300%;
+    background-color: black;
+}
+p {
+    color: firebrick;
+    font-size: 200%;
+}
+li{
+    color: maroon;
+    font-size: 175%;
+}
+#computer:hover{
+    background-color: crimson;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 150px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 105%;
+}
+.tooltip:hover .tooltiptext{
+    visibility: visible;
+}
