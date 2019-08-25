@@ -1,13 +1,19 @@
 body {
   background-color:#a8a8a8;
-  font-family: sans-serif;
+  font-family: Georgia, serif;
 }
 
 button{
   border: none;
   font-size:25px;
-  
-  
+  font-family: Georgia, serif;
+  font-weight:bold;
+}
+
+button:hover {
+  background-color: #555555; /* Green */
+  color: white;
+  cursor: pointer;
 }
 
 div{
