@@ -19,27 +19,24 @@ body {
 h1 {
     color: lightgray;
     font-weight: bold;
-    font-size: 5vw;
+    font-size: 400%;
     text-align: center;
 }
 
 h2 {
     color: lightgray;
     font-weight: bold;
-    font-size: 2vw;
     padding-left: 10%;
     padding-right: 10%;
 }
 
 p {
     color: gray;
-    font-size: 1.5vw;
     padding-left: 10%;
     padding-right: 10%;
 }
 li {
     color: gray;
-    font-size: 1.5vw;
     margin-left: 10%
 }
 
