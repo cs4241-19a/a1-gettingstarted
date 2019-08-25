@@ -2,8 +2,11 @@ body {
   background-color:#a8a8a8;
 }
 
-text {
-c
+div{
+  paddding-top:20px;
+  margin: 20px 250px 0px 250px;
+  background: rgba(255, 255, 255, 0.6);
+  height:600px;
 }
 
 h1 {
@@ -25,17 +28,17 @@ ul {
 }
 
 li {
- margin-left:auto;
+ margin-left:500px;
  margin-right:auto;
- width:25%;
+
   font-size:16px;
 }
 
 .experience {
   
-  margin-left:auto;
+  margin-left:500px;
   margin-right:auto;
-  width:25%;
+
   line-height:3px;
   font-size:19px;
 }
