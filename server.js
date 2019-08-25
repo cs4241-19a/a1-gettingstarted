@@ -14,12 +14,14 @@ fs.readFile('./styles.css', function (err, content) {
 const server = http.createServer(function (request, response) {
     switch (request.url) {
         case '/':
-            response.end(index, 'utf-8')
+            sendFile(response, 'index.html')
+            break
+        case '/index.html':
+            sendFile(response, 'index.html')
             break
       case '/styles.css':
             response.writeHead(200, {'Content-Type': 'text/css'})
-            response.write(css)
-            response.end()
+            sendFile(response, 'styles.css')
             break;
         default:
             response.end('404 Error: File Not Found')
@@ -27,3 +29,10 @@ const server = http.createServer(function (request, response) {
 })
 
 server.listen(process.env.PORT || port)
+
+const sendFile = function( response, filename ) {
+    fs.readFile( filename, function( err, content ) {
+        file = content
+        response.end( content, 'utf-8' )
+    })
+}
