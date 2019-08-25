@@ -2,7 +2,7 @@ const http = require('http'),
 	fs   = require('fs'),
 	port = 3000
 
-let file, picture, picture2, style
+let file, picture, picture2, icon, style
 
 /* Read all files before loading page */
 console.log("Loading files into memory...")
@@ -15,6 +15,9 @@ const server = http.createServer( function( request,response ) {
 	switch( request.url ) {
 		case '/':
 			sendFile(file, response, './index.html', 'utf-8')
+			break;
+		case '/favicon.ico':
+			sendFile(icon, response, './favicon.ico')
 			break;
 		case '/P7.jpg':
 			sendFile(picture, response, './P7.jpg')
