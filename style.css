@@ -11,12 +11,9 @@ body, html{
 #major{
 	text-align: center;
 	font-size: 30px;
-	}
+}
 #intro{
 	font-size: 30px;
-}
-div.top, div.bottom{
-	width: 100%;
 }
 div.top{
 	background-color: #77CBB9;
@@ -65,13 +62,18 @@ div.bottom{
   transform: rotateY(180deg);
 }
 
-a{
+li{
 	color: white;
 	text-decoration: none;
   line-height: 30px;
-	font-size: 25px;
+  font-size: 25px;
 }
-a:hover{
+li:hover{
   font-size: 30px;
+  color: white;
+  text-decoration: none;
   line-height: 30px;
+}
+.modal-title, .modal-body{
+  color: #094b73;
 }

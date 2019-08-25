@@ -1,117 +1,285 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
-     <link rel = "stylesheet" type = "text/css" href = "style.css"/>
-  </head>
-  <body>
-    <div class="top">
-      <br>
-      <br>
-      <img src="ken.jpeg" style="display: block; margin-left: auto; margin-right: auto; border-radius: 50%; width: 20%;">
-      <h1 id="title">Ken Desrosiers</h1>
-      <h2 id="major">Computer Science class of 2021</h2>
-    </div>
-    <div class="bottom">
-      <p id ="intro">
+<head>
+  <title>CS4241 Assignment 1</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel = "stylesheet" type = "text/css" href = "style.css"/>
+</head>
+<body>
+  <div class="jumbotron jumbotron-fluid top">
+    <br>
+    <br>
+    <img src="ken.jpeg" style="display: block; margin-left: auto; margin-right: auto; border-radius: 50%; width: 20%;">
+    <h1 id="title">Ken Desrosiers</h1>
+    <h2 id="major">Computer Science class of 2021</h2>
+  </div>
+  <div class="bottom">
+    <p id ="intro">
       Hello, my name is Ken! In this class, I wish to learn more about the back-end of web development with hopes of becoming a full-stack web developer!
     </p>
     <h1 style="font-size: 40px;text-decoration: underline;">
       Courses i've taken:
     </h1>
-      <ul id="courselist">
-      <li> <a target="_blank" href="https://www.wpi.edu/academics/calendar-courses/course-descriptions/17851/computer-science#CS-1101">Intro to Program Design</a></li>
-      <li> <a target="_blank" href="https://www.wpi.edu/academics/calendar-courses/course-descriptions/17851/computer-science#CS-2102">Intro to Object-Oriented</a></li>
-      <li> <a target="_blank" href="https://www.wpi.edu/academics/calendar-courses/course-descriptions/17851/computer-science#CS-2022">Discrete Math</a></li>
-      <li> <a target="_blank" href="https://www.wpi.edu/academics/calendar-courses/course-descriptions/17851/computer-science#CS-2223">Algorithms & Data Str.</a></li>
-      <li> <a target="_blank" href="https://www.wpi.edu/academics/calendar-courses/course-descriptions/17851/computer-science#CS-2303">Systems</a></li>
-      <li> <a target="_blank" href="https://www.wpi.edu/academics/calendar-courses/course-descriptions/17851/computer-science#CS-3041">HCI</a></li>
-      <li> <a target="_blank" href="https://www.wpi.edu/academics/calendar-courses/course-descriptions/17851/computer-science#CS-3043">Social Imps.</a></li>
-      <li> <a target="_blank" href="https://www.wpi.edu/academics/calendar-courses/course-descriptions/17851/computer-science#CS-2011">Machine Org & Assembly</a></li>
-      <li> <a target="_blank" href="https://www.wpi.edu/academics/calendar-courses/course-descriptions/17851/computer-science#CS-3133">Foundations</a></li>
-      <li> <a target="_blank" href="https://www.wpi.edu/academics/calendar-courses/course-descriptions/17851/computer-science#CS-3013">OS</a></li>
-      <li> <a target="_blank" href="https://www.wpi.edu/academics/calendar-courses/course-descriptions/17851/computer-science#CS-3733">Soft Eng</a></li>
+    <ul id="courselist">
+      <li data-toggle="modal" data-target="#CS1101">Intro to Program Design</li>
+      <div class="modal fade" id="CS1101" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title">CS 1101. INTRODUCTION TO PROGRAM DESIGN</h2>
+            </div>
+            <div class="modal-body">
+              This course introduces principles of computation and programming with an emphasis on program design. Topics include the design, implementation and testing of programs that use a variety of data structures (such as structures, lists, and trees), functions, conditionals, recursion and higher-­‐order functions. Students will be expected to design simple data models, and implement and debug programs in a functional programming language. Recommended background: none. Either CS 1101 or CS 1102 provides sufficient background for further courses in the CS department. Undergraduate credit may not be earned for both this course and CS 1102.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <li data-toggle="modal" data-target="#CS2102">Intro to Object-Oriented</li>
+      <div class="modal fade" id="CS2102" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title">CS 2102. OBJECT-ORIENTED DESIGN CONCEPTS</h2>
+            </div>
+            <div class="modal-body">
+              Cat. I This course introduces students to an object-oriented model of programming. Building from the design methodology covered in CS 1101/CS 1102, this course shows how programs can be decomposed into classes and objects. By emphasizing design, this course shows how to implement small defect-free programs and evaluate design decisions to select an optimal design under specific assumptions. Topics include inheritance, exceptions, interface, design by contract, basic design patterns, and reuse. Students will be expected to design, implement, and debug object-oriented programs composed of multiple classes and over a variety of data structures. Recommended background: CS 1101 or CS 1102
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <li data-toggle="modal" data-target="#CS2022">Discrete Math</li>
+      <div class="modal fade" id="CS2022" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title">CS 2022. DISCRETE MATHEMATICS</h2>
+            </div>
+            <div class="modal-body">
+              Cat. I This course serves as an introduction to some of the more important concepts, techniques, and structures of discrete mathematics, providing a bridge between computer science and mathematics. Topics include sets, functions and relations, propositional and predicate calculus, mathematical induction, properties of integers, counting techniques and graph theory. Students will be expected to develop simple proofs for problems drawn primarily from computer science and applied mathematics. Recommended background: none.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <li data-toggle="modal" data-target="#CS2223">Algorithms and Data Str.</li>
+      <div class="modal fade" id="CS2223" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title">CS 2223. ALGORITHMS</h2>
+            </div>
+            <div class="modal-body">
+              Cat. I Building on a fundamental knowledge of data structures, data abstraction techniques, and mathematical tools, a number of examples of algorithm design and analysis, worst case and average case, will be developed. Topics include greedy algorithms, divide-and-conquer, dynamic programming, heuristics, and probabilistic algorithms. Problems will be drawn from areas such as sorting, graph theory, and string processing. The influence of the computational model on algorithm design will be discussed. Students will be expected to perform analysis on a variety of algorithms. Recommended background: CS 2102 and CS 2022.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <li data-toggle="modal" data-target="#CS2303">Systems</li>
+      <div class="modal fade" id="CS2303" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title">CS 2303. SYSTEMS PROGRAMMING CONCEPTS</h2>
+            </div>
+            <div class="modal-body">
+              Cat. I This course introduces students to a model of programming where the programming language exposes details of how the hardware stores and executes software. Building from the design concepts covered in CS 2102, this course covers manual memory management, pointers, the machine stack, and input/ output mechanisms. The course will involve large-scale programming exercises and will be designed to help students confront issues of safe programming with system-level constructs. The course will cover several tools that assist programmers in these tasks. Students will be expected to design, implement, and debug programs in C++ and C. The course presents the material from CS 2301 at a fast pace and also includes C++ and other advanced topics. Recommended background: CS 2102 and/or substantial object-oriented programming experience.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <li data-toggle="modal" data-target="#CS3041">HCI</li>
+      <div class="modal fade" id="CS3041" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title">CS 3041. HUMAN-COMPUTER INTERACTION</h2>
+            </div>
+            <div class="modal-body">
+              Cat. I This course develops in the student an understanding of the nature and importance of problems concerning the efficiency and effectiveness of human interaction with computer-based systems. Topics include the design and evaluation of interactive computer systems, basic psychological considerations of interaction, interactive language design, interactive hardware design, and special input/output techniques. Students will be expected to complete several projects. A project might be a software evaluation, interface development, or an experiment. Recommended background: CS 2102 or CS 2118.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <li data-toggle="modal" data-target="#CS3043">Social Imp.</li>
+      <div class="modal fade" id="CS3043" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title">CS 3043. SOCIAL IMPLICATIONS OF INFORMATION PROCESSING</h2>
+            </div>
+            <div class="modal-body">
+              Cat. I This course makes the student aware of the social, moral, ethical, and philosophical impact of computers and computer-based systems on society, both now and in the future. Topics include major computer-based applications and their impact, humanmachine relationships, and the major problems of controlling the use of computers. Students will be expected to contribute to classroom discussions and to complete a number of significant writing assignments. This course is recommended for juniors and seniors. Undergraduate credit may not be earned both for this course and for CS 505. Recommended background: a general knowledge of computers and computer systems.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <li data-toggle="modal" data-target="#CS2011">Machine Org & Assembly</li>
+      <div class="modal fade" id="CS2011" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title">CS 2011. INTRODUCTION TO MACHINE ORGANIZATION AND ASSEMBLY LANGUAGE</h2>
+            </div>
+            <div class="modal-body">
+              Cat. I This course introduces students to the structure and behavior of modern digital computers and the way they execute programs. Machine organization topics include the Von Neumann model of execution, functional organization of computer hardware, the memory hierarchy, caching performance, and pipelining. Assembly language topics include representations of numbers in computers, basic instruction sets, addressing modes, stacks and procedures, low-level I/O, and the functions of compilers, assemblers, linkers, and loaders. The course also presents how code and data structures of higher-level languages are mapped into the assembly language and machine representations of a modern processor. Programming projects will be carried out in the C language and the assembly language of a modern processor. Recommended background: CS 2301 or CS 2303, or a significant knowledge of C/C++.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <li data-toggle="modal" data-target="#CS3133">Foundations</li>
+      <div class="modal fade" id="CS3133" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title">CS 3133. FOUNDATIONS OF COMPUTER SCIENCE</h2>
+            </div>
+            <div class="modal-body">
+              Cat. I This course introduces the theoretical foundations of computer science. These form the basis for a more complete understanding of the proficiency in computer science. Topics include computational models, formal languages, and an introduction to compatibility and complexity theory, including NP-completeness. Students will be expected to complete a variety of exercises and proofs. Undergraduate credit may not be earned both for this course and for CS 5003. Recommended Background: Discrete mathematics (CS 2022 or equivalent) and algorithms (CS 2223 or equivalent). Students who have credit for CS 4121 cannot receive credit for CS 3133.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <li data-toggle="modal" data-target="#CS3013">OS</li>
+      <div class="modal fade" id="CS3013" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title">CS 3013. OPERATING SYSTEMS</h2>
+            </div>
+            <div class="modal-body">
+              Cat. I This course provides the student with an understanding of the basic components of a general-purpose operating system. Topics include processes, process management, synchronization, input/output devices and their programming, interrupts, memory management, resource allocation, and an introduction to file systems. Students will be expected to design and implement a large piece of system software in the C programming language. Undergraduate credit may not be earned both for this course and for CS 502. Recommended background: CS 2303 or CS 2301, and CS 2011.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <li data-toggle="modal" data-target="#CS3733">Soft Eng</li>
+      <div class="modal fade" id="CS3733" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title">CS 3733. SOFTWARE ENGINEERING</h2>
+            </div>
+            <div class="modal-body">
+              Cat. I This course introduces the fundamental principles of software engineering. Modern software development techniques and life cycles are emphasized. Topics include requirements analysis and specification, analysis and design, architecture, implementation, testing and quality, configuration management, and project management. Students will be expected to complete a project that employs techniques from the topics studied. This course should be taken before any course requiring a large programming project. Undergraduate credit may not be earned both for this course and for CS 509. Recommended background: CS 2102.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </ul>
-
     <h2 style="font-size: 40px; text-decoration: underline;">Experience</h2>
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="html.png" alt="Avatar" style="width:300px;height:300px;">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="html.png" alt="Avatar" style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+          <h1>HTML</h1> 
+          <p>A lot of experience</p>
+        </div>
+      </div>
     </div>
-    <div class="flip-card-back">
-      <h1>HTML</h1> 
-      <p>A lot of experience</p>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="css.png" alt="Avatar" style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+          <h1>CSS</h1> 
+          <p>A lot of experience</p>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="js.png" alt="Avatar" style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+          <h1>Javascript</h1> 
+          <p>Some experience</p>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="java.png" alt="Avatar" style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+          <h1>Java</h1> 
+          <p>A lot of experience</p>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="ruby.png" alt="Avatar" style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+          <h1>Ruby</h1> 
+          <p>No experience</p>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="python.png" alt="Avatar" style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+          <h1>Python</h1> 
+          <p>A lot of experience</p>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="test.png" alt="Avatar" style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+          <h1>Unit Testing</h1> 
+          <p>Some experience</p>
+        </div>
+      </div>
     </div>
   </div>
-</div>
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="css.png" alt="Avatar" style="width:300px;height:300px;">
-    </div>
-    <div class="flip-card-back">
-      <h1>CSS</h1> 
-      <p>A lot of experience</p>
-    </div>
-  </div>
-</div>
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="js.png" alt="Avatar" style="width:300px;height:300px;">
-    </div>
-    <div class="flip-card-back">
-      <h1>Javascript</h1> 
-      <p>Some experience</p>
-    </div>
-  </div>
-</div>
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="java.png" alt="Avatar" style="width:300px;height:300px;">
-    </div>
-    <div class="flip-card-back">
-      <h1>Java</h1> 
-      <p>A lot of experience</p>
-    </div>
-  </div>
-</div>
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="ruby.png" alt="Avatar" style="width:300px;height:300px;">
-    </div>
-    <div class="flip-card-back">
-      <h1>Ruby</h1> 
-      <p>No experience</p>
-    </div>
-  </div>
-</div>
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="python.png" alt="Avatar" style="width:300px;height:300px;">
-    </div>
-    <div class="flip-card-back">
-      <h1>Python</h1> 
-      <p>A lot of experience</p>
-    </div>
-  </div>
-</div>
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="test.png" alt="Avatar" style="width:300px;height:300px;">
-    </div>
-    <div class="flip-card-back">
-      <h1>Unit Testing</h1> 
-      <p>Some experience</p>
-    </div>
-  </div>
-</div>
-    </div>
-  </body>
+</body>
 </html>
