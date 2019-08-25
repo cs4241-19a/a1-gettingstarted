@@ -31,7 +31,7 @@ div.bottom{
 
 .flip-card {
   background-color: transparent;
-  width: 30%;
+  width: 33%;
   display: inline-block;
   height: 300px;
   perspective: 1000px;
@@ -68,5 +68,10 @@ div.bottom{
 a{
 	color: white;
 	text-decoration: none;
+  line-height: 30px;
 	font-size: 25px;
+}
+a:hover{
+  font-size: 30px;
+  line-height: 30px;
 }
