@@ -1,10 +1,16 @@
 body {
-  background-color: powderblue;
-  fontarial;
+  background-color: #FFFFFF;
+  font-family: verdana;
 }
 h1 {
-  color: blue;
+  color: #554971;
+}
+h2 {
+  color: #554971
 }
 p {
-  color: red;
+  color: #36213E;
+}
+li {
+  color: #6D466B
 }
