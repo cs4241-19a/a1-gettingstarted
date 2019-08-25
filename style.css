@@ -12,7 +12,7 @@ html {
     text-transform: uppercase;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #d0d0d0;
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
@@ -26,6 +26,8 @@ html {
 ul {
     margin: 0;
     list-style-type: none;
+    width: 90%;
+    margin: auto;
 }
 
 li {
@@ -34,10 +36,10 @@ li {
 
 li a {
     display: block;
-    color: #d0d0d0;
+    color: #333;
     text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
     padding-bottom: 20px;
     padding-top: 20px;
     text-decoration: none;
@@ -98,7 +100,7 @@ h1 {
 
 .parallax {
     /* The image used */
-    background-image: url(/bg/4.jpg);
+    background-image: url(Images/bg.jpg);
     /* Set a specific height */
     height: 180px;
     padding-top: 400px;
@@ -106,7 +108,7 @@ h1 {
     padding-left: 250px;
     padding-right: 250px;
 
-    min-width: 1190px;
+    min-width: 1180px;
 
     margin: -10px;
 
@@ -117,11 +119,14 @@ h1 {
     background-size: cover;
 }
 
-.parallax1 {
+.aboutme {
     /* The image used */
-    background-image: url(/bg/2.jpg);
+    background-color: darkslategray;
 
-    margin: -10px;
+    margin-top: -20px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: -10px;
 
 
     /* Set a specific height */
