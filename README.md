@@ -3,7 +3,7 @@ Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 
 Deploy the starting Web site that will be used this term to [Glitch](http://www.glitch.com/). 
 
-Sample Readme 
+Readme 
 ---
 
 Vandana Anand
