@@ -6,7 +6,7 @@ http://a1-charlieroberts.glitch.me
 
 This project shows the information about me, as the instruction said.
 
-## Technical Achievements
+### Technical Achievements
 - **Proved P=NP**: Using a combination of...
 - **Solved AI**: ...
 
