@@ -13,13 +13,10 @@ h1{
   padding: 20px 50px 20px 50px;
   box-shadow: 5px 5px 18px #888888;
 }
-p{
+p, li{
   line-height: 175%;
   text-align: justify;
 }
 div{
   margin: 0px 20px 0px 20px;
-}
-.wrap{
-  display: inline-block;
 }
