@@ -1,0 +1,49 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    padding: 100px 0 50px;
+  }
+  
+section {
+    padding: 25px 0;
+}
+
+body {
+    background-color: whitesmoke;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+}
+
+h2 {
+    color: rgb(37, 38, 46);
+}
+
+h3 {
+    color: rgb(51, 52, 63);
+}
+
+.head-photo {
+    border-radius: 50%;
+    width: 75%;
+}
+
+#page-content {
+    flex: 1 0 auto;
+  }
+
+#sticky-footer {
+    flex-shrink: none;
+  }
+
+.footer-social i {
+    font-size: 24px !important;
+    color: #FFFFFA;
+    padding: 20px;
+}

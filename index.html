@@ -2,27 +2,153 @@
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <link rel="icon" type="image/png" href="images/favicon.png" sizes="32x32" />
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
-  </body>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Max Westwater">
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- Font Awesome CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <!-- Template origin: https://startbootstrap.com/templates/scrolling-nav/ -->
+
+  <body id="home">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#home">Max Westwater</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#courses">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  
+    <header class="bg-primary text-white">
+      <div class="container text-center">
+        <h1>Max Westwater</h1>
+        <p class="lead">  WPI 2020 - Robotics Engineering & Computer Science</p>
+      </div>
+    </header>
+  
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+              <h2>About Me</h2>
+              <div class="row">
+                <div class="col-4 no-gutters">
+                    <img class="head-photo" src="images/max.jpg" alt="Avatar">
+                </div>
+                  <div class="col-8">
+                      <p>
+                          Hi! I'm a senior at WPI majoring in RBE and CS. I'm interested in robotics, 3D printing, and short walks on the beach. 
+                          I am excited to learn more about the wild world of <i>full-stack development</i> after working with mostly python for the past 5 months.
+                      </p>
+                  </div>
+
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section id="courses" class="bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+              <h2>WPI CS Courses Taken</h2>
+              <ul>
+                <li>CS 1101 - introduction to program design</li>
+                <li>CS 2022 - discrete math</li>
+                <li>CS 2102 - object oriented programming</li>
+                <li>CS 2223 - algorithms</li>
+                <li>CS 2303 - systems</li>
+                <li>CS 2011 - machine organization & assembly language</li>
+                <li>CS 3431 - databases I</li>
+                <li>CS 3733 - software engineering</li>
+                <li>CS 4120 - analysis of algorithms</li>
+                <li>CS 453X - machine learning</li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </section>
+  
+    <section id="experience">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+              <h2>Experience</h2>
+              <br></br>
+  
+              <h3>Work Experience</h3>
+              <ul>
+                <li>Moog Space & Defense - System Engineering Intern</li>
+                <li>Amazon Robotics - Software Engineering Intern</li>
+              </ul>
+              
+              <h3>Technologies</h3>
+              <ul>
+                <li>HTML - some</li>
+                <li>CSS - some</li>
+                <li>Java - a lot</li>
+                <li>JavaScript - some</li>
+                <li>Ruby - none</li>
+                <li>Python - a lot</li>
+                <li>Unit Testing - some</li>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Footer -->
+    <footer class="text-center py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-white">Copyright &copy; Max Westwater 2019</p>
+        <div class="footer-social">
+            <a href="mailto:mhwestwater@wpi.edu" target="_blank">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            </a>
+            <a href="https://github.com/Max5254" target="_blank">
+                <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/max-westwater" target="_blank">
+                <i class="fa fa-linkedin"></i>
+            </a>
+        </div>
+      </div>
+    </footer>
+
+      <!-- Bootstrap JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    
+      <!-- Plugin JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    
+      <!-- Custom JavaScript for this theme -->
+      <script src="js/scrolling-nav.js"></script>
+    
+    </body>
+
 </html>
