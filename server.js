@@ -8,7 +8,7 @@ fs.readFile( './index.html', function( err, content ) {
 })
 
 let cssFile
-fs.readFile( './a1_gettingstarted_style.css', function( err, content ) {
+fs.readFile( './style.css', function( err, content ) {
   cssFile = content
 })
 
@@ -20,7 +20,7 @@ const server = http.createServer( function( request,response ) {
       case '/index.html':
       response.end( file, 'utf-8')
       break
-      case '/a1_gettingstarted_style.css':
+      case '/style.css':
       response.end( cssFile, 'utf-8')
       break
     default:
