@@ -139,11 +139,89 @@ h1 {
     margin-right: -10px;
     margin-bottom: -10px;
 
-    padding: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-right: 250px;
+    padding-left: 250px;
 
 
     /* Set a specific height */
-    height: 710px;
+    height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.education {
+    /* The image used */
+    background-color: white;
+
+    margin-top: -20px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: -10px;
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-right: 250px;
+    padding-left: 250px;
+
+
+    /* Set a specific height */
+    height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.courseHistory {
+    /* The image used */
+    background-color: #ededed;
+
+    margin-top: -20px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: -10px;
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-right: 250px;
+    padding-left: 250px;
+
+
+    /* Set a specific height */
+    height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.experience {
+    /* The image used */
+    background-color: white;
+
+    margin-top: -20px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: -10px;
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-right: 250px;
+    padding-left: 250px;
+
+
+    /* Set a specific height */
+    height: 500px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -165,10 +243,71 @@ h1 {
 
 }
 
+.edu {
+     height: 500px;
+     background-color: white;
+
+ }
+
+.edu:hover {
+    height: 500px;
+    background-color: white;
+    box-shadow: 0 1px 10px #999;
+
+}
+
+.course {
+    height: 500px;
+    background-color: #ededed;
+
+}
+
+.course:hover {
+    height: 500px;
+    background-color: #ededed;
+    box-shadow: 0 1px 10px #999;
+
+}
+
+.exp {
+    height: 500px;
+    background-color: white;
+
+}
+
+.exp:hover {
+    height: 500px;
+    background-color: white;
+    box-shadow: 0 1px 10px #999;
+
+}
+
 .aboutHead {
     height: 100px;
+    padding-top: 50px;
+    padding-left: 400px;
     background-color: #1a1a1a;
 
+}
+
+.eduHead {
+    height: 100px;
+    padding-top: 50px;
+    background-color: #1a1a1a;
+
+}
+
+.courseHead {
+    height: 100px;
+    padding-top: 50px;
+    background-color: #1a1a1a;
+
+}
+
+.expHead {
+    height: 100px;
+    padding-top: 50px;
+    background-color: #1a1a1a;
 }
 
 h2 {
@@ -183,10 +322,29 @@ h2 {
     text-align: center;
 }
 
+.column {
+    height: 400px;
+    width: 45%;
+    float: left;
+}
+
 .myPic {
-    height: 200px;
-    width: 200px;
+    height: 400px;
+    width: 400px;
+    margin-top: -100px;
+    margin-left: -25px;
     background-image: url(Images/Manas.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wpiPic {
+    height: 150px;
+    width: 300px;
+    margin-top: 10px;
+    margin-left: -25px;
+    background-image: url(Images/wpi.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

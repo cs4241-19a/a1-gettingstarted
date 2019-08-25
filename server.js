@@ -19,6 +19,9 @@ const server = http.createServer( function( request,response ) {
     case '/Images/Manas.jpg':
       sendFile( response, 'Images/Manas.jpg' )
       break
+    case '/Images/wpi.png':
+      sendFile( response, 'Images/wpi.png' )
+      break
     case '/Scripts/NavBar.js':
       sendFile( response, 'Scripts/NavBar.js' )
       break
