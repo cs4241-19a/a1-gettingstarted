@@ -5,19 +5,6 @@ Assignment details
 ---
 
 Do the following to complete this assignment:
-
-2. Edit `index.html` to show the following information about you:
-    * your name and class at WPI (e.g. class of 2020) Note: Do not put any contact or personal information that you do not potentially want other people outside of this class to see.
-    * your major(s) and minor(s)
-    * previous computer science courses that you have taken at WPI
-    * your experience with the following technologies and methods (none, some, a lot)
-        * HTML
-        * CSS
-        * Java
-        * JavaScript
-        * Ruby
-        * Python
-        * unit testing
 3. Test your project to make sure that when someone goes to your main page, it displays correctly. You can do this locally by simply running `node server.js` from within the assignment directory.
 
 4. Modify the README file according to the specification below.
