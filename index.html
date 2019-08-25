@@ -1,28 +1,280 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
-  </body>
+    <!--CSS Files-->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<header>
+    <nav id="nav-wrap">
+        <ul id="nav" class="nav">
+            <li><a class="smoothscroll" href="#education">Education</a></li>
+            <li><a class="smoothscroll" href="#courses">Courses</a></li>
+            <li><a class="smoothscroll" href="#experience">Experience</a></li>
+            <li><a class="smoothscroll" href="#projects">Projects</a></li>
+        </ul>
+    </nav>
+    <canvas id="renderCanvas"></canvas>
+    <div class="centerDiv">
+        <!--<img src="./files/kit.jpg" class="profileImg"/>-->
+        <h1 id="typed" class="profile_heading">Kit Zellerbach</h1>
+    </div>
+</header>
+
+<!-- ABOUT -->
+<section class="p" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h3 class="text-center">Welcome</h3>
+                <br/>
+                <p class="mb-5 mx-5">Welcome to my personal website. I am currently a Senior at Worcester Polytechnic Institute (WPI) pursuing a B.S. in Computer Science with minors in Astrophysics and Data Science.
+
+                    I am passionate about computer technology and its applications to solve real-world problems. While my focus is usually on Software Engineering, this year I will be conducting research on nutritional deficiency using a range of computational methods to preform data analysis including data mining and machine learning algorithms.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+    <div class="row">
+        <div class="col-md-1 mx-auto">
+            <h1><span>Education</span></h1>
+        </div>
+
+        <div class="col-md-8 mx-auto">
+            <div class="mb-5"><h3>Worcester Polytechnic Institute</h3>
+                <p class="info">B.S. Computer Science <span>&bull; </span><em class="date">2020</em></p>
+                <p class="info">Data Science Minor <span>&bull; </span>Astrophysics Minor</p>
+
+            </div>
+            <div class="mb-5"><h3>Bangkok Patana School</h3>
+                <p class="info">IB Diploma <span>&bull; </span><em class="date">2016</em></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="courses" class="mx-5">
+    <div class="row">
+        <div class="col-md-1 mx-5 mb-5">
+            <h1><span>Courses</span></h1>
+        </div>
+    </div>
+    <div class="card-columns">
+        <div class="card bg-light">
+            <div class="card-body text-center">
+                <p class="card-text">Accelerated Introduction to Program Design</p>
+            </div>
+        </div>
+        <div class="card bg-light">
+            <div class="card-body text-center">
+                <p class="card-text">Accelerated Object Oriented Design</p>
+            </div>
+        </div>
+        <div class="card bg-light">
+            <div class="card-body text-center">
+                <p class="card-text">Systems Programming Concepts</p>
+            </div>
+        </div>
+        <div class="card bg-light">
+            <div class="card-body text-center">
+                <p class="card-text">Machine Language and Assembly</p>
+            </div>
+        </div>
+        <div class="card bg-light">
+            <div class="card-body text-center">
+                <p class="card-text">Algorithms</p>
+            </div>
+        </div>
+        <div class="card bg-light">
+            <div class="card-body text-center">
+                <p class="card-text">Operating Systems</p>
+            </div>
+        </div>
+        <div class="card bg-light">
+            <div class="card-body text-center">
+                <p class="card-text">Database Systems I</p>
+            </div>
+        </div>
+        <div class="card bg-light">
+            <div class="card-body text-center">
+                <p class="card-text">Software Engineering</p>
+            </div>
+        </div>
+        <div class="card bg-light">
+            <div class="card-body text-center">
+                <p class="card-text">Data and Knowledge Discovery in Databases</p>
+            </div>
+        </div>
+        <div class="card bg-light">
+            <div class="card-body text-center">
+                <p class="card-text">Computer Graphics</p>
+            </div>
+        </div>
+        <div class="card bg-light">
+            <div class="card-body text-center">
+                <p class="card-text">Ubiquitous and Mobile Computing</p>
+            </div>
+        </div>
+        <div class="card bg-light">
+            <div class="card-body text-center">
+                <p class="card-text">Data Visualization</p>
+            </div>
+        </div>
+        <div class="card bg-light">
+            <div class="card-body text-center">
+                <p class="card-text">Object Oriented Design Principles</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="skills" class="mx-5">
+    <div class="skill-container">
+        <div class="skills html">HTML <span class="float-right">90%</span></div>
+    </div>
+
+    <div class="skill-container">
+        <div class="skills css">CSS <span class="float-right">90%</span></div>
+    </div>
+
+    <div class="skill-container">
+        <div class="skills js">Javascript <span class="float-right">90%</span></div>
+    </div>
+
+    <div class="skill-container">
+        <div class="skills php">Java <span class="float-right">90%</span></div>
+    </div>
+
+    <div class="skill-container">
+        <div class="skills php">Ruby <span class="float-right">90%</span></div>
+    </div>
+
+    <div class="skill-container">
+        <div class="skills php">Python <span class="float-right">90%</span></div>
+    </div>
+
+    <div class="skill-container">
+        <div class="skills php">Unit Testing <span class="float-right">90%</span></div>
+    </div>
+</section>
+
+
+<!-- EXPERIENCE -->
+<section id="experience">
+    <div class="row">
+        <div class="col-md-1 mx-auto">
+            <h1><span>Experience</span></h1>
+        </div>
+        <div class="col-md-8 mx-auto">
+            <div class="mb-5"><h3>Microsoft</h3>
+                <p class="info">Software Engineering Intern<span> &bull;</span> <em class="date">May - August 2019</em></p>
+                <p>Worked in the Cyber Defense Operations Center as a member of the Digital Security and Risk Engineering team.</p>
+            </div>
+            <div class="mb-5"><h3>WPI</h3>
+                <p class="info">Student Assistant<span> &bull;</span> <em class="date">March 2018 - Present</em></p>
+                <p>Working as a Student Assistant for various Computer Science courses, such as Software Engineering and Database Systems.
+                </p>
+            </div>
+            <div class="mb-5"><h3>WPI</h3>
+                <p class="info">REU Student<span> &bull;</span> <em class="date">February 2019 - Present</em></p>
+                <p>Research on optimizing deep learning inference models for Android devices as part of an NSF award.</p>
+            </div>
+            <div class="mb-5"><h3>Raytheon</h3>
+                <p class="info">Software Engineering Intern<span> &bull;</span> <em class="date">May - August 2018</em></p>
+                <p>Worked on the development of Air Traffic Control Automation Systems and Next Generation (NexGen) Weather data processing systems</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <div>
+        <header class="text-center py-3 mb-3">
+            <div class="container">
+                <h1 class="font-weight-light">Projects</h1>
+            </div>
+        </header>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-md-6 mb-4">
+                    <div class="card border-0 shadow">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="..."/>
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-0">Title</h5>
+                            <div class="card-text text-black-50">Descr</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 mb-4">
+                    <div class="card border-0 shadow">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="..."/>
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-0">Title</h5>
+                            <div class="card-text text-black-50">Descr</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 mb-4">
+                    <div class="card border-0 shadow">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="..."/>
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-0">Title</h5>
+                            <div class="card-text text-black-50">Descr</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 mb-4">
+                    <div class="card border-0 shadow">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="..."/>
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-0">Title</h5>
+                            <div class="card-text text-black-50">Descr</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p class="float-right text-muted">
+            Kit Zellerbach
+        </p>
+        <div>
+            <a class="btn" href="www.github.com/kitzeller">
+                <i class="fa fa-2x fa-github"></i></a>
+            <a class="btn" href="https://www.linkedin.com/in/kitzeller/">
+                <i class="fa fa-2x fa-linkedin"></i></a>
+        </div>
+    </div>
+</footer>
+
+
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="vendor/init.js"></script>
+
+<script src="https://preview.babylonjs.com/babylon.js"></script>
+<script src="https://preview.babylonjs.com/babylon.js"></script>
+<script src="files/babylon.gridMaterial.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/typeit@6.0.3/dist/typeit.min.js"></script>
+
+<script src="main.js"></script>
+</body>
 </html>

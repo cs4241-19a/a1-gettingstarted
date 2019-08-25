@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+canvas {
+    width: 100%;
+    height: 100vh;
+}
+
+@font-face {
+    font-family: tiger_walk;
+    src: url(files/tiger_walk.ttf);
+}
+
+.centerDiv {
+    text-align: center;
+    position: absolute;
+    z-index: 2;
+    transform: translate(-50%, -50%); /* Yep! */
+    left: 50%;
+    top: 50%;
+}
+
+.profileImg {
+    border-radius: 20%;
+    width: calc(200px + 2vmin);
+    filter: grayscale(100%);
+}
+
+.profile_heading {
+    margin: 5px;
+    font-size: calc(80px + 2vmin);
+    color: white;
+    font-family: tiger_walk, fantasy;
+}
+
+.profile_sub {
+    margin: 5px;
+    font-size: calc(20px + 2vmin);
+    color: white;
+    font-family: "CMU Concrete";
+}
+
+#nav-wrap ul, #nav-wrap li, #nav-wrap a {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+/* nav-wrap */
+#nav-wrap {
+    font: 12px 'opensans-bold', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    margin: 0 auto;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.opaque { background-color: rgba(0.3,0.3,0.3,0.5); }
+
+ul#nav {
+    min-height: 48px;
+    margin: 0;
+    padding: 0;
+}
+
+ul#nav li {
+    position: relative;
+    list-style: none;
+    height: 48px;
+    display: inline-block;
+}
+
+/* Links */
+ul#nav li a {
+
+    /* 8px padding top + 8px padding bottom + 32px line-height = 48px */
+
+    display: inline-block;
+    padding: 8px 13px;
+    line-height: 32px;
+    text-decoration: none;
+    text-align: left;
+    color: #fff;
+
+    -webkit-transition: color .2s ease-in-out;
+    -moz-transition: color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out;
+    -ms-transition: color .2s ease-in-out;
+    transition: color .2s ease-in-out;
+}
+
+ul#nav li a:active { background-color: transparent !important; }
+ul#nav li.current a { color: #F06000; }
+
+section {
+    padding: 3rem 0;
+}
+
+p {
+    white-space: pre-line;
+}
+
+.fa {
+    color: grey;
+}
+
+.fa:hover {
+    color: #F06000;
+}
+
+/* Skills Bar */
+
+/* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.skill-container {
+    margin: 10px;
+    width: 100%; /* Full width */
+    background-color: #ddd; /* Grey background */
+}
+
+.skills {
+    padding: 10px;
+    color: white; /* White text color */
+}
+
+.html {width: 90%; background-color: #4CAF50;} /* Green */
+.css {width: 80%; background-color: #2196F3;} /* Blue */
+.js {width: 65%; background-color: #f44336;} /* Red */
+.php {width: 60%; background-color: #808080;} /* Dark Grey */
