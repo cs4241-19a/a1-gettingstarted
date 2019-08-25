@@ -9,8 +9,13 @@ body{
 h1{
   text-align: center;
   background-color: #c9a4a0;
-  padding: 10px 10px 10px 10px;
+  padding: 100px 50px 100px 50px;
+  margin-right: 70%;
+  box-shadow: 5px 5px 30px #888888;
 }
 div{
   margin: 0px 20px 0px 20px;
+}
+.wrap{
+  display: inline-block;
 }
