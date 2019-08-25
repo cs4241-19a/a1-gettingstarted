@@ -4,17 +4,18 @@ html, body{
 }
 
 body{
-  margin: 0% 10% 0% 25%;
+  margin: 0% 10% 0% 22%;
 }
 h1{
+  width: 90%;
   text-align: center;
   background-color: #c9a4a0;
-  padding: 100px 50px 100px 50px;
-  /*margin-right: 70%;*/
-  box-shadow: 5px 5px 30px #888888;
+  padding: 20px 50px 20px 50px;
+  box-shadow: 5px 5px 18px #888888;
 }
 p{
   line-height: 175%;
+  text-align: justify;
 }
 div{
   margin: 0px 20px 0px 20px;
