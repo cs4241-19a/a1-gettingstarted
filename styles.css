@@ -1,5 +1,6 @@
 html, body{
-    background-color: #f2dcd3;
+  width: 75%
+  background-color: #f0e7e3;
 }
 
 body{
@@ -7,5 +8,5 @@ body{
 }
 h1{
   background-color: #ae8094;
-  padding: 10px 0px 10px 0px;
+  padding: 10px 10px 10px 10px;
 }
