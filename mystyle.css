@@ -2,8 +2,13 @@ body {
   background-color:#a8a8a8;
 }
 
+button{
+   border: none;
+  background-image: url("https://cdn.glitch.com/ca488780-8739-44a6-bc9d-4af8cf40b6df%2F%E8%BF%9B%E5%85%A5%E7%AE%AD%E5%A4%B4.png?v=1566763217700");
+}
+
 div{
-  paddding-top:20px;
+  padding:10px;
   margin: 20px 250px 0px 250px;
   background: rgba(255, 255, 255, 0.6);
   height:600px;
@@ -30,7 +35,6 @@ ul {
 li {
  margin-left:500px;
  margin-right:auto;
-
   font-size:16px;
 }
 
