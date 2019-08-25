@@ -71,6 +71,7 @@ li{
 li:hover{
   font-size: 30px;
   color: white;
+  cursor: pointer;
   text-decoration: none;
   line-height: 30px;
 }
