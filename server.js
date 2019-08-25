@@ -2,6 +2,11 @@ const http = require('http'),
       fs   = require('fs'),
       port = 3000
 
+let cssFile;
+fs.readFile( './styles.css', function( err, content ) {
+    cssFile = content;
+});
+
 const server = http.createServer( function( request,response ) {
   switch( request.url ) {
     case '/':
