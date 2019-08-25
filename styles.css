@@ -13,6 +13,9 @@ h1{
   margin-right: 70%;
   box-shadow: 5px 5px 30px #888888;
 }
+p{
+  line-height: 175%;
+}
 div{
   margin: 0px 20px 0px 20px;
 }
