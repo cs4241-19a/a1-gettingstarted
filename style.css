@@ -67,9 +67,10 @@ li{
 	text-decoration: none;
   line-height: 30px;
   font-size: 25px;
+  width: 16%;
 }
 li:hover{
-  font-size: 30px;
+  font-size: 27px;
   color: white;
   cursor: pointer;
   text-decoration: none;
