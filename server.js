@@ -16,7 +16,7 @@ const server = http.createServer( function( request,response ) {
       sendFile( response, 'index.html' )
       break
     case '/styles.css':
-      sendFile( response, 'index.html' )
+      sendFile( response, 'styles.css' )
       response.write( cssFile, 'utf-8' );
       break;
     default:
