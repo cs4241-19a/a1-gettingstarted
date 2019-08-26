@@ -1,7 +1,15 @@
-#tech-table {
+body {
+  font-family: sans-serif;
+}
+
+.centered-table {
   margin: 0 auto;
 }
 
+td {
+  padding-left: 5px;
+  padding-right: 5px;
+}
 
 /**
  * Tooltip styles modified from https://www.w3schools.com/css/css_tooltip.asp
@@ -32,12 +40,9 @@
 
 /** End tooltip styles */
 
-/* Sets the background image if the screen size is greater than 1000px
-    The background image should not be shown smaller screens because it
-    will be almost completely covered by the carousel
- */
+/* Sets the background image if the screen size is greater than 1000px*/
 @media (min-width: 1000px) {
-    #main-container {
+    body {
         background-repeat: no-repeat;
         /* Centers the background image horizontally, offsets by 20px from the top vertically */
         background-position: center 20px;
