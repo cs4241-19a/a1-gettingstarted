@@ -4,39 +4,11 @@ const http = require('http'),
       port = 3000
 
 const server = http.createServer( function( request,response ) {
-  switch( request.url ) {
-    case '/':
-      sendFile( response, 'index.html' )
-      break
-    case '/ken.jpeg':
-      sendFile( response, 'ken.jpeg' )
-      break
-    case '/html.png':
-      sendFile( response, 'html.png' )
-      break
-    case '/css.png':
-      sendFile( response, 'css.png' )
-      break
-    case '/js.png':
-      sendFile( response, 'js.png' )
-      break
-    case '/java.png':
-      sendFile( response, 'java.png' )
-      break
-    case '/ruby.png':
-      sendFile( response, 'ruby.png' )
-      break
-    case '/python.png':
-      sendFile( response, 'python.png' )
-      break
-    case '/test.png':
-      sendFile( response, 'test.png' )
-      break
-    case '/style.css':
-      sendFile( response, 'style.css' )
-      break
-    default:
-      response.end( '404 Error: File Not Found')
+  const url = request.url.slice(1)
+  if(request.url === '/'){
+    sendFile(response, url)
+  } else{
+    sendFile(response, url)
   }
 })
 
@@ -45,8 +17,14 @@ server.listen( process.env.PORT || port )
 const sendFile = function( response, filename ) {
   const mimeType = mime.getType(filename)
   response.writeHeader(200, {'Content-Type': mimeType})
-   fs.readFile( filename, function( err, content ) {
-     file = content
-     response.end( content, 'utf-8' )
+   fs.readFile( filename, function( error, content ) {
+    if (error === null){
+      response.end( content, 'utf-8' )
+    } else{
+      response.writeHeader(404)
+      response.end('File not found', 'utf-8')
+    }
    })
 }
+
+/*RENAME GIT REPO*/
