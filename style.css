@@ -340,12 +340,62 @@ h2 {
 }
 
 .wpiPic {
-    height: 150px;
-    width: 300px;
-    margin-top: 10px;
-    margin-left: -25px;
-    background-image: url(Images/wpi.png);
+     height: 150px;
+     width: 300px;
+     margin-top: 10px;
+     margin-left: -25px;
+     background-image: url(Images/wpi.png);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+.senPic {
+    height: 25px;
+    width: 125px;
+    margin-top: 30px;
+    margin-left: -50px;
+    background-image: url(Images/2020.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    transform: rotate(25deg);
+}
+
+.senPic:hover {
+    height: 35px;
+    width: 175px;
+    margin-top: 30px;
+    margin-left: -50px;
+    background-image: url(Images/2020.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotate(25deg);
+    box-shadow: 0 1px 5px #999;
+
+}
+
+
+.eduCont {
+    height: 100px;
+    width: 50%;
+    float: left;
+}
+
+p {
+    margin-top: 30px;
+    font-size: 1.5em;
+    color: black;
+    font-family: 'Source Code Pro', 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    letter-spacing: 1px;
+    font-weight: 100;
+    border: 0;
+
+}
+
+.senP {
+    margin-top: 50px;
+    margin-left: 125px;
+    margin-right: -125px;
 }
