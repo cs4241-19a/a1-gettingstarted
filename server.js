@@ -21,12 +21,13 @@ server.listen( process.env.PORT || port )
 
 const sendFile = function( response, filename ) {
   const mimeType = mime.getType( filename )
-  response.writeHeader( 200, { 'Content-Type': mimeType })
   fs.readFile (filename, function( err, content) {
-    if(error === null) {
-      
+    if(err === null) {
+      response.writeHeader( 200, { 'Content-Type': mimeType })
+      response.end( content )
     } else {
-    response.end( content, 'utf-8' )
+      response.writeHeader( 404 )
+      response.end( '404 Error: File Not Found' )
     }
   })
 }

@@ -3,3 +3,12 @@ body {
   color : #ffffff;
   font-family: "Arial", sans-serif;
 }
+
+.sidebar {
+  position: fixed;
+  background-color: #2B82AB;
+  width: 20vw;
+  font-family: "Arial", sans-serif;
+
+  
+}
