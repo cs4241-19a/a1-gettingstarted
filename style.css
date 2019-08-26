@@ -29,3 +29,18 @@
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
+
+/** End tooltip styles */
+
+/* Sets the background image if the screen size is greater than 1000px
+    The background image should not be shown smaller screens because it
+    will be almost completely covered by the carousel
+ */
+@media (min-width: 1000px) {
+    #main-container {
+        background-repeat: no-repeat;
+        /* Centers the background image horizontally, offsets by 20px from the top vertically */
+        background-position: center 20px;
+        background-image: url("/assets/Rocket_with_Smoke_Colored.svg");
+    }
+}
