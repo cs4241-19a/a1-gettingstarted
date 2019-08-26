@@ -1,3 +1,5 @@
 h1 {
-  color: red;
+  background: linear-gradient(to right, #ff8a00 0%, #da1b60 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
