@@ -9,12 +9,11 @@ fs.readFile( './index.html', function( err, content ) {
 })
 
 const server = http.createServer( function( request,response ) {
-  switch( request.url ) {
-    case '/':
-      sendFile( response, 'index.html' )
-      break
-    default:
-      response.end( '404 Error: File Not Found')
+  const url = request.url.slice( 1 )
+  if(request.url === "/") {
+    sendFile( response, "index.html") 
+  } else {
+    sendFile( response, url ) 
   }
 })
 
@@ -24,6 +23,10 @@ const sendFile = function( response, filename ) {
   const mimeType = mime.getType( filename )
   response.writeHeader( 200, { 'Content-Type': mimeType })
   fs.readFile (filename, function( err, content) {
+    if(error === null) {
+      
+    } else {
     response.end( content, 'utf-8' )
+    }
   })
 }

@@ -1,4 +1,5 @@
-p {
+body {
   background-color: #205B78;
-  
+  color : #ffffff;
+  font-family: "Arial", sans-serif;
 }
