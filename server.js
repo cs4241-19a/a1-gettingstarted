@@ -12,9 +12,6 @@ const server = http.createServer( function( request,response ) {
     case '/':
       sendFile( response, 'index.html' )
       break
-    case '/index.html':
-      sendFile( response, 'index.html' )
-      break
     case '/styles.css':
       sendFile( response, 'styles.css' )
       response.write( cssFile, 'utf-8' );
@@ -27,6 +24,7 @@ const server = http.createServer( function( request,response ) {
 server.listen( process.env.PORT || port )
 
 const sendFile = function( response, filename ) {
+  const mimeType = mime.getType
    fs.readFile( filename, function( err, content ) {
      filename = content
      response.end( content, 'utf-8' )
