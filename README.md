@@ -13,6 +13,7 @@ This project shows some information about me.
 - **Added Bulma.io**: To help with styling of the website.
 - **Added links to all of the tools and libraries I use**: To provide a direct link if the reader is interested.
 - **Added `.gitignore`**: To prevent the node_modules folder from being added to git.
+- **Made responsive**: Thanks to bulma.io, the website has support for different sized screens and will resize accordingly.
 
 ### Design Achievements
 
