@@ -62,16 +62,20 @@ If you need a Git/GitHub refreseher, see [GitHub Bootcamp](https://help.github.c
 Sample Readme (delete the above when you're ready to submit, and modify the below so with your links and descriptions)
 ---
 
-Charlie Roberts
-http://a1-charlieroberts.glitch.me
+Randy Agudelo
+http://a1-RandyAgudelo.glitch.me
 
-This project shows ...
+This project shows a webpage displaying my personal information such as my major and experiences. 
+It also describes my knowledge of certain technologies and methods as well as what CS courses I have
+taken in the past. 
 
 ## Technical Achievements
 - **Proved P=NP**: Using a combination of...
 - **Solved AI**: ...
 
 ### Design Achievements
-- **Re-vamped Apple's Design Philosophy**: Shown in `style.css`, the code...
+- **Organized experiences into a table**: The webpage displays a table through the use of HTML code which 
+can be seen in the index.html. The table was stylized with CSS code which can be seen in the beginning of
+the index.html
 
 
