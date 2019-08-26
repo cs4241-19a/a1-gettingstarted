@@ -1,14 +1,28 @@
+// server.js
+
 const http = require('http'),
       fs   = require('fs'),
-      port = 3000
+      port = 3000,
+      // Added the express framework
+      express = require('express'),
+      app = express();
 
-const server = http.createServer( function( request,response ) {
+// Using express to include an external css and javascript file
+app.use(express.static('public'));
+
+app.get('/', function(request, response) {
+  response.sendFile(__dirname + '/index.html');
+});
+
+// Using express for routing index.html
+// http://expressjs.com/en/starter/basic-routing.html
+const server = app.get('/', function(request, response) {
   switch( request.url ) {
     case '/':
-      sendFile( response, 'index.html' )
+      response.sendFile(__dirname + '/index.html');
       break
     case '/index.html':
-      sendFile( response, 'index.html' )
+      response.sendFile(__dirname + '/index.html');
       break
     default:
       response.end( '404 Error: File Not Found' )
@@ -23,3 +37,4 @@ const sendFile = function( response, filename ) {
      response.end( content, 'utf-8' )
    })
 }
+
