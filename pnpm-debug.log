@@ -1,0 +1,39 @@
+---
+  0 debug pnpm:scope: 
+    selected: 1
+    workspacePrefix: null
+  1 info pnpm: 
+    message: "A store server is running. All store manipulations are delegated to it."
+    prefix: "/app"
+  2 debug pnpm:package-json: 
+    initial: 
+      name: "cr-4241-simple-glitch"
+      version: "0.1.0"
+      description: "WPI CS 4241 first assignment"
+      author: 
+        name: "Charlie Roberts"
+      scripts: 
+        start: "node server.js"
+      dependencies: 
+        text2png: "^2.1.0"
+        mime: "^2.4.4"
+      readme: "1. Fork the starting project code in GitHub. This repo contains:\n    * the server code, `server.js`\n    * A starting `index.html` file that you will edit as described below\n    * A package.json file that helps configure Glitch\n    * This README\n2. Edit `index.html` to show the following information about you:\n    * your name and class at WPI (e.g. class of 2020) Note: Do not put any contact or personal information that you do not potentially want other people outside of this class to see.\n    * your major(s) and minor(s)\n    * previous computer science courses that you have taken at WPI\n    * your experience with the following technologies and methods (none, some, a lot)\n        * HTML\n        * CSS\n        * Java\n        * JavaScript\n        * Ruby\n        * Python\n        * unit testing\n3. Test your project to make sure that when someone goes to your main page, it displays correctly. You can do this locally by simply running `node server.js` from within the assignment directory.\n\n4. Modify the README file according to the specification below.\n5. Commit and push all your changes to GitHub. \n6. Deploy your project to Glitch. You can do this by [importing the repo from GitHub](https://medium.com/glitch/import-code-from-anywhere-83fb60ea4875)\n7. Ensure that your project has the proper naming scheme (guide follows) so we can find it.\n8. Create and submit a Pull Request to the original repo.\n\n\n\n\nJeffrey Harnois\n\nhttps://a1-jharnois4512.glitch.me\n\n#### This project shows ...\n\nTechnical Achievements\n--- \n\n- Added in the CSS sheet to the HTML page when requested from the server\n- Added in my own custom font as a ttf file (my favorite font)\n- Figured out how to modify this md (didn't know I had to hit the button at the top)\n- Added a css animation from https://codepen.io/matchboxhero/pen/XeQWNw (bird animation)\n- Figured out how to modify elements inside of other elements in css\n- Created the server before the professor made the new server (commented out above the new server)\n- Added a script that logged a success after everthing was loaded\n\nDesign Achievements\n---\n\n- Made the background my favorite color\n- Used every single list in JavaScript\n- Color coded my CS classes based on ones that I enjoyed the least to most, red to green respectively \n- Put my animation in it's own div\n- Centered some text to make things look better\n\n#### This project has ...\n\n**1)Milkshake.ttf\n\n**2)README.md\n\n**3)index.html\n\n**4)package.json\n\n**5)server.js\n\n**6)style.css\n"
+      readmeFilename: "README.md"
+      gitHead: "1fe5bec47463200e2b687cf0869940dfecaceeaa"
+      _id: "cr-4241-simple-glitch@0.1.0"
+    prefix: "/app"
+  3 warn pnpm: 
+    message: "Moving text2png that was installed by a different package manager to \"node_modules/.ignored"
+    prefix: "/app"
+  4 error pnpm: 
+    message: 
+      errno: -39
+      code: "ENOTEMPTY"
+      syscall: "rename"
+      path: "/rbd/pnpm-volume/8c958920-925a-4c50-8eaa-283f93ba6032/node_modules/text2png"
+      dest: "/rbd/pnpm-volume/8c958920-925a-4c50-8eaa-283f93ba6032/node_modules/.ignored/text2png"
+    err: 
+      name: "Error"
+      message: "ENOTEMPTY: directory not empty, rename '/rbd/pnpm-volume/8c958920-925a-4c50-8eaa-283f93ba6032/node_modules/text2png' -> '/rbd/pnpm-volume/8c958920-925a-4c50-8eaa-283f93ba6032/node_modules/.ignored/text2png'"
+      code: "ENOTEMPTY"
+      stack: "Error: ENOTEMPTY: directory not empty, rename '/rbd/pnpm-volume/8c958920-925a-4c50-8eaa-283f93ba6032/node_modules/text2png' -> '/rbd/pnpm-volume/8c958920-925a-4c50-8eaa-283f93ba6032/node_modules/.ignored/text2png'"
