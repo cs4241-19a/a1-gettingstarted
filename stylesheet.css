@@ -1,4 +1,14 @@
 body {
-  background-color: #205B78;
+  background-color: #000000;
+  font-style: sans-serif;
 }
 
+p {
+  background-color: #000000;
+  font-style: sans-serif;
+}
+
+.temp {
+  background-color: #000000;
+  font-style: sans-serif; 
+}
