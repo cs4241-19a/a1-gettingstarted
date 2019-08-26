@@ -1,4 +1,5 @@
 const http = require('http'),
+      mime = require("mime"),
       fs   = require('fs'),
       port = 3000
 
@@ -10,6 +11,9 @@ fs.readFile( './styles.css', function( err, content ) {
 const server = http.createServer( function( request,response ) {
   switch( request.url ) {
     case '/':
+      sendFile( response, 'index.html' )
+      break
+    case '/index.html':
       sendFile( response, 'index.html' )
       break
     case '/styles.css':
@@ -24,7 +28,8 @@ const server = http.createServer( function( request,response ) {
 server.listen( process.env.PORT || port )
 
 const sendFile = function( response, filename ) {
-  const mimeType = mime.getType
+   const mimeType = mime.getType(filename)
+   
    fs.readFile( filename, function( err, content ) {
      filename = content
      response.end( content, 'utf-8' )
