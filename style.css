@@ -4,17 +4,6 @@ body, html{
 	width: 100%;
 	margin: 0;
 }
-#title{
-	text-align: center;
-	font-size: 50px;
-}
-#major{
-	text-align: center;
-	font-size: 30px;
-}
-#intro{
-	font-size: 30px;
-}
 div.top{
 	background-color: #77CBB9;
 	color: white;
@@ -62,15 +51,15 @@ div.bottom{
   transform: rotateY(180deg);
 }
 
-li{
+p.courses{
 	color: white;
 	text-decoration: none;
   line-height: 30px;
-  font-size: 25px;
-  width: 16%;
+  font-size: 30px;
+  text-align: center;
 }
-li:hover{
-  font-size: 27px;
+p.courses:hover{
+  font-size: 33px;
   color: white;
   cursor: pointer;
   text-decoration: none;
