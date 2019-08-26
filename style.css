@@ -1,0 +1,29 @@
+
+
+/* Style the header */
+body {
+	background-color: #231F18;
+	color: #fff8c1
+}
+
+.header {
+  background-color: #231F18;
+  padding: 30px;
+  text-align: center;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 48.95%;
+  padding: 10px;
+  height: 250px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  margin: auto;
+}
