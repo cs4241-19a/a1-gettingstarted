@@ -8,6 +8,8 @@ This project shows ...
 
 ## Technical Achievements
 - **Basic Understanding**: Using HTML, Git, Glitch
+- **Implemented**: Computer Graphics project scripts and model
 
 ## Design Achievements
 - **Basic Understanding**: CSS
+- **Implemented Use of**: Bootstrap, Fonts, Stylesheets
