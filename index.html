@@ -5,24 +5,33 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="https://reneborner.de/favicon.ico">
     <meta charset="utf-8">
+    <script src="js/Chart.min.js"></script>
 </head>
 <body>
 <h1>
-    <img class="profile" src="https://avatars0.githubusercontent.com/u/28114144?s=400&u=a1395dcb6003e021312162dba7d370c5d0d6530c&v=4" alt="
+    <img class="profile"
+         src="https://avatars0.githubusercontent.com/u/28114144?s=400&u=a1395dcb6003e021312162dba7d370c5d0d6530c&v=4"
+         alt="
      avatar">
     <br>
     Hi I'm René Borner!
 </h1>
 <h2>Self introduction</h2>
 <p>
-    I'm an international exchange student from Germany and study at WPI for the 2019 A and B Term.
-    In Germany I'm majoring in Business Information Technology at HTWG Constance.
+    I'm an international exchange student from Germany and study at WPI for the 2019 A and B Term. I'm in the class of
+    2023 but I obviously won't graduate at WPI.<br>
+    In Germany I'm majoring in Business Information Technology at HTWG Constance.<br>
     After I finish my courses here at WPI successfully I only have to write my bachelor thesis to successfully
     conclude my study.
 </p>
 <h2>Major and other information</h2>
 <p>
-    My major at WPI is computer science.
+    My major at WPI is computer science. Because I'm an exchange student I have not taken any previous CS courses at
+    WPI.<br>
+    At my home university there are generally way more courses that you take during one semester, but some of the
+    courses that I have taken are Intro to Programming, Fundamentals of Computer Systems, Algorithms and Data
+    Structures, Operating Systems, Probability and Statistics, Database and Information Systems, Software Engineering
+    and Computer Networks.
 </p>
 <h2>Other things</h2>
 <p>
@@ -30,9 +39,12 @@
 </p>
 
 <h2>Experience</h2>
-<p>
-    Working experience
-</p>
+<p>Technologies</p>
+<div class="chart-container">
+    <canvas id="technologies"></canvas>
+</div>
+<script src="js/chartConfig.js"></script>
+<p>Working experience</p>
 <ul>
     <li>Software Developer at diva-e</li>
 </ul>

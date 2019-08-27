@@ -1,38 +1,28 @@
 const http = require('http'),
     fs = require('fs'),
+    mime = require('mime'),
     port = 3000
 
-let index
-let css
-fs.readFile('./index.html', function (err, content) {
-    index = content
-})
-fs.readFile('./styles.css', function (err, content) {
-    css = content
-})
-
 const server = http.createServer(function (request, response) {
-    switch (request.url) {
-        case '/':
-            sendFile(response, 'index.html')
-            break
-        case '/index.html':
-            sendFile(response, 'index.html')
-            break
-      case '/styles.css':
-            response.writeHead(200, {'Content-Type': 'text/css'})
-            sendFile(response, 'styles.css')
-            break;
-        default:
-            response.end('404 Error: File Not Found')
+    const filename = request.url.slice(1)
+    console.log(filename)
+    if (filename === '') {
+        if (request.url === '/') sendFile(response, 'index.html')
+    } else {
+        sendFile(response, filename)
     }
 })
 
-server.listen(process.env.PORT || port)
-
-const sendFile = function( response, filename ) {
-    fs.readFile( filename, function( err, content ) {
-        file = content
-        response.end( content, 'utf-8' )
+const sendFile = function (response, filename) {
+    const type = mime.getType(filename)
+    fs.readFile(filename, function (err, content) {
+        if (err === null) {
+            response.writeHeader(200, {'Content-Type': type})
+            response.end(content)
+        } else {
+            response.writeHeader(404)
+            response.end('404 Error: File Not Found')
+        }
     })
 }
+server.listen(process.env.PORT || port)

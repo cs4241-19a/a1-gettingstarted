@@ -5,5 +5,9 @@
   "author": "René Borner",
   "scripts": {
     "start": "node server.js"
+  },
+  "dependencies": {
+    "install": "^0.13.0",
+    "mime": "^2.4.4"
   }
 }

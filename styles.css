@@ -10,6 +10,13 @@
     li {
         margin-right: 5% !important;
     }
+    .chart-container{
+        margin-left: auto !important;
+        margin-right: auto !important;
+        position: relative !important;
+        width:90% !important;
+        height: 450px !important;
+    }
 }
 body {
     background-color: black;
@@ -43,4 +50,13 @@ li {
 .profile {
     border-radius: 50%;
     width: 10%;
+}
+
+.chart-container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width:80%;
+    height: 250px;
+    text-align: center;
 }

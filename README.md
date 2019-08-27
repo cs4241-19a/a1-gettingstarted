@@ -11,5 +11,6 @@ This project shows ...
 
 ### Design Achievements
 - **Re-vamped Apple's Design Philosophy**: Shown in `style.css`, the code...
+ChartsJS!
 
 
