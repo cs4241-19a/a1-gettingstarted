@@ -28,6 +28,7 @@ It has seven sections:
     - ncaa
     - electrical engineering
     - goldwater scholar
+	 - eagle scout
 
 
 ## Technical Achievements
@@ -39,7 +40,6 @@ It has seven sections:
 - **Created javascript to animate sections**: In index.html I wrote a script that gets called for html code with the class "expandable". This code is adapted from code found online at 
         W3 school. Essentially, if a user clicks on the main title area, it will toggle the nextElementSibling which in all my cases is called "content". The content is then shown or hidden 
         from view on the webpage. In the css I wrote to manipulate the toggling areas, a "+" sign will appear if the area can be expanded and "-" sign will appear if the are can be contracted.
-- **Added use of MIME for auto generated header data**: 
 
 ### Design Achievements
 - **Re-vamp for A1 Project**: The general requirements for this project were very undefined so I took it upon myself to transfer my entire resume to this webpage. First I added some really 
