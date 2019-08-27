@@ -1,89 +1,186 @@
-<!doctype html>
-<html lang="en">
-   <head>
-      <title>CS4241 Assignment 1 - Michael Bosik</title>
-      
-      <!--Link stylesheet and font-->
-      <link rel="stylesheet" type="text/css" href="./style.css">
-      <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-      <meta charset="utf-8">
-
-      <!--Bootstrap Imports-->
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
-   </head>
-   <body>
-
-    <!--Main Div-->
-      <div class="main">
-
-        <!--Bootstrap Container for structure-->
-         <div class="container">
-
-          <!--About Me row. Centers objects using bootstrap class-->
-            <div class="row justify-content-center data">
-               <h1 class="col-12">Information about Michael Bosik</h1>
-               
-               <!--Using half wide columns for description and image-->
-               <div class="col-md-6 align-self-center">
-                  <p>
-                     I am just starting my Junior year here at WPI. I am majoring in Computer Science with a minor in IMGD. This past summer, I had an internship at a startup company
-                     called Tracelink in which I was able to program using React Javascript. This sparked my interest in learning
-                     how to create websites from scratch. As a side project, I began developing my own personal website portfolio <strong><a href="http://michaelbosik.com" target="__blank">michaelbosik.com</a></strong>
-                     to experiement with the different capabilities of web development tools such as bootstrap, sass and JQuery.
-                     I have really come to enjoy web development during this process and I would love to persue a career in the field.
-                  </p>
+<!--
+   Created by Michael Bosik
+   This website is a submission for Webware at WPI
+   This website is built using Bootstrap and OpenGL script libraries
+   This website uses the 'Lato' font by Google
+   -->
+   <!doctype html>
+   <html lang="en">
+      <head>
+         <title>CS4241 Assignment 1 - Michael Bosik</title>
+         <!--Link stylesheet and font-->
+         <link rel="stylesheet" type="text/css" href="./style.css">
+         <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+         <meta charset="utf-8">
+         <!--Bootstrap Imports-->
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
+         <!--WebGL Mobile Project Shaders-->
+         <script id="vshaderMobile" type="x-shader/x-vertex">
+            uniform mat4 projectionMatrix, modelMatrix;
+            attribute vec4 vColor, vPosition;
+            varying vec4 fColor;
+            
+            uniform vec4 diffuseProduct, ambientProduct, specularProduct;
+            uniform vec4 lightPosition;
+            uniform float shininess;
+            attribute vec4 vNormal;
+            
+            uniform float angle;
+            varying vec3 refl; 
+            
+            attribute vec2 vTexCoord;
+            varying vec2 fTexCoord;
+            
+            void main() {
+                vec3 pos = (modelMatrix * vPosition).xyz;
+                vec3 L = normalize(lightPosition.xyz - pos);
+                vec3 V = normalize(-pos);
+                vec3 N = normalize(modelMatrix * vNormal).xyz;
+                vec3 R = (2.0 * dot(L, N) * N) - L;
+            
+                refl = refract(pos, N, 0.5);
+            
+                float Kd = dot(L, N);
+                float Ks = pow(max(dot(V, R), 0.0), shininess);
+                vec4 ambient = ambientProduct;
+                vec4 diffuse = vec4(0, 0, 0, 0);
+                vec4 specular = vec4(0, 0, 0, 0);
+            
+                vec3 lightDir = normalize(vec3(-1, -1, -6));
+            
+                if(dot(L, -lightDir) > angle){
+                    diffuse = Kd * diffuseProduct;
+                    specular = Ks * specularProduct;
+                }
+            
+                gl_PointSize = 10.0;
+                gl_Position = projectionMatrix * modelMatrix * vPosition;
+                fColor = ambient + diffuse + specular;
+                fColor.a = 1.0;
+            
+                fTexCoord = vTexCoord;
+            }
+         </script>
+         <script id="fshaderMobile" type="x-shader/x-fragment">
+            precision mediump float;
+            
+            varying vec4 fColor;
+            varying vec2 fTexCoord;
+            varying vec3 refl;
+            
+            uniform sampler2D tex0;
+            uniform sampler2D tex1;
+            uniform samplerCube texMap;
+            
+            uniform float texType;
+            
+            void main() {
+                gl_FragColor = fColor;
+              }
+         </script>
+         <!--Mobile Project Scripts (hosted on my github)-->
+         <script src="http://michaelbosik.github.io/computergraphics/lib/webgl-utils.js"></script>
+         <script src="http://michaelbosik.github.io/computergraphics/lib/initShaders.js"></script>
+         <script src="http://michaelbosik.github.io/computergraphics/lib/MV.js"></script>
+         <script src="http://michaelbosik.github.io/computergraphics/scripts/mobile.js"></script>
+      </head>
+      <!--Begin the Mobile script-->
+      <body onload="mainMobile()">
+         <!--Main Div-->
+         <div class="main">
+            <!--Bootstrap Container for structure-->
+            <div class="container">
+               <!--About Me row. Centers objects using bootstrap class-->
+               <div class="row justify-content-center data">
+                  <h1 class="col-12">Information about Michael Bosik</h1>
+                  <!--Using half wide columns for description and image-->
+                  <div class="col-md-6 align-self-center">
+                     <p>
+                        I am just starting my Junior year here at WPI. I am majoring in Computer Science with a minor in IMGD. This past summer, I had an internship at a startup company
+                        called Tracelink in which I was able to program using React Javascript. This sparked my interest in learning
+                        how to create websites from scratch. As a side project, I began developing my own personal website portfolio <strong><a href="http://michaelbosik.com" target="__blank">michaelbosik.com</a></strong>
+                        to experiement with the different capabilities of web development tools such as bootstrap, sass and JQuery.
+                        I have really come to enjoy web development during this process and I would love to persue a career in the field.
+                     </p>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="imgwrapper align-self-center">
+                        <img src="http://michaelbosik.github.io/website/images/brand/profile.png">
+                     </div>
+                  </div>
                </div>
-               <div class="col-md-6">
-                  <div class="imgwrapper align-self-center">
-                     <img src="http://michaelbosik.github.io/website/images/brand/profile.png">
+               <!--Experience Row-->
+               <div class="row justify-content-center data">
+                  <h1 class="col-12">Experience</h1>
+                  <div class="col-md-6">
+                     <p><strong>Working experience</strong></p>
+                     <ul>
+                        <li>WPI Computer Science Major</li>
+                        <ul>
+                           <li>Computer Graphics</li>
+                           <li>Systems Programming</li>
+                           <li>Operating Systems</li>
+                           <li>Computer Networks</li>
+                        </ul>
+                        <li>Tracelink Developer</li>
+                        <ul>
+                           <li>Worked on a small scrum team using Reactive Programming in Java<br/>
+                              to generate event handlers for CRUDQ operations.
+                           </li>
+                           <li>Used Postman to send requests in order to generate type schema and relationships<br/>
+                              for a data model
+                           </li>
+                        </ul>
+                     </ul>
+                  </div>
+                  <div class="col-md-6">
+                     <p><strong>Language Skills</strong></p>
+                     <ul>
+                        <li>HTML - a lot</li>
+                        <li>CSS/SASS - a lot</li>
+                        <li>NodeJs - a lot</li>
+                        <li>ReactJS - some</li>
+                        <li>JQuery - some</li>
+                        <li>Java - a lot</li>
+                        <li>Unit Testing - a lot</li>
+                        <li>Ruby - none</li>
+                        <li>Python - a lot</li>
+                        <li>WebGL - some</li>
+                     </ul>
+                  </div>
+               </div>
+               <!--WebGL Project-->
+               <div class="row justify-content-center data">
+                  <h1 class="col-12">WebGL Shape Mobile Project</h1>
+                  <p class="col-12">This is just a project I made in Computer Graphics that uses the OpenGL libraries, and shaders I created to render shapes in browser. The shapes move in a stack as they are attached to parent shapes and rotate like a childrens mobile. The rendering also uses Gouraud shading to illuminate the shapes.</p>
+                  <div class="col-5 align-self-center">
+                     <h3>Controls</h3>
+                     <p>p - increase spotlight cutoff angle</br>
+                        o - decrease spotlight cutoff angle</br>
+                     <p>Use the slider to adjust the amount of shapes in the scene.</p>
+                     <input class="mobile" type="range" min="3" max="13" value="8" onchange="changeShapes(value)">
+                     <p id='shapes'></p>
+                     <p id='modeModule'></p>
+                     <p id='angle'></p>
+                     <p id='textures'></p>
+                     <p id='shadows'></p>
+                     <p id='reflections'></p>
+                     <p id='refractions'></p>
+                     <button class="mobile" onclick="refresh()">New Mobile</button>
+                  </div>
+                  <div class="col-7">
+                     <div class="imgwrapper">
+                        <!--This is where the mobile is rendered-->
+                        <canvas id="webglMobile" width="500px" height="500px">
+                           Please use a browser that supports the "canvas" tag.
+                        </canvas>
+                     </div>
                   </div>
                </div>
             </div>
-
-            <!--Experience Row-->
-            <div class="row justify-content-center data">
-               <h1 class="col-12">Experience</h1>
-               <div class="col-md-6">
-                  <p><strong>Working experience</strong></p>
-                  <ul>
-                     <li>WPI Computer Science Major</li>
-                     <ul>
-                        <li>Computer Graphics</li>
-                        <li>Systems Programming</li>
-                        <li>Operating Systems</li>
-                        <li>Computer Networks</li>
-                     </ul>
-                     <li>Tracelink Developer</li>
-                     <ul>
-                        <li>Worked on a small scrum team using Reactive Programming in Java<br/>
-                           to generate event handlers for CRUDQ operations.
-                        </li>
-                        <li>Used Postman to send requests in order to generate type schema and relationships<br/>
-                           for a data model
-                        </li>
-                     </ul>
-                  </ul>
-               </div>
-               <div class="col-md-6">
-                  <p><strong>Language Skills</strong></p>
-                  <ul>
-                     <li>HTML - a lot</li>
-                     <li>CSS/SASS - a lot</li>
-                     <li>NodeJs - a lot</li>
-                     <li>ReactJS - some</li>
-                     <li>JQuery - some</li>
-                     <li>Java - a lot</li>
-                     <li>Unit Testing - a lot</li>
-                     <li>Ruby - none</li>
-                     <li>Python - a lot</li>
-                     <li>WebGL - some</li>
-                  </ul>
-               </div>
-            </div>
          </div>
-      </div>
-   </body>
-</html>
+      </body>
+   </html>
