@@ -5,7 +5,7 @@ Readme (delete the above when you're ready to submit, and modify the below so wi
 ---
 
 Andrew Bonaventura
-<<<glitch link
+https://glitch.com/~a1-abon27
 
 This project shows understanding of the processes of Github through the use of 
 forking the original repository code to be able to make edits to the index.html
