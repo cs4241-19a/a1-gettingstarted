@@ -1,0 +1,21 @@
+:root {
+  --text-color: rgba(0, 0, 0, 0.93);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--text-color);
+}
+
+.page {
+  max-width: 1000px;
+  padding: 15px;
+  margin: auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  border-bottom: 2px solid;
+}
