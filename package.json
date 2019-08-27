@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "name": "test",
   "version": "0.0.0",
   "scripts": {
@@ -44,13 +43,5 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
     "typescript": "~3.5.3"
-=======
-  "name": "cr-4241-simple-glitch",
-  "version": "0.1.0",
-  "description": "WPI CS 4241 first assignment",
-  "author": "Charlie Roberts",
-  "scripts": {
-    "start": "node server.js"
->>>>>>> 911ed45553ddcbf0621cd41f438fd8da7932791f
   }
 }
