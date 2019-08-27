@@ -1,16 +1,23 @@
 body {
-  background-color: #FFFFFF;
+  background-color: black;
   font-family: verdana;
+  text-align: center;
 }
 h1 {
-  color: #554971;
+  color: #ECD444;
+  
 }
 h2 {
-  color: #554971
+  color: #ECD444;
 }
 p {
-  color: #36213E;
+  color: #FFFFFF;
+  font-family: consolas;
 }
 li {
-  color: #6D466B
+  color: #FFFFFF;
+  font-family: consolas;
+}
+a{
+  color: #EAE0D5
 }
