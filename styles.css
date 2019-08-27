@@ -31,7 +31,9 @@ h3 {
 
 .head-photo {
     border-radius: 50%;
-    width: 75%;
+    height: auto;
+    display:block;
+    max-width: 100%;
 }
 
 #page-content {
