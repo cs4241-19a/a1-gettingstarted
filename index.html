@@ -18,11 +18,14 @@
         </a>
       </nav>
       
+      
+      
       <h2 class="mt-4">
         About
       </h2>
       
-      <div class="mt-3">
+      <button class="collapsible">WPI Class 2020 majoring in Computer Science...</button>
+      <div class="content">
         <p>
           WPI Class 2020 majoring in Computer Science. I am also on the Varsity Football Team and a member of Upsilon Pi Epsilon (UPE), the computer science honors society. My particular interests within the software domain include full-stack web and mobile development. I intend to pursue a career as a software engineer after graduation.
         </p>
@@ -30,6 +33,7 @@
           Aside from technology, I am also passionate about sports, travel and photography!
         </p>
       </div>
+
       
       <hr/>
       
@@ -93,9 +97,7 @@
           </div>
         </div>    
       </div>
-      
-        
-
+    
     </div>
     
     <!-- JavaScript -->
@@ -103,5 +105,22 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+    </script>
   </body>
 </html>
