@@ -25,6 +25,16 @@ button:hover {
   height:800px;
 }
 
+div{
+  animation-name: example;
+  animation-duration: 2s;
+}
+
+@keyframes example {
+  from {background-color: #a8a8a8;}
+  to {background-color: #dcdcdc;}
+}
+
 h1 {
   color: red;
   font-size: 20pt;
