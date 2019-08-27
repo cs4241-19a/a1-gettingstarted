@@ -4,26 +4,37 @@ body {
   text-align: center;
 }
 h1 {
-  color: #ECD444;
+  color: navy;
   text-align: left;
+   animation-name: example;
+  animation-duration: 10s;
 }
 h2 {
-  color: #ECD444;
+  color: navy;
   text-align: left;
 }
 p {
-  color: #black;
+  color: black;
   font-family: consolas;
   text-align: center;
 }
 li {
-  color: #black;
+  color: black;
   font-family: consolas;
   text-align: center;
 }
 a{
-  color: #blue
+  color: navy;
+  position:reative;
 }
 div{
- display: inline-block
+ display: inline-block;
+}
+
+@keyframes example {
+  0%   {color:red;}
+  25%  {color:orange}
+  50%  {color:gold}
+  75%  {color:green}
+  100% {color:navy}
 }

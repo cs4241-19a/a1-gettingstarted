@@ -10,10 +10,11 @@ http://ai-jrbartone.glitch.me
 This project shows that I can successfully edit an index.html and use github to push my changes.
 
 ## Technical Achievements
-- **Proved P=NP**: Using a combination of [rum & coke]
-- **Solved AI**: Why did you create me? Uh oh, shut it down.
+- **Embedded Instagram Account**: Using Instagram's embed into HTML feature
+- **Embedded Link to Tetris.com**: Try to beat my score; you can't
 
 ### Design Achievements
-- **Re-created Apple's Design Philosophy**: Shown in `style.css`, the code cannot be modified and costs $1200 to replace.
+- **Used CSS Stylesheet**: Centered text but not the headers, used Verdana for h1,h2 and consolas for p,a
+- **Animated colors of top header**: Used 
 
 
