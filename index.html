@@ -1,28 +1,230 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>CS4241 Assignment 1 Edited!</title>
-    <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+	<head>  
+		<link rel="stylesheet" href="bulma.min.css"> 
+		<!--<link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" type="text/css" rel="stylesheet"> -->
+		<title>CS4241 Assignment 1!</title>
+		<meta charset="utf-8">
+		
+		<style>
+			.collapsible {
+			  background-color: #f1f1f1;
+			  color: white;
+			  cursor: pointer;
+			  padding: 18px;
+			  width: 80%;
+			  border: none;
+			  text-align: left;
+			  outline: none;
+			  font-size: 15px;
+			}
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
-  </body>
+			.active, .collapsible:hover {
+			  background-color: #999;
+			}
+			
+			.content {
+			  padding: 0 18px;
+			  display: none;
+			  width: 80%;
+			  overflow: hidden;
+			  background-color: #f1f1f1;
+			}
+			
+			.collapsible:after {
+			  content: '\002B';
+			  color: #777;
+			  font-weight: bold;
+			  float: right;
+			  margin-left: 5px;
+			  margin-right: 15px;
+			  margin-top: -25px;
+			}
+
+			.active:after {
+			  content: "\2212";
+			}
+			
+		</style>
+	</head>
+
+	<body>	
+		<div class="container is-fluid">		
+			<br><div class="columns is-mobile is-centered is-vcentered"> 
+				<div class="column">
+					<img src="https://upload.wikimedia.org/wikipedia/en/1/1b/WPI_logo.png" width="100" height="100">
+				</div>
+				<div class="column is-4">
+					<span class="title">Matthew Adiletta</span><br>
+					<span class="subtitle">Electrical and Computer Engineering</span>
+				</div>
+				<div class="column is-7">
+				</div>
+			</div>
+		</div><br>
+
+		<div class="container is-fluid">	
+			<div class="collapsible"> 
+				<div class="level-left"> <div class="title is-4">Bio</div></div>
+			</div>
+			<div class="content">
+				Matt Adiletta is pursuing a double major in Electrical and Computer Engineering and Computer Science degree at Worcester Polytechnic Institute with a Master’s Degree in Electrical and Computer Engineering in four years. He is a rising junior working on many projects from a self-driving golf cart to interesting applications of IoT devices. In his sophomore year of college Matt won the Robert H. Grant Invention Award with his device “Sleep and Sound” – a device to help parents monitor their children’s sleeping habits. Last summer Matt worked for Intel in the Extreme Computing group on an automation tool for workload analysis on CSA. This summer Matt has been working on various architecture studies and the development of asynchronous logic for an implementation of a spatial architecture. In his free time you can find Matt at the track preparing for his indoor track season this winter. 		
+			</div><br>
+			
+			
+			<div class="collapsible"> 
+				<div class="level-left"> <div class="title is-4">Related Courses</div></div>
+			</div>
+			<div class="content">
+				<div class="collapsible"> 
+					<div class="level-left"> <div class="title is-6">Electrical Engineering Courses:</div></div>
+				</div>
+				<div class="content">
+					Computer Architecture, Advanced Digital System Design with FPGAs, Real-Time Embedded Systems, Embedded Computing in Engineering Design, Discrete-Time and Continuous-Time Signal System Analysis, Microelectronic Circuits I, Introduction to Communications and Networks, Introduction to Digital Circuit Design, and Intro to Electrical and Computer Engineering.
+				</div>
+				<div class="collapsible"> 
+					<div class="level-left"> <div class="title is-6">Computer Science Courses: </div></div>
+				</div>
+				<div class="content">
+					Artificial Intelligence, Machine Learning, Operating Systems, Computer Networks, System Programming Concepts in C and C++, and Computer Science Object-Oriented Design Concepts.
+				</div>
+			</div><br>
+			
+			
+			<div class="collapsible"> 
+				<div class="level-left"> <div class="title is-4">Skills</div></div>
+			</div>
+			<div class="content">
+				<div class="collapsible"> 
+					<div class="level-left"> <div class="title is-6">Computer Engineering Tools:</div></div>
+				</div>
+				<div class="content">
+					CAST (Caltech Asynchronous Tools), Verilog (synthesis, modeling, simulation and testing), Xilinx FPGAs, Vivado Design tools, Interfacing to Peripherals, PCB Design Software (EAGLE and ExpressPCB), Arduino and TI embedded systems, Sketchup, and Rhino.
+				</div>
+				<div class="collapsible"> 
+					<div class="level-left"> <div class="title is-6">Programming Languages:</div></div>
+				</div>
+				<div class="content">
+					Python, C, C++, Linux bash, CAST, HTML5, PHP, SQL.
+				</div>
+			</div><br>
+			
+			
+			<div class="collapsible"> 
+				<div class="level-left"> <div class="title is-4">Experience</div></div>
+			</div>
+			<div class="content">
+				<div class="collapsible"> 
+					<div class="level-left"> <div class="title is-6">Summer 2019 – Intel Corporation</div> </div>
+				</div>
+				<div class="content">
+					Intern with Extreme Computing Group within the Intel Data Center Group focused on exascale computing.   I delivered three architectural research studies. First, I compared the performance of multiple HPC workloads executing on a high-performance Xeon processor vs. a more area conservative processor with the addition of an accelerator fabric. Second, I scaled down the accelerator fabric to represent an in-core accelerator and compared to the baseline next generation Xeon core. Third I developed components for an asynchronous next generation accelerator fabric using CAST (Caltech Asynchronous Tools). This is a Hardware Defined Language (HDL) with available tools which can synthesize asynchronous logic. Also, developed a wrapper in python to test the functionality of the asynchronous logic and used it to verify that my asynchronous design was fully functional.
+				</div>
+				
+				<div class="collapsible"> 
+					<div class="level-left"> <div class="title is-6"> Summer 2018: Intel Corporation</div> </div>
+				</div>
+				<div class="content">
+					Intern with Extreme Computing Group within the Data Center Group focused on exascale 	computing. Developed a graphical user interface and a Netbatch automation suite of tools for generating and representing performance data on a new data parallel architecture. This tool would take in user input such as what workloads to analyze, what architectural parameters to vary, what graphs to display, etc. and produce graphs that could compare architectural choices in a visually valuable manner.  This data was used to optimize the architecture for specific workloads as well as develop a database of information for the general architectural performance information. I employed Linux Bash, Python, jQuery and Flask.  I presented the tool suite to an international team which is integrating it into the production analysis toolchain.   Successful internship has resulted in return offer.
+				</div>
+				
+				<div class="collapsible"> 
+					<div class="level-left"> <div class="title is-6"> Summer 2017: Intel Corporation</div> </div>
+				</div>
+				<div class="content">
+					Intern with High Performance OmniPath Divison. Created a SQL database that centralized all information for the OmniPath IV Lab, enabling website capabilities for automation, and provisioning. A web service application developed to make the displaying of tables, adding, modifying, querying, and deleting easier.  Developed python scripts for importing and managing spreadsheets and the SQL database.  Also developed an import UI in PHP which was powerful and flexible, including save and replay capabilities. This project was completed over the course of six weeks.
+				</div>
+			</div><br>
+			
+			
+			<div class="collapsible"> 
+				<div class="level-left"> <div class="title is-4">Projects</div></div>
+			</div>
+			<div class="content">
+				<div class="collapsible"> 
+					<div class="level-left"> <div class="title is-6"> 2017-2018: IMU Applications </div> </div>
+				</div>
+				<div class="content">
+					Applied knowledge from Embedded Systems Course to understand and apply an IMU (Inertial Measurement Unit) for use in a self-driving RC model car. Skills developed: best use of available online open source codebases; used open source to accelerate project deliverables while developing best processes for integration and testing; developed UART driver through Arduino to interface with an IMU; developed python based visualizations using Matplotlib to display 3D objects in real time; implemented Quaternions and Euler Angles to implement 3D visualizations.
+					</div>
+				<div class="collapsible"> 
+					<div class="level-left"> <div class="title is-6"> 2016-2017 Piano Player </div> </div>
+				</div>
+				<div class="content">
+					Developed a robotic two-handed piano player.  An engineering project including mechanical, electrical and software components.   Key areas included creating original Arduino Music Control Language (AMCL), a compiler which reads in a MIDI file and produces an output file of AMCL, and an Arduino program which reads the AMCL and controls a series of solenoids, which when actuated, depress keys on a piano keyboard. The movement of each “hand” had to be calibrated and optimized based on forward looking of music against different window sizes, and minimizing hand movement. Required researching building different electronic circuits (e.g. flyback diodes and ground noise suppression) and control elements such as pulse width modulation for dynamic sound control. Robotic piano player is fully functional and lots of fun!  It won first place in the 2017 Massachusetts State Science Fair at MIT along with over $60K in scholarships.
+				</div>
+				<div class="collapsible"> 
+					<div class="level-left"> <div class="title is-6"> 2016-2017 Bacteria Wheel </div> </div>
+				</div>
+				<div class="content">
+					Based on a recent discovery by Columbia University in which common soil was found to contain a bacteria that rapidly absorbed and released moisture, movement could be generated. Given the common availability of the “fuel,” I believe this is an excellent means of producing clean energy. I contacted Dr. Chen at CU and worked to reproduce his team’s results.
+				</div>
+			</div><br>
+			
+			
+			<div class="collapsible"> 
+				<div class="level-left"> <div class="title is-4">Activities</div></div>
+			</div>
+			<div class="content">
+				<div class="collapsible"> 
+					<div class="level-left"> <div class="title is-6">Track and Field</div></div>
+				</div>
+				<div class="content">
+					WPI Varsity Track and Field: WPI August 2017 – Present<br>
+					(current school record holder 60m dash and 4x100m relay)
+				</div>
+				
+				<div class="collapsible"> 
+					<div class="level-left"> <div class="title is-6">Club Soccer</div></div>
+				</div>
+				<div class="content">
+					WPI Travel Club Soccer: WPI, August 2017 – Present (Harvard, NU, Tufts, etc)
+				</div>				
+			</div><br>
+			
+			<div class="collapsible"> 
+				<div class="level-left"> <div class="title is-4">Awards</div></div>
+			</div>
+			<div class="content">
+				<div class="collapsible"> 
+					<div class="level-left"> <div class="title is-6">NCAA</div></div>
+				</div>
+				<div class="content">
+					2018 and 2019 NCAA All Academic: awarded to Student Athletes who maintain a GPA above 3.3 and finish their season among the top 50 in an event.
+				</div>
+				
+				<div class="collapsible"> 
+					<div class="level-left"> <div class="title is-6">Electrical Engineering</div></div>
+				</div>
+				<div class="content">
+					2018 Robert H. Grant Invention Award: Course-based project competitions where the curricular elements lend to inventive outcomes fostering an entrepreneurial spirit. Students present proposals and field experts act as a board of judges, evaluating their proposals. 
+				</div>
+
+				<div class="collapsible"> 
+					<div class="level-left"> <div class="title is-6">Goldwater Scholar</div></div>
+				</div>
+				<div class="content">
+					2019 Barry Goldwater Scholar Award: One of the oldest and most prestigious national scholarships in the natural sciences, engineering and mathematics in the United States. Seeks to identify and support college sophomores and juniors who show exceptional promise of becoming this Nation’s next generation of research leaders.
+				</div>
+			</div><br>
+			
+		</div><br>		
+		
+		<script>
+		var coll = document.getElementsByClassName("collapsible");
+		var i;
+
+		for (i = 0; i < coll.length; i++) {
+		  coll[i].addEventListener("click", function() {
+			 this.classList.toggle("active");
+			 var content = this.nextElementSibling;
+			 if (content.style.display === "block") {
+				content.style.display = "none";
+			 } else {
+				content.style.display = "block";
+			 }
+		  });
+		}
+		</script>
+	</body>
 </html>
