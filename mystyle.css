@@ -11,12 +11,10 @@ button{
 }
 
 button:hover {
-  background-color: #555555; /* Green */
+  background-color: #555555; /* Grey */
   color: white;
   cursor: pointer;
 }
-
-
 
 .background{
   padding:10px;
@@ -26,11 +24,11 @@ button:hover {
 }
 
 div{
-  animation-name: example;
-  animation-duration: 2s;
+  animation-name: changeBackgroundColor;
+  animation-duration: 3s;
 }
 
-@keyframes example {
+@keyframes changeBackgroundColor {  /*from dark grey to light grey*/
   from {background-color: #a8a8a8;}
   to {background-color: #dcdcdc;}
 }
@@ -46,7 +44,7 @@ h2{
   text-align: center;
 }
 
-.intro {
+.intro {  /*introduction paragrph*/
   text-align: center;
 }
 
@@ -54,22 +52,21 @@ ul {
   text-indent:5px;
 }
 
-li {
+li { 
   text-align:left;
- margin-left:500px;
- margin-right:auto;
+  margin-left:500px;
+  margin-right:auto;
   font-size:16px;
 }
 
-.experience {
- margin-left:500px;
- margin-right:auto;
-
+.experience { /*experience sub title*/
+  margin-left:500px;
+  margin-right:auto;
   line-height:3px;
   font-size:19px;
 }
 
-.ff{
+.ff{  /*fun fact*/
   text-align:center;
   
 }

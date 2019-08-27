@@ -1,60 +1,57 @@
 <!doctype html>
 <html lang="en">
   <head>
+
     <script>
-function show()
-{
-  document.getElementById("ff1").style.color = "black";
-  document.getElementById("ff2").style.color = "black";
-}
-</script>
-    
+      function show(){  /*make the elements visible*/
+        document.getElementById("ff1").style.color = "black";
+        document.getElementById("ff2").style.color = "black";
+      }
+    </script>
+
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
-     <link rel="stylesheet" href="/mystyle.css">
+    <link rel="stylesheet" href="/mystyle.css">
   </head>
+
   <body>
     <div class="background">
-    <h1 align="center">Information about Yicheng Yang
-    
-    </h1>
-    <p class="intro">Year of 2021</p>
-    <p class="intro"> Robotics Engineering and Computer Science</p>
-    <p class="intro">Member of Chinese Student Association and Robotics Club</p>
+      <h1 align="center">Information about Yicheng Yang</h1>
+        <p class="intro">Year of 2021</p>
+        <p class="intro"> Robotics Engineering and Computer Science</p>
+        <p class="intro">Member of Chinese Student Association and Robotics Club</p>
 
-    <h2>Experience</h2>
-    
-    <p class="experience">CS Courses Taken in WPI:</p>
-
-    <ul>
-    <li>CS1101</li>
-    <li>CS2102</li>
-    <li>CS2303</li>
-    <li>CS3733</li>
-    </ul>
-    
-    <p class="experience">Working experience</p>
-
-    <ul>
-      <li>Summer Internship in CHINA ROBOTC</li>
+      <h2>Experience</h2>
+      <p class="experience">CS Courses Taken in WPI:</p>
+      <ul>  /*list items*/
+        <li>CS1101</li>
+        <li>CS2102</li>
+        <li>CS2303</li>
+        <li>CS3733</li>
       </ul>
-    <p class="experience">Pervious Experience</p>
-    <ul>
-      <li>HTML - some (in CS3733 as fxml)</li>
-      <li>CSS - some (in 3733)</li>
-      <li>Java - some (in both CS2102 & CS3733)</li>
-      <li>JavaScript - a little</li>
-      <li> Ruby - none</li>
-      <li> Python - none</li>
-      <li> unit testing - none</li>
-    </ul>
-   
-      <center><button onclick="show()">Fun Fact</button></center>
-      <p class="ff" id="ff1" style="color:rgba(0, 0, 0, 0);">
-        Switched second major between CS and ECE several times. </p>
-        <p class="ff" id="ff2" style="color:rgba(0, 0, 0, 0);">
-          Finally decided on CS because of the great experience in CS3733 (Soft Eng!!!)
-      </p>
+
+      <p class="experience">Working experience</p>
+
+      <ul>
+       <li>Summer Internship in CHINA ROBOTC</li>
+      </ul>
+      
+      <p class="experience">Pervious Experience</p>
+      <ul>
+        <li>HTML - some (in CS3733 as fxml)</li>
+        <li>CSS - some (in 3733)</li>
+        <li>Java - some (in both CS2102 & CS3733)</li>
+        <li>JavaScript - a little</li>
+        <li> Ruby - none</li>
+        <li> Python - none</li>
+        <li> unit testing - none</li>
+      </ul>
+
+      <center><button onclick="show()">Fun Fact</button></center> /*make title a button*/
+      <p class="ff" id="ff1" style="color:rgba(0, 0, 0, 0);"> /*make sentences invisible*/
+      Switched second major between CS and ECE several times. </p>
+      <p class="ff" id="ff2" style="color:rgba(0, 0, 0, 0);">
+      Finally decided on CS because of the great experience in CS3733 (Soft Eng!!!)</p>
     </div>
   </body>
 </html>
