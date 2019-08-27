@@ -46,13 +46,14 @@ ul {
 
 li {
   text-align:left;
-/*  margin-left:500px;
- margin-right:auto; */
+ margin-left:500px;
+ margin-right:auto;
   font-size:16px;
 }
 
 .experience {
-text-align:left;
+ margin-left:500px;
+ margin-right:auto;
 
   line-height:3px;
   font-size:19px;

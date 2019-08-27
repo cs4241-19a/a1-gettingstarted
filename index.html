@@ -1,6 +1,14 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <script>
+function show()
+{
+  document.getElementById("ff1").style.color = "black";
+  document.getElementById("ff2").style.color = "black";
+}
+</script>
+    
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
      <link rel="stylesheet" href="/mystyle.css">
@@ -41,11 +49,11 @@
       <li> unit testing - none</li>
     </ul>
    
-      <center><button>Fun Fact</button></center>
-      <p class="ff">
-        Switch the second major between CS and ECE several times. </p>
-        <p class="ff">
-          Finally decided on CS due to the experience in CS3733 (Soft Eng!!!)
+      <center><button onclick="show()">Fun Fact</button></center>
+      <p class="ff" id="ff1" style="color:#dcdcdc;">
+        Switched second major between CS and ECE several times. </p>
+        <p class="ff" id="ff2" style="color:#dcdcdc;">
+          Finally decided on CS because of the great experience in CS3733 (Soft Eng!!!)
       </p>
     </div>
   </body>
