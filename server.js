@@ -31,6 +31,9 @@ const server = http.createServer( function( request,response ) {
     case '/Scripts/scroll.js':
       sendFile( response, 'Scripts/scroll.js' )
       break
+    case '/Scripts/typewriter.js':
+      sendFile( response, 'Scripts/typewriter.js' )
+      break
     case '/node_modules/jquery/dist/jquery.js':
       sendFile( response, 'node_modules/jquery/dist/jquery.js' )
       break
