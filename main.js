@@ -2,6 +2,7 @@
 // TODO: Non-interactive mode
 // TODO: Improve skill bars
 // TODO: Disable scrolling during animations?
+// TODO: Fix width changes?
 
 window.onload = function () {
 
@@ -134,7 +135,7 @@ window.onload = function () {
             .type("* Alright let's get to the good stuff...")
             .pause(100)
             .delete("* Alright let's get to the good stuff...".length - 1)
-            .type(" I'm a passionate programmer. I truly love what I do. I am always amazed with how Computer Science can be applied to solve real world problems")
+            .type(" I'm a passionate programmer. I truly love what I do. I am always amazed with how Computer Science can be applied to solve real world problems.")
             .break()
             .type("* ")
             .break()
@@ -229,7 +230,7 @@ window.onload = function () {
                                     "        <div class=\"col-md-1 mx-auto\">\n" +
                                     "            <h1><span>Experience</span></h1>\n" +
                                     "        </div>\n" +
-                                    "        <div class=\"col-md-8 mx-auto\">\n" +
+                                    "        <div class=\"col-md-7 mx-auto\">\n" +
                                     "            <div class=\"mb-5\"><h3>Microsoft</h3>\n" +
                                     "                <p class=\"info\">Software Engineering Intern<span> &bull;</span> <em class=\"date\">May - August 2019</em>\n" +
                                     "                </p>\n" +
