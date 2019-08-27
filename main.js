@@ -188,7 +188,7 @@ window.onload = function () {
                     scrollTop: parseInt($("#code_skills").offset().top) - 100
                 }, 2000);
                 new TypeIt('#code_skills', {
-                    speed: 30,
+                    speed: 40,
                     lifeLike: false,
                     afterComplete: (instance) => {
                         // TODO
@@ -367,7 +367,7 @@ window.onload = function () {
             .break()
             .type("* ")
             .break()
-            .type("* I'm also a huge fan of Computer Graphics and continue to work with external libraries such as Three.js and Babylon.js to created web-based experiences.")
+            .type("* I'm also a huge fan of Computer Graphics and continue to work with external libraries such as Three.js and Babylon.js to create web-based experiences.")
             .break()
             .type("* ")
             .break()
