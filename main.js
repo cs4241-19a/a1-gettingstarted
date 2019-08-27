@@ -1,6 +1,3 @@
-// TODO: Add synth sound on load
-// TODO: Replace with jQuery
-
 window.onload = function () {
 
     // Type It
@@ -9,9 +6,9 @@ window.onload = function () {
         breakLines: false,
         strings: [
             "Welcome to my website!",
-            "It looks a little empty....",
+            "It looks a little empty...",
             "Let's fix that.",
-            "I think we should add a cool background",
+            "I think we should add a cool background.",
             ""
         ],
         afterComplete: (instance) => {
@@ -37,6 +34,7 @@ window.onload = function () {
                 $("#start").css("top", "20%");
             })
             .type("Sick! Now to identify myself.")
+            .pause(200)
             .delete("Sick! Now to identify myself.".length)
             .exec(async () => {
                 $("#start").addClass("profile_heading");
@@ -75,9 +73,8 @@ window.onload = function () {
         }, 2000);
 
         let code_intro = new TypeIt('#code_intro', {
-            speed: 10,
+            speed: 30,
             afterComplete: (instance) => {
-                // ...
                 clearInterval(interval);
 
                 $("#code_intro_section").css("color", "black");
@@ -166,7 +163,7 @@ window.onload = function () {
         }, 500);
 
         let code_courses = new TypeIt('#code_courses', {
-            speed: 1,
+            speed: 30,
             lifeLike: false,
             autoStart: true,
             waitUntilVisible: true,
@@ -273,7 +270,6 @@ window.onload = function () {
                                     "            <li><a class=\"smoothscroll\" href=\"#education\">Education</a></li>\n" +
                                     "            <li><a class=\"smoothscroll\" href=\"#courses\">Courses</a></li>\n" +
                                     "            <li><a class=\"smoothscroll\" href=\"#experience\">Experience</a></li>\n" +
-                                    "            <li><a href=\"./old_index.html\">Remove Code</a></li>\n" +
                                     "        </ul>\n" +
                                     "    </nav>");
 
