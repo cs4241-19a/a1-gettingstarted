@@ -1,77 +1,52 @@
-Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
-===
-
-*DUE: Thursday, August 29th by 11:59 AM (before the start of class!)*  
-
-This assignment is a "warm-up" exercise. 
-You will simply deploy the starting Web site that you will use this term to [Glitch](http://www.glitch.com/). 
-
-Treat this assignment as a chance to get up to speed on Git, GitHub, and Glitch. 
-If you already know these, great. 
-However, if you're new to them, spend several hours practicing, experimenting, and reading documentation. 
-In other words, don't just get your website up and done. You will need skills with these tools throughout the rest of the course.
-
-Assignment details
 ---
 
-Do the following to complete this assignment:
+# Matt Adiletta
+##### -   https://a1-mjadiletta.glitch.me
 
-1. Fork the starting project code in GitHub. This repo contains:
-    * the server code, `server.js`
-    * A starting `index.html` file that you will edit as described below
-    * A package.json file that helps configure Glitch
-    * This README
-2. Edit `index.html` to show the following information about you:
-    * your name and class at WPI (e.g. class of 2020) Note: Do not put any contact or personal information that you do not potentially want other people outside of this class to see.
-    * your major(s) and minor(s)
-    * previous computer science courses that you have taken at WPI
-    * your experience with the following technologies and methods (none, some, a lot)
-        * HTML
-        * CSS
-        * Java
-        * JavaScript
-        * Ruby
-        * Python
-        * unit testing
-3. Test your project to make sure that when someone goes to your main page, it displays correctly. You can do this locally by simply running `node server.js` from within the assignment directory.
+This project contains a design for an online resume with information about me. 
 
-4. Modify the README file according to the specification below.
-5. Commit and push all your changes to GitHub. 
-6. Deploy your project to Glitch. You can do this by [importing the repo from GitHub](https://medium.com/glitch/import-code-from-anywhere-83fb60ea4875)
-7. Ensure that your project has the proper naming scheme (guide follows) so we can find it.
-8. Create and submit a Pull Request to the original repo.
+It has seven sections: 
+  ### 1. Bio
+  ### 2. Related Courses:
+    - electrical engineering courses
+    - computer science courses
+  ### 3. Skills
+    - computer engineering tools
+    - programming languages
+  ### 4. Experiences
+    - summer 2019
+    - summer 2018
+    - summer 2017 
+  ### 5. Projects
+    - imu applications
+    - piano player
+    - bacteria wheel
+  ### 6. Activities
+    - track and field
+    - club soccer
+  ### 7. Awards
+    - ncaa
+    - electrical engineering
+    - goldwater scholar
 
-Naming and URL Scheme
----
-
-You must use a consistent naming scheme for all projects in this course.
-If we can't find it, we can't grade it.
-
-By default Glitch often assigns your application a random name. To change it, click on the project dropdown menu in the upper left corner of Glitch. You will then see an additional text field displaying the project name in the resulting menu; click here to edit the name.
-
-The name scheme should be `a1-yourGitHubUsername`.
-The `a1` will need to be updated to `a2`, `a3`, and so on in future projects.
-
-Resources
----
-
-If you need a JavaScript/HTML/CSS refresher, see [Technology Fundamentals by Scott Murray](http://chimera.labs.oreilly.com/books/1230000000345/ch03.html#_html) and/or [JavaScript Codeacademy](https://www.codecademy.com/en/tracks/javascript).
-
-If you need a Git/GitHub refreseher, see [GitHub Bootcamp](https://help.github.com/categories/bootcamp/), the [GitHub Guides](https://guides.github.com/) (especially the ones on Hello World, and Understanding the GitHub Flow, and Forking Projects), and [CodeSchool's Try Git Course](https://www.codeschool.com/courses/try-git).
-
-Sample Readme (delete the above when you're ready to submit, and modify the below so with your links and descriptions)
----
-
-Charlie Roberts
-http://charlieroberts-a1.glitch.me
-
-This project shows ...
 
 ## Technical Achievements
-- **Proved P=NP**: Using a combination of...
-- **Solved AI**: ...
+- **Redesigned server.js for auto-updates**: Initially, the source code provided by Professor Roberts did not include the ability to auto-update the html page. 
+        This means that even while editing the html page, the webpage was never edited unless the server.js or package.json was edited. To fix this I added a function
+        submitFileData which essentially just calls index.html. This forces glitch to autoupdate based on changes to index.html.
+- **Implemented a bulma css styling sheet**: The bulma style sheet comes from bulma.min.css. This style sheet must be read into the server in a similar fassion to a .html file. 
+        In server.js I added a case statement for the bulma.min.css style sheet. In the case statement I write a response with header 200, and write to the response with the loaded cssFile.
+- **Created javascript to animate sections**: In index.html I wrote a script that gets called for html code with the class "expandable". This code is adapted from code found online at 
+        W3 school. Essentially, if a user clicks on the main title area, it will toggle the nextElementSibling which in all my cases is called "content". The content is then shown or hidden 
+        from view on the webpage. In the css I wrote to manipulate the toggling areas, a "+" sign will appear if the area can be expanded and "-" sign will appear if the are can be contracted.
+- **Added use of MIME for auto generated header data**: 
 
 ### Design Achievements
-- **Re-vamped Apple's Design Philosophy**: Shown in `style.css`, the code...
-
+- **Re-vamp for A1 Project**: The general requirements for this project were very undefined so I took it upon myself to transfer my entire resume to this webpage. First I added some really 
+        cool style from bulma which is mostly just text style, color schemes, and containers. Then I added a few images from online to spice-up the resume. All the sections of the resume
+        are contained in very simple, clear expandable text regions to make it easy for a user to see everything. I made sure that html lists are used when necessary. Also as mentioned
+        previously, the script for expanding and contracting text regions is very useful for the overal visual of the resume, along with a well-chosen color pallet. I also included many
+        embedded images and even an embedded youtube video. 
+- **Created css for drowdown text**: In index.html I wrote a css style section for the dropdown text. In this section I define the different colors for when a user is hovering over 
+        the dropdown, pressed the dropdown, what the expanded dropdown looks like, what percent of the dropdown is used, how the text is alligned, and much more. 
 
