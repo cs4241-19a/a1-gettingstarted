@@ -24,9 +24,11 @@ color scheme, animation speed, auto-scroll behavior.
 
 
 **Mobile Version**
+
 ![img](files/mobile_version.png)
 
 
-**Video Demo**
+**Video Demo (Click Thumbnail)**
+
 [![video](https://img.youtube.com/vi/WkgU7bAWqhg/0.jpg)](https://www.youtube.com/watch?v=WkgU7bAWqhg)
 

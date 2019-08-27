@@ -1,3 +1,8 @@
+// TODO: Clean code
+// TODO: Non-interactive mode
+// TODO: Improve skill bars
+// TODO: Disable scrolling during animations?
+
 window.onload = function () {
 
     // Type It
@@ -6,7 +11,8 @@ window.onload = function () {
         breakLines: false,
         strings: [
             "Welcome to my website!",
-            "It looks a little empty...",
+            "Please note that this is an experience and will take just less than a minute.",
+            "This page looks a little empty...",
             "Let's fix that.",
             "I think we should add a cool background.",
             ""
@@ -27,8 +33,9 @@ window.onload = function () {
             afterComplete: (instance) => {
                 stepTwo();
             }
-        }).type("This is looking pretty cool, but I think we can make it cooler")
-            .delete("This is looking pretty cool, but I think we can make it cooler".length)
+        }).type("This is looking pretty cool, but I think we can make it even better!")
+            .pause(500)
+            .delete("This is looking pretty cool, but I think we can make it even better!".length)
             .exec(async () => {
                 addGround();
                 $("#start").css("top", "20%");
@@ -42,6 +49,7 @@ window.onload = function () {
 
             })
             .type("Kit Zellerbach")
+            .pause(300)
             .go();
     }
 
@@ -77,8 +85,9 @@ window.onload = function () {
             afterComplete: (instance) => {
                 clearInterval(interval);
 
-                $("#code_intro_section").css("color", "black");
-                $("#code_intro_section").css("background-color", "white")
+                $("#code_intro_section").animate({color:"black"});
+                $("#code_intro_section").animate({backgroundColor:"white"});
+
 
                 $("body").append("<section id=\"education\">\n" +
                     "    <div class=\"row\">\n" +
@@ -131,13 +140,14 @@ window.onload = function () {
             .break()
             .type("* I know several languages, like Java, Javascript, HTML, CSS, C++, C, and Python. Wait check this out.")
             .break()
+            .pause(300)
             .exec(async () => {
-                $("#code_intro_section").css("color", "white");
-                $("#code_intro_section").css("background-color", "black");
+                $("#code_intro_section").animate({color:"white"});
+                $("#code_intro_section").animate({backgroundColor:"black"});
             })
             .type("* ")
             .break()
-            .type("* Pretty cool huh?")
+            .type("* Pretty cool, huh?")
             .break()
             .type("* ")
             .break()
@@ -145,12 +155,12 @@ window.onload = function () {
             .break()
             .type("* ")
             .break()
-            .type("* I neither identify as a front-end or back-end developer. I am currently one of those indecisive individuals who seek the full stack-title, or a similar broad label.")
+            .type("* I neither identify as a front-end nor a back-end developer. I am currently one of those indecisive individuals who seek the full stack-title, or a similar broad label.")
             .break()
             .type("* ")
             .break()
             .type("* I'm just going to go ahead and create some more parts of the site.")
-            .pause(100);
+            .pause(500);
 
         code_intro.go();
     }
@@ -318,6 +328,8 @@ window.onload = function () {
                     .type("* ")
                     .break()
                     .type("* Javascript is a big one. Here's my WebGL Portfolio!")
+                    .break()
+                    .type("* ")
                     .exec(async () => {
                         $("#extra_stuff").append('<iframe width="100%" height="500px" src="https://kitzeller.github.io/webgl-portfolio"></iframe>')
                     })
@@ -328,7 +340,7 @@ window.onload = function () {
                     .break()
                     .type("* ")
                     .break()
-                    .type("* Feel free to check it out later! ")
+                    .type("* Feel free to check it out later! The link is https://kitzeller.github.io/webgl-portfolio/")
                     .break()
                     .type("* ")
                     .break()
@@ -363,7 +375,7 @@ window.onload = function () {
             .break()
             .type("* ")
             .break()
-            .type("* From all the courses I have taken, Software Engineering has been my favorite. I've also had the opportunity to be a SA three times!")
+            .type("* From all the courses I have taken, Software Engineering has been my favorite. I've also had the opportunity to be an SA three times!")
             .break()
             .type("* ")
             .break()
