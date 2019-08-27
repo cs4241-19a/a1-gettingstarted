@@ -1,2 +1,5 @@
-  <app-nav-bar></app-nav-bar>
-  <app-about></app-about>
+  <app-nav-bar (pageEmitter)="updatePage($event)"></app-nav-bar>
+  <app-about *ngIf="page === 1"></app-about>
+  <app-work *ngIf="page === 2"></app-work>
+  <app-school *ngIf="page === 3"></app-school>
+  <app-faq *ngIf="page === 4"></app-faq>

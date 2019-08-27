@@ -8,12 +8,13 @@ ul {
 }
 li {
   float: left;
-}
-
-li {
   display: block;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+}
+
+li:hover {
+  cursor: pointer;
 }
