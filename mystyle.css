@@ -16,7 +16,9 @@ button:hover {
   cursor: pointer;
 }
 
-div{
+
+
+.background{
   padding:10px;
   margin: 20px 250px 0px 250px;
   background: rgba(255, 255, 255, 0.6);
@@ -50,8 +52,7 @@ li {
 }
 
 .experience {
-  margin-left:500px;
-  margin-right:auto;
+text-align:left;
 
   line-height:3px;
   font-size:19px;
