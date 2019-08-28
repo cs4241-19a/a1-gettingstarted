@@ -1,7 +1,7 @@
 Peter Jankowski
 http://a1-pjjankowski.glitch.me
 
-This project shows personal information about me, as well as some of my basic knowledge in html, javascript, and css already, while also adding a few more things that I have not used before. The basic requirements of the project that I have fulfilled are. The work that went into each of the technical and design achievements are stated in detail below.
+This project shows personal information about me, as well as some of my basic knowledge in html, javascript, and css already, while also adding a few more things that I have not used before. I have fulfilled the basic requirements of the project in forking the project, listing the required information about myself in the project, and hosting it on glitch at the above link. The work that went into each of the technical and design achievements are stated in detail below.
 
 
 ## Technical Achievements
