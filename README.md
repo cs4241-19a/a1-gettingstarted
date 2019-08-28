@@ -1,5 +1,5 @@
 James Plante
-http://a1-jwplante.glitch.me
+https://jwplante-a1-jwplante.glitch.me/
 
 This project shows how a small personal website can be made with exclusively CSS and HTML. I intended to implement a dark mode feature using JavaScript to change the style of each element but ended up running out of time.
 
@@ -21,4 +21,3 @@ DM Serif Text fonts, as opposed to using any of the built-in fonts.
 - **Material Design Inspired layout**: Shown in `style.css`, the website takes a card-based
 design inspired by Google's Material Design that incorporates both image and text cards, using a two-column
 layout to seperate text and images. Each subheader also has its own card to seperate sections of the website. 
-
