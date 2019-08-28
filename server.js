@@ -18,6 +18,10 @@ const server = http.createServer( function( request,response ) {
       response.setHeader("Content-Type", 'image/svg+xml')
       sendFile( response, 'assets/Rocket_with_Smoke_Colored.svg' )
       break
+    case '/assets/index.js':
+      response.setHeader("Content-Type", 'application/javascript')
+      sendFile( response, 'assets/index.js' )
+      break      
     default:
       response.end( '404 Error: File Not Found' )
   }

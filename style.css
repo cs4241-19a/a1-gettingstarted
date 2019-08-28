@@ -41,6 +41,7 @@ td {
 /** End tooltip styles */
 
 /* Sets the background image if the screen size is greater than 1000px*/
+/* From wpi-sdc.github.io, a website I helped create. */
 @media (min-width: 1000px) {
     body {
         background-repeat: no-repeat;
@@ -48,4 +49,51 @@ td {
         background-position: center 20px;
         background-image: url("/assets/Rocket_with_Smoke_Colored.svg");
     }
+}
+
+@media screen and (min-width: 1200px) {
+
+	.dot1 {
+		height: 63px;
+		width: 63px;
+		background-color: rgb(243, 164, 71);
+		border-radius: 50%;
+		display: inline-block;
+		position: fixed;
+		top: calc(50% - 137px - 600px);
+		right: calc(26px + 12%);
+	}
+
+	.dot2 {
+		height: 57px;
+		width: 57px;
+		background-color: rgb(156, 133, 192);
+		border-radius: 50%;
+		display: inline-block;
+		position: fixed;
+		top: calc(50% - calc(137px - 89px) - 600px);
+		right: calc(7px + 12%);
+	}
+
+	.dot3 {
+		height: 27px;
+		width: 27px;
+		background-color: rgb(208, 146, 167);
+		border-radius: 50%;
+		display: inline-block;
+		position: fixed;
+		top: calc(50% - calc(137px - 181px) - 600px);
+		right: calc(50px + 12%);
+	}
+
+	.dot4 {
+		height: 39px;
+		width: 39px;
+		background-color: rgb(128, 158, 194);
+		border-radius: 50%;
+		display: inline-block;
+		position: fixed;
+		top: calc(50% - calc(137px - 240px) - 600px);
+		right: calc(16px + 12%);
+	}
 }
