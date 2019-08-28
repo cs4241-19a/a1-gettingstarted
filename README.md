@@ -17,5 +17,9 @@ on browser refresh
 - **Used images to create top banner**
 - **Used divs to align banner and resize background**
 - **Used css to change font color and banner alignment**
+- **Used a combination of css and javscript to create buttons that**
+    * Display content depending on what the user presses
+    * react on hover
+    * rescale with browser window.
 
 
