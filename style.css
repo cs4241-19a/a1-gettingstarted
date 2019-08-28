@@ -1,0 +1,41 @@
+html {
+    background: lightblue;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 100%;
+    text-align: center;
+    font-size: 15px;
+  }
+  
+  #heading {
+    padding-top: 10px;
+    padding-bottom: 60px;
+    font-family: "Arial Black";
+    color: black;
+    font-size: 50px;
+  }
+  
+  #desc{
+    background-image: linear-gradient(to bottom, pink , white 60%);
+    padding: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    margin-top: 75px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: "Lucida Sans Unicode";
+    color: black;
+    border-style: solid;
+  }
+  
+  #exp {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 30px;
+  }
+  
+  h2 { 
+    font-size: 40px;
+  }
