@@ -2,8 +2,12 @@
   "name": "cr-4241-simple-glitch",
   "version": "0.1.0",
   "description": "WPI CS 4241 first assignment",
-  "author": "Charlie Roberts",
+  "author": "Joseph Caltabiano",
   "scripts": {
     "start": "node server.js"
+  },
+  "dependencies": {
+    "http-server": "^0.11.1",
+    "mime": "^2.4.4"
   }
 }
