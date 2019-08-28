@@ -1,0 +1,116 @@
+body {
+  background-color: lightgrey;
+  font-family: "Lucida Console";
+}
+
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+  color: black;
+}
+
+h1:hover {
+  color: grey;
+}
+
+h2 {
+  font-style: italic;
+}
+
+h2:hover {
+  font-style: normal;
+  text-decoration: underline;
+}
+
+h3:hover {
+  font-style: normal;
+  text-decoration: underline;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+iframe {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 4px 4px 14px #000;
+} 
+
+section {
+  background-color: navy;
+}
+
+section:hover {
+  background-color: grey;
+}
+
+body {
+	margin: 0;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+header {
+  background: #333;
+  margin-top: 0px;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 20px;
+  padding-top: 10%;
+  position: relative;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+ul {
+	margin-left: 20%;
+}
+
+.indent {
+  margin-left: 15%
+}
+
+.indent2 {
+  margin-left: 18%
+}
