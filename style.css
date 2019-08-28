@@ -1,0 +1,30 @@
+* {
+    font-family: Sans-Serif;
+    margin: 0;
+}
+
+body {
+    margin: 2% 25%;
+    background: #051a60;
+    color: #a9b0b7;
+}
+
+h1 {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: .5em;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: .2em;
+}
+
+p, ul{
+    font-size: 18px;
+    margin-bottom: 2em;
+}
+
+
+.content {
+}

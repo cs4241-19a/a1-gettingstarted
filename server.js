@@ -1,21 +1,27 @@
 const http = require('http'),
-      fs   = require('fs'),
-      port = 3000
+    fs = require('fs'),
+    mime = require('mime'),
+    port = 3000;
 
-let file
-fs.readFile( './index.html', function( err, content ) {
-  file = content
-})
+const server = http.createServer(function (request, response) {
+    if (request.url === '/') {
+        sendFile('index.html', response);
+    } else {
+        sendFile(request.url.slice(1), response);
+    }
+});
 
-const server = http.createServer( function( request,response ) {
-  switch( request.url ) {
-    case '/':
-      response.end( file, 'utf-8' )
-      break
-    default:
-      response.end( '404 Error: File Not Found' )
-  }
-})
+const sendFile = function (filename, res) {
+    const mimeType = mime.getType(filename);
+    res.writeHeader(200, {'Content-Type': mimeType});
+    fs.readFile(filename, (err, content) => {
+        if (err) {
+            res.status(404).send('Not found')
+        } else {
+            res.end(content, 'utf-8');
+        }
+    });
+};
 
-server.listen( process.env.PORT || port )
+server.listen(process.env.PORT || port);
 
