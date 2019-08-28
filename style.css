@@ -61,7 +61,7 @@ td {
 		display: inline-block;
 		position: fixed;
 		top: calc(50% - 137px - 600px);
-		right: calc(26px + 12%);
+		left: calc(26px + 12%);
 	}
 
 	.dot2 {
@@ -72,7 +72,7 @@ td {
 		display: inline-block;
 		position: fixed;
 		top: calc(50% - calc(137px - 89px) - 600px);
-		right: calc(7px + 12%);
+		left: calc(7px + 12%);
 	}
 
 	.dot3 {
@@ -83,7 +83,7 @@ td {
 		display: inline-block;
 		position: fixed;
 		top: calc(50% - calc(137px - 181px) - 600px);
-		right: calc(50px + 12%);
+		left: calc(50px + 12%);
 	}
 
 	.dot4 {
@@ -94,6 +94,6 @@ td {
 		display: inline-block;
 		position: fixed;
 		top: calc(50% - calc(137px - 240px) - 600px);
-		right: calc(16px + 12%);
+		left: calc(16px + 12%);
 	}
 }
