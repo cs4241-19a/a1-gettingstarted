@@ -10,14 +10,13 @@ body {
   left: 0;
   width: 150px;
   height: 100vh;
-  min-width: 150px;
   background-color: #2B82AB;
   box-shadow: 5px 0px 30px 0px rgba(0,0,0,0.4);
   font-family: "Arial", sans-serif;
   
 }
 
-.title {
+.title.main {
   padding-top: 30px;
   padding-bottom: 25px;
   font-size: 25px;
@@ -42,12 +41,13 @@ body {
 
 .information {
   position: relative;
-  width: 75vw;
+  width: 70%;
   top: 0;
   left: 200px;
+  padding-right: 100px
 }
 
-.about.title {
+.title {
   text-align: left;
   font-size: 40px;
 }
@@ -55,7 +55,7 @@ body {
 .underline {
   position: absolute;
   left: -25px;
-  width: 75%;
+  width: 90%;
   height: 1px;
   border-width: 1px;
   background-color: #6DB4D3;
