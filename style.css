@@ -1,5 +1,5 @@
 body {
-  background-color: pink !important;
+  background-color: #ffe6ee !important;
   font-family: georgia !important;
 }
 
@@ -19,7 +19,7 @@ body {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: coral; 
+  background: pink; 
 }
 
 .holder {
