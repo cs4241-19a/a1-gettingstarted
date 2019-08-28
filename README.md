@@ -9,5 +9,5 @@ This project shows ...
 ### Design Achievements
 - Changed the color scheme to a sepia tone color
 - Changed the font to Helvetica
-- Arranged the text into individual boxs which all scale and keep their keep their correct arrangement as the window's size changes 
+- Arranged the text into individual divs which all scale and keep their correct arrangement as the window's size changes 
 
