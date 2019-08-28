@@ -19,4 +19,3 @@ This achievement is largely based on my prior knowledge about css:
 The following achievements are relatively new to me:
 - Added a text animation upon loading and reloading index.html, largely based on the MDN example at the link in the css file.
 - Imported alternative fonts for use in the document from google fonts, (Cabin and Lexend Giga), and applied them to index.html.
-
