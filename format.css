@@ -1,0 +1,51 @@
+html {
+    background-image: url("./images/background.jpg");
+}
+
+h1, h2, h3, h4{
+    font-size: 110%;
+    font-family: 'Times New Roman', Times, serif, monospace;
+}
+
+p, li {
+    font-size: 100%;
+    font-family: 'Arial';
+}
+
+.header {
+    background-color: white;
+    text-align: center;
+    padding: 20%;
+}
+
+.left {
+    background-color: white;
+    width: 30%;
+    float: left;
+    margin-left: 10px;
+}
+
+.middle {
+    width: 10%;
+    float: left;
+    margin: 50px;  
+}
+
+.right {
+    background-color: white;
+    width: 30%;
+    float: right;
+    margin-right: 200px;
+    margin-top: 20px;
+}
+
+.slide{
+    display: none;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3.0s;
+    animation-name: fade;
+    animation-duration: 3.0s;
+}

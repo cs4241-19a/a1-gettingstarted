@@ -62,16 +62,17 @@ If you need a Git/GitHub refreseher, see [GitHub Bootcamp](https://help.github.c
 Sample Readme (delete the above when you're ready to submit, and modify the below so with your links and descriptions)
 ---
 
-Charlie Roberts
-http://a1-charlieroberts.glitch.me
+Zonglin Peng
+http://a1-zonglinpeng.glitch.me
 
-This project shows ...
+This project shows my basic information and experiences relevant to web developments.
 
 ## Technical Achievements
-- **Proved P=NP**: Using a combination of...
-- **Solved AI**: ...
+- **Image Slides**: Shown in `slideshow.js.`Three images of my college logos are  isplayed in turn with a 2 second time interval.
+- **Button to My LinkedIn**: the linkedin icon at the middle of my webpage leads to my linkedin webpage.
 
 ### Design Achievements
-- **Re-vamped Apple's Design Philosophy**: Shown in `style.css`, the code...
+- **Extra Web Styles**: Shown in `format.css`, my webpage implements background    and different font size and styles.
+- **Extra Web Page Arrangements**: Shown in `index.html`, left and right modules     are implements for text and image information.
 
 
