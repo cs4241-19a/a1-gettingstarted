@@ -7,7 +7,7 @@ h1 {
   color: navy;
   text-align: relative;
   animation-name: example;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animaton-iteration-count: 10;
 }
 h2 {
@@ -19,7 +19,7 @@ p {
   font-family: consolas;
   text-align: center;
   animation-name: example;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animaton-iteration-count: 10;
 }
 li {
@@ -27,7 +27,7 @@ li {
   font-family: consolas;
   text-align: center;
   animation-name: example;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animaton-iteration-count: 10;
 }
 a{
@@ -37,11 +37,16 @@ a{
 div{
  display: inline-block;
 }
+ul{
+  text-align: center;
+  align:center;
+    display: inline-block
+}
 
 @keyframes example {
-  0%   {color:red; font-size:100px}
-  25%  {color:orange; font-size:90px}
-  50%  {color:gold; font-size:60px}
-  75%  {color:green; font-size:30px}
-  100% {color:navy; font-size:20px}
+  0%   {color:red; font-size:200px}
+  25%  {color:orange; font-size:100px}
+  50%  {color:gold; font-size:75px}
+  75%  {color:green; font-size:50px}
+  100% {color:navy; font-size:30px}
 }
