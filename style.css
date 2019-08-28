@@ -2,6 +2,7 @@ body {
   background-color: lavenderblush;
   font-family: Georgia, serif;
   margin: 1em;
+  text-align: center;
 }
 
 .typewriter h1 {
