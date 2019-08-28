@@ -1,4 +1,4 @@
-h1 {
+h3 {
   font-family: Arial, sans-serif;
   font-size: 4em;
   font-weight: bold;
@@ -40,6 +40,38 @@ h2{
     letter-spacing: -0.05em;
 }
 
+h1 {
+  font-family: Arial, sans-serif;
+  font-size: 4em;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+    transform: skew(0, -10deg) scale(1, 1.5);
+    -webkit-transform: skew(0, -10deg) scale(1, 1.5);
+    -moz-transform: skew(0, -10deg) scale(1, 1.5);
+    -o-transform: skew(0, -10deg) scale(1, 1.5);
+    -ms-transform: skew(0, -10deg) scale(1, 1.5);
+    letter-spacing: -0.01em;
+    font-family: Impact;
+    background: #4222be;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…IgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+    background: -moz-linear-gradient(top, #4222be 0%, #a62cc1 73%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4222be), color-stop(73%, #a62cc1));
+    background: -webkit-linear-gradient(top, #4222be 0%, #a62cc1 73%);
+    background: -o-linear-gradient(top, #4222be 0%, #a62cc1 73%);
+    background: -ms-linear-gradient(top, #4222be 0%, #a62cc1 73%);
+    background: linear-gradient(to bottom, #4222be 0%, #a62cc1 73%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4222be', endColorstr='#a62cc1', GradientType=0);
+    -webkit-text-stroke: 0.01em #B28FFD;
+    filter: progid:DXImageTransform.Microsoft.Glow(Color=#b28ffd, Strength=1);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 body{
   margin 0;
   height: 100vh;
@@ -52,6 +84,22 @@ table th, td{
   width: auto;
   table-layout: fixed;
   text-align: center;
-
 }
+
+#nav{
+  display: inline;
+  padding: 8px;
+  background-color: black;
+  overflow: hidden;
+}
+
+#nav.a{
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
 
