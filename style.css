@@ -1,8 +1,9 @@
 
 
-/* Style the header */
+
 body {
 	background-color: #231F18;
+  font-family: "Helvetica", sans-serif;
 	color: #fff8c1
 }
 
@@ -12,18 +13,13 @@ body {
   text-align: center;
 }
 
-/* Create three equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 48.95%;
-  padding: 10px;
-  height: 250px;
+.row{
+  display:flex;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-  margin: auto;
+.column {
+  float: left;
+  width: 33%;
+  padding: 10px;
+  flex: 1;
 }
