@@ -6,8 +6,9 @@ body {
 h1 {
   color: navy;
   text-align: left;
-   animation-name: example;
-  animation-duration: 10s;
+  animation-name: example;
+  animation-duration: 1s;
+  animaton-iteration-count: infinite;
 }
 h2 {
   color: navy;
@@ -32,9 +33,9 @@ div{
 }
 
 @keyframes example {
-  0%   {color:red;}
-  25%  {color:orange}
-  50%  {color:gold}
-  75%  {color:green}
-  100% {color:navy}
+  0%   {color:red; text-align:left}
+  25%  {color:orange; text-align:center}
+  50%  {color:gold; text-align:right}
+  75%  {color:green; text-align:center}
+  100% {color:navy; text-align:left}
 }
