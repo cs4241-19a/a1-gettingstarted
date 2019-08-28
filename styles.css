@@ -28,13 +28,15 @@ div{
   height: 900px;
 }
 .left{
-  width: 200px;
+  width: 25%;
   margin-left: -20px;
   margin-right: 5%;
+  box-shadow: 5px 5px 18px #888888;
 }
 .right{
-  width: 800px;
+  width: 70%;
   margin-left: -20px;
+  box-shadow: 5px 5px 18px #888888;
 }
 /* Clear floats after the columns */
 .row:after {
