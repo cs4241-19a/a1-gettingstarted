@@ -108,11 +108,11 @@ table th, td{
 }
 
 #nav li{
-  float: left;
+display: inline;
 }
 
 #nav li a {
-  display: block;
+  display: inline-block;
   color: white;
   text-align: center;
   padding: 14px 16px;
