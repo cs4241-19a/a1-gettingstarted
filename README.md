@@ -17,12 +17,12 @@ I understood what exactly does what.
 can be seen in the index.html. I added the table to organize and neaten up the technologies and methods together 
 which makes it easier to read.
 
-- **Animated Headings and table**:The table and headings on each of the sections were animated through the
+- **Animated Headings and table**: The table and headings on each of the sections were animated through the
 use of the Animate.css library. The headings remain animated after the initial entrance animation occurs.
 I accessed the library through a link shown within the beginning of the index.html file. The animations
 give the webpage a "WOW" effect or catches the interest of the user. It makes it seem like a fun webpage.
  
-- **Background Gradient color**:I gave the webpage a background color gradient using CSS. The background
+- **Background Gradient color**: I gave the webpage a background color gradient using CSS. The background
 gives the webpage a dusk effect. Also my favorite color is orange and if I made the background just orange,
 it would seem too aggressive and hard to read the text. In this way, the gradient gives an attractive background while 
 also making it easy to read the text.
