@@ -9,7 +9,7 @@ Readme
 Vandana Anand
 https://a1-vanand23.glitch.me
 
-This project shows that I created a starting web site containing some information about myself such as my major and my experiences and deployed it onto Glitch. 
+This project shows a starting web site containing some information about myself such as my major and my experiences and deployed it onto Glitch. 
 
 ### Design Achievements
 - **Configued Bootstrap**: Used bootstrap to create a navigation bar to be able to click on separate pages and divide the content.
