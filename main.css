@@ -1,9 +1,15 @@
 body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-    max-width: 100%;
+    font-family: sans-serif, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue";
+    width: 100vw;
+}
+
+#sound {
+    margin: 5px;
+    font-size: 24px;
+    z-index: 100;
+    position: absolute;
 }
 
 canvas {
@@ -61,7 +67,7 @@ canvas {
     text-transform: uppercase;
     letter-spacing: 2.5px;
     margin: 0 auto;
-    z-index: 100;
+    z-index: 99;
     position: fixed;
     top: 0;
     width: 100%;
@@ -107,6 +113,7 @@ ul#nav li a {
 
 ul#nav li a:active { background-color: transparent !important; }
 ul#nav li.current a { color: #F06000; }
+ul#nav li a:hover { color: #F06000; }
 
 section {
     padding: 3rem 0;
@@ -125,7 +132,7 @@ p {
 }
 
 .card:hover {
-    color: darkcyan;
+    color: #F06000;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -135,5 +142,5 @@ p {
 }
 
 .code-format{
-    font-family: "Source Code Pro";
+    font-family: "Source Code Pro", Arial, sans-serif;
 }
