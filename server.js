@@ -3,8 +3,7 @@ const http = require('http'),
 //Node.js syntax to interact with the file system, can be unsafe on client
   fs = require('fs'),
   mime = require('mime'),
-  port = 3000,
-  express = require('express')
+  port = 3000
 
 //Let is much more flexible than const, can define value later
 //Variable for server for ease of use

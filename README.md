@@ -2,14 +2,13 @@ Assignment 1 README - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 ===
 ---
 
-Natalie Bloniarz
+Natalie Bloniarz 
 http://a1-nbloniarz.glitch.me
 
-This project displays my understanding of HTML, CSS, and JS.
+This project displays my understanding of HTML, CSS, and JS. My goal was to make this website 
 
 ## Technical Achievements
 - **Navigation Bar**: Created a static navigation bar with internal links that always remains at the top of the displayed area.
-- **Change Cursor**: Created an external script that alternates the display of the cursor when the spacebar is pressed.
 
 
 ### Design Achievements
