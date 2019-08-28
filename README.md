@@ -1,9 +1,10 @@
 Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 # Karen Royer 
-## [A1-Arundelain](https://a1-arundelain.glitch.me "This is a really cool CV.")
+### [A1-Arundelain](https://a1-arundelain.glitch.me "This is a really cool CV.")
+***  
+***  
 
 ### This project shows
-
 > 1. I was able to fork the repo successfully. 
 
 > 2. I changed the server.js file to load in the external style sheet I created.  
@@ -23,7 +24,8 @@ Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 >> - unit testing  
 
 > 5. I left the package json file alone because it was doing what it was supposed to do
-> 6. I used the proper naming conventions for the project in Glitch and in Github
+> 6. I used the proper naming conventions for the project in Glitch and in Github  
+***
 
 ### Technical Achievements
 > I successfully changed the server.js file to handle an external style sheet prior to Monday's class.  
@@ -40,7 +42,8 @@ Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 
 > I used z-index to overlay items for layout purposes.
 
-> I figured out how to format my markdown page to make it look nice.
+> I figured out how to format my markdown page to make it look nice.  
+***
 
 ### Design Achievements
 > I used a variety of ways to absolutely position images and tables containing data to retain a layout that was planned outside of an .html editor.   
