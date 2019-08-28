@@ -66,7 +66,7 @@ Katherine Thompson
 
 https://a1-ktrose1.glitch.me/
 
-This project shows ...
+This project shows that I can make a basic website, 
 
 ## Technical Achievements
 - **Proved P=NP**: Using a combination of...
