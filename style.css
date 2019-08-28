@@ -26,66 +26,64 @@ body {
   list-style-type: none;
 }
 
-.slide-card {
-  position: relative;
-  
-  width: 700px;
-  height: 400px;
-  overflow: hidden;
-
-  border-radius: 5px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+/** SLIDESHOW **/
+.slideshow,
+.slideshow:after { 
+    top: -16px; /*Not sure why I needed this fix*/
+		position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    z-index: 0; 
 }
 
-/*Light blue cover above the slide show*/
-.slide-card::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 900;
-
-  display: block;
-  width: 100%;
-  height: 100%;
-
-  background-color: rgba(140, 22, 115, 0.2);
-}
-
-.slide-card_part {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 7;
-
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  
-  transform: translateX( 700px );
-  background-image: url( /images/assets/rhodeisland.jpg );
-  
-  animation: opaqTransition 28s cubic-bezier(0, 0, 0, 0.97) infinite;
+.slideshow li span { 
+		position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 30s linear infinite 0s; 
 }
 
 
-.slide-card_part.card_part-two {
-  z-index: 6;
-  background-image: url( /images/assets/connecticut.jpg );
-  animation-delay: 7s;
+
+.slideshow li:nth-child(1) span { 
+    background-image: url("/images/assets/rhodeisland.jpg"); 
+}
+.slideshow li:nth-child(2) span { 
+    background-image: url("/images/assets/connecticut.jpg");
+    animation-delay: 6s; 
+}
+.slideshow li:nth-child(3) span { 
+    background-image: url("/images/assets/windsor.jpg");
+    animation-delay: 12s; 
+
+
+@keyframes imageAnimation { 
+    0% { opacity: 0; animation-timing-function: ease-in; }
+    8% { opacity: 1; animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
 }
 
-.slide-card_part.card_part-three {
-  z-index: 5;
-  background-image: url( /images/assets/windsor.jpg );
-  animation-delay: 14s;
+
+@keyframes titleAnimation { 
+    0% { opacity: 0 }
+    8% { opacity: 1 }
+    17% { opacity: 1 }
+    19% { opacity: 0 }
+    100% { opacity: 0 }
 }
 
 
-@keyframes opaqTransition {
-  3% { transform: translateX( 0 ); }
-  25% { transform: translateX( 0 ); }
-  28% { transform: translateX( -700px ); }
-  100% { transform: translateX( -700px ); }
+.no-cssanimations .cb-slideshow li span {
+	opacity: 1;
 }
