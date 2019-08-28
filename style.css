@@ -1,0 +1,25 @@
+
+
+
+body {
+	background-color: #231F18;
+  font-family: "Helvetica", sans-serif;
+	color: #fff8c1
+}
+
+.header {
+  background-color: #231F18;
+  padding: 30px;
+  text-align: center;
+}
+
+.row{
+  display:flex;
+}
+
+.column {
+  float: left;
+  width: 33%;
+  padding: 10px;
+  flex: 1;
+}
