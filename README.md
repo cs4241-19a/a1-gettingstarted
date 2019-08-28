@@ -15,6 +15,6 @@ This project shows that I can successfully edit an index.html and use github to 
 
 ### Design Achievements
 - **Used CSS Stylesheet**: Centered text but not the headers, used Verdana for h1,h2 and consolas for p,a
-- **Animated colors of top header**: Used @keyframes to apply an animation to an element
+- **Animated colors & size of top header**: Used @keyframes to apply an animation to an element
 
 
