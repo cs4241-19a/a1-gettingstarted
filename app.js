@@ -5,7 +5,15 @@ $(document).ready(function() {
     $(this).css("background-color", "#2B82AB");
   });
   
-  $(".option.home").click(function() {
+  $(".option").click(function() {
+    switch(this.class) {
+        ".option.home" :
+          break
+        ".option.about" :
+        break
+        
+    }
+      
       $('html,body').animate({
         scrollTop: $(".title.home").offset().top},
         'slow');
