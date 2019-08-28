@@ -1,39 +1,47 @@
-const http = require('http');
-const fs = require('fs');
+const http = require( 'http' ),
+      fs   = require( 'fs' ),
+      // IMPORTANT: you must run `npm install` in the directory for this assignment
+      // to install the mime library used in the following line of code
+      mime = require( 'mime' ),
+      port = 3000
 
-let htmlFile
-fs.readFile('./index.html', function (err, data) {
-  if (err) throw err
-  htmlFile = data
-})
+const server = http.createServer( function( request,response ) {
+  // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice
+  const filename = request.url.slice( 1 ) // remove leading forward slash (**not a backslash**)
 
-let cssFile
-fs.readFile('./style.css', function (err, data) {
-  if (err) throw err
-  cssFile = data
-})
-
-let imgFile
-fs.readFile('./Savin-NY-Website-Background-Web.jpg', function (err, data) {
-  if (err) throw err
-  imgFile = data
-})
-
-const server = http.createServer(function (request, response) {
-  switch (request.url) {
-    case "/Savin-NY-Website-Background-Web.jpg":
-      response.writeHead(200, { "Content-Type": "text/html" })
-      response.write(imgFile)
-      break
-    case "/style.css":
-      response.writeHead(200, { "Content-Type": "text/css" })
-      response.write(cssFile)
+  console.log( filename )
+  
+  switch( filename ) {
+    case '':
+      if( request.url === '/' ) sendFile( response, 'index.html' )
       break
     default:
-      response.writeHead(200, { "Content-Type": "text/html" });
-      response.write(htmlFile);
+      sendFile( response, filename )
+      break
   }
-  response.end()
 })
 
-server.listen(3000);
+server.listen( process.env.PORT || port )
+
+const sendFile = function( response, filename ) {
+   // mime types: https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Complete_list_of_MIME_types
+   const type = mime.getType( filename ) 
+
+   fs.readFile( filename, function( err, content ) {
+
+     // if the error = null, then we've loaded the file successfully
+     if( err === null ) {
+
+       // status code: https://httpstatuses.com
+       response.writeHeader( 200, { 'Content-Type': type })
+       response.end( content )
+
+     }else{
+
+       // file not found, error code 404
+       response.writeHeader( 404 )
+       response.end( '404 Error: File Not Found' )
+
+     }
+   })
+}

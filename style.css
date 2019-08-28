@@ -1,8 +1,52 @@
 html {
-    /* background-color: aqua; */
     background-image: url("./Savin-NY-Website-Background-Web.jpg");
 }
 
 h1, h2, p, li {
     font-family: "Lucida Console", Monaco, monospace;
+}
+
+.right {
+    width: 500px;
+    float: right;
+    margin-right: 150px;
+}
+.main-nav {
+	list-style: none;
+    margin-top: 30px;
+    margin-left: -40px;
+}
+.main-nav li {
+	display: inline-block;
+}
+.main-nav li a {
+	color: black;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-family: "Roboto", sans-serif;
+	font-size: 15px;
+    border: 2px solid black;
+}
+.main-nav li a:hover {
+	border: 2px solid red;
+}
+
+.images{
+    background: yellow;
+    flex: 0 0 80%;
+    min-height: 40vh;
+    background: url('./fun_facts/1.jpg');
+    border-radius: 15px;
+    position: relative;
+}
+.btn{
+    margin-top: 10px;
+    display: inline-block;
+    background: white;
+    border: 2px solid black;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+.btn:hover{
+    border: 2px solid red;
 }
