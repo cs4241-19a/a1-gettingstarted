@@ -1,44 +1,133 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
   <head>
-    <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Peter Christakos</h1>
-      <p> <b> Worcester Polytechnic Institute </b>
-      <p> <i> Bachelors of Computer Science, Data Science Minor </i> </p>
-      <p> <i> Class of 2020 </i> </p>
-    <h2> Related Coursework </h2>
-      <p>
-        Object Oriented Programming, Algorithms, Operating Systems, Software Engineering,
-        Advanced Computer Networks, Databases, Webware (Fall 2019), Data Visualization 
-        (Fall 2019)
-      </p>
-    <h2> Work Experience </h2>
-      <p> <b> Gama Aviation </b>| <i> Stratford, CT </i> </p>
-        <ul> 
-          <li> Talk about what i did... </li>
-        </ul>
-      <p> <b> United States Patent and Tradenark Office </b>| <i> Alexandria, VA </i> </p>  
-        <ul> 
-          <li> Talk about what i did... </li>
-        </ul>
-      <p> <b> BAE Systems </b>| <i> Greenlawn, NY </i> </p>
-        <ul> 
-          <li> Talk about what i did... </li>
-        </ul>
-      <h2> Programming Experience </h2>
-      <ul id="languages">
-        <li> HTML, <i> some </i> </li>
-        <li> CSS, <i> none </i> </li>
-        <li> Java, <i> a lot </i> </li>
-        <li> Javascript <i> none </i> </li>
-        <li> Ruby, <i> none </i> </li>
-        <li> Python, <i> a lot </i> </li>
-        <li> Unit Testing, <i> some </i> </li>
-        <button id="seeMore"> See More </button>
-      </ul>
-      <script src = "main.js" ></script>
-  </body>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Peter Christakos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <!--link rel="stylesheet" href="debug.css"> -->
+    <style>
+        .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <section class="hero">
+        <div class="notification is-link">
+            <h1 class="title center">
+                Peter Christakos
+            </h1>
+        </div>
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-one-third">
+                        <figure class="image center">
+                            <img src="images/profile.jpeg" style="max-width: 300px;">
+                        </figure>
+                    </div>
+                    <div class="column is-two-thirds">
+                        <h2 class="title">
+                            About Me
+                        </h2>
+                        <div class="notification">
+                            <p> <b> Worcester Polytechnic Institute </b>
+                            <p> <i> Bachelors of Computer Science, Data Science Minor </i> </p>
+                            <p> <i> Class of 2020 </i> </p>
+                        </div>
+                            <p> I am a senior at Worcester Polytechnic Institute with a passion for software 
+                                engineering. I am an extremely hard worker with a strong will and desire to 
+                                learn new skills. I work well on my own, however, I enjoy a collaborative 
+                                setting and flourish working with a team or group on a project. 
+                            </p> 
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="notification is-info">
+                <h2 class="title center"> Related Coursework </h2>
+                <div class="content">
+                    <ul> 
+                        <li> Object Oriented Programming </li>
+                        <li> Foundations of Computer Science </li>
+                        <li> Algorithms </li>
+                        <li> Operating Systems </li>
+                        <li> software Engineering </li>
+                        <li> Advanced Computer Networks </li>
+                        <li> Databases (I,II) </li>
+                        <li> Webware (Fall 2019) </li>
+                        <li> Data Visualization (Fall 2019) </li>
+                    </ul>        
+                </div>
+            </div>
+            <div class="notification is-success">
+                    <h2 class="title center"> Work Experience </h2>
+                    <div class="content">
+                        <p> <b> Gama Aviation </b>| <i> Stratford, CT </i> </p>
+                            <ul> 
+                            <li> Data Visualization and IT Intern. Analyzed and manipulated data 
+                                ranging from aircraft maintenance information to trial balances, 
+                                sales, and company revenue to design effective and clean dashboards 
+                                to portray relevant company information. </li>
+                            <li> Used Microsoft PowerBI </li>
+                            </ul>
+                        <p> <b> United States Patent and Tradenark Office </b>| <i> Alexandria, VA </i> </p>  
+                            <ul> 
+                                <li> Quality Assurance Extern </li>
+                                <li> Worked with a team of four students to analyze the USPTO’s 
+                                    current quality review dashboard, interview various members 
+                                    across several Patent Office departments, and create mockups 
+                                    for new features in the dashboard’s next version. </li>
+                            </ul>
+                        <p> <b> BAE Systems </b>| <i> Greenlawn, NY </i> </p>
+                            <ul> 
+                                <li> Software Technical Intern </li>
+                                <li> Worked on a team of eight to create and modify testing software
+                                     to test computer system hardware for the Boeing P8-A Poseidon aircraft,
+                                      a military aircraft used by the United States Navy for anti-submarine 
+                                      warfare. </li>
+                            </ul>
+                    </div>
+            </div>
+            <div class="notification is-warning">
+                    <h2 class="title center">
+                        Programming Experience
+                    </h2>
+                    <div class="content">
+                    <ul>
+                        <li> HTML, <i> some </i> </li>
+                        <li> CSS, <i> none </i> </li>
+                        <li> Java, <i> a lot </i> </li>
+                        <li> Javascript <i> none </i> </li>
+                        <li> Ruby, <i> none </i> </li>
+                        <li> Python, <i> a lot </i> </li>
+                        <li> Unit Testing, <i> some </i> </li>
+                    </ul>
+                    </div>
+            </div>       
+        </div>
+        <div class="container">    
+            <figure class="image center" id="github">
+                <img src="images/_github-512.png" style="max-width: 200px;">
+            </figure>
+            <div class="title" id="githublink">
+                github.com/newtownfam
+            </div>
+            <div class="content center">
+                    <p> Click on the github icon to open my page! </p>
+            </div>
+        </div>
+    <br>
+    <br>            
+    </section>
+    <script src = "main.js" ></script>
+</body>
 </html>
