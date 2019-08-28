@@ -4,6 +4,6 @@ h1 {
   -webkit-text-fill-color: transparent;
 }
 
-.module{
-  cursor: url('https://cdn.glitch.com/da293af5-e591-4bcc-939a-00fb7e595dcb%2Fcursor.gif?v=1566953329591'), auto;
+body, html{
+cursor: url(https://cdn.glitch.com/da293af5-e591-4bcc-939a-00fb7e595dcb%2Fcursor-click.png?v=1566954344441), default;
 }
