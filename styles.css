@@ -7,7 +7,7 @@ h1 {
   color: navy;
   text-align: relative;
   animation-name: example;
-  animation-duration: 20s;
+  animation-duration: 2s;
   animaton-iteration-count: 10;
 }
 h2 {
@@ -19,7 +19,7 @@ p {
   font-family: consolas;
   text-align: center;
   animation-name: example;
-  animation-duration: 20s;
+  animation-duration: 2s;
   animaton-iteration-count: 10;
 }
 li {
@@ -27,7 +27,7 @@ li {
   font-family: consolas;
   text-align: center;
   animation-name: example;
-  animation-duration: 20s;
+  animation-duration: 2s;
   animaton-iteration-count: 10;
 }
 a{
