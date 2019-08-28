@@ -1,40 +1,49 @@
-// server.js
+const http = require( 'http' ),
+      fs   = require( 'fs' ),
+      // IMPORTANT: you must run `npm install` in the directory for this assignment
+      // to install the mime library used in the following line of code
+      mime = require( 'mime' ),
+      jquery = require ( 'jquery' ),
+      port = 3000;
 
-const http = require('http'),
-      fs   = require('fs'),
-      port = 3000,
-      // Added the express framework
-      express = require('express'),
-      app = express();
+const server = http.createServer( function( request,response ) {
+  // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice
+  const filename = request.url.slice( 1 ) // remove leading forward slash (**not a backslash**)
 
-// Using express to include an external css and javascript file
-app.use(express.static('public'));
-
-app.get('/', function(request, response) {
-  response.sendFile(__dirname + '/index.html');
-});
-
-// Using express for routing index.html
-// http://expressjs.com/en/starter/basic-routing.html
-const server = app.get('/', function(request, response) {
-  switch( request.url ) {
-    case '/':
-      response.sendFile(__dirname + '/index.html');
-      break
-    case '/index.html':
-      response.sendFile(__dirname + '/index.html');
+  console.log( filename )
+  
+  switch( filename ) {
+    case '':
+      if( request.url === '/' ) sendFile( response, 'index.html' )
       break
     default:
-      response.end( '404 Error: File Not Found' )
+      sendFile( response, filename )
+      break
   }
 })
 
 server.listen( process.env.PORT || port )
 
 const sendFile = function( response, filename ) {
+   // mime types: https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Complete_list_of_MIME_types
+   const type = mime.getType( filename ) 
+
    fs.readFile( filename, function( err, content ) {
-     var file = content
-     response.end( content, 'utf-8' )
+
+     // if the error = null, then we've loaded the file successfully
+     if( err === null ) {
+
+       // status code: https://httpstatuses.com
+       response.writeHeader( 200, { 'Content-Type': type })
+       response.end( content )
+
+     } else{
+
+       // file not found, error code 404
+       response.writeHeader( 404 )
+       response.end( '404 Error: File Not Found' )
+
+     }
    })
 }
 
