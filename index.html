@@ -1,28 +1,180 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
-  </head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<head>
+  <title>CS4241 Assignment 1</title>
+  <meta charset="utf-8">
+</head>
+<div class="container">
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+  <!-- HEADER -->
+  <div class="row mt-3 align-items-center justify-content-md-center">
+    <div class="col-8">
+      <h1 class="display-3">carla duarte</h1>
+    </div>
+    <div class="col-4">
+      <div class="card text-right border-light">
+        <div class="card-body">
+          <h5 class="card-title">find me on the world wide web!</h5>
+          <a href="https://github.com/ciduarte" target="_blank" class="card-link"><i class="fa fa-github" style="font-size:24px"></i> GitHub</a>
+          <a href="https://www.linkedin.com/in/carla1duarte/" target="_blank" class="card-link"><i class="fa fa-linkedin-square" style="font-size:24px"></i> LinkedIn</a>
+          <a  href="mailto:ciduarte@wpi.edu" class="card-link"><i class="fa fa-envelope" style="font-size:24px"></i> Email</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  END HEADER  -->
+  <hr />
+  <!--  BODY  -->
+  <div class="row justify-content-md-center">
+    <!--   LEFT COLUMN   -->
+    <div class="col-9">
+      <!--    ABOUT SECTION    -->
+      <div>
+        <h2>about me</h2>
+        <p>Self-proclaimed UI enthusiast, front-end developer, ramen eater, music lover, oat milk fangirl.</p>
+      </div>
+      <!--    END ABOUT SECTION    -->
+      <!--    EDUCATION SECTION    -->
+      <div>
+        <h2>education</h2>
+        <p>
+          Worcester Polytechnic Institute, Class of 2020<br>
+          Computer Science, Bachelors of Science<br>
+        </p>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+        <!--    COURSE LIST    -->
+        <a class="text-primary" data-toggle="collapse" href="#collapseCourses">
+          <i class="fa fa-sort" style="font-size:12px"></i> Relevant Courses
+        </a>
+        <div class="collapse" id="collapseCourses">
+          <div class="row">
+            <div class="col-4">
+              <ul class="list-group list-group-flush">
+                <a class="list-group-item text-body" href="https://web.wpi.edu/academics/catalogs/ugrad/cscourses.html#cs1101" target="_blank">CS1101, Intro to Program Design</a>
+                <a class="list-group-item text-body" href="https://web.wpi.edu/academics/catalogs/ugrad/cscourses.html#cs2011" target="_blank">CS2011, Intro to Machine Org & Assembly</a>
+                <a class="list-group-item text-body" href="https://web.wpi.edu/academics/catalogs/ugrad/cscourses.html#cs2022" target="_blank">CS2022, Discrete Math</a>
+                <a class="list-group-item text-body" href="https://web.wpi.edu/academics/catalogs/ugrad/cscourses.html#cs2102" target="_blank">CS2102, Object-Oriented Design Concepts</a>
+                <a class="list-group-item text-body" href="https://web.wpi.edu/academics/catalogs/ugrad/cscourses.html#cs2223" target="_blank">CS2223, Algorithms</a>
+                <a class="list-group-item text-body" href="https://web.wpi.edu/academics/catalogs/ugrad/cscourses.html#cs2303" target="_blank">CS2303, Systems Programming Concepts</a>
+              </ul>
+            </div>
+            <div class="col-4">
+              <ul class="list-group list-group-flush">
+                <a class="list-group-item text-body" href="https://web.wpi.edu/academics/catalogs/ugrad/cscourses.html#cs3013" target="_blank">CS3013, Operating Systems</a>
+                <a class="list-group-item text-body" href="https://web.wpi.edu/academics/catalogs/ugrad/cscourses.html#cs3041" target="_blank">CS3041, Human-Computer Interaction</a>
+                <a class="list-group-item text-body" href="https://web.wpi.edu/academics/catalogs/ugrad/cscourses.html#cs3043" target="_blank">CS3043, Social Implications of CS</a>
+                <a class="list-group-item text-body" href="https://web.wpi.edu/academics/catalogs/ugrad/cscourses.html#cs3133" target="_blank">CS3133, Foundations of CS*</a>
+                <a class="list-group-item text-body" href="https://web.wpi.edu/academics/catalogs/ugrad/cscourses.html#cs3431" target="_blank">CS3431, Database Systems I</a>
+                <a class="list-group-item text-body" href="https://web.wpi.edu/academics/catalogs/ugrad/cscourses.html#cs3516" target="_blank">CS3516, Computer Networks</a>
+              </ul>
+            </div>
+            <div class="col-4">
+              <ul class="list-group list-group-flush">
+                <a class="list-group-item text-body" href="https://web.wpi.edu/academics/catalogs/ugrad/cscourses.html#cs3733" target="_blank">CS3733, Software Engineering</a>
+                <a class="list-group-item text-body" href="https://web.wpi.edu/academics/catalogs/ugrad/cscourses.html#cs4233" target="_blank">CS4233, Object-Oriented Analysis & Design</a>
+                <a class="list-group-item text-body" href="https://web.wpi.edu/academics/catalogs/ugrad/cscourses.html#cs4241" target="_blank">CS4241, Webware*</a>
+                <a class="list-group-item text-body" href="https://web.wpi.edu/academics/catalogs/ugrad/cscourses.html#cs4731" target="_blank">CS4731, Computer Graphics</a>
+                <a class="list-group-item text-body" href="https://web.wpi.edu/academics/catalogs/grad/cscourses.html#cs528" target="_blank">CS528, Mobile & Ubiquitous Computing*</a>
+                <a class="list-group-item text-body" href="https://www.wpi.edu/project-based-learning/global-project-program/project-centers/silicon-valley-california-project-center-mqp" target="_blank">MQP, Silicon Valley Project Center*</a>
+              </ul>
+            </div>
+          </div>
+          <div class="mb-3 text-secondary" style="text-align: right;">* = in progress</div>
+        </div>
+        <!--     END COURSE LIST     -->
+      </div>
+      <!--    END EDUCATION    -->
+
+      <!--    EXPERIENCE    -->
+      <div class="mt-3">
+        <h2>experience</h2>
+        <div class="card-deck mt-3">
+          <div class="card border-light">
+            <img src="/images/wpi-logo.png" class="card-img-top center ml-auto mr-auto mt-4 mb-1" style="max-width: 90%; height: auto;" alt="edX logo">
+            <div class="card-body">
+              <h5 class="card-title">MQP Research</h5>
+              <small class="text-muted">
+                Spring 2020
+              </small>
+              <p class="card-text">Will be working with a company in Silicon Valley to complete a 9-week project as part of the MQP requirement at WPI.</p>
+            </div>
+          </div>
+          <div class="card border-light">
+            <img src="/images/edx-logo.png" class="card-img-top center ml-auto mr-auto mt-4 mb-2" style="max-width: 90%; height: auto;" alt="edX logo">
+            <div class="card-body">
+              <h5 class="card-title">Software Engineer Intern</h5>
+              <small class="text-muted">
+                Summer 2019
+              </small>
+              <p class="card-text">Developed front-end features and custom components using React and Redux and created a REST API to surface data from Salesforce.</p>
+            </div>
+          </div>
+          <div class="card border-light">
+            <img src="/images/nust-logo.png" class="card-img-top center ml-auto mr-auto mt-4 mb-1" style="max-width: 90%; height: auto;" alt="NUST logo">
+            <div class="card-body">
+              <h5 class="card-title">Research Assistant</h5>
+              <small class="text-muted">
+                Fall 2018
+              </small>
+              <p class="card-text">Worked with the NUST, UNESCO, and the Namibia Ministry of Education in creating MOOCs to address the challenge of promoting Namibian students to pursue STEM higher education.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-deck mt-3">
+          <div class="card border-light">
+            <img src="/images/hanover-logo.png" class="card-img-top center ml-auto mr-auto mt-4 mb-1" style="max-width: 90%; height: auto;" alt="Hanover Insurance Group logo">
+            <div class="card-body">
+              <h5 class="card-title">Technology Intern</h5>
+              <small class="text-muted">
+                Summer 2018
+              </small>
+              <p class="card-text">Collaborated with multiple business units to optimize data scraping techniques and gain exposure to data science.</p>
+            </div>
+          </div>
+          <div class="card border-light">
+            <img src="/images/sensitech-logo.png" class="card-img-top center ml-auto mr-auto mt-4 mb-1" style="max-width: 90%; height: auto;" alt="Sensitech logo">
+            <div class="card-body">
+              <h5 class="card-title">IT Intern</h5>
+              <small class="text-muted">
+                Summer 2017
+              </small>
+              <p class="card-text">Lead the purchasing process of a database monitoring tool to address business needs through interactions with third-party vendors.</p>
+            </div>
+          </div>
+          <div class="card" style="visibility: hidden;"></div>
+        </div>
+      </div>
+      <!--     END EXPERIENCE     -->
+    </div>
+    <!--   END LEFT COLUMN   -->
+    <!--   RIGHT COLUMN   -->
+    <div class="col-3">
+      <div class="card border-light">
+        <h4 class="card-header">
+          technologies
+        </h4>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">HTML <span class="badge badge-pill badge-success">A Lot</span></li>
+          <li class="list-group-item">CSS <span class="badge badge-pill badge-success">A Lot</span></li>
+          <li class="list-group-item">Java <span class="badge badge-pill badge-success">A Lot</span></li>
+          <li class="list-group-item">JavaScript <span class="badge badge-pill badge-success">A Lot</span></li>
+          <li class="list-group-item">Ruby <span class="badge badge-pill badge-danger">None</span></li>
+          <li class="list-group-item">Python <span class="badge badge-pill badge-warning">Some</span></li>
+          <li class="list-group-item">Unit testing <span class="badge badge-pill badge-warning">Some</span></li>
+        </ul>
+      </div>
+    </div>
+    <!--  END RIGHT COLUMN  -->
+  </div>
+  <!--  END BODY  -->
+  <hr />
+  <!--  FOOTER  -->
+  <div class="mb-3 text-secondary" style="text-align: right;">Created by Carla Duarte, Fall 2019</div>
+  <!--  END FOOTER  -->
   </body>
+</div>
 </html>
