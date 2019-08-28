@@ -1,7 +1,7 @@
 ---
 
 Ken Desrosiers
-http://a1-kendesrosiers.glitch.me
+https://a1-kendesrosiers.glitch.me/
 
 This project shows ...
 
