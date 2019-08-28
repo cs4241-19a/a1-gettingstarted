@@ -6,29 +6,28 @@ $(document).ready(function() {
   });
   
   $(".option").click(function() {
-    switch(this.class) {
-        ".option.home" :
-          break
-        ".option.about" :
-        break
-        
+    alert(this.className);
+    switch(this.attr("class")) {
+      case ".option.home" :
+        $('html,body').animate({
+          scrollTop: $(".title.home").offset().top},
+          'slow');
+        break;
+      case ".option.about" :
+        $('html,body').animate({
+          scrollTop: $(".title.about").offset().top},
+          'slow');
+        break;
+      case ".option.experience" :
+        $('html,body').animate({
+          scrollTop: $(".title.experience").offset().top},
+          'slow');
+        break;
+      default:
+        alert(this.attr('class'));
     }
       
-      $('html,body').animate({
-        scrollTop: $(".title.home").offset().top},
-        'slow');
-  });
   
-  $(".option.about").click(function() {
-      $('html,body').animate({
-        scrollTop: $(".title.about").offset().top},
-        'slow');
-  });
-  
-  $(".option.experience").click(function() {
-      $('html,body').animate({
-        scrollTop: $(".title.experience").offset().top},
-        'slow');
   });
   
 });
