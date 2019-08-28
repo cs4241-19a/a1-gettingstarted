@@ -3,26 +3,113 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/style.css">
   </head>
+  <header class>
+    <div class="banner">
+      <div class="icon">
+        <img class="scalable" src="imgs/a1-icon.png" alt="Checkmark"/>
+      </div>
+      <div class="logo">
+        <img class="scalable" src="imgs/a1-name.png" alt="KENT banner"/>
+      </div>
+    </div>
+  </header>
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
-
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+    <div class = "banner button_bar">
+      <table class = "button_bar_table">
+        <tbody>
+          <tr>
+            <td id="who"> <b> WHO? </b> </td>
+            <td id = "what"> <b> WHAT? </b> </td>
+            <td id = "how"> <b> HOW? </b> </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class = "content_container" id = "who_container">
+      <table class = "info_table">
+        <thead> <tr> <th colspan="2"> Who is Kent?</th> </tr></thead>
+        <tbody>
+        <tr>
+          <td> Roxbury High School Alum: <br /> class of 2016</td>
+          <td> Worcester Polytechnic Institute: <br /> class of 2020</td>
+        </tr>
+        <tr> <td colspan="2"> Robotic Engineering Major <br/> ---&----
+          <br/> Computer Science Major</td></tr>
+        <tr> <td colspan="2"> World Class Minute Rice Chef</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class = "content_container" id = "what_container">
+      <table class = "info_table">
+        <thead> <tr> <th colspan="2"> What Has Kent Done?</th> </tr></thead>
+        <tbody>
+        <tr>
+          <td>I've taken <i> a few</i> CS courses at WPI
+            <!-- nested table-->
+            <table class="inner_table">
+              <tr><td>CS 1102</td> <td>ACCELERTD INTRO TO PROGR DESGN</td></tr>
+              <tr><td>CS 2102 </td> <td>OBJCT-ORIENTED DESIGN CONCEPTS</td></tr>
+              <tr><td>CS 2303</td> <td>SYSTEMS PROGRAMMING CONCEPTS</td></tr>
+              <tr><td>CS 3733</td> <td>SOFTWARE ENGINEERING</td></tr>
+              <tr><td>CS 2022</td> <td>DISCRETE MATHEMATICS</td></tr>
+              <tr><td>CS 2011</td> <td>INTRO-MACHINE ORG & ASSEMBLY</td></tr>
+              <tr><td>CS 2223</td> <td>ALGORITHMS</td></tr>
+              <tr><td>CS 3013</td> <td>OPERATING SYSTEMS</td></tr>
+              <tr><td>CS 3133</td> <td>FOUNDATIONS OF COMP. SCIENCE</td></tr>
+            </table>
+            <!--          end nested table-->
+          </td>
+        </tr>
+        <tr>
+          <td> And I've written <i>some</i> code
+          <!-- nested table-->
+          <table class="inner_table">
+            <tr><td>HTML</td> <td>Some</td></tr>
+            <tr><td>Java </td> <td>A lot</td></tr>
+            <tr><td>JavaScript</td> <td>None</td></tr>
+            <tr><td>Ruby</td> <td>None</td></tr>
+            <tr><td>Python</td> <td>Some</td></tr>
+            <tr><td>Unit Testing</td> <td>Some</td></tr>
+          </table>
+          <!--          end nested table-->
+          </td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class = "content_container" id = "how_container">
+      <table class = "info_table">
+        <thead> <tr> <th colspan="2"> How can he do that?</th> </tr></thead>
+        <tbody>
+        <tr>
+          <td> Well I do have a bit of work experience
+            <!-- nested table-->
+            <table class="titled_inner_table">
+              <tr class="title_row"><td><strong>Title</strong></td>
+                <td><strong>Location</strong></td>
+                <td><strong>Date</strong></td>
+              </tr>
+              <tr><td>Software Dev Intern</td> <td>213 NJ-15, Wharton <br/>
+                NJ 07885</td> <td> SUMMER 2017 <br/> SUMMER 2018</td></tr>
+              <tr><td>Software Dev Intern</td> <td>101 Main St <br/>
+              MA 02142</td> <td> SUMMER 2019</td></tr>
+            </table>
+            <!--          end nested table-->
+          </td>
+        </tr>
+        <tr>
+          <td> And I've done a project here and there
+          </td></tr>
+        </tbody>
+      </table>
+    </div>
   </body>
+  <footer>
+    <div class="banner end">
+      <p>Made by Kent Libby</p>
+    </div>
+  </footer>
+  <script type="text/javascript" src="handlers.js"></script>
 </html>

@@ -4,6 +4,10 @@
   "description": "WPI CS 4241 first assignment",
   "author": "Charlie Roberts",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "jasmine"
+  },
+  "dependencies": {
+    "jasmine": "^3.4.0"
   }
 }

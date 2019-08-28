@@ -1,0 +1,149 @@
+/*****Banner style info*****/
+.banner{
+    /* make the banner div resize with the page*/
+    height: 200px;
+    min-width: 620px;
+    position: relative;
+    background-color: #f96d22;
+}
+.banner.end{
+    height: 25px;
+    text-align: center;
+    align-items: center;
+    background-color: #f9c79e;
+}
+.icon{
+    /* make the container change size based on space in the banner*/
+    position: absolute;
+    top: 1%; left: 0;
+    width: 100%; height: 100%;
+    float: left;
+    min-width: 100px;
+    max-width: 25%;
+}
+
+.logo{
+    /*Do the same as icon but with different constratints*/
+    position: absolute;
+    /*the right makes the logo right aligned*/
+    top: 13%; right: -2px;
+    width: 100%; height: 100%;
+    float: right;
+    min-width: 500px;
+    max-width: 75%;
+}
+
+.scalable {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+}
+
+/*****Button Bar style info*****/
+.button_bar {
+    background-color: transparent;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.button_bar_table{
+    width: 100%;
+    height: 100%;
+}
+
+.button_bar_table td{
+    background-color: #f96d22;
+    border: 3px solid #90481a;
+    color: #ACE4FF;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.button_bar_table td:hover{
+    color: #dfffc2;
+    border: 3px solid #dfffc2;
+}
+
+/*****Body style info*****/
+.content_container{
+    min-width: 620px;
+    background-color: #dfffc2;
+    position: relative;
+    padding: 1em;
+    margin: 1em;
+}
+
+.info_table{
+    width: 100%;
+}
+
+
+
+.info_table th{
+    text-align: center;
+    font-size: 1.25em;
+    color: #4e6c82;
+}
+
+.info_table td{
+    text-align: center;
+    width: 50%;
+    font-size: 1.25em;
+    border: 1px solid #4e6c82;
+    color: #4e6c82;
+    height: 4em;
+}
+
+/* Nested table setup */
+.inner_table{
+    padding-top: .25em;
+    width:100%;
+}
+
+.inner_table tr{
+    justify-content: center;
+}
+
+.inner_table td{
+    border: transparent;
+    height: 1.25em;
+    font-size: .75em;
+}
+
+/* align the left and right columns of the table*/
+.inner_table td:nth-child(1){
+    text-align: right;
+    font-weight: bold;
+}
+
+.inner_table td:nth-child(2){
+    text-align: left;
+}
+
+.titled_inner_table{
+    width: 100%;
+    padding-bottom: 1em;
+}
+
+.titled_inner_table .title_row{
+    text-align: center;
+}
+
+.titled_inner_table td{
+    width: 33%;
+    height: 1.25em;
+    font-size: 1em;
+}
+
+body {
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+    color: #054749;
+}
+
+h1 {
+    color: #002eff;
+}
