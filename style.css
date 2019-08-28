@@ -1,0 +1,50 @@
+body {
+  background-color: #E8E8E8;
+
+}
+
+p, h1, h2, li, td{
+  font-family: 'Montserrat';
+  color: #484848;
+}
+
+.columnh{
+  border-radius: 10px;
+  float: left;
+  width: 100%;
+  padding: 0px;
+  height: 200px;
+}
+
+.column2 {
+  text-align: justify;
+  border-radius: 10px;
+  float: left;
+  width: 38%;
+  padding: 1%;
+  height: 300px;
+}
+
+.column1, .column3 {
+  border-radius: 10px;
+  float: left;
+  width: 28%;
+  padding: 1%;
+  height: 300px;
+}
+
+.columnl {
+  text-align: justify;
+  border-radius: 10px;
+  float: left;
+  width: 31.3%;
+  padding: 1%;
+  height: 200px;
+
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
