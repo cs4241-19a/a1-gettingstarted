@@ -4,13 +4,13 @@ Readme
 Jialin Song
 http://a1-charlieroberts.glitch.me
 
-This project shows the information about me, as the instruction said.
+This assignment includes a simple website created with my information.
 
 ### Technical Achievements
-- **Proved P=NP**: Using a combination of...
-- **Solved AI**: ...
+- **Linked style.css from server.js**: Adding the case '/style.css' in the switch statement in server.js to build the link for style.css to run before the second webware class was taken.
 
 ### Design Achievements
-- **Re-vamped Apple's Design Philosophy**: Shown in `style.css`, the code...
+- **Rearranged the elements in index.html**: Added <h3> for subtitle of "Experience" part in the biography and rearranged some <p>, <h2> elements to make the bio more concise.
+- **Created style.css**: Created specific choices of color, font, border, alignment and padding for 3 headers, paragraphs and lists to make this website look more organized. 
 
 
