@@ -1,16 +1,16 @@
 body, html{
-	background-color: #094b73;
+	background-color: #1ABC9C;
 	height: 100%;
 	width: 100%;
 	margin: 0;
 }
 div.top{
-	background-color: #77CBB9;
+	background-color: #2B3E50;
 	color: white;
 	font-family: "Calibri", Times, sans-serif;
 }
 div.bottom{
-	background-color: #094b73;
+	background-color: #1ABC9C;
 	color: white;
 	font-family: "Calibri", Times, sans-serif;
 }
@@ -66,5 +66,5 @@ p.courses:hover{
   line-height: 30px;
 }
 .modal-title, .modal-body{
-  color: #094b73;
+  color: #2B3E50;
 }
