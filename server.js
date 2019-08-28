@@ -13,6 +13,8 @@ const server = http.createServer( function( request,response ) {
     case '/style.css':
       sendFile( response, 'style.css' )
       break
+    case 'https://cdn.jsdelivr.net/gh/greghub/green-audio-player/dist/css/green-audio-player.min.css':
+      sendFile( response, 'https://cdn.jsdelivr.net/gh/greghub/green-audio-player/dist/css/green-audio-player.min.css' )
     default:
       response.end( '404 Error: File Not Found' )
   }
