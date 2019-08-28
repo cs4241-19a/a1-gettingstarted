@@ -1,5 +1,7 @@
 // Handles the language list descriptions with Jquery
 
+'use strict';
+
 // On mouseover, shows a decription of the experience with each
 // and stops showing it when the mouse is moved off
 $( "div.some-experience" ).hover(
