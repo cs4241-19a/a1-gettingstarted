@@ -25,7 +25,6 @@ This project shows ...
 Resources
 ---
 
-I used stylesheet XXX from YYY and I changed it for BLAHBLAHBLAH
-
+WordArt for the headings was adapted from https://www.designpieces.com/2017/03/wordart-css3-text-effects/
 
 
