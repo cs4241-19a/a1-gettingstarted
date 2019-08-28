@@ -3,22 +3,39 @@ body {
   font-family: georgia !important;
 }
 
-::-webkit-scrollbar {
-  width: 10px;
+.scrollbar
+{
+	margin-left: 22px;
+	float: left;
+	height: 300px;
+	width: 65px;
+	background: #F5F5F5;
+	overflow-y: scroll;
+	margin-bottom: 25px;
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: white; 
+.force-overflow
+{
+	min-height: 450px;
 }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: crimson; 
+#style-1::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background: white;
 }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: pink; 
+#style-1::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background: crimson;
 }
 
