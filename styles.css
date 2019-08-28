@@ -1,3 +1,6 @@
+html{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 body{
     background: radial-gradient(#6dd5ed, #076980);
     color: black;
