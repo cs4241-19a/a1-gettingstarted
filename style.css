@@ -1,0 +1,96 @@
+h1 {
+    color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
+  }
+    header {
+      text-align: center;
+      background-size: cover;
+      overflow: hidden;
+      padding-top: 40px;
+      background: url('https://cdn.glitch.com/a7c7fddf-ac36-44cd-94b5-5e47208625ec%2Fboston-1099418_1280.jpg?v=1567002813401') no-repeat top center ;
+  
+    }
+  
+    header .profile-image {
+      margin-top: 10px;
+      margin-bottom: 50px;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 3px solid white;
+      transition: all .5s;
+    }
+  
+  header .profile-image:hover {
+      transform: scale(1.3) rotate(15deg);
+  }
+  
+  h2 {
+    font-size: 35px;
+  }
+  
+  p {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .card {
+    margin: 30px;
+    padding: 20px 40px 40px;
+    text-align: left;
+    background: #F5F5F5;
+    border-bottom: 4px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  ul {
+      font-family: 'Roboto', sans-serif;
+  }
+  
+  .some {
+    color: peru;
+  }
+  
+  .lot {
+    color: #66CD00;
+  }
+  
+  .none {
+    color: red;
+  }
+  
+  .greenchoice {
+    width: 200px;
+    height: 200px;
+    border: 3px solid white;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    
+  }
+  
+  .greenchoice:hover {
+        transform: scale(1.1);
+  }
+  
+  .santa-pic {
+      margin-top: 10px;
+    
+      width: 200px;
+      height: 300px;
+      border: 3px solid white;  
+  }
+  
+  .track {
+    width: 150px;
+    height: 200px;
+    border: 3px solid white;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
