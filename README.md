@@ -1,6 +1,6 @@
 Tim Winters
 
-[Glitch](http://a1-charlieroberts.glitch.me)
+[Glitch](https://a1-archduketim.glitch.me)
 
 This project shows an understanding of html, git, github, and glitch. 
 
@@ -8,6 +8,6 @@ This project shows an understanding of html, git, github, and glitch.
 - Learned how to load a project into Glitch
 
 ### Design Achievements
-- None so far...
+- Custom CSS styling
 
 
