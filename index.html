@@ -3,26 +3,78 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <script src='test.js' type='text/javascript'></script>
   </head>
+  <style>
+.spoiler {
+  background-color: white;
+  color: black;
+} 
+</style>
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
+    <h1>Information about James Scherick</h1>
+    <input type="button" class="spoiler" value=">" onclick="toggleHide('all'); if(this.value == '\\/'){this.value='>'}else{this.value='\\/'}">
+    <a id="all">
+    <p id="intro">
+      James Scherick is part of WPI's class of 2021.
     </p>
     <p>
-      [Major and other information]
+      James Scherick is a Computer Science major and Interactive Media and Game Design minor.
     </p>
     <p>
-      [Other things]
+      CS Classes I have taken:
+      <p>
+      <input type="button" class="spoiler" value=">" onclick="toggleHide('classes'); if(this.value == '\\/'){this.value='>'}else{this.value='\\/'}">
+      </p>
+      <ul id="classes">
+      <li>1102</li>
+      <li>210X</li>
+      <li>2011</li>
+      <li>2303</li>
+      <li>2022</li>
+      <li>2223</li>
+      <li>3733</li>
+      <li>3013</li>
+      <li>3043</li>
+      <li>3133</li>
+    </ul>
     </p>
 
     <h2>Experience</h2>
     <p>
       Working experience
     </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+        <input type="button" class="spoiler" value=">" onclick="toggleHide('skills'); if(this.value == '\\/'){this.value='>'}else{this.value='\\/'}">
+  
+<ul id="skills">
+<li>HTML: some</li>
+<li>CSS: none</li>
+<li>Java: a lot</li>
+<li>JavaScript: some</li>
+<li>Ruby: none</li>
+<li>Python: some</li>
+<li>unit testing: some</li>
+</ul>
+    </a>
   </body>
 </html>
+<script>
+function toggleHide ( name ){
+  let el = document.getElementById(name);
+  if (el.style.visibility == 'hidden'){
+    el.style.marginBottom = "0px";
+    el.style.visibility = 'visible';
+
+
+  }
+  else{
+    el.style.marginBottom = "-" + el.offsetHeight + "px";
+    el.style.visibility = 'hidden';
+  }
+
+}
+  toggleHide('classes')
+  toggleHide('skills')
+  toggleHide('all')
+
+</script>
