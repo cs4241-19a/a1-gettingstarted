@@ -4,9 +4,13 @@
   "description": "WPI CS 4241 first assignment",
   "author": "Charlie Roberts",
   "scripts": {
-    "start": "node server.improved.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "mime": "^2.4.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thearst3rd/a1-gettingstarted"
   }
 }
