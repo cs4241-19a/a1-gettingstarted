@@ -4,7 +4,8 @@ Kent Libby README
 Kent Libby
 https://a1-kdoje.glitch.me/
 
-This project shows ...
+This project shows general information about me. I've added work, course and educational expierence. Simply click on WHO, WHAT or 
+HOW on the top of the page to show more.
 
 ## Technical Achievements
 - **Created asynchronous server**: Made an extensible server without case/switch. Used promises to ensure
