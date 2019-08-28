@@ -11,6 +11,6 @@ This assignment includes a simple website created with my information.
 
 ### Design Achievements
 - **Rearranged the elements in index.html**: Added "h3" element for subtitle of "Experience" part in the biography and rearranged some "p", "h2" elements to make the bio more concise.
-- **Created style.css**: Created specific choices of color, font, border, alignment and padding for 3 headers, paragraphs and lists to make this website look more organized. 
+- **Created style.css**: Created specific choices of color, font, border, alignment and padding for 3 headers, paragraphs and lists to make this website look more organized. Added border to clarify each section, making the paragraphs more readable.
 
 
