@@ -36,7 +36,7 @@ body{
   font-size: 28px;
   text-align: center;
   align: center;
-  color: rgba(255,255,255,.70);
+  color: rgba(0,0,0,.70);
   position: relative;
   animation: animated-text 2s steps(30,end) 1s 1 normal both;
 }
@@ -47,6 +47,29 @@ body{
   right: -7px;
   width: 20px;
   animation: animated-cursor 600ms steps(30,end) infinite;
+}
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 480px;}
+}
+@keyframes animated-cursor{
+  from{border-bottom-color: rgba(100,255,255,.75);}
+  to{border-bottom-color: transparent;}
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+.column {
+  justify-content:center;
+  float: left;
+  width: 50%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+};
 }
 @keyframes animated-text{
   from{width: 0;}
