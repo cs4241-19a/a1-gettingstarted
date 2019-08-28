@@ -6,25 +6,27 @@ $(document).ready(function() {
   });
   
   $(".option").click(function() {
-    alert(this.className);
-    switch(this.attr("class")) {
-      case ".option.home" :
+    switch(this.className) {
+      case "option home" :
         $('html,body').animate({
           scrollTop: $(".title.home").offset().top},
           'slow');
+        this.animate({
+          scrollTop: $(".title.home").offset().top},
+          'slow');
         break;
-      case ".option.about" :
+      case "option about" :
         $('html,body').animate({
           scrollTop: $(".title.about").offset().top},
           'slow');
         break;
-      case ".option.experience" :
+      case "option experience" :
         $('html,body').animate({
           scrollTop: $(".title.experience").offset().top},
           'slow');
         break;
       default:
-        alert(this.attr('class'));
+        alert(this.className);
     }
       
   
