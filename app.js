@@ -7,7 +7,7 @@ $(document).ready(function() {
   
   $(".option").click(function() {
       $('html,body').animate({
-        scrollTop: $(".title.about").offset().top},
+        scrollTop: $(".title.home").offset().top},
         'slow');
   });
   
