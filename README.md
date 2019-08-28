@@ -16,15 +16,18 @@ http://a1-nbloniarz.glitch.me
 This project shows ...
 
 ## Technical Achievements
-- **Proved P=NP**: Using a combination of...
+- **Navigation Bar**: Created a static navigation bar with internal links that always remains at the top of the displayed area.
 - **Solved AI**: ...
 
 ### Design Achievements
-- **Re-vamped Apple's Design Philosophy**: Shown in `style.css`, the code...
+- **Made the Headings 2003 WordArt**: Shown in `style.css`, the code for h1, h2, and h3 produce different styles of word art.
+The code for the wordart was adapted from (https://www.designpieces.com/2017/03/wordart-css3-text-effects/) to fit within one selector each.
+ **Displayed Coursework and Experience as Tables**: Shown in `index.html`, Each of these sections contains a table to display the 
+The code for the wordart was adapted from (https://www.designpieces.com/2017/03/wordart-css3-text-effects/) to fit within one selector each.
+
 
 Resources
 ---
 
-WordArt for the headings was adapted from https://www.designpieces.com/2017/03/wordart-css3-text-effects/
 
 
