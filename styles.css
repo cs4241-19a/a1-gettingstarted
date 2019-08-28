@@ -7,7 +7,7 @@ body{
   margin: 0% 10% 0% 22%;
 }
 h1{
-  width: 90%;
+  width: 100%;
   text-align: center;
   background-color: #c9a4a0;
   padding: 20px 50px 20px 50px;
@@ -20,8 +20,26 @@ p, li{
 div{
   margin: 0px 20px 0px 20px;
 }
-.box{
-  height: 200px;
-  width: 200px;
-  border-color: black;
+* {
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+  padding: 10px;
+  height: auto;
+}
+.left{
+  width: 25%;
+  margin-left: -20px;
+}
+.right{
+  width: 75%;
+  margin-left: -20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
