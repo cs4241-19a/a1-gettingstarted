@@ -5,5 +5,8 @@
   "author": "James Plante",
   "scripts": {
     "start": "node server.js"
+  },
+  "dependencies": {
+    "mime": "^2.4.4"
   }
 }

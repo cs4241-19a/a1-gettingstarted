@@ -51,7 +51,7 @@ section {
 	box-shadow: 5px 5px 5px grey;
 }
 
-#subheader {
+.subheader {
 	background-color: white;	
 	font-size:32px;
 	text-align:center;
@@ -67,6 +67,7 @@ section {
     font-family: 'Roboto', sans-serif;
 	box-shadow: 5px 5px 5px grey;
 }
+
 
 /* Bottom Table */
 

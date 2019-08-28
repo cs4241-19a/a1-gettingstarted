@@ -1,54 +1,47 @@
-const http = require('http'),
-	fs   = require('fs'),
+const http = require( 'http' ),
+	fs   = require( 'fs' ),
+	// IMPORTANT: you must run `npm install` in the directory for this assignment
+	// to install the mime library used in the following line of code
+	mime = require( 'mime' ),
 	port = 3000
 
-let file, picture, picture2, icon, style
-
-/* Read all files before loading page */
-console.log("Loading files into memory...")
-
-console.log("Starting Server!")
-
-/* This callback is made every time a request is given. */
 const server = http.createServer( function( request,response ) {
-	console.log("New request! The user is asking for " + request.url)
-	switch( request.url ) {
-		case '/':
-			sendFile(file, response, './index.html', 'utf-8')
-			break;
-		case '/favicon.ico':
-			sendFile(icon, response, './favicon.ico')
-			break;
-		case '/P7.jpg':
-			sendFile(picture, response, './P7.jpg')
-			break;
-		case '/P8.jpg':
-			sendFile(picture2, response, './P8.jpg')
-			break;
-		case '/style.css':
-			sendFile(style, response, './style.css', 'utf-8')
-			break;
+	// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice
+	const filename = request.url.slice( 1 ) // remove leading forward slash (**not a backslash**)
+
+	console.log( filename )
+
+	switch( filename ) {
+		case '':
+			if( request.url === '/' ) sendFile( response, 'index.html' )
+			break
 		default:
-			response.end( '404 Error: File Not Found' )
+			sendFile( response, filename )
+			break
 	}
 })
 
 server.listen( process.env.PORT || port )
 
-/*
- * Function to send a file to the client
- * @param pointer - where to store the file
- * @param response - final response to the client
- * @param filename - filename for file
- * @param format - how to interpret the data in the request
- */
-const sendFile = function( pointer, response, filename, format=null ) {
-   fs.readFile( filename, function( err, content ) {
-     pointer = content
-	   if (format === null) {
-		   response.end( pointer, format )
-	   } else {
-		   response.end( pointer )
-	   }
-   })
+const sendFile = function( response, filename ) {
+	// mime types: https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Complete_list_of_MIME_types
+	const type = mime.getType( filename ) 
+
+	fs.readFile( filename, function( err, content ) {
+
+		// if the error = null, then we've loaded the file successfully
+		if( err === null ) {
+
+			// status code: https://httpstatuses.com
+			response.writeHeader( 200, { 'Content-Type': type })
+			response.end( content )
+
+		}else{
+
+			// file not found, error code 404
+			response.writeHeader( 404 )
+			response.end( '404 Error: File Not Found' )
+
+		}
+	})
 }
