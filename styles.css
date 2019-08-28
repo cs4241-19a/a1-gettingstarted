@@ -1,0 +1,63 @@
+html {
+    /*background: url('https://i.redd.it/8qxg1uomq2f31.jpg') center center fixed;*/
+    background: url('https://i.redd.it/xcork1aobaa31.jpg') center center fixed;
+    background-size: 100vw;
+}
+
+.demo-card-wide {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.demo-card-wide.mdl-card {
+    width: 30vw;
+}
+
+.demo-card-wide>.mdl-card__title {
+    color: #fff;
+    height: 150px;
+    /*background: url('https://i.redd.it/xcork1aobaa31.jpg') no-repeat center center fixed;*/
+    background: url('https://i.redd.it/7zebjsi4m8a31.jpg') fixed;
+    background-size: 100vw;
+}
+
+.demo-card-wide>.mdl-card__menu {
+    color: #fff;
+}
+
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+    color: white;
+}
+
+.cards {
+    position: absolute;
+    top: 75px;
+    left: 35vw;
+}
+
+.material-icons {
+    font-size: 50px;
+}
+
+.mdl-layout-title {
+    font-size: 60px;
+}
+
+.mdl-layout__obfuscator.is-visible {
+    background-color: rgba(0, 0, 0, 0)
+}
+
+.mdl-layout__drawer {
+    transition-duration: .1s;
+    bottom: 0
+}
+
+.mdl-layout__drawer.is-visible {
+    position: fixed
+}
+
+.mdl-card__title-text {
+    font-size: 40px;
+    text-shadow: 2px 2px #000000;
+}
