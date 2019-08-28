@@ -1,0 +1,140 @@
+body{
+    background: radial-gradient(#6dd5ed, #076980);
+    color: black;
+}
+
+.main-content{
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+h1{
+    color: yellow;
+}
+
+.header-nav{
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    background-color: grey;
+    background: linear-gradient(darkgrey, grey);
+    position: fixed;
+    top: 0;
+    margin-left: -8px;
+}
+
+.nav-holder{
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+.header-nav a{
+    float: left;
+    display: block;
+    padding: 8px;
+    background-color: grey;
+    background: linear-gradient(darkgrey, grey);
+    text-decoration: none;
+    color: white;
+}
+
+.mobile-nav a{
+    width:100%;
+    height: 15px;
+    background: none;
+}
+
+.header-nav a:hover{
+    background: none;
+    background-color: lightslategrey;
+}
+
+.anchor{
+    padding-top: 35px;
+    margin-top: -35px;
+}
+
+.mobile-only{
+    display:none;
+    color: yellow;
+}
+
+
+ul{
+    text-align: left;
+}
+
+/*Responsive Hamburger css only attempt*/
+.mobile-nav{
+    border-top: 1px solid #EAEAEB;
+    text-align: right;
+}
+.mobile-menu{
+    margin: 0 30px 0 0;
+}
+.mobile-menu a{
+    text-decoration: none;
+    margin: 0 10px;
+    clear: right;
+}
+label{
+    margin: 0 40px 0 0;
+    font-size: 30px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+#toggle{
+    display: none;
+}
+
+/*mobile styles*/
+@media (max-width: 700px){
+    .mobile-only{
+        display: block;
+    }
+    .header-nav .nav-holder a{
+        display: none;
+    }
+    h1{
+        text-align: center;
+    }
+    .mobile-only h3{
+        text-align: center;
+    }
+    ul{
+        padding-inline-start: 20px;
+    }
+
+    /*more hamburger menu*/
+    label{
+        display: block;
+        cursor: pointer;
+    }
+    .mobile-menu{
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    .mobile-menu a{
+        display: block;
+        border-top: 1px solid #eaeaeb;
+        margin: 0;
+    }
+    #toggle:checked + .mobile-menu{
+        display: block;
+    }
+}
+.desktop-only{
+    display: none;
+}
+@media (min-width: 700px){
+    .desktop-only{
+        color: yellow;
+        display: block;
+    }
+}
