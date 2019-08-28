@@ -60,9 +60,9 @@ li {
 }
 
 .experience { /*experience sub title*/
-  margin-left:500px;
-  margin-right:auto;
-  line-height:3px;
+  text-align:left;
+  width:50%;
+  line-height:3p;
   font-size:19px;
 }
 
