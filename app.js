@@ -1,11 +1,14 @@
 $(document).ready(function() {
   $(".option").hover( function(){
-    $(this).css({"background-color": "black"})
+    $(this).css("background-color", "#6DB4D3");
+  }, function() {
+    $(this).css("background-color", "#2B82AB");
   });
-
   
-  $(".option.about").on("click", function() {
-    alert("Hi");
+  $(".option").click(function() {
+      $('html,body').animate({
+        scrollTop: $(".title.about").offset().top},
+        'slow');
   });
   
 
