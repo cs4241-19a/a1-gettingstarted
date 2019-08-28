@@ -1,6 +1,6 @@
 body {
-  background-color: pink;
-  font-family: georgia;
+  background-color: pink !important;
+  font-family: georgia !important;
 }
 
 ::-webkit-scrollbar {
