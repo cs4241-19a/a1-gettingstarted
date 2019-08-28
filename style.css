@@ -1,0 +1,55 @@
+/* CSS Stylesheet */
+
+body {
+  font-family: "Cabin", helvetica, arial, sans-serif;
+  margin: 2em;
+  background-color: powderblue;
+}
+
+h1 {
+  font-style: italic;
+  color: #373fff;
+}
+
+h2 {
+  font-family: "Times New Roman", Times, serif;
+  color: #373f;
+}
+
+.languages {
+  margin: 15px;
+  text-align: center;
+}
+
+.most-experience {
+  background: lightgreen;
+}
+
+.some-experience {
+  background: yellow;
+}
+
+.not-experienced {
+  background: pink;
+}
+
+/* Using a page animation 
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations */
+
+p {
+  font-family: "Lexend Giga", serif;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-top: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-top: 0%;
+    width: 100%;
+  }
+}
