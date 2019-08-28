@@ -1,0 +1,112 @@
+
+body {
+  background: white;
+  text-align: center;
+}
+
+/* modified from https://css-tricks.com/snippets/css/typewriter-effect/ */
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid blue; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  animation: 
+    typing 3.5s steps(40, end) infinite,
+    blink-caret .75s step-end infinite;
+  font-family: courier;
+  font-size: 30px;
+}
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100%}
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: blue; }
+}
+
+/* about me circle */
+.aboutMe {
+  -webkit-transition: width 2s;
+  background: blue;  
+  transition: width 2s, height 2s;
+  display: inline-block;
+    margin-top: 10%;
+  
+}
+
+.aboutMe:hover {
+  background: orange; 
+  width: 600px;
+  height: 100px;
+}
+
+/* experience circle */
+.experience {
+  -webkit-transition: width 2s;
+  background: yellow;  
+  transition: width 2s, height 2s;
+  display: left;
+  line-height: 30px;
+  margin-left: 10%;
+  float: left;
+    margin-top: 22%;
+  
+  
+}
+
+.experience:hover {
+  background: purple; 
+  width: 650px;
+  height: 400px;
+  position: relative;
+  line-height: 30px;
+  text-align: center;
+
+  
+  
+}
+
+/* more info circle */
+.moreInfo{
+  -webkit-transition: width 2s;
+  background: red;  
+  transition: width 2s, height 2s;
+  float: right;
+  margin-right: 10%;
+  margin-top: 35%;
+}
+
+.moreInfo:hover {
+  background: green; 
+  width: 500px;
+  height: 200px;
+  text-align: center;
+  line-height: 30px;
+}
+
+
+/* styles for all circles regardless of  topic*/
+.circle {
+  width: 200px;
+  height: 75px;
+  border: transparent;
+  color: transparent;
+  border-radius: 100%;
+  font-family: georgia;
+  font-size: 20px; 
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100px;
+
+  
+}
+
+.circle:hover {
+  color: white;
+}
+
+
