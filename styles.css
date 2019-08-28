@@ -35,6 +35,7 @@ body {
 .information {
   position: relative;
   width: 70%;
+  height: 2000px;
   top: 0;
   left: 200px;
   padding-right: 100px
