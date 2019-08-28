@@ -1,6 +1,9 @@
 $(document).ready(function() {
   $(".option").hover( function(){
-    $(this).css("background-color", "#6DB4D3");
+    $(this).animate(
+      {"background-color": "#6DB4D3"},
+      'slow'
+    );
   }, function() {
     $(this).css("background-color", "#2B82AB");
   });
