@@ -14,9 +14,6 @@ const server = http.createServer(function (request, response){
   if(request.url === '/'){
     sendFile(response, 'index.html')
   }
-  else if(request.url ==='www.linkedin.com/in/natalie-bloniarz-507775147'){
-    
-  }
   else{
         sendFile(response, url)
   }
