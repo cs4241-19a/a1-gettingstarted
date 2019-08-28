@@ -6,9 +6,30 @@ body {
 
 .sidebar {
   position: fixed;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100vh;
   background-color: #2B82AB;
-  width: 20vw;
   font-family: "Arial", sans-serif;
+}
 
+.option {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+.option:hover {
+  background-color: #6DB4D3;
+}
+
+.option:click {
   
+}
+
+.information {
+  position: absolute;
+  top: 0;
+  left: 100px;
 }
