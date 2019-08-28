@@ -25,13 +25,12 @@ div{
 }
 .column {
   float: left;
-  padding: 10px;
-  height: auto;
+  padding: 20px;
+  height: 890px;
 }
 .left{
   width: 25%;
   margin-left: -20px;
-  border-color: #000000;
 }
 .right{
   width: 75%;
