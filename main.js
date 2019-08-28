@@ -365,7 +365,7 @@ window.onload = function () {
                     .break()
                     .exec(async () => {
 
-                        // Skills bars
+                        // Skill bars
 
                         let skills = ["Javascript", "HTML", "CSS", "Java", "Ruby", "Testing"];
                         let colors = ["green", "red", "cyan", "orange", "purple", "magenta"];
