@@ -2,7 +2,6 @@ Readme
 ---
 
 Jialin Song
-http://a1-charlieroberts.glitch.me
 
 This assignment includes a simple website created with my information.
 
