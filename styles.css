@@ -1,46 +1,3 @@
-h3 {
-  
-  font-family: Arial, sans-serif;
-  font-size: 4em;
-  font-weight: bold;
-  position: relative;
-  z-index: 1;
-  display: inline-block;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  transform: scale(1, 1.5);
-  -webkit-transform: scale(1, 1.5);
-  -moz-transform: scale(1, 1.5);
-  -o-transform: scale(1, 1.5);
-  -ms-transform: scale(1, 1.5);
-  background: red; 
-  background: -webkit-linear-gradient(left, #b306a9, #ef2667, #f42e2c, #ffa509, #fdfc00, #55ac2f, #0b13fd, #a804af);
-  background: -o-linear-gradient(left, #b306a9, #ef2667, #f42e2c, #ffa509, #fdfc00, #55ac2f, #0b13fd, #a804af);
-  background: -moz-linear-gradient(left, #b306a9, #ef2667, #f42e2c, #ffa509, #fdfc00, #55ac2f, #0b13fd, #a804af);
-  background: linear-gradient(to right, #b306a9, #ef2667, #f42e2c, #ffa509, #fdfc00, #55ac2f, #0b13fd, #a804af); 
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-h2{
-  
-  font-family: Arial, sans-serif;
-  font-size: 4em;
-  font-weight: bold;
-  position: relative;
-  z-index: 1;
-  display: inline-block;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-family: Impact, sans-serif;
-    color: #24c0fd;
-    -webkit-text-stroke: 0.01em #0000aa;
-    filter: progid:DXImageTransform.Microsoft.Glow(Color=#0000aa,Strength=1);
-    text-shadow: 0.13em -0.13em 0px #0000aa;
-    letter-spacing: -0.05em;
-}
-
 h1 {
   margin: 100px;
   font-family: Arial, sans-serif;
@@ -74,10 +31,54 @@ h1 {
     -webkit-text-fill-color: transparent;
 }
 
+h2{
+  
+  font-family: Arial, sans-serif;
+  font-size: 4em;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: Impact, sans-serif;
+    color: #24c0fd;
+    -webkit-text-stroke: 0.01em #0000aa;
+    filter: progid:DXImageTransform.Microsoft.Glow(Color=#0000aa,Strength=1);
+    text-shadow: 0.13em -0.13em 0px #0000aa;
+    letter-spacing: -0.05em;
+}
+
+h3 {
+  
+  font-family: Arial, sans-serif;
+  font-size: 4em;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: scale(1, 1.5);
+  -webkit-transform: scale(1, 1.5);
+  -moz-transform: scale(1, 1.5);
+  -o-transform: scale(1, 1.5);
+  -ms-transform: scale(1, 1.5);
+  background: red; 
+  background: -webkit-linear-gradient(left, #b306a9, #ef2667, #f42e2c, #ffa509, #fdfc00, #55ac2f, #0b13fd, #a804af);
+  background: -o-linear-gradient(left, #b306a9, #ef2667, #f42e2c, #ffa509, #fdfc00, #55ac2f, #0b13fd, #a804af);
+  background: -moz-linear-gradient(left, #b306a9, #ef2667, #f42e2c, #ffa509, #fdfc00, #55ac2f, #0b13fd, #a804af);
+  background: linear-gradient(to right, #b306a9, #ef2667, #f42e2c, #ffa509, #fdfc00, #55ac2f, #0b13fd, #a804af); 
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 body{
   margin 0;
   height: 100vh;
-cursor: url('https://cdn.glitch.com/da293af5-e591-4bcc-939a-00fb7e595dcb%2Fcropped.gif?v=1566955020998'), auto;
+  background-color: lightgrey;
+  cursor: url('https://cdn.glitch.com/da293af5-e591-4bcc-939a-00fb7e595dcb%2Fcropped.gif?v=1566955020998'), auto;
 }
 
 table th, td{
@@ -121,4 +122,21 @@ display: inline;
 
 #nav li a:hover {
   background-color: #111;
+}
+
+.pulsate {
+    -webkit-animation: pulsate 3s ease-out;
+    -webkit-animation-iteration-count: infinite; 
+    opacity: 0.5;
+}
+@-webkit-keyframes pulsate {
+    0% { 
+        opacity: 0.5;
+    }
+    50% { 
+        opacity: 1.0;
+    }
+    100% { 
+        opacity: 0.5;
+    }
 }
