@@ -1,5 +1,5 @@
 Randy Agudelo
-http://a1-RandyAgudelo.glitch.me
+http://a1-randyagudelo.glitch.me
 
 This project shows a webpage displaying my personal information such as my major and experiences. 
 It also describes my knowledge of certain technologies and methods as well as what CS courses I have
