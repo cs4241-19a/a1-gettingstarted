@@ -23,5 +23,5 @@ div{
 .box{
   height: 200px;
   width: 200px;
-  color: black;
+  border-color: black;
 }
