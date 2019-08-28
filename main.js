@@ -282,7 +282,7 @@ window.onload = function () {
                                     "            Kit Zellerbach\n" +
                                     "        </p>\n" +
                                     "        <div>\n" +
-                                    "            <a class=\"btn\" href=\"www.github.com/kitzeller\">\n" +
+                                    "            <a class=\"btn\" href=\"https://www.github.com/kitzeller\">\n" +
                                     "                <i class=\"fa fa-2x fa-github\"></i></a>\n" +
                                     "            <a class=\"btn\" href=\"https://www.linkedin.com/in/kitzeller/\">\n" +
                                     "                <i class=\"fa fa-2x fa-linkedin\"></i></a>\n" +
