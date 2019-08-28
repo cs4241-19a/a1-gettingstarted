@@ -59,7 +59,6 @@ li {
 
 .experience { /*experience sub title*/
   text-align:left;
-  width:50%;
   line-height:3p;
   font-size:19px;
 }
@@ -70,10 +69,7 @@ li {
 
 .introDiv{
   margin:0 auto;
-  padding
-  border:1px solid #000;
-  width:400px;
-  
+  width:330px;
   align:center;
 }
 
