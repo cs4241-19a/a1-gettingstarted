@@ -3,7 +3,21 @@ html{
   width: 100%;
 }
 
-h1{
-  color:#305B96;
-  text-align: center;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  padding: 80px;
+  text-align: center; 
+  background:#305B96;;
+  color: white;
+}
+
+.header h1{
+  font-size: 40px;
+}
+
+.navbar {
+  o
 }
