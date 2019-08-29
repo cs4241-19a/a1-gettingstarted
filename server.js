@@ -19,32 +19,6 @@ const server = http.createServer( function( request,response ) {
 
 server.listen( process.env.PORT || port );
 
- 
-const mimeForExt = function(ext){
-  let mime = null;
-  switch( ext ){
-    case 'png': case 'gif':
-      mime = 'image/' + ext;
-      break;
-    case 'jpeg': case 'jpg':
-      mime = 'image/jpeg';
-      break;
-    case 'htm': case 'html':
-      mime = 'text/html';
-      break;
-    case 'css':
-      mime = 'text/css';
-      break;
-    case 'js':
-      mime = 'text/javascript';
-      break;
-    default:
-      mime = 'text/plain';
-      break;
-  }
-  return mime;
-}; 
-
 const sendFile = function(response, filename){
   const type = mime.getType(filename);
   fs.readFile(filename, function(err, content){

@@ -1,4 +1,41 @@
-p {
-    color: red;
-    font-family: Helvetica;
+#title {
+  font-family: Georgia;
+  color: blue;
+  background-color: #929fad;
+  width: 210px;
+  padding-left: 5px;
+}
+
+#prof p {
+  font-family: Georgia;
+  color: green;
+}
+
+#prof li {
+  font-family: Georgia;
+  color: purple;
+  text-align: justify;
+}
+
+#prof ul{
+  columns: 3;
+}
+
+#prof h2 {
+  font-family: Georgia;
+  color: #542621;
+}
+
+#intro p {
+  font-family: Georgia
+  text-align: justify;
+  border: red 2px solid;
+  margin-right: 2em;
+  margin-left: 1em;
+  width: 400px;
+  height: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
