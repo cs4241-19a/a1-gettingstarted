@@ -1,8 +1,133 @@
 ﻿body {
-    background-color: lightblue;
+    background-image: url("bg.jpg");
+    font-family: Arial, Helvetica, sans-serif;
+    background-position: center;
+    background-size:cover;
 }
 
 h1 {
-    color: navy;
-    margin-left: 20px;
+    text-align: center;
+    color: black;
+    margin-top: 70px;
+    font-style: normal;
+    font-weight:bold;
+    font-size: 40px;
+    margin-bottom:-10px;
+}
+
+h4 {
+    text-align: center;
+    color: black;
+}
+
+.profile {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    width: 12%;
+    height: auto;
+    border: 3px solid transparent;
+}
+
+.profile:hover {
+    border: 3px solid #3A3A3A;
+    border-radius: 100px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.columns {
+    column-count: 2;
+    column-gap: 50px;
+    column-rule-style: solid;
+    column-rule-width: 3px;
+    column-rule-color: black;
+    column-fill:balance;
+    column-width: 100px;
+    margin-bottom: 100px;
+}
+
+.education {
+    text-align: right;
+}
+
+.item {
+    break-inside: avoid-column;
+}
+
+/* Lowers the 2nd column's content to align with the top of the 1st's */
+.item:nth-of-type(2){
+    break-after:column;
+    display:block;
+}
+
+.experience {
+    text-align: left;
+}
+
+/* Popup container */
+.popup {
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+    /* Popup (appears on right) */
+    .popup .popuptext {
+        visibility: hidden;
+        width: 180px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 15px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 35%;
+        left: 63%;
+        margin-left: -80px;
+    }
+
+    /* Popup left arrow */
+    .popup .popuptext::after {
+        content: "";
+        position: absolute;
+        top: 45%;
+        left: 0%;
+        margin-left: -10px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: black transparent transparent transparent;
+        transform: rotate(90deg);
+    }
+
+    /* Hide/Show popup */
+    .popup .show {
+        visibility: visible;
+        -webkit-animation: fadeIn 1s;
+        animation: fadeIn 1s
+    }
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }

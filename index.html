@@ -1,70 +1,98 @@
 
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
     <link rel="stylesheet"
           type="text/css"
           href="style.css" />
-  </head>
-  <body>
-      <h1>Information about Joseph Yuen Class of 2020</h1>
-      <p>
-          Welcome to my information page. Here you can find info on my education and experience.
-      </p>
+</head>
 
-      <h2>Education</h2>
-      <h3>
-          School: Worcester Polytechnic Institute
-      </h3>
-      <h3>
-          Major: Computer Science
-      </h3>
-      <h3>
-          Minor: Data Science
-      </h3>
+<body>
+    <h1>Joseph Yuen </h1>
+    <h4>Class of 2020</h4>
 
-      <h3>
-          Computer Science Courses Completed
-      </h3>
-      <ul>
-          <li>CS1101 Introduction to Program Design</li>
-          <li>CS2102 Object Oriented Design Concepts</li>
-          <li>CS2303 Systems Programming Concepts</li>
-          <li>CS2011 Introduction to Machine Organization and Assembly Language</li>
-          <li>CS2022 Discrete Mathematics</li>
-          <li>CS3733 Software Engineering</li>
-          <li>CS3013 Operating Systems</li>
-          <li>CS3043 Social Implications of Information Processing</li>
-          <li>CS3431 Database Systems I</li>
-          <li>CS4518 Mobile and Ubiquitous Computing</li>
-          <li>CS4432 Database Systems II</li>
-      </ul>
+    <div class="popup" onclick="popupMessage()">
+        <img src="profilepic.png" alt="Joseph Yuen" class="center profile"/>
+        <span class="popuptext" id="myPopup">Welcome to my info page!</span>
+    </div>
 
-      <h2>Experience</h2>
-      <h3>Programming Languages</h3>
-      <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Java</li>
-          <li>Python</li>
-          <li>Swift</li>
-          <li>SQL</li>
-          <li>C/C++</li>
-      </ul>
-      <h3>Development Environments</h3>
-      <ul>
-          <li>Android Studios</li>
-          <li>XCode</li>
-          <li>GameMaker 2</li>
-          <li>Unity</li>
-          <li>IntelliJ</li>
-      </ul>
-      <h3>Methods</h3>
-      <ul>
-          <li>Scrum Agile Development</li>
-          <li>Unit Testing</li>
-      </ul>
-  </body>
+    <div class="columns">
+        <div class="education">
+            <h2>Education</h2>
+            <h3>
+                School
+            </h3>
+            <p>
+                Worcester Polytechnic Institute
+            </p>
+            <h3>
+                Major
+            </h3>
+            <p>
+                Computer Science
+            </p>
+
+            <h3>
+                Computer Science Courses Completed
+            </h3>
+            <p>
+                CS1101 Introduction to Program Design<br>
+                CS2102 Object Oriented Design Concepts<br>
+                CS2303 Systems Programming Concepts<br>
+                CS2011 Introduction to Machine Organization and Assembly Language<br>
+                CS2022 Discrete Mathematics<br>
+                CS3733 Software Engineering<br>
+                CS3013 Operating Systems<br>
+                CS3043 Social Implications of Information Processing<br>
+                CS3431 Database Systems I<br>
+                CS4518 Mobile and Ubiquitous Computing<br>
+                CS4432 Database Systems II
+            </p>
+        </div>
+
+        <div class="item"> </div>
+
+        <div class="experience">
+            <h2>Experience</h2>
+            <h3>Programming Languages</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Java</li>
+                <li>Python</li>
+                <li>Swift</li>
+                <li>SQL</li>
+                <li>C/C++</li>
+            </ul>
+            <h3>Development Environments</h3>
+            <ul>
+                <li>Android Studios</li>
+                <li>XCode</li>
+                <li>GameMaker 2</li>
+                <li>Unity</li>
+                <li>IntelliJ</li>
+            </ul>
+            <h3>Methods</h3>
+            <ul>
+                <li>Scrum Agile Development</li>
+                <li>Unit Testing</li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <script> 
+    function popupMessage() {
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
+    }
+    </script>
+
+
+</body>
 </html>
+
