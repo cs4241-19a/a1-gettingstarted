@@ -4,8 +4,12 @@
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
     <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="node_modules/jquery/dist/jquery.js"></script>
   </head>
   <body>
+  <script src="Scripts/NavBar.js"></script>
+  <script src="Scripts/typewriter.js"></script>
+  <script src="node_modules/scrollreveal/dist/scrollreveal.js"></script>
     <a name="home"></a>
     <div class="parallax">
       <div class="name">
@@ -19,19 +23,19 @@
     <nav id="navB" class="navbar">
       <ul class="nav">
         <li class="titleItem">
-          <a class="nav-link js-scroll-trigger" href="#home">Manas Mehta</a>
+          <a class="nav-link" href="#home">Manas Mehta</a>
         </li>
         <li class="titleItem">
-          <a class="nav-link js-scroll-trigger" href="#aboutMe">About Me</a>
+          <a class="nav-link" href="#aboutMe">About Me</a>
         </li>
         <li class="titleItem">
-          <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+          <a class="nav-link" href="#education">Education</a>
         </li>
         <li class="titleItem">
-          <a class="nav-link js-scroll-trigger" href="#courseHistory">Course History</a>
+          <a class="nav-link" href="#courseHistory">Course History</a>
         </li>
         <li class="titleItem">
-          <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+          <a class="nav-link" href="#experience">Experience</a>
         </li>
       </ul>
     </nav>
@@ -52,7 +56,7 @@
               I'm Manas Mehta, and I am interested in Computer Vision, Artificial Intelligence, Software Development and UI Design.
             </p>
             <p>
-              I like travelling, food and photography. My favorite color is Salmon. My favorite food is... you guessed it.. Salmon.
+              I like travelling, food and photography. My favorite color is Salmon.
             </p>
           </div>
         </div>
@@ -81,12 +85,9 @@
             </div>
             <div>
               <p class="major">
-                <a href="" class="typewrite" data-period="2000" data-type='[ "Major: Computer Science", "Minor: Mechanical Engineering"]'>
+                <a class="typewrite" data-period="2000" data-type='[ "Major: Computer Science", "Minor: Mechanical Engineering"]'>
                   <span class="wrap"></span>
                 </a>
-              </p>
-              <p class="minor">
-                Minor : Mechanical Engineering
               </p>
             </div>
           </div>
@@ -103,9 +104,40 @@
             </h2>
           </div>
           <div class="content" >
-            <p>
-              I'm a senior at WPI majoring in Computer Science with a minor in Mechanical Engineering
-            </p>
+            <ul class="courseList" >
+              <li class="courseItem" >
+                <a class="c1"> CS 2102 </a>
+                <a class="c2"> Object-Oriented Design Concepts </a>
+              </li>
+              <li class="courseItem" >
+                <a class="c1"> CS 2303 </a>
+                <a class="c2"> Systems Programming Concepts </a>
+              </li>
+              <li class="courseItem" >
+                <a class="c1"> CS 3043 </a>
+                <a class="c2"> Social Implications of Information Processing </a>
+              </li>
+              <li class="courseItem" >
+                <a class="c1"> CS 2011 </a>
+                <a class="c2"> Introduction to Machine Organization and Assembly Language </a>
+              </li>
+              <li class="courseItem" >
+                <a class="c1"> CS 2223 </a>
+                <a class="c2"> Algorithms </a>
+              </li>
+              <li class="courseItem" >
+                <a class="c1"> CS 3133 </a>
+                <a class="c2"> Foundations of Computer Science </a>
+              </li>
+              <li class="courseItem" >
+                <a class="c1"> CS 3013 </a>
+                <a class="c2"> Operating Systems </a>
+              </li>
+              <li class="courseItem" >
+                <a class="c1"> CS 3733 </a>
+                <a class="c2"> Introduction to Software Engineering </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -127,10 +159,5 @@
         </div>
       </div>
     </div>
-    <script src="Scripts/NavBar.js"></script>
-    <script src="Scripts/scroll.js"></script>
-    <script src="Scripts/typewriter.js"></script>
-    <script src="node_modules/jquery/dist/jquery.js"></script>
-    <script src="node_modules/scrollreveal/dist/scrollreveal.js"></script>
   </body>
 </html>

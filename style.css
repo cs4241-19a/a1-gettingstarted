@@ -3,16 +3,35 @@ html {
 }
 
 .navbar {
-    margin-top: -30px;
+    margin-top: -62px;
     margin-bottom: 0;
     margin-left: -10px;
     margin-right: -10px;
+    height: 62px;
     font-family: 'Source Code Pro', 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
     font-weight: 600;
     text-transform: uppercase;
     padding: 0;
-    border-bottom: 1px;
-    border-bottom-color: black;
+    overflow: hidden;
+    background-color: transparent;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    left: 0;
+    box-shadow: 0 1px 10px #999;
+
+}
+
+.solid {
+    margin-top: -62px;
+    margin-bottom: 0;
+    margin-left: -10px;
+    margin-right: -10px;
+    height: 62px;
+    font-family: 'Source Code Pro', 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0;
     overflow: hidden;
     background-color: #ededed;
     position: -webkit-sticky; /* Safari */
@@ -20,29 +39,38 @@ html {
     top: 0;
     left: 0;
     box-shadow: 0 1px 10px #999;
-
-
 }
 
-.solid {
-    background-color: black;
-}
-
-ul {
+.nav {
     margin: 0;
     list-style-type: none;
     width: 90%;
     margin: auto;
-    border-bottom: 1px black
-
 }
 
-li {
+.titleItem {
     float: left;
-    border-bottom: 1px black
 }
 
-li a {
+.nav-link {
+    display: block;
+    color: white;
+    text-align: center;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+}
+/* Change the link color to #111 (black) on hover */
+.nav-link:hover {
+    background-color: white;
+    color: #111;
+    border-bottom: 3px solid orangered;
+}
+
+.navSc {
     display: block;
     color: #333;
     text-align: center;
@@ -54,11 +82,10 @@ li a {
     border-bottom: 3px solid transparent;
 }
 /* Change the link color to #111 (black) on hover */
-li a:hover {
+.navSc:hover {
     background-color: #111;
     color: white;
     border-bottom: 3px solid orangered;
-
 }
 
 
@@ -113,7 +140,7 @@ h1 {
     /* The image used */
     background-image: url(Images/bg.jpg);
     /* Set a specific height */
-    height: 180px;
+    height: 215px;
     padding-top: 400px;
     padding-bottom: 400px;
     padding-left: 250px;
@@ -121,7 +148,10 @@ h1 {
 
     min-width: 1180px;
 
-    margin: -10px;
+    margin-top: -10px;
+    margin-right: -10px;
+    margin-left: -10px;
+    margin-bottom: -10px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -134,7 +164,7 @@ h1 {
     /* The image used */
     background-color: #ededed;
 
-    margin-top: -20px;
+    margin-top: 0;
     margin-left: -10px;
     margin-right: -10px;
     margin-bottom: -10px;
@@ -146,7 +176,7 @@ h1 {
 
 
     /* Set a specific height */
-    height: 500px;
+    height: 520px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -171,7 +201,7 @@ h1 {
 
 
     /* Set a specific height */
-    height: 500px;
+    height: 420px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -244,13 +274,13 @@ h1 {
 }
 
 .edu {
-     height: 500px;
+     height: 400px;
      background-color: white;
 
  }
 
 .edu:hover {
-    height: 500px;
+    height: 400px;
     background-color: white;
     box-shadow: 0 1px 10px #999;
 
@@ -342,7 +372,7 @@ h2 {
 .wpiPic {
      height: 150px;
      width: 300px;
-     margin-top: 10px;
+     margin-top: 30px;
      margin-left: -25px;
      background-image: url(Images/wpi.png);
      background-position: center;
@@ -353,7 +383,7 @@ h2 {
 .senPic {
     height: 25px;
     width: 125px;
-    margin-top: 30px;
+    margin-top: 50px;
     margin-left: -50px;
     background-image: url(Images/2020.jpg);
     background-position: center;
@@ -365,7 +395,7 @@ h2 {
 .senPic:hover {
     height: 35px;
     width: 175px;
-    margin-top: 30px;
+    margin-top: 50px;
     margin-left: -50px;
     background-image: url(Images/2020.jpg);
     background-position: center;
@@ -388,36 +418,27 @@ p {
     color: black;
     font-family: 'Source Code Pro', 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
     letter-spacing: 1px;
-    font-weight: 100;
+    font-weight: 300;
     border: 0;
 
 }
 
 .senP {
-    margin-top: 50px;
+    margin-top: 75px;
     margin-left: 125px;
     margin-right: -125px;
 }
 
 
 .major {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orangered; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
+    color:#111;
+    margin-top: 30px;
+    text-decoration: none;
+    border-right: .15em solid orangered;
     animation:
-            typing 2.5s steps(40, end),
             blink-caret 0.75s step-end infinite;
 }
 
-/* The typing effect */
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-}
-
-/* The typewriter cursor effect */
 @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: orangered; }
