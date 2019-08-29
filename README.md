@@ -1,5 +1,5 @@
 Georgina Cromwell
-http://a1-charlieroberts.glitch.me
+http://a1-gccromwell.glitch.me/
 
 This project represents a website containing information about my computer science-related experience both inside and outside the classroom. It was made using HTML and CSS, as well as with small additions made in JavaScript to the server.js file.
 
