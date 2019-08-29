@@ -1,3 +1,8 @@
+h1, h2, .bio{
+  text-align: center;
+  padding: 0 1%;
+}
+
 .wrapper{
   display: grid;
   grid-template-colums: 50% 50%;
@@ -7,6 +12,10 @@
 .wrapper > div{
   background:	#66A5AD;
   color: #003B46;
+}
+
+.wrapper > div:not(.title){
+  padding-bottom: 5%
 }
 
 button{
@@ -26,12 +35,9 @@ body{
   margin: 5% 15%;
   padding: 10px;
 }
-h1, h2{
-  text-align: center;
-  padding: 0 1%;
-}
+
 h3{
-  
+  padding: 0 5%;
 }
 p{
   padding: 0 5%;
@@ -41,4 +47,7 @@ img{
   display: block;
   margin: 3% auto;
   width: 50%;
+}
+ul{
+  padding: 0 15%;
 }
