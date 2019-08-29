@@ -15,3 +15,28 @@
     display: block;
     word-wrap: break-word;
 }
+.toolbar{
+    margin: 0px -30px;
+    display: flex;
+}
+.toolbar-section {
+    padding: 0px 25px;
+    display: inherit;
+    border-right: 1px solid #1f1d1d;
+}
+.toolbar-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: inherit;
+    border: none;
+    padding: 10px;
+    width: 75px;
+    color: white;
+    font-size: 11px;
+}
+.toolbar-button:hover{
+    background-color: #663399;
+    filter: grayscale(75%);
+    border: none;
+}
