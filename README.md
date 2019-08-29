@@ -1,7 +1,7 @@
 Jarod Thompson
 http://a1-jsthompson16.glitch.me
 
-This project shows ...
+This project shows simple information about me.
 
 ## Technical Achievements
 - **Implemented a CSS stylesheet**: I have never worked with node.js or CSS before so it 
