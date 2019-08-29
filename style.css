@@ -111,7 +111,7 @@ h4 {
         animation: fadeIn 1s
     }
 
-/* Add animation (fade in the popup) */
+/* Fade animation popup */
 @-webkit-keyframes fadeIn {
     from {
         opacity: 0;
