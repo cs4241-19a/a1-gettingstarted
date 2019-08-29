@@ -29,12 +29,12 @@ const server = http.createServer( function( request,response ) {
     case '/cards.css':
       sendFile(response,'cards.css');
       break;
-      case '/experineceDropdown.css':
-          sendFile(response, 'experineceDropdown.css');
-          break;
-      case '/textStyles.css':
-          sendFile(response, 'textStyles.css');
-          break;
+    case '/experineceDropdown.css':
+      sendFile(response, 'experineceDropdown.css');
+      break;
+    case '/textStyles.css':
+      sendFile(response, 'textStyles.css');
+      break;
     default:
       response.end( '404 Error: File Not Found');
       break;

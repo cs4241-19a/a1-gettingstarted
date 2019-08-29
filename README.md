@@ -16,7 +16,7 @@ The site is divided into
 
 To make this site, I used mostly HTML and CSS. Below is a more concrete list of the technical and design choices I made. 
 
-## Technical Achievements
+## Technical Achievements 
 - **Overlay of sections**: Used CSS to place the divs strategically throughout the site to create the illusion of two layers in the site
 - **Navigation pane**: Used <nav> and <a> tags to create a navigation pane for the site that links to various parts
 - **Hover to change text effect**: Used CSS and JS to trigger the text on the course tiles to move up to reveal the name of the class. Also added another box inside the tile on hover. Can see on cards.css
