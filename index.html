@@ -3,26 +3,126 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
   </head>
+  
   <body>
-    <h1>Information about [Your name here]</h1>
+  <!-- Full name is Catherine (for grading purposes), but I prefer Cat -->
+    <h1>Cat Sherman, a Computer Science Overview</h1>
+    <h3>
+      Hi! I'm Cat, and I'm graduating in 2020!
+    </h3>
+    
+    <img src="https://cdn.glitch.com/1cd144de-a81b-4dea-9277-b6f603a22478%2Fthumbnails%2FIMG_0809.jpg?1567044216123">
+    
     <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
+      Major 1: Biology & Biotechnology
+      <br>
+      Major 2: Bioinformatics & Computational Biology
+      <br>
+      Minor: Computer Science
     </p>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+<!-- Section 1, CS class experience, including languages added below in different drop-down tabs (buttons), drop downs found at w3 schools-->
+    <h4>Computer Science Background</h4>
+      <button class="collapsible">+ WPI CS Classes</button>
+      <div class="content">
+      <p>
+        <ul>
+          <li>CS 1004: Programing for Non-Majors</li>
+          <li>CS 2102: Object Oriented Design</li>
+        <li>CS 2223: Algorithms</li>
+      </ul>
+      </p>
+      </div>  
+    
+      <button class="collapsible">+ WPI Course Languages</button>
+      <div class="content">
+      <p>
+        <ul>
+         <li>Python: CS 1004</li>
+         <li>Java: CS 2102 and CS 2223</li>
+         <li>Unit Testing: Completed through homework assignments</li>
+        </ul>
+        </p>
+      </div>
+    
+      <button class="collapsible">+ Self-Taught Languages</button>
+      <div class="content">
+      <p>
+        <ul>
+         <li>R: Used in Summer '19 data analysis</li>
+         <li>Matlab: Used in Summer '19 data analysis</li>
+         <li>HTML: Needed to design a website to show my team's lab work</li>
+         <li>CSS: Needed to design a website to show my team's lab work</li>
+         <li>JavaScript: Developed 2 tools for Monsanto's Employee's website</li>
+         <li>Ruby: Heard of it, but no experience with it (same goes for Pearl)</li>
+        </ul>
+        </p>
+      </div>
+
+<!-- Section 2, CS work experience, with general description of what was done, info in drop-down tabs (buttons), drop downs found at w3 schools--->
+    <h4>Computer Science Work Experience</h4>
+      <button class="collapsible">+ MQP Prep 2019</button>
+      <div class="content">
+      <p>
+        I worked mostly in the lab imaging moss with a silenced gene, but I also taught myself R and Matlab to complete some data and image analysis.
+        </p>
+      </div>
+
+      <button class="collapsible">+ Monsanto 2018</button>
+      <div class="content">
+      <p>
+        I worked mostly in the lab helping with a phage problem, but other than lab work, I was responsible for biulding two features for their employee website.
+      <br> 
+        Feature 1 was a search bar for their website (so they could easily find product codes). 
+      <br> 
+        Feature 2 was a 'recent links' section on each employee's home login page. 
+        </p>
+      </div>
+      
+      <button class="collapsible">+ iGEM 2017</button>
+      <div class="content">
+      <p>
+        iGEM stands for international genetically engineered machine. It's an international biology competition for teams of college students.
+        We did some cool biology things, but I also helped put a website together with my team.
+      </p>
+        <a href="http://2017.igem.org/Team:WPI_Worcester">Check it out!</a>
+        </div>
+        
+<!-- Section 3, Info not included in the hw questions -->
+        <h4>Fun Facts</h4>
+        <p>
+          Providence Marathon Finisher
+          <br>
+          V4 Climber
+          <br>
+          Hiker
+          <br>
+          Avid home chef
+          <br>
+          Taylor Swift Fan
+        </p>
+        <img src="https://cdn.glitch.com/1cd144de-a81b-4dea-9277-b6f603a22478%2Fthumbnails%2FBT%202.JPG?1567044238446">
+
+
+<!-- This is the script from w3schools to make the drop-downs clickable-->
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
   </body>
 </html>

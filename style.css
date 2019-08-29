@@ -1,0 +1,49 @@
+body {
+  font-family: 'IBM Plex Mono', monospace;
+  background: #FFD8E7;
+}
+
+h1 {
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 15px;
+}
+
+p {
+  padding: 1px 0;
+  font-size: 15px;
+  line-height: 1.5;
+  color: black; 
+}
+
+/* All of the drop downs have the same formating, adapted from w3 schools (but things like color and font information was modified) */
+.collapsible {
+  background-color: #C2E1FF;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+/* Color change when tag is being hovered over, adapted from w3 schools (but things like color and font information was modified) */
+.active, .collapsible:hover {
+  background-color: #BCFFDB;
+  color: black;
+}
+
+/* Color and info for the inside of the drop-down, adapted from w3 schools (but things like color and font information was modified) */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #E3CDFD;
+  color: black;
+  font-family: 'IBM Plex Mono', monospace;
+}
