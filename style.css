@@ -1,0 +1,104 @@
+html{
+  height: 100%;
+  width: 100%;
+  background: black;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  padding: 80px;
+  text-align: center; 
+  background:#305B96;
+  color: white;
+}
+
+.header h1{
+  font-size: 40px;
+  color: #9CBDF9;
+}
+
+.info{
+  background: #4E627D;
+  color: white;
+  text-align: center;
+}
+
+.info h2{
+  color: #9CBDF9;
+}
+
+.skills{
+  text-align: left;
+  width: 500px;
+  margin: 60px auto; 
+  color: white;
+  list-style: none;
+}
+
+.skills h3{ /*trying to make it look like h2*/
+  font-size: 25px;
+  text-align: center;
+  color: #9CBDF9;
+}
+
+.skills li{
+  margin: 20px 0;
+}
+
+.bar{
+  background: #4E577D;
+  display: block;
+  height: 4px;
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 0 5px #9CBDF9;
+}
+
+.bar span{
+  height: 4px;
+  float: left;
+  background: #9CBDF9;
+}
+
+.html{
+  width: 70%;
+}
+
+.css{
+  width: 63%;
+}
+
+.java{
+  width: 85%;
+}
+
+.js{
+  width: 30%;
+}
+
+.ruby{
+  width: 0%; /*never tried to program in ruby*/
+}
+
+.python{
+  width: 20%;
+}
+
+.utest{
+  width: 75%; 
+}
+
+.footer {
+  padding: 11px; 
+  text-align:center;
+  background: #305B96;
+  color: white;
+}
+
+.footer p{
+  font-size: 11px;
+}
