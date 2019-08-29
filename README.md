@@ -1,45 +1,7 @@
 Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
-===
+Corrin M Courville ~cmcourville
 
-*DUE: Thursday, August 29th by 11:59 AM (before the start of class!)*  
 
-This assignment is a "warm-up" exercise. 
-You will simply deploy the starting Web site that you will use this term to [Glitch](http://www.glitch.com/). 
-
-Treat this assignment as a chance to get up to speed on Git, GitHub, and Glitch. 
-If you already know these, great. 
-However, if you're new to them, spend several hours practicing, experimenting, and reading documentation. 
-In other words, don't just get your website up and done. You will need skills with these tools throughout the rest of the course.
-
-Assignment details
----
-
-Do the following to complete this assignment:
-
-1. Fork the starting project code in GitHub. This repo contains:
-    * the server code, `server.js`
-    * A starting `index.html` file that you will edit as described below
-    * A package.json file that helps configure Glitch
-    * This README
-2. Edit `index.html` to show the following information about you:
-    * your name and class at WPI (e.g. class of 2020) Note: Do not put any contact or personal information that you do not potentially want other people outside of this class to see.
-    * your major(s) and minor(s)
-    * previous computer science courses that you have taken at WPI
-    * your experience with the following technologies and methods (none, some, a lot)
-        * HTML
-        * CSS
-        * Java
-        * JavaScript
-        * Ruby
-        * Python
-        * unit testing
-3. Test your project to make sure that when someone goes to your main page, it displays correctly. You can do this locally by simply running `node server.js` from within the assignment directory.
-
-4. Modify the README file according to the specification below.
-5. Commit and push all your changes to GitHub. 
-6. Deploy your project to Glitch. You can do this by [importing the repo from GitHub](https://medium.com/glitch/import-code-from-anywhere-83fb60ea4875)
-7. Ensure that your project has the proper naming scheme (guide follows) so we can find it.
-8. Create and submit a Pull Request to the original repo.
 
 Naming and URL Scheme
 ---
