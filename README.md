@@ -1,8 +1,5 @@
 Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 ===
-
-*DUE: Thursday, August 29th by 11:59 AM (before the start of class!)*  
-
 Ching Wing (Winny) Cheng
 http://a1-winnycheng.glitch.me/
 
