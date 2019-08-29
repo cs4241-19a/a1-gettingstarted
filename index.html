@@ -1,48 +1,138 @@
 <!doctype html>
 <html lang="en">
+  <style>
+.lotButton {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.someButton {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.noneButton {
+  background-color: #f44336;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+    .classButton{
+  background-color: #555555;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+    }    
+        .hideButton{
+  background-color: #DEB887;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+    }  
+.lotButton {border-radius: 16px;}
+.someButton {border-radius: 16px;}
+.noneButton {border-radius: 16px;}
+    .hideButton {border-radius: 12px;}
+    
+p {
+ text-align:center
+}
+    
+h1 {
+ text-align:center
+}
+ul {
+ text-align:center
+}
+</style>
   <head>
-    <title>CS4241 Assignment 1</title>
+    <title>Cooper Bennet - CS4241 A1</title>
     <meta charset="utf-8">
   </head>
-  <body>
-    <h1>Cooper Bennet</h1>
+  <body bgcolor = "#00FFFF">
     <p>
-      [Self introduction]
-    </p>
-    <p>
+<img src="https://cdn.glitch.com/35fe31e1-9c78-4cd6-b324-cb494761ae59%2Fthumbnails%2FIMG_1184.jpg?1567082545156" alt="Cooper Bennet">
+     </p>
+        <h1><a href = "https://www.linkedin.com/in/cooperbennet/"> Cooper Bennet</a></h1>
+    <p style="font-size:20px" >
       Computer Science and Robotics Engineering Double Major, Class of 2021
     </p>
-    <p>
-      Relevant Classes Taken
-        <ul>
-          <li>CS 1101 - Introduction to Program Design</li>
-          <li>CS 2102 - Object Oriented Design Concepts</li>
-          <li>CS 2223 - Algorithms</li>
-          <li>CS 2303 - Systems Programming Concepts</li>
-          <li>CS 3733 - Software Engineering</li>
-        </ul>
-      </ul>
+    <p style="font-size:20px" >
+      Computer Science Classes Taken
+      <button class="hideButton" onclick="showClasses()">Hide/Show</button>
+      <div id = "classes">
+          <button class="classButton">CS 1101 - Introduction to Program Design</button>
+          <button class="classButton">CS 2102 - Object Oriented Design Concepts</button>
+          <button class="classButton">CS 2223 - Algorithms</button>
+          <button class="classButton">CS 2303 - Systems Programming Concepts</button>
+          <button class="classButton">CS 3733 - Software Engineering</button>
+    </div>
     </p>
-    <p>
-Programming Languages
-<ul>
-    <li>Java - A Lot</li>
-    <li>HTML - A Lot</li>
-    <li>CSS - Some</li>
-    <li>JavaScript - Some</li>
-    <li>Ruby - None</li>
-    <li>Python - Some</li>
-    <li>Unit Testing - Some</li>
-</ul>
+    <p style="font-size:20px" >
+      Experience with Programming Languages
+<button class="hideButton" onclick="showLangs()">Hide/Show</button>
+    <div  id = "langs">
+    <button class="lotButton">Java - A Lot</button>
+    <button class="lotButton">HTML - A Lot</button>
+    <button class="someButton">CSS - Some</button>
+    <button class="someButton">JavaScript - Some</button>
+    <button class="someButton">Python - Some</button>
+    <button class="someButton">Unit Testing - Some</button>
+    <button class="noneButton">Ruby - None</button>
+  </div>
     </p>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+<script>
+function showClasses() {
+  var x = document.getElementById("classes");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+  
+function showLangs() {
+  var x = document.getElementById("langs");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
   </body>
 </html>
