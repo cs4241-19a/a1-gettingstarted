@@ -9,10 +9,10 @@ This project shows a little about me!! This is the very first time I have used H
 ## Technical Achievements
 - **CSS Server Case**: Modified the original server provided to include a case to load my CSS stylesheet
 - **LinkedIn Hyperlink**: inserted a hyperlink which navigates to my LinkedIn on my main header
-- **Implemented Two Different Data Display Options**: one being lists through "<li>" and the other being a table using "<table>" 
+- **Implemented Two Different Data Display Options**: one being lists and the other being a table
 
 ### Design Achievements
 - **Complete Re-Vamp**: Scraped the original format given and took it upon myself to completely change it to my liking
-- **
-
+- **New Font**: imported a font called 'Montserrat' through Google Fonts, 
+- **Hover Capability**: implemented hover capabilites to make the website more interactive and less 'cluttered'
 
