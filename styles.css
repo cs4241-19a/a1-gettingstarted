@@ -61,9 +61,11 @@ body {
 
 @keyframes text-slide {
   0% {
-    left: 100vw
+    display: none;
+    left: -100px;
   }
   100% {
-    left: 200px
+    display: block;
+    left: 200px;
   }
 }

@@ -12,9 +12,7 @@ $(document).ready(function() {
         $('html,body').animate({
           scrollTop: $(".title.home").offset().top},
           'slow');
-        this.animate({
-          scrollTop: $(".title.home").offset().top},
-          'slow');
+        this.playKeyframe();
         break;
       case "option about" :
         $('html,body').animate({
