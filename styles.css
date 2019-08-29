@@ -1,0 +1,172 @@
+* {
+  font-family: sans-serif;
+}
+
+.container {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.container span {
+  display: block;
+  transform: translate(0%, -300px);
+}
+
+.name-text {
+  color: white;
+  letter-spacing: 8px;
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  position: relative;
+  animation: text 2s 1;
+}
+
+.intro {
+  display: inline;
+}
+
+.intro-text {
+  display:inline-block;
+  width: 40%;
+  margin-left: 15px;
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+body {
+  /* Gradient was made at https://cssgradient.io */
+  background: rgb(57,63,77);
+  background: radial-gradient(circle, rgba(57,63,77,1) 0%, rgba(29,30,34,1) 97%);
+}
+
+h1 {
+  text-align: center;
+  font-family: Gill Sans Extrabold, sans-serif;
+  font-size: 75px;
+  font-weight: 500;
+  color: #feda6a;
+  letter-spacing: 1px;
+}
+
+li {
+  display: inline-block;
+  align-content: center;
+}
+
+li a {
+  text-decoration: none;
+  display: inline-block;
+  font-weight: lighter;
+  color: #fff;
+  font-size: 12px;
+}
+
+.cool-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width .3s;
+}
+
+.cool-link:hover::after{
+  width: 100%;
+  transition: width .3s;
+}
+
+.image:nth-child(1){
+  position: relative; 
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  border: 3px solid #DCAE1D;
+}
+
+.image:nth-child(2){
+  vertical-align: middle;
+  width: 50%;
+  display: inline-block;
+  margin-left: 15px;
+  border: 3px solid #DCAE1D;
+}
+
+.image:nth-child(3){
+  position: relative;
+  display: inline-block;
+}
+
+.course{
+  list-style: circle;
+  display: list-item;
+  -right: 25%;
+}
+
+.block2 {
+  display: inline-block;
+  margin-top: 250px;
+}
+
+ul{
+  list-style: circle;
+  text-decoration: none;
+  color: #fff;
+  font-weight: lighter;
+  font-size: 20px;
+}
+
+
+p {
+  color: white;
+}
+
+@keyframes text {
+  0% {
+    margin-bottom: 100px;
+    letter-spacing: 13px;
+
+  }
+  80% {
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+  }
+}
+  
+table {
+  border-collapse: collapse;
+  border: 2px solid #DCAE1D;
+  letter-spacing: 1px;
+  font-size: 12px;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 200px;
+}
+
+td, th {
+  border: 1px solid rgb(190,190,190);
+  padding: 10px 20px;
+}
+
+th {
+  background-color: rgb(235,235,235);
+}
+
+td {
+  text-align: center;
+}
+
+tr:nth-child(even) td {
+  background-color: rgb(250,250,250);
+}
+
+tr:nth-child(odd) td {
+  background-color: rgb(245,245,245);
+}
+
+caption {
+  padding: 10px;
+}
