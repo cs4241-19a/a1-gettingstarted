@@ -1,4 +1,15 @@
 .wrapper{
   display: grid;
-  grid-template-colums: 70% 30%
+  grid-template-colums: 50% 50%;
+}
+
+.wrapper > div{
+  background:#eee;
+}
+.wrapper > div:nth-child(odd){
+  background:#ddd;
+}
+
+canvas{ 
+  border: 2px solid black; 
 }
