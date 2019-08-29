@@ -1,24 +1,44 @@
 var i = 0;
 var j = 0;
-var txt1 = `Hello.`;
-var txt2 = `I'm Jean Claude.`;
 var speed = 80;
 
-function typeWriter() {
-    if (i < txt1.length) {
-        document.getElementById("typewriter-1").innerHTML += txt1.charAt(i);
+var messages = [
+    ["Hello.", `I'm Jyan.`],
+    ["Hola.", "Yo soy Jean Claude."],
+    ["Saluton.", "Mi nomiĝas Johano."],
+    ["Xin chào.", "Tôi tên là Rohn."]
+]
+
+var phase = 0;
+
+function writeName() {
+    if (i < messages[phase][0].length) {
+        document.getElementById("write-name-1").innerHTML += messages[phase][0].charAt(i);
         i++;
-        setTimeout(typeWriter, speed);
-    } else if (j < txt2.length) {
-        document.getElementById("typewriter-2").innerHTML += txt2.charAt(j);
+        setTimeout(writeName, speed);
+    } else if (j < messages[phase][1].length) {
+        document.getElementById("write-name-2").innerHTML += messages[phase][1].charAt(j);
         j++;
-        setTimeout(typeWriter, speed);
+        setTimeout(writeName, speed);
+    } else {
+        i = 0;
+        j = 0;
+        if (phase === 3) {
+            phase = 0
+        } else {
+            phase++;
+        }
+        setTimeout(function() {
+            document.getElementById("write-name-1").innerHTML = ""
+            document.getElementById("write-name-2").innerHTML = ""
+            setTimeout(writeName, speed);
+        }, 3000);
     }
 }
 
 
 window.onload = function() {
-    typeWriter();
+    writeName();
     document.getElementById("body").classList.add("background");
     setTimeout(function() {
         document.getElementById("keep-scrolling").style.opacity = "100";

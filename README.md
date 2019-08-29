@@ -68,10 +68,11 @@ http://a1-charlieroberts.glitch.me
 This project shows ...
 
 ## Technical Achievements
-- **Proved P=NP**: Using a combination of...
-- **Solved AI**: ...
+- **Name display**: I use multiple names, so it was important to display them as they reflect who I am and my interests.
+- **No third party libraries**: I found it import
 
 ### Design Achievements
-- **Re-vamped Apple's Design Philosophy**: Shown in `style.css`, the code...
+- **Minimal dependencies**: The site was designed to be simple yet aesthetically pleasing. It still feels interactive due to the transitions and name display.
+- **Mobile friendly**: The site was designed to look good whether on a phone or desktop.
 
 
