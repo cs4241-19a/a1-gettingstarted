@@ -15,7 +15,7 @@ This project shows basic information about myself.
 - **CSS Animation**: I used the CSS animation from codepen.io/vajkri/pen/NxzZwL for the chart, and modified it so that it would show me what I want. I also used the CSS animation from speckyboy.com/css-background-effects/ for the animated gradient background.
 - **Chart animation**: Once you load the page and immediately go to the chart, you will see the animation.
 - **Go to top button**: The button on the bottom right corner that only appears when you're not at the top of the page, takes you (scroll automatically) to the top of the page upon click.
-- **Auto scroll on click**: Clicking on any of the three buttons will take you (autoscroll) to that particular section of the page.
+- **Auto scroll on click**: Clicking on any of the three buttons will take you (auto-scroll) to that particular section of the page.
 
 ### Sources
 - https://www.speckyboy.com/css-background-effects/
