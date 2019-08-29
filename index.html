@@ -3,30 +3,124 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <style>
+      body {font-family: Arial;}
+        /*Style the tab */
+        .tab {
+          overflow: hidden;
+          border: 1px solid #000;
+          background-color: #90AEFF
+          
+        }
+
+        /* Style the buttons inside the tab */
+        .tab button {
+          background-color: inherit;
+          float: left;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          padding: 14px 16px;
+          transition: 0.3s;
+          font-size: 18px;
+        }
+
+        /*Background color of buttons on hover */
+        .tab button:hover {
+          background-color: #6C94FF;;
+        }
+
+        /* Create an active/current tablink class */
+        .tab button.active {
+          background-color: #6C94FF;;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+          display: none;
+          padding: 6px 12px;
+          border: 1px solid #000;
+          border-top: none;
+          background-color: #3164F4
+        }
+      
+      a:link {
+        color: white; 
+        background-color: transparent; 
+        text-decoration: bold;
+      }
+      
+    </style>
   </head>
-  <body>
+  
+  <body text = 'white'>
     <h1>Information about  
       Rosana Pochat</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      Major: Electrical and Computer Engineering
-      Graduation Year: 2021
-      (hoping for a minor in CS)
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <div class="tab">
+      <button class = "tablinks" onclick = "openInfo(event, 'About')"> About me </button>
+      <button class = "tablinks" onclick = "openInfo(event, 'School')"> School </button>
+      <button class = "tablinks" onclick = "openInfo(event, 'Experience')"> Experience </button>
+    </div>
 
-    <h2>Experience</h2>
+    <div id="About" class="tabcontent">
+      <h3>About me</h3>
+      <p>
+      Hi, I'm a Human named Rosana Alexandra Pochat Garcia. <a href="https://www.glsen.org/sites/default/files/GLSEN%20Pronouns%20Resource.pdf">I use they/them pronouns</a>
+      </p>
+      <p>
+        I was born in Venezuela.
+      </p>
+    </div>
+
+    <div id = "School" class = "tabcontent">
+      <h3>School</h3>
+      <p>I'm currently a 3rd Year Student, Studying Electrical and Computer Engineering.</p>
+      <p>I will graduate in May 2021.</p>
+      <p>I'm currently taking CS 4241.</p>
+    </div>
+    <div id="Experience" class="tabcontent">
+      <h3>Experience</h3>
+      <p>CS Classes Taken: </p>
+      <ul> 
+        <li>CS 1004</li>
+        <li>CS 2301</li>
+        <li>CS 2119</li>
+      </ul>
+      <p>Programming Languages that I'm familiar with:</p>
+      <ul> 
+        <li>HTML5</li>
+        <li>C</li>
+        <li>Python</li>
+        <li>Java</li>
+        <li>basic Java Script</li>
+        <li>some Ruby</li>
+      </ul>
+    </div>
+   
+    <script>
+    document.body.style.backgroundImage = "url('https://cdn.glitch.com/0d27a232-8325-4d21-be6e-aef51b1bbd78%2Fbg-1-full.jpg?v=1567044132650')";
+    </script>
+    
+    <script>
+    function openInfo(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }  
+    </script>
     <p>
-      CS Classes Taken: CS 1004, CS 2301, CS 2119
-      Experiences: HTML5, Java, some JS, some Ruby, Python, C.      
+      Click on the different tabs to know about the different informations about me!
     </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+    <p>
+      Thank you for stopping by!
+    </p>
   </body>
 </html>
