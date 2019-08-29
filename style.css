@@ -1,0 +1,39 @@
+body {
+  background-image: 
+    linear-gradient(to bottom, black, #54EB6A 80%);
+  text-align: center;
+  color: white;
+  font-family: 'Varela Round', sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+a {
+  position: center;
+}
+
+ul {
+  padding-left: 0;
+  text-align: relative;
+}
+
+li {
+  padding-left: 0;
+  text-align: relative;
+}
+
+div {
+  text-align: center;
+  align: center;
+    display: inline-block;
+}
