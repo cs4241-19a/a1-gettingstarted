@@ -19,4 +19,11 @@ function typeWriter() {
 
 window.onload = function() {
     typeWriter();
+    document.getElementById("body").classList.add("background");
+    setTimeout(function() {
+        document.getElementById("keep-scrolling").style.opacity = "100";
+    }, 2000)
+    setTimeout(function() {
+        document.getElementById("keep-scrolling").style.opacity = "0";
+    }, 4500)
 }

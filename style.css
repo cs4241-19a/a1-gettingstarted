@@ -15,11 +15,40 @@ html, body {
 
 body {
     color: #444;
-    background: #EEEEEE;
+}
+
+.background {
+    background-color: #EEEEEE;
+    -webkit-transition: background-color 2s linear;
+}
+
+#keep-scrolling-container {
+    height: 5%;
+}
+
+#keep-scrolling {
+    opacity: 0;
+    transition: opacity 2s linear;
 }
 
 .full-height {
     height: 100%;
+}
+
+.full-height-90 {
+    height: 90%;
+}
+
+.full-height-80 {
+    height: 80%;
+}
+
+.full-height-50 {
+    height: 50%;
+}
+
+.full-height-40 {
+    height: 40%;
 }
 
 .text-example {
@@ -36,4 +65,12 @@ body {
 
 h1 {
     font-size: 4em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 2em;
 }
