@@ -42,7 +42,6 @@ html {
 }
 
 .nav {
-    margin: 0;
     list-style-type: none;
     width: 90%;
     margin: auto;
@@ -133,7 +132,6 @@ h1 {
     padding-top: 40px;
     padding-bottom: 20px;
     background-color: #ededed;
-    min-width: 1190px;
 }
 
 .parallax {
@@ -145,8 +143,6 @@ h1 {
     padding-bottom: 400px;
     padding-left: 250px;
     padding-right: 250px;
-
-    min-width: 1180px;
 
     margin-top: -10px;
     margin-right: -10px;
@@ -226,7 +222,7 @@ h1 {
 
 
     /* Set a specific height */
-    height: 500px;
+    height: 620px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -287,13 +283,13 @@ h1 {
 }
 
 .course {
-    height: 500px;
+    height: 600px;
     background-color: #ededed;
 
 }
 
 .course:hover {
-    height: 500px;
+    height: 600px;
     background-color: #ededed;
     box-shadow: 0 1px 10px #999;
 
@@ -447,3 +443,97 @@ p {
 .major {
     display: inline-flex;
 }
+
+
+.courseList {
+    list-style-type: none;
+    text-align: left;
+}
+
+.courseItem {
+    float: bottom;
+    margin-top: 20px;
+}
+
+.c1 {
+    color: #111;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-family: 'Source Code Pro', 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    letter-spacing: 1px;
+    font-weight: 500;
+    border: 0;
+}
+
+.c2 {
+    color: #111;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-family: 'Source Code Pro', 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    letter-spacing: 1px;
+    font-weight: 300;
+    border: 0;
+}
+
+.expTab {
+    border-collapse: collapse;
+    width: 80%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.expRowHead {
+    color: #111;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-family: 'Source Code Pro', 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.expEle {
+    color: #111;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter";
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.expA {
+    margin: 10px;
+    padding: 10px;
+    background-color: orangered;
+    color: white;
+    border-radius: 5px;
+}
+
+.expA:hover {
+    margin: 10px;
+    padding: 10px;
+    background-color: orangered;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px #999;
+}
+
+th, td {
+    text-align: center;
+    padding: 20px;
+    width: 100px;
+}
+
+td:nth-child(even){
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+th:nth-child(even){
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.content1 {
+    margin-left: -100px;
+}
+

@@ -28,17 +28,11 @@ const server = http.createServer( function( request,response ) {
     case '/Scripts/NavBar.js':
       sendFile( response, 'Scripts/NavBar.js' )
       break
-    case '/Scripts/scroll.js':
-      sendFile( response, 'Scripts/scroll.js' )
-      break
     case '/Scripts/typewriter.js':
       sendFile( response, 'Scripts/typewriter.js' )
       break
-    case '/node_modules/jquery/dist/jquery.js':
-      sendFile( response, 'node_modules/jquery/dist/jquery.js' )
-      break
-    case '/node_modules/scrollreveal/dist/scrollreveal.js':
-      sendFile( response, 'node_modules/scrollreveal/dist/scrollreveal.js' )
+    case '/Scripts/jquery.js':
+      sendFile( response, 'Scripts/jquery.js' )
       break
     default:
       response.end( '404 Error: File Not Found' )
