@@ -1,0 +1,15 @@
+body {
+background: #3BB0CE;
+background: linear-gradient(top, #3BB0CE 0%, #2A92A4 32%, #4A6FC5 100%);
+background: linear-gradient(to bottom, #3BB0CE 0%, #2A92A4 32%, #4A6FC5 100%);
+font-family: "Comic Sans MS", cursive, sans-serif;
+font-size: 16px;
+letter-spacing: 2px;
+word-spacing: 2px;
+color: #00116C;
+font-weight: normal;
+text-align: center;
+text-decoration: none solid rgb(68, 68, 68);
+margin:50px;
+padding: 0px;
+}

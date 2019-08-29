@@ -4,6 +4,9 @@ const http = require('http'),
 
 const server = http.createServer( function( request,response ) {
   switch( request.url ) {
+    case '/stylesheet.css':
+      sendFile( response, 'stylesheet.css')
+      break;
     case '/':
       sendFile( response, 'index.html' )
       break
