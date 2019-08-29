@@ -148,10 +148,8 @@
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
       <div class="w-100">
         <div data-aos="fade-left">
-        <h2 class="mb-5">Technical Skills</h2>
+        <h2 class="mb-5" id="stuck">Technical Skills</h2>
         </div>
-        <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-
         <div id="barChart">
           <div class="techSkills">
           <ul class="lines">
@@ -186,57 +184,57 @@
             <div class="chart chart--dev">
               <span class="chart__title">Development</span>
               <ul class="chart--horiz">
-                <li class="chart__bar" style="width: 98%;">
+                <li class="chart__bar" style="width: 95%;">
           <span class="chart__label">
             HTML
           </span>
                 </li>
-                <li class="chart__bar" style="width: 98%;">
+                <li class="chart__bar" style="width: 95%;">
           <span class="chart__label">
             CSS
           </span>
                 </li>
-                <li class="chart__bar" style="width: 70%;">
+                <li class="chart__bar" style="width: 60%;">
           <span class="chart__label">
             JavaScript
           </span>
                 </li>
-                <li class="chart__bar" style="width: 40%;">
+                <li class="chart__bar" style="width: 70%;">
           <span class="chart__label">
             D3
           </span>
                 </li>
-                <li class="chart__bar" style="width: 40%;">
+                <li class="chart__bar" style="width: 80%;">
           <span class="chart__label">
             Python
           </span>
                 </li>
-                <li class="chart__bar" style="width: 60%;">
+                <li class="chart__bar" style="width: 90%;">
           <span class="chart__label">
             Oracle
           </span>
                 </li>
-                <li class="chart__bar" style="width: 55%;">
+                <li class="chart__bar" style="width: 20%;">
           <span class="chart__label">
             C/C++
           </span>
                 </li>
-                <li class="chart__bar" style="width: 50%;">
+                <li class="chart__bar" style="width: 5%;">
           <span class="chart__label">
             Java
           </span>
                 </li>
-                <li class="chart__bar" style="width: 40%;">
+                <li class="chart__bar" style="width: 5%;">
           <span class="chart__label">
             Ruby
           </span>
                 </li>
-                <li class="chart__bar" style="width: 60%;">
-          <span class="chart__label" id="bottomWaypoint">
+                <li class="chart__bar" style="width: 5%;">
+          <span class="chart__label">
             Unit Testing
           </span>
                 </li>
-                <li class="chart__bar" style="width: 60%;">
+                <li class="chart__bar" style="width: 75%;">
           <span class="chart__label">
             R
           </span>
@@ -247,12 +245,12 @@
             <div class="chart chart--prod">
               <span class="chart__title">Productivity</span>
               <ul class="chart--horiz">
-                <li class="chart__bar" style="width: 75%;">
+                <li class="chart__bar" style="width: 100%;">
         <span class="chart__label">
-          Git + Github, Bitbucket & Sourcetree
+          GitHub
         </span>
                 </li>
-                <li class="chart__bar" style="width: 80%;">
+                <li class="chart__bar" style="width: 95%;">
         <span class="chart__label">
           Microsoft Office
         </span>
@@ -261,20 +259,20 @@
             </div>
 
             <div class="chart chart--design">
-              <span class="chart__title">Design</span>
+              <span class="chart__title" id='bottom-in-view'>Design</span>
               <ul class="chart--horiz">
-                <li class="chart__bar" style="width: 45%;">
+                <li class="chart__bar" style="width: 10%;">
         <span class="chart__label">
           Photoshop
         </span>
                 </li>
-                <li class="chart__bar" style="width: 35%;">
+                <li class="chart__bar" style="width: 95%;">
         <span class="chart__label">
-          Illustrator
+          Solidworks
         </span>
                 </li>
-                <li class="chart__bar" style="width: 60%;">
-        <span class="chart__label">
+                <li class="chart__bar"  style="width: 85%;">
+        <span class="chart__label" >
           User Experience
         </span>
                 </li>
@@ -297,8 +295,8 @@
         <h2 class="mb-5">Interests</h2>
         </div>
           <div data-aos="fade-right">
-        <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
-        <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
+        <p class="mb-0">Outside of my school life, I spent most of my free time watching Youtube videos on makeup, fashion as well as gears. I also enjoy playing MMORPGs. </p>
+        <p class>I am not a good chef but I aspire to be one. The most enjoyful moment of my everyday life is when I get to finally sit down in front of my laptop in the evening, with my favorite channel being played and start eating.  </p>
       </div>
       </div>
     </section>
@@ -314,12 +312,8 @@
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/typeit@6.0.3/dist/typeit.min.js"></script>
-  <script src="vendor/noframework.waypoints.min.js"></script>
-  <script src="vendor/jquery.waypoints.min.js"></script>
-  <script src="vendor/inview.min.js"></script>
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
@@ -331,6 +325,11 @@
   <script src="js/resume.js"></script>
   <script src="vendor/particles.js"></script>
   <script src="main.js"></script>
+  <script src="vendor/sticky.min.js"></script>
+  <script src="vendor/noframework.waypoints.min.js"></script>
+  <script src="vendor/jquery.waypoints.min.js"></script>
+  <script src="vendor/inview.min.js"></script>
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <script>
     AOS.init();

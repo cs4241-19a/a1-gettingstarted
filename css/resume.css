@@ -242,7 +242,7 @@ html.sr .widget {
 #barChart {
   margin-top: 20px;
   font-family:'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  color: #77AAAD;
+  color: #cb7575;
 }
 
 .techSkills {
@@ -287,10 +287,12 @@ html.sr .widget {
   position: absolute;
   bottom: -20px;
   right: -50px;
+  color:#77AAAD;
 }
 .line__label.title {
   text-transform: uppercase;
   font-weight: bold;
+  color:#77AAAD;
 }
 
 .charts {
@@ -330,7 +332,7 @@ html.sr .widget {
 .chart__bar {
   height: 30px;
   margin-bottom: 10px;
-  background: linear-gradient(to left, #ef9e9f, #cb7575);
+  background: linear-gradient(to left, #a3c9c7, #ef9e9f);
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
   opacity: 0;
@@ -400,4 +402,9 @@ html.sr .widget {
     transform: translateX(0);
     opacity: 1;
   }
+}
+
+.stuck {
+    position:fixed;
+    top:0;
 }

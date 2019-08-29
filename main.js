@@ -62,20 +62,15 @@ window.onload=function()
 
 //waypoint
 
-    var inview = new Waypoint.Inview({
-        element: $('#bottomWaypoint')[0],
-        enter: function(direction) {
-            alert('Enter triggered with direction ' + direction)
-        },
-        entered: function(direction) {
-            alert('Entered triggered with direction ' + direction)
-        },
-        exit: function(direction) {
-            alert('Exit triggered with direction ' + direction)
-        },
-        exited: function(direction) {
-            alert('Exited triggered with direction ' + direction)
-        }
+    var sticky = new Waypoint.Sticky({
+        element: $('#stuck')[0]
     })
-
+    var waypoint = new Waypoint({
+        element: document.getElementById('#stuck'),
+        handler: function(direction) {
+            alert('Triggered once, now destroyed')
+            this.destroy()
+        },
+        offset: 'bottom-in-view'
+    })
 }
