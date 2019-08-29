@@ -1,0 +1,45 @@
+#makesmall {
+  max-width: 20%;
+  margin: 10px auto 20px;
+  display: block;
+}
+
+.center {
+  text-align: center;
+}
+
+.noBullets {
+  list-style: none;
+}
+
+.none {
+  color: red;
+}
+
+.some {
+  color: goldenrod;
+}
+
+.a_lot {
+  color: green;
+}
+
+.styleTable {
+  text-align: right;
+  margin: 0 auto;
+}
+
+tr:hover {
+  font-size: 150%;
+  font-weight: bold;
+}
+
+li:hover {
+  color: black;
+  font-size: large;
+  font-weight: bold;
+}
+
+body {
+  background: tan;
+}
