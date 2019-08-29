@@ -1,14 +1,12 @@
 .wrapper{
   display: grid;
   grid-template-colums: 50% 50%;
-  grid-gap:3em;
+  grid-gap:1em;
 }
 
 .wrapper > div{
   background:	#66A5AD;
   color: #003B46;
-  border-style: dotted;
-  border-width: 15px;
 }
 
 canvas{ 
@@ -17,9 +15,20 @@ canvas{
 
 body{
   background: #07575B;
+  border-style: dotted;
+  border-width: 15px;
   margin: 5% 15%;
+  padding: 10px;
 }
-h1{
+h1, h2{
   text-align: center;
   padding: 0 1%;
 }
+p, h3{
+  padding: 0 5%;
+  margin: 5px 0;
+}
+canvas{
+  align: center;
+}
+
