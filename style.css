@@ -1,6 +1,7 @@
 html{
   height: 100%;
   width: 100%;
+  background: black;
 }
 
 body {
@@ -18,6 +19,11 @@ body {
   font-size: 40px;
 }
 
+.info{
+  background: #4E627D;
+  color: white;
+  text-align: center;
+}
 .footer {
   padding: 11px; 
   text-align:center;
