@@ -19,7 +19,7 @@ server.listen( process.env.PORT || port )
 
 const sendFile = function( response, filename ) {
    fs.readFile( filename, function( err, content ) {
-     file = content
+     File = content
      response.end( content, 'utf-8' )
    })
 }
