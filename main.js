@@ -61,12 +61,12 @@ window.onload=function()
     });
 
 //waypoint
-
+//still cannot figure out why 
     var sticky = new Waypoint.Sticky({
         element: $('#stuck')[0]
     })
     var waypoint = new Waypoint({
-        element: document.getElementById('#stuck'),
+        element: document.getElementById('stuck'),
         handler: function(direction) {
             alert('Triggered once, now destroyed')
             this.destroy()
