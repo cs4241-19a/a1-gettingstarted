@@ -1,5 +1,5 @@
 Trevor Dowd
-https://dowdtd16-a1-gettingstarted.glitch.me
+https://a1-dowdtd16.glitch.me
 
 This project shows basic information about myself, Trevor Dowd. This includes information about my major and minor, CS classes taken at WPI, and experience with certain technologies.
 
