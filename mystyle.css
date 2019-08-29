@@ -4,7 +4,10 @@ body {
 }
 
 button{
-  border: none;
+  background-color:rgba(0,0,0,0);
+  border-color:red;
+  border-radius:3em;
+  
   font-size:25px;
   font-family: Georgia, serif;
   font-weight:bold;
