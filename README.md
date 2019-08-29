@@ -12,7 +12,7 @@ This project shows a little about me!! This is the very first time I have used H
 - **Implemented Two Different Data Display Options**: one being lists and the other being a table
 
 ### Design Achievements
-- **Complete Re-Vamp / CSS Stylesheet**: Scraped the original format given and took it upon myself to completely change it to my liking
+- **Complete Re-Vamp / CSS Stylesheet**: Scraped the original format given and took it upon myself to completely change it suit the eye
 - **New Font**: imported a font called 'Montserrat' through Google Fonts, 
 - **Hover Capability**: implemented hover capabilites to make the website more interactive and less 'cluttered'
 
