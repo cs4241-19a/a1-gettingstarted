@@ -259,10 +259,10 @@ function renderLine(numPoints) {
     pointIndex += numPoints;
 }
 //setting color of each point
-function setColors(currentColor, numPoints){
+function setColors(curColor, numPoints){
     var col = [];
     for(var i = 0; i < numPoints; i++) {
-        col.push(currentColor);
+        col.push(curColor);
     }
     color = col;
 }
@@ -272,7 +272,7 @@ function resetCanvas(){
     polyNum = 0;
     drawPoints = [];
     numberPoints = [];
-    currentColor = "K";
+    currentColor = vec4(0.0, 0.0, 0.0, 1.0);
     gl.clearColor(1.0, 1.0, 1.0, 1.0);
     gl.clear(gl.COLOR_BUFFER_BIT);
 }
@@ -282,18 +282,37 @@ function resetCanvas(){
 function keyPressEvent(event){
     var key = event.key;
     switch(key){
-        case 'c':   //changes color of drawing and alternates between Black, Red, Green, and Blue
-            if(currentColor === "K" )
-                currentColor = "R";
-            else if(currentColor === "R")
-                currentColor = "G";
-            else if(currentColor === "G")
-                currentColor = "B";
-            else
-                currentColor = "K";
+        case 'r':   //adds red to color
+            if(currentColor[0] !== 1)
+                currentColor[0] += 0.1
             renderDrawing();
             break;
-        case 'b':  //sets up for a new polyline
+        case 'R':   //subtract red from color
+            if(currentColor[0] !== 0)
+                currentColor[0] -= 0.1;
+            renderDrawing();
+            break;
+        case 'g':   //adds green to color
+            if(currentColor[1] !== 1)            
+                currentColor[1] += 0.1;
+            renderDrawing();
+            break;
+        case 'G':   //subtracts green from color
+            if(currentColor[1] !== 0) 
+                currentColor[1] -= 0.1;
+            renderDrawing();
+            break;
+        case 'b':   //adds blue to color
+            if(currentColor[2] !== 1)            
+                currentColor[2] += 0.1;
+            renderDrawing();
+            break;
+        case 'B':   //subtracts blue from color
+            if(currentColor[2] !== 0) 
+                currentColor[2] -= 0.1;
+            renderDrawing();
+            break;
+        case 'n':  //sets up for a new polyline
             newline = true;
             break;
     }
