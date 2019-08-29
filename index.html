@@ -36,6 +36,7 @@
     <script src="MV.js"></script>
 
     <script src="DrawMode.js"></script>
+    <script src="script.js"></script>
   </head>
   <body>
     <h1>Information about Ching Wing (Winny) Cheng</h1>
@@ -67,9 +68,9 @@
     </p>
 
     <h2>Experience</h2>
-    <p>
-     Experiences in Technologies and Methods
-    </p>
+    <h3>
+     Technology Ex
+    </h3>
     <ul>
       <li>HTML - some</li>
       <li>CSS - some</li>
@@ -113,29 +114,6 @@
       <p id="rgb">Red: 0 | Green: 0 | Blue: 0</p>
       <button type="button" onclick="resetCanvas()">Reset</button><br>
       <canvas id="webglDraw" width="500" height="500">Please use a browser that supports the "canvas" tag.</canvas>
-    </div>
-    
-    <div id="background">
-      <canvas id="webgl">Please use a browser that supports the "canvas" tag.</canvas>
-      <script>
-        //paint the text
-        var canvas = document.getElementById('webgl');
-        var context = canvas.getContext('2d');
-
-        context.fillStyle    = '#00f';
-        context.font         = 'italic 30px sans-serif';
-        context.textBaseline = 'top';
-        context.font         = 'bold 30px sans-serif';
-        context.strokeText('Your Text!!', 0, 0);
-
-        //paint the square
-
-        var canvasSquare = document.getElementById('canvasSquare');
-        var ctxSquare = canvas.getContext('2d');
-
-        ctxSquare.fillStyle='#FF0000';
-        ctxSquare.fillRect(0, 100,50,100);
-      </script>
     </div>
     
     <script type = "text/javascript">
