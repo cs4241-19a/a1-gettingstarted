@@ -1,7 +1,6 @@
 # a1-bwhetherington
 
-Benjamin Hetherington
-http://a1-bwhetherington.glitch.me
+[Benjamin Hetherington](http://a1-bwhetherington.glitch.me)
 
 ## Technical Achievements
 
