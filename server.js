@@ -1,3 +1,5 @@
+import '@vaadin/vaadin';
+
 const http = require('http'),
       fs   = require('fs'),
       port = 3000
@@ -9,6 +11,9 @@ const server = http.createServer( function( request,response ) {
       break
     case '/index.html':
       sendFile( response, 'index.html' )
+      break
+    case '/resources/seniorPicture.png':
+      sendFile(response, 'resources/seniorPicture.png')
       break
     default:
       response.end( '404 Error: File Not Found' )
