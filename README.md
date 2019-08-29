@@ -16,7 +16,7 @@ This Assignment includes a simple website
 
 ### Design Achievements
 - Added in-line style sheet, including:
-   =different size of the title <h1><h7>
-   =different font <kbd>
-   =<del> to make it interesting to read
+   =different size of the title (h1)(h7)
+   =different font (kbd)
+   =(del) to make it interesting to read
    =background-color
