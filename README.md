@@ -9,7 +9,7 @@ You can view the deployed project at: https://glitch.com/~a1-mmdanke
 - Learned how to make buttons out of the headings in the menu and linked them to the different sections on a webpage using div id.
 - Learned how to import bootstrap and other libraries within <head></head>
 - Learned how to import pictures.
-- Added a link to my LinkedIn page under Past Employment.
+- Learned to add links to external sites and added a link to my LinkedIn page under Past Employment.
 
 ### Design Achievements
 - Used a clean, simplistic design with refreshing color scheme to reprsent information about myself.
