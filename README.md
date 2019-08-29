@@ -1,13 +1,13 @@
-Charlie Roberts
-http://a1-charlieroberts.glitch.me
+Kristen Andonie
+https://glitch.com/~a1-kandonie
 
-This project shows ...
+This project shows the following achievements:
 
 ## Technical Achievements
-- **Proved P=NP**: Using a combination of...
-- **Solved AI**: ...
+- **Linked CSS Stylesheet**: By adding a case in the server to link the file
 
 ### Design Achievements
-- **Re-vamped Apple's Design Philosophy**: Shown in `style.css`, the code...
+- **Font Design**: Shown in `styles.css`, I used different colors for the background and text
+
 
 
