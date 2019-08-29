@@ -10,7 +10,7 @@ body {
 .header {
   padding: 80px;
   text-align: center; 
-  background:#305B96;;
+  background:#305B96;
   color: white;
 }
 
@@ -18,6 +18,13 @@ body {
   font-size: 40px;
 }
 
-.navbar {
-  o
+.footer {
+  padding: 11px; 
+  text-align:center;
+  background: #305B96;
+  color: white;
+}
+
+.footer p{
+  font-size: 11px;
 }
