@@ -15,11 +15,12 @@ const server = http.createServer(function(request, response)
 	switch (filename)
 	{
 		case "":
-			if (request.url==="/") sendFile(response, "index.html")
+			if (request.url==="/")
+				sendFile(response, "index.html")
 			break
 		
 		default:
-			sendFile( response, filename )
+			sendFile(response, filename)
 			break
 	}
 })
@@ -28,7 +29,8 @@ server.listen(process.env.PORT || port)
 
 const sendFile = function(response, filename)
 {
-	// mime types: https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Complete_list_of_MIME_types
+	// mime types:
+	// https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Complete_list_of_MIME_types
 	const type = mime.getType(filename) 
 
 	fs.readFile(filename, function(err, content)
