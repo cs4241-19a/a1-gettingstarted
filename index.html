@@ -1,50 +1,81 @@
-﻿<!doctype html>
+﻿﻿<!doctype html>
 <html lang="en">
 <head>
+    <script type="text/javascript">
+        //help from StackoverFlow
+        function showSpoiler(obj) {
+            var inner = obj.parentNode.getElementsByTagName("div")[0];
+            if (inner.style.display == "none") {
+                inner.style.display = "";
+            }
+            else
+                inner.style.display = "none";
+        }
+
+        function hideAll() {
+            var spoilers = document.getElementsByClassName("inner");
+            var i;
+            for (i = 0; i < spoilers.length; i++) {
+                spoilers[i].style.display = "none";
+            }
+        }
+    </script>
     <title>CS4241 Assignment 1</title>
+    <link rel="stylesheet" href="style.css">
     <meta charset="utf-8">
 </head>
-<body>
-    <h1>Information about Jimmy Tran</h1>
-    <p>
-        Vietnamese senior. Part of Alpha Chi Rho and VSA.
-    </p>
-    <p>
-        CS/IMGD Major<br />
-        Psych Minor (Dropped)
-        <li>CS1101</li>
-        <li>CS2102</li>
-        <li>CS2303</li>
-        <li>Soft Eng</li>
-        <li>Biovis</li>
-        <li>Distributed</li>
-        <li>Object Oriented Analysis</li>
-        <li>AI-IMGD</li>
-        <li>HCI</li>
-    </p>
-    <p>
-        [Other things]
-    </p>
+<body onload="hideAll()">
+    <center>
+        <img src="https://cdn.glitch.com/acf8133d-5eb4-4d38-af28-7addb44ba7d1%2Fprofile.jpg?v=1567042612760" height="400" width="300">
 
-    <h2>Experience</h2>
-    <p>
-        Little to No Experience
-    </p>
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>Ruby</li>
-    <li>Unit Testing</li>
-    <p>
-    <p>
-        Moderate Experience
-    </p>
-    <li>Java</li>
-    <li>JS</li>
-    Working experience
-    </p>
-    <ul>
-        <li>MQP</li>
-        <li>ChirithyMS</li>
-    </ul>
+        <h1>Information about Jimmy Tran</h1>
+        <p>
+            Vietnamese senior. Part of Alpha Chi Rho and VSA.
+        </p>
+        <p>
+            <h1 class="title">Academic Info<br /></h1>
+            CS/IMGD Major<br>
+            Psych Minor (Dropped)<br>
+            <div class="spoiler">
+                <input type="button" onclick="showSpoiler(this);" value="Classes" />
+                <div class="inner" style="">
+                    CS1101<br>
+                    CS2102<br>
+                    CS2303<br>
+                    Soft Eng<br>
+                    Biovis<br>
+                    Distributed<br>
+                    Object Oriented Analysis<br>
+                    AI-IMGD<br>
+                    HCI<br>
+                </div>
+            </div>
+        </p>
+
+        <h1 class="title">Experience</h1>
+        <div class="spoiler">
+            <input type="button" onclick="showSpoiler(this);" value="Experience" />
+            <div class="inner" style="">
+                <p>
+                    Little to No Experience
+                </p>
+                HTML<br>
+                CSS<br>
+                Ruby<br>
+                Unit Testing<br>
+
+                <p>
+                    Moderate Experience
+                </p>
+                Java<br>
+                JavaScript<br>
+                <p>
+                    Working experience
+                </p>
+                MQP<br>
+                ChirithyMS<br>
+            </div>
+        </div>
+    </center>
 </body>
 </html>
