@@ -30,7 +30,7 @@ button:hover {
 
 
 
-@keyframes changeBackgroundColor {  /*from dark grey to light grey*/
+@keyframes changeBackgroundColor {  /*change border color*/
    0%   {border-color:red;}
   25%  {border-color:yellow;}
   50%  {border-color:blue; }
