@@ -29,7 +29,7 @@ __Technical Achievement__:
     
     Particularly, learned how to use particle.js as background but only for the main page and modified the options. 
 
-- animated widget box of coursework
+- Designed an animated widget box of coursework
 - Fixed bugs with the original template where the email hyperlink malfunctions if the previous textbox inline is not long enough
 *Currently working on inserting a sticky section title with Waypoint but got stuck and could not figure out why... 
 
