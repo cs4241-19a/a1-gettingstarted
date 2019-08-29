@@ -62,16 +62,18 @@ If you need a Git/GitHub refreseher, see [GitHub Bootcamp](https://help.github.c
 Sample Readme (delete the above when you're ready to submit, and modify the below so with your links and descriptions)
 ---
 
-Charlie Roberts
+Jeffrey Xiao
 http://a1-charlieroberts.glitch.me
 
 This project shows ...
 
 ## Technical Achievements
-- **Proved P=NP**: Using a combination of...
-- **Solved AI**: ...
+- Applied concepts of "class selector" and "tag selector" from CSS selectors
+- Applied inline vs block from the box model
 
 ### Design Achievements
-- **Re-vamped Apple's Design Philosophy**: Shown in `style.css`, the code...
-
+- Added stylesheet from a previous hackathon project "https://github.com/jyxiao1/mangamatic" with modifications to some
+classes such as "display: inline-block;" as discussed in reading
+- Applied CRAP principles from HCI to better divide the individual sections
+- Added image link to my personal storefront
 
