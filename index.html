@@ -1,28 +1,77 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+</head>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
-  </body>
+<body>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js">
+    </script>
+
+
+    <div class="demo-layout-transparent mdl-layout mdl-js-layout">
+        <header class="mdl-layout__header mdl-layout__header--transparent">
+            <div class="mdl-layout__header-row">
+                <span class="mdl-layout-title">Joseph Caltabiano</span>
+        </header>
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title" style="font-size:20px">Navigation</span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="#card1">About Me</a>
+                <a class="mdl-navigation__link" href="#card2">Previous Courses</a>
+                <a class="mdl-navigation__link" href="#card3">Experience</a>
+            </nav>
+        </div>
+        <main class="mdl-layout__content">
+        </main>
+        </div>
+
+        <div class='cards'>
+            <div class="demo-card-wide mdl-card mdl-shadow--2dp" id="card1">
+                <div class="mdl-card__title">
+                    <h2 class="mdl-card__title-text">About me</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                    Class of 2020 <br> Major: Computer Science <br> Minor: Computational Biology
+                </div>
+            </div>
+
+            <div class="demo-card-wide mdl-card mdl-shadow--2dp" id="card2">
+                <div class="mdl-card__title">
+                    <h2 class="mdl-card__title-text">Previous Courses</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                    Intro to Program Design<br> Object-Oriented Design Concepts<br> Intro to Machone Org. & Assembly<br> Systems Programming Concepts<br> Discrete Mathematics<br> Algorithms
+                    <br> Operating Systems<br> Social Implications of Information Processing<br> Software Engineering<br> Human-Computer Interaction<br> Foundations of Computer Science<br> Data Visualization<br> Computer Networks
+                </div>
+            </div>
+
+            <div class="demo-card-wide mdl-card mdl-shadow--2dp" id="card3">
+                <div class="mdl-card__title">
+                    <h2 class="mdl-card__title-text">Experience</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                    HTML: Some<br> CSS: None to some<br> Java: Some<br> JavaScript: A lot<br> Ruby: Some<br> Python: Some<br> Unit Test: None to some
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+            function close() {
+                var d = document.querySelector(".mdl-layout");
+                d.MaterialLayout.toggleDrawer();
+                console.log('a')
+            }
+
+            document.querySelector(".mdl-navigation").addEventListener("click", close);
+        </script>
+</body>
+
 </html>
