@@ -16,6 +16,7 @@ For some reason, Glitch doesn't want to use my latest code and keeps rewinding b
 __Design Achievement__:
 - Self-picked every single color used in this project and made up an overall cohesive color palette. My inspo came from LOLColors
 - Modified an animated staggering bar chart using another color scheme (original here: https://codepen.io/vajkri/pen/NxzZwL)
+- Replacecd the original background with particle.js with some personal modifications. It took me some time to find out how to change the background but only for the main page
 - Most elements are animated while the original template is pretty much static (the original template can be found here for comparison: https://startbootstrap.com/previews/resume/)
 
 
@@ -26,10 +27,8 @@ __Technical Achievement__:
   - animate.css
   - particles.js
   - typeit.js 
-    
-    Particularly, learned how to use particle.js as background but only for the main page and modified the options. 
-
 - Designed an animated widget box of coursework
+- Fully functional on mobile (through bootstrap)
 - Fixed bugs with the original template where the email hyperlink malfunctions if the previous textbox inline is not long enough
 
 
