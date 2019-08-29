@@ -3,26 +3,133 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <script id="vshader" type="x-shader/x-vertex">
+
+	  attribute vec4 vPosition;
+	  attribute vec4 vColor;
+	  uniform mat4 projMatrix;
+	  varying vec4 fColor;
+
+    void main() {
+        gl_Position = projMatrix * vPosition;
+        gl_PointSize = 10.0;
+        fColor = vColor;
+    }
+	  </script>
+
+    <script id="fshader" type="x-shader/x-fragment">
+      precision mediump float;
+	    varying vec4 fColor;
+
+	    void main() {
+	      gl_FragColor = fColor;
+  	  }
+	  </script>
+
+    <script src="webgl-utils.js"></script>
+    <script src="initShaders.js"></script>
+    <script src="MV.js"></script>
+
+    <script src="DrawMode.js"></script>
+    <script src="script.js"></script>
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <div class="wrapper">
+      <div class="title">
+        <h1>Information about Ching Wing (Winny) Cheng</h1>
+      </div>
+      <div class="bio">
+        <img src="https://cdn.glitch.com/90a10e22-735e-445a-a92f-b568fa87d11b%2FProPic.jpg?v=1567054765831" alt="Profile Picture" width="40%">
+        <p id="school">Worcester Polytechnic Institue (WPI)</p>
+        <p id="class">Class of 2020</p>
+        <p id="major">Computer Science Major</p>
+        <p id="minor">Mechanical Engineering Minor</p>    
+        <p id="aboutMe">
+          Currently a senior here at WPI! 
+          I am a huge fan of anime, manga, and japanese culture.
+          If you are a fellow comarde, come join the Japanese Culture Club!!!
+          I also really enjoy drawing so I left a little something at the botton of this page.
+          Check it out!
+        </p>
+      </div>
+      <div class="courses">
+        <h2>Computer Science Courses</h2>
+        <p>
+          CS 453X: Machine Learning <br>
+          CS 2223: Algorithms <br>
+          CS 4731: Computer Graphics <br>
+          CS 3043: Social Implications of Information Processing <br>
+          CS 3733: Software Engineering <br>
+          CS 3041: Human-Computer Interaction <br>
+          CS 3013: Operating Systems <br>
+          CS 2011: Introduction to Machine Organization & Assembly <br>
+          CS 2303: Systems Programming Concepts <br>     
+          CS 2102: Object-Oriented Design <br>
+          CS 1101: Introduction to Program Design <br>
+        </p>
+      </div>
+      <div class="exp">
+        <h2>Experience</h2>
+        <div class="tech">
+          <h3>
+           Technology Experience
+          </h3>
+          <ul>
+            <li>HTML - some</li>
+            <li>CSS - some</li>
+            <li>Java - a lot</li>
+            <li>Javascript - some</li>
+            <li>Rudy - none</li>
+            <li>Python - some</li>
+            <li>Unit Testing - none</li>
+          </ul>
+        </div>
+        <div class="work">
+          <h3>Working Experience</h3>
+          <ul>
+            <li>WPI - Research Assistant</li>
+            <li>Golden Ming - Cashier/Waitress</li>
+            <li>WPI - PLA in Mathematics Department</li>
+          </ul>
+        </div>
+        
+      </div>
+      <div class="draw">
+        <h1>Draw Something! Polyline Art</h1>
+        <div class="text">
+          <h3>Intructions:</h3>
+          <p>
+            To draw, you simply click within the canvas to create points.
+            The initial point will not be visible on the canvas.
+            The second point will connect to the first point.
+            The third point will connect to the second point and so on and so forth.
+          </p>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+          <h3>Some neat features:</h3>
+          <p>
+            Press <b>'r'</b> to increase the red in the color of the lines<br>
+            Press <b>'R'</b> to decrease the red in the color of the lines<br>
+            Press <b>'g'</b> to increase the green in the color of the lines<br>
+            Press <b>'G'</b> to decrease the green in the color of the lines<br>
+            Press <b>'b'</b> to increase the blue in the color of the lines<br>
+            Press <b>'B'</b> to decrease the blue in the color of the lines<br>
+            Press <b>'n'</b> to draw a new polyline<br>
+          </p>
+        </div>
+        <div class="canvas">
+          <p id="rgb">Red: 0 | Green: 0 | Blue: 0</p>
+          <button type="button" onclick="resetCanvas()">Reset</button><br>
+          <canvas id="webglDraw" width="500" height="500">Please use a browser that supports the "canvas" tag.</canvas>
+        </div>
+        
+        <script type = "text/javascript">
+          document.getElementById('webglDraw').addEventListener("click", drawPolylines);
+        </script>
+      </div>
+    </div>
+    
   </body>
 </html>

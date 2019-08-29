@@ -1,6 +1,6 @@
 const http = require('http'),
       fs   = require('fs'),
-      port = 3000
+      port = 3000 
 
 const server = http.createServer( function( request,response ) {
   switch( request.url ) {
@@ -9,6 +9,21 @@ const server = http.createServer( function( request,response ) {
       break
     case '/index.html':
       sendFile( response, 'index.html' )
+      break
+    case '/DrawMode.js':
+      sendFile( response, 'DrawMode.js' )
+      break
+    case '/MV.js':
+      sendFile( response, 'MV.js' )
+      break
+    case '/initShaders.js':
+      sendFile( response, 'initShaders.js' )
+      break
+    case '/webgl-utils.js':
+      sendFile( response, 'webgl-utils.js' )
+      break
+    case '/style.css':
+      sendFile( response, 'style.css' )
       break
     default:
       response.end( '404 Error: File Not Found' )
@@ -19,7 +34,7 @@ server.listen( process.env.PORT || port )
 
 const sendFile = function( response, filename ) {
    fs.readFile( filename, function( err, content ) {
-     file = content
+     filename = content
      response.end( content, 'utf-8' )
    })
 }
