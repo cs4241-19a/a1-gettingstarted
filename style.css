@@ -1,0 +1,39 @@
+body {
+  background-color: lavenderblush;
+  font-family: Georgia, serif;
+  margin: 1em;
+  text-align: center;
+}
+
+.typewriter h1 {
+  color: #09298A;
+  font-style: italic;
+  overflow: hidden; 
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation: 
+    typing 3.5s steps(24, end);
+}
+
+/* The typing */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+h2 {
+  font-style: italic;
+  color: #09298A;
+}
+
+h3{
+  text-align: center;
+  font-style: italic;
+  color: #09298A;
+}
+
+ul {
+    text-align: center;
+    list-style-position: inside;
+}
