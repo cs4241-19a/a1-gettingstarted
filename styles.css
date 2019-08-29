@@ -58,14 +58,3 @@ body {
   border-width: 1px;
   background-color: #6DB4D3;
 }
-
-@keyframes text-slide {
-  0% {
-    display: none;
-    left: -100px;
-  }
-  100% {
-    display: block;
-    left: 200px;
-  }
-}
