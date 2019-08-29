@@ -120,6 +120,7 @@ function resetCanvas(){
     currentColor = vec4(0.0, 0.0, 0.0, 1.0);
     gl.clearColor(1.0, 1.0, 1.0, 1.0);
     gl.clear(gl.COLOR_BUFFER_BIT);
+    display();
 }
 
 //handle key events such as changing color by pressing 'c' or changing
@@ -156,6 +157,7 @@ function add(c){
     if(currentColor[c] <= 0.9){
         currentColor[c] += 0.1
     }
+    renderDrawing();
     display();
 }
 
@@ -164,12 +166,12 @@ function subtract(c){
     if(currentColor[c] >= 0.1){
       currentColor[c] -= 0.1
     }
+    renderDrawing();
     display();
 }
 
-//redraw in new color and display color values
+//display color values
 function display(){
-    renderDrawing();
     let r = currentColor[0].toFixed(1);
     let g = currentColor[1].toFixed(1);
     let b = currentColor[2].toFixed(1);
