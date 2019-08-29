@@ -9,8 +9,14 @@
   color: #003B46;
 }
 
-canvas{ 
-  border: 2px solid black; 
+button{
+  display: block;
+  margin: auto;
+}
+canvas{
+  border: 2px solid;
+  display: block;
+  margin: auto;
 }
 
 body{
@@ -24,11 +30,15 @@ h1, h2{
   text-align: center;
   padding: 0 1%;
 }
-p, h3{
+h3{
+  
+}
+p{
   padding: 0 5%;
   margin: 5px 0;
 }
-canvas{
-  align: center;
+img{
+  display: block;
+  margin: 3% auto;
+  width: 50%;
 }
-
