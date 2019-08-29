@@ -1,6 +1,6 @@
 body {
   background-color: #E8E8E8;
-
+  background-image: https://cdn.glitch.com/73978886-a8c8-43f4-841d-6eaa60a7318c%2FA7ADC421-8618-48A4-81B5-5202AF67D97B.JPG?v=1567030094568;
 }
 
 p, h1, h2, li, td{
@@ -11,18 +11,47 @@ p, h1, h2, li, td{
 .columnh{
   border-radius: 10px;
   float: left;
-  width: 100%;
-  padding: 0px;
+  width: 98%;
+  padding: 1%;
   height: 200px;
 }
 
-.column2 {
+.container { 
+  position: relative;
   text-align: justify;
   border-radius: 10px;
   float: left;
   width: 38%;
   padding: 1%;
   height: 300px;
+  background-color:#FEEAFA;
+}
+
+.title1,
+.title2 {
+  transition: 0.4s;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.title1{
+  text-align: center;
+}
+
+.title2{
+  text-align: justify;
+}
+
+.title2 , .column2:hover .title1 , .columnl1:hover .title1 , .columnl2:hover .title1 , .columnl3:hover .title1{ 
+  opacity: 0;
+}
+
+.column2:hover .title2 , .columnl1:hover .title2 , .columnl2:hover .title2 , .columnl3:hover .title2{
+  opacity: 1;
 }
 
 .column1, .column3 {
@@ -33,14 +62,37 @@ p, h1, h2, li, td{
   height: 300px;
 }
 
-.columnl {
+.containerl1 { 
+  position: relative;
   text-align: justify;
   border-radius: 10px;
   float: left;
   width: 31.3%;
   padding: 1%;
-  height: 200px;
+  height: 280px;
+  background-color:#E0C5DA;
+}
 
+.containerl2 { 
+  position: relative;
+  text-align: justify;
+  border-radius: 10px;
+  float: left;
+  width: 31.3%;
+  padding: 1%;
+  height: 280px;
+  background-color:#C7CFEA;
+}
+
+.containerl3 { 
+  position: relative;
+  text-align: justify;
+  border-radius: 10px;
+  float: left;
+  width: 31.3%;
+  padding: 1%;
+  height: 280px;
+  background-color:#FCD4E1;
 }
 
 .row:after {
