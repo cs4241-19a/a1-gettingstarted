@@ -71,7 +71,9 @@ There are sections detailing the courses I have taken and currently taken, and a
 
 ## Technical Achievements
 
-I successfully imported the Bootstrap library and utilized some of its components 
+I successfully imported the Bootstrap library (https://getbootstrap.com/) and utilized its components (Containers, Columns, Cards, etc)
+I also created a customized scrollbar for this assignment, which required me research about Webkit CSS extensions (https://developer.mozilla.org/en-US/docs/Web/CSS/WebKit_Extensions).
+I got inspiration as to how to create my own scrollbar from W3 Schools (https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp)
 
 - **Proved P=NP**: Using a combination of...
 - **Solved AI**: ...

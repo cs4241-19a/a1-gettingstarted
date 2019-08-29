@@ -4,22 +4,19 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 15px;
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: white; 
-}
-
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: crimson; 
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: pink; 
+}
+
+::-webkit-scrollbar-track {
+  background: white; 
 }
 
 div { position: relative; }
