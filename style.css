@@ -17,12 +17,17 @@ body {
 
 .header h1{
   font-size: 40px;
+  color: #9CBDF9;
 }
 
 .info{
   background: #4E627D;
   color: white;
   text-align: center;
+}
+
+.info h2{
+  color: #9CBDF9;
 }
 
 .skills{
@@ -36,6 +41,7 @@ body {
 .skills h3{ /*trying to make it look like h2*/
   font-size: 25px;
   text-align: center;
+  color: #9CBDF9;
 }
 
 .skills li{
@@ -45,7 +51,7 @@ body {
 .bar{
   background: #4E577D;
   display: block;
-  height: 2px;
+  height: 4px;
   border: 1px solid rgba(0,0,0,0.3);
   border-radius: 3px;
   overflow: hidden;
@@ -53,13 +59,37 @@ body {
 }
 
 .bar span{
-  height: 2px;
+  height: 4px;
   float: left;
-  background: #305B96;
+  background: #9CBDF9;
 }
 
 .html{
-  width: 65
+  width: 70%;
+}
+
+.css{
+  width: 63%;
+}
+
+.java{
+  width: 85%;
+}
+
+.js{
+  width: 30%;
+}
+
+.ruby{
+  width: 0%; /*never tried to program in ruby*/
+}
+
+.python{
+  width: 20%;
+}
+
+.utest{
+  width: 75%; 
 }
 
 .footer {
