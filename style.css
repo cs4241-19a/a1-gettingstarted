@@ -35,6 +35,10 @@ body {
     height: 100%;
 }
 
+.full-height-110 {
+    height: 110%;
+}
+
 .full-height-90 {
     height: 90%;
 }
@@ -101,6 +105,10 @@ p {
     }
     
     h1 {
-        font-size: 3.5em;
+        font-size: 3em;
+    }
+    
+    h2 {
+        font-size: 1.5em;
     }
 }
