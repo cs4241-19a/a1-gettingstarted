@@ -16,12 +16,12 @@ Assignment details
 
 Do the following to complete this assignment:
 
-1. Fork the starting project code in GitHub. This repo contains:
+<!-- 1. Fork the starting project code in GitHub. This repo contains:
     * the server code, `server.js`
     * A starting `index.html` file that you will edit as described below
     * A package.json file that helps configure Glitch
-    * This README
-2. Edit `index.html` to show the following information about you:
+    * This README -->
+<!-- 2. Edit `index.html` to show the following information about you:
     * your name and class at WPI (e.g. class of 2020) Note: Do not put any contact or personal information that you do not potentially want other people outside of this class to see.
     * your major(s) and minor(s)
     * previous computer science courses that you have taken at WPI
@@ -32,7 +32,7 @@ Do the following to complete this assignment:
         * JavaScript
         * Ruby
         * Python
-        * unit testing
+        * unit testing -->
 3. Test your project to make sure that when someone goes to your main page, it displays correctly. You can do this locally by simply running `node server.js` from within the assignment directory.
 
 4. Modify the README file according to the specification below.
@@ -52,26 +52,32 @@ By default Glitch often assigns your application a random name. To change it, cl
 The name scheme should be `a1-yourGitHubUsername`.
 The `a1` will need to be updated to `a2`, `a3`, and so on in future projects.
 
-Resources
----
 
-If you need a JavaScript/HTML/CSS refresher, see [Technology Fundamentals by Scott Murray](http://chimera.labs.oreilly.com/books/1230000000345/ch03.html#_html) and/or [JavaScript Codeacademy](https://www.codecademy.com/en/tracks/javascript).
+Jack Gerulskis
+http://a1-jgerulskis.glitch.me
 
-If you need a Git/GitHub refreseher, see [GitHub Bootcamp](https://help.github.com/categories/bootcamp/), the [GitHub Guides](https://guides.github.com/) (especially the ones on Hello World, and Understanding the GitHub Flow, and Forking Projects), and [CodeSchool's Try Git Course](https://www.codeschool.com/courses/try-git).
-
-Sample Readme (delete the above when you're ready to submit, and modify the below so with your links and descriptions)
----
-
-Charlie Roberts
-http://a1-charlieroberts.glitch.me
-
-This project shows ...
+## Overview
+This project is assignment 1 for CS4241. It creates a simple webpage with the following details about me
+- **Education**
+    Courses Taken
+    Major
+    Grade
+    Skill Sets
+    Clubs
+- **Work History**
+    A breif summary of the past few jobs I've had
 
 ## Technical Achievements
-- **Proved P=NP**: Using a combination of...
-- **Solved AI**: ...
+- **Converted standard Node JS server to Express JS server**: 
+    Installed express using the node package manager, created dependency
+- **Dynamically loaded html (for navbar)**
+    Instead of copy and pasting hundreds of lines of html code to replicate nav bar on every page, I created a html file with the nav bar html and dynamically injected the code into any webpage.
+- **Nodemon hot reloading**:
+    Implemented an alternative script `start-dev` that allowed my server to automatically restart when changes occured to any JS file
 
 ### Design Achievements
-- **Re-vamped Apple's Design Philosophy**: Shown in `style.css`, the code...
+- **Bootstrap CDN (content delivery network)**:
+    Bootstrap allowed easy and quick site scaffolding and UI development. Allowed lots of features to easily
+    be implemented. Using their content deliver network removed the need for any dependencies.
 
 

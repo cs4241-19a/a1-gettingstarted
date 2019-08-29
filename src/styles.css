@@ -1,0 +1,35 @@
+.dropdown-item:hover {
+    background-color: #808080 !important;
+}
+
+.main-img {
+    width: 100%;
+    height: auto;
+}
+
+.small-img {
+    width: 40%;
+    height: auto;
+}
+
+.center-text {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-img-container {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top: -20px;
+}
+
+.small-img-container {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
