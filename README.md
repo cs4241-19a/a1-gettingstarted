@@ -1,6 +1,6 @@
 Kaitlin McDermott http://a1-kaitlinmcdermott.glitch.me
 
-This project incldues some basic information about myself.
+This project includes some basic information about myself.
 
 Technical Achievements:
 This project is my first webpage I have created. I played around with making different lists by using ul and li. 
