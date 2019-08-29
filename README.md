@@ -1,77 +1,37 @@
-Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
-===
+my Glitch is hosted here: a1-eos7l.glitch.me
 
-*DUE: Thursday, August 29th by 11:59 AM (before the start of class!)*  
-
-This assignment is a "warm-up" exercise. 
-You will simply deploy the starting Web site that you will use this term to [Glitch](http://www.glitch.com/). 
-
-Treat this assignment as a chance to get up to speed on Git, GitHub, and Glitch. 
-If you already know these, great. 
-However, if you're new to them, spend several hours practicing, experimenting, and reading documentation. 
-In other words, don't just get your website up and done. You will need skills with these tools throughout the rest of the course.
-
-Assignment details
 ---
+PLEASE USE THIS LINK FOR GRADING:
+https://eos7l.github.io/a1-gettingstarted/
 
-Do the following to complete this assignment:
 
-1. Fork the starting project code in GitHub. This repo contains:
-    * the server code, `server.js`
-    * A starting `index.html` file that you will edit as described below
-    * A package.json file that helps configure Glitch
-    * This README
-2. Edit `index.html` to show the following information about you:
-    * your name and class at WPI (e.g. class of 2020) Note: Do not put any contact or personal information that you do not potentially want other people outside of this class to see.
-    * your major(s) and minor(s)
-    * previous computer science courses that you have taken at WPI
-    * your experience with the following technologies and methods (none, some, a lot)
-        * HTML
-        * CSS
-        * Java
-        * JavaScript
-        * Ruby
-        * Python
-        * unit testing
-3. Test your project to make sure that when someone goes to your main page, it displays correctly. You can do this locally by simply running `node server.js` from within the assignment directory.
+For some reason, Glitch doesn't want to use my latest code and keeps rewinding back to the original template. I made sure I imported from Github correctly because my README can be found on glitch. All other files are fine on Glitch except my CSS styling sheets. My CSS files kept getting replaced by the original CSS files that came with the template although I did not do anything to glitch. Also Glitch is supposed to auto-save but it does not want to save the changes even if I tried pasting my styling sheets manually in there. I don't think there is anything wrong with my code because it can be opend up fine on 
+1) my localhost 
+2) directly opened as a HTML file 
+3) with Webstorm. 
 
-4. Modify the README file according to the specification below.
-5. Commit and push all your changes to GitHub. 
-6. Deploy your project to Glitch. You can do this by [importing the repo from GitHub](https://medium.com/glitch/import-code-from-anywhere-83fb60ea4875)
-7. Ensure that your project has the proper naming scheme (guide follows) so we can find it.
-8. Create and submit a Pull Request to the original repo.
 
-Naming and URL Scheme
----
 
-You must use a consistent naming scheme for all projects in this course.
-If we can't find it, we can't grade it.
 
-By default Glitch often assigns your application a random name. To change it, click on the project dropdown menu in the upper left corner of Glitch. You will then see an additional text field displaying the project name in the resulting menu; click here to edit the name.
+__Design Achievement__:
+- Self-picked every single color used in this project and made up an overall cohesive color palette. My inspo came from LOLColors
+- Modified an animated staggering bar chart using another color scheme (original here: https://codepen.io/vajkri/pen/NxzZwL)
+- Replacecd the original background with particle.js with some personal modifications. It took me some time to find out how to change the background but only for the main page
+- Most elements are animated while the original template is pretty much static (the original template can be found here for comparison: https://startbootstrap.com/previews/resume/)
 
-The name scheme should be `a1-yourGitHubUsername`.
-The `a1` will need to be updated to `a2`, `a3`, and so on in future projects.
 
-Resources
----
+__Technical Achievement__:
+- Learned how to use multiple JQuery/JS/Angular/CSS libraries including: 
+  - animate on scroll
+  - scroll reveal
+  - animate.css
+  - particles.js
+  - typeit.js 
+- Designed an animated widget box of coursework
+- Fully functional on mobile (through bootstrap)
+- Fixed bugs with the original template where the email hyperlink malfunctions if the previous textbox inline is not long enough
 
-If you need a JavaScript/HTML/CSS refresher, see [Technology Fundamentals by Scott Murray](http://chimera.labs.oreilly.com/books/1230000000345/ch03.html#_html) and/or [JavaScript Codeacademy](https://www.codecademy.com/en/tracks/javascript).
 
-If you need a Git/GitHub refreseher, see [GitHub Bootcamp](https://help.github.com/categories/bootcamp/), the [GitHub Guides](https://guides.github.com/) (especially the ones on Hello World, and Understanding the GitHub Flow, and Forking Projects), and [CodeSchool's Try Git Course](https://www.codeschool.com/courses/try-git).
-
-Sample Readme (delete the above when you're ready to submit, and modify the below so with your links and descriptions)
----
-
-Charlie Roberts
-http://a1-charlieroberts.glitch.me
-
-This project shows ...
-
-## Technical Achievements
-- **Proved P=NP**: Using a combination of...
-- **Solved AI**: ...
-
-### Design Achievements
-- **Re-vamped Apple's Design Philosophy**: Shown in `style.css`, the code...
-
+In Progress:
+Currently working on inserting a sticky section title with Waypoint but got stuck and could not figure out why... 
 

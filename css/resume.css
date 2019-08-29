@@ -1,0 +1,410 @@
+/*!
+ * Start Bootstrap - Resume v5.0.7 (https://startbootstrap.com/template-overviews/resume)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
+ */
+
+body {
+  font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  padding-top: 54px;
+  color: #6E7783;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 0;
+    padding-left: 17rem;
+  }
+}
+
+
+#overlay {
+  position: relative;
+  padding: 0px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #7c7877;
+}
+
+h1 {
+  font-size: 6rem;
+  line-height: 5.5rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p.lead {
+  font-size: 1.15rem;
+  font-weight: 400;
+}
+
+.subheading {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-size: 1.5rem;
+}
+
+.social-icons a {
+  display: inline-block;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: #7C7877;
+  color: #F0E5DE !important;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 3.5rem;
+  margin-right: 1rem;
+}
+
+.social-icons a:last-child {
+  margin-right: 0;
+}
+
+.social-icons a:hover {
+  background-color: #ABD0CE;
+}
+
+.dev-icons {
+  font-size: 3rem;
+}
+
+.dev-icons .list-inline-item i:hover {
+  color: #ABD0CE;
+}
+
+#sideNav .navbar-nav .nav-item .nav-link {
+  font-weight: 800;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+}
+
+#sideNav .navbar-toggler:focus {
+  outline-color: #D8E6E7;
+}
+
+@media (min-width: 992px) {
+  #sideNav {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 17rem;
+    height: 100vh;
+  }
+  #sideNav .navbar-brand {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto auto 0;
+    padding: 0.5rem;
+  }
+  #sideNav .navbar-brand .img-profile {
+    max-width: 10rem;
+    max-height: 10rem;
+    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+  }
+  #sideNav .navbar-collapse {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    width: 100%;
+    margin-bottom: auto;
+  }
+  #sideNav .navbar-collapse .navbar-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item {
+    display: block;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+    display: block;
+  }
+}
+
+section.resume-section {
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+  max-width: 75rem;
+}
+
+section.resume-section .resume-item .resume-date {
+  min-width: none;
+}
+
+@media (min-width: 768px) {
+  section.resume-section {
+    min-height: 100vh;
+  }
+  section.resume-section .resume-item .resume-date {
+    min-width: 18rem;
+  }
+}
+
+@media (min-width: 992px) {
+  section.resume-section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+}
+
+#particles-js{
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+}
+
+.bg-primary {
+  background-color: #9DC3C1 !important;
+}
+
+.text-primary {
+  color: #a3c9c7 !important;
+}
+
+a {
+  color: #a3c9c7;
+}
+
+a:hover, a:focus, a:active {
+  color: #77AAAD;
+}
+
+/* utility */
+html.sr .load-hidden {
+  visibility: hidden;
+}
+
+.widget-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  background:#D8E6E7 ;
+  border-radius: 8px;
+}
+
+.widget {
+  width: 15%;
+  height: 50px;
+  flex: auto;
+  margin: 0.5rem;
+  background: #77AAAD;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 4px;
+  padding:2px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  color: white;
+}
+
+/* extension */
+html.sr .widget {
+  visibility: hidden;
+}
+
+#barChart {
+  margin-top: 20px;
+  font-family:'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  color: #cb7575;
+}
+
+.techSkills {
+  width: 80%;
+  max-width: 960px;
+  height: 780px;
+  margin: auto;
+  position: relative;
+}
+
+.lines {
+  height: 100%;
+  position: relative;
+}
+
+.line {
+  height: inherit;
+  width: 2px;
+  position: absolute;
+  background: rgba(216, 230, 231, 0.6);
+}
+.line.l--0 {
+  left: 0;
+}
+.line.l--25 {
+  left: 25%;
+}
+.line.l--50 {
+  left: 50%;
+}
+.line.l--75 {
+  left: 75%;
+}
+.line.l--100 {
+  left: calc(100% - 1px);
+}
+
+.line__label {
+  display: block;
+  width: 100px;
+  text-align: center;
+  position: absolute;
+  bottom: -20px;
+  right: -50px;
+  color:#77AAAD;
+}
+.line__label.title {
+  text-transform: uppercase;
+  font-weight: bold;
+  color:#77AAAD;
+}
+
+.charts {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.chart {
+  margin: 30px 0 0;
+}
+.chart:first-child {
+  margin: 0;
+}
+
+.chart__title {
+  display: block;
+  margin: 0 0 10px;
+  font-weight: bold;
+  opacity: 0;
+  animation: 1s anim-lightspeed-in ease forwards;
+}
+.chart--prod .chart__title {
+  animation-delay: 3.3s;
+}
+.chart--design .chart__title {
+  animation-delay: 4.5s;
+}
+
+.chart--horiz {
+  overflow: hidden;
+}
+
+.chart__bar {
+  height: 30px;
+  margin-bottom: 10px;
+  background: linear-gradient(to left, #a3c9c7, #ef9e9f);
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  opacity: 0;
+  animation: 1s anim-lightspeed-in ease forwards;
+}
+.chart--dev .chart__bar:nth-of-type(11) {
+  animation-delay: 2.7s;
+}
+.chart--dev .chart__bar:nth-of-type(10) {
+  animation-delay: 2.5s;
+}
+.chart--dev .chart__bar:nth-of-type(9) {
+  animation-delay: 2.3s;
+}
+.chart--dev .chart__bar:nth-of-type(8) {
+  animation-delay: 2.1s;
+}
+.chart--dev .chart__bar:nth-of-type(7) {
+  animation-delay: 1.9s;
+}
+.chart--dev .chart__bar:nth-of-type(6) {
+  animation-delay: 1.7s;
+}
+.chart--dev .chart__bar:nth-of-type(5) {
+  animation-delay: 1.5s;
+}
+.chart--dev .chart__bar:nth-of-type(4) {
+  animation-delay: 1.3s;
+}
+.chart--dev .chart__bar:nth-of-type(3) {
+  animation-delay: 1.1s;
+}
+.chart--dev .chart__bar:nth-of-type(2) {
+  animation-delay: 0.9s;
+}
+.chart--dev .chart__bar:nth-of-type(1) {
+  animation-delay: 0.7s;
+}
+.chart--prod .chart__bar:nth-of-type(2) {
+  animation-delay: 4.2s;
+}
+.chart--prod .chart__bar:nth-of-type(1) {
+  animation-delay: 4s;
+}
+.chart--design .chart__bar:nth-of-type(3) {
+  animation-delay: 5.6s;
+}
+.chart--design .chart__bar:nth-of-type(2) {
+  animation-delay: 5.4s;
+}
+.chart--design .chart__bar:nth-of-type(1) {
+  animation-delay: 5.2s;
+}
+
+.chart__label {
+  padding-left: 10px;
+  line-height: 30px;
+  color: white;
+}
+
+@keyframes anim-lightspeed-in {
+  0% {
+    transform: translateX(-200%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.stuck {
+    position:fixed;
+    top:0;
+}
