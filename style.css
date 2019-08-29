@@ -19,7 +19,6 @@ html {
     top: 0;
     left: 0;
     box-shadow: 0 1px 10px #999;
-
 }
 
 .solid {
@@ -379,27 +378,24 @@ h2 {
 .senPic {
     height: 25px;
     width: 125px;
-    margin-top: 50px;
+    margin-top: 60px;
     margin-left: -50px;
     background-image: url(Images/2020.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    transform: rotate(25deg);
 }
 
 .senPic:hover {
     height: 35px;
     width: 175px;
-    margin-top: 50px;
+    margin-top: 60px;
     margin-left: -50px;
     background-image: url(Images/2020.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    transform: rotate(25deg);
     box-shadow: 0 1px 5px #999;
-
 }
 
 .eduCont {
@@ -419,9 +415,14 @@ p {
 
 }
 
+.sal {
+    color: salmon;
+    font-weight: 500;
+}
+
 .senP {
-    margin-top: 75px;
-    margin-left: 125px;
+    margin-top: 60px;
+    margin-left: 0;
     margin-right: -125px;
 }
 
@@ -456,13 +457,17 @@ p {
 }
 
 .c1 {
-    color: #111;
     text-decoration: none;
     font-size: 1.5em;
     font-family: 'Source Code Pro', 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
     letter-spacing: 1px;
     font-weight: 500;
     border: 0;
+    margin: 5px;
+    padding: 5px;
+    background-color: orangered;
+    color: white;
+    border-radius: 5px;
 }
 
 .c2 {
