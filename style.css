@@ -1,0 +1,157 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html,body {
+	height: 100%;
+	position: relative;
+}
+
+body {
+	width: 100%
+	margin: 0;
+	padding: 0;
+	background-color: #262626;
+	color: #e0e0e0; 
+	
+}
+
+h1 {
+  display: block;
+  position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.featured-audio {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.featured-audio audio {
+  width: 325px;
+  height: 25px;
+  padding-bottom: 30px;
+}
+
+.headings {
+  font-family: 'Monserrat', sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.bio-content {
+  display: block;
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: center;
+}
+
+.paragraph-content {
+  font-family: 'Merriweather', serif;
+}
+
+.paragraph-content.content-1 {
+  padding-bottom: 25px
+}
+
+h2 { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.experience-content {
+  display: block;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.experience-content ul {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-left: 10%;
+}
+
+.experience-content ul li {
+  line-height: 1.6;
+}
+
+h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.media-icons {
+  width: 100%;
+  z-index: 1;
+}
+
+.media-icons ul {
+  display: flex;
+  transform: translate(-50%, 50%);
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  position: absolute;
+}
+
+.media-icons ul li {
+	list-style: none;
+  z-index: -1;
+}
+
+.media-icons ul li a {
+	position: relative;
+	width: 80px;
+	height: 75px;
+	line-height: 75px;
+	font-size: 50px;
+	text-align: center;
+	text-decoration: none;
+  text-transform: uppercase;
+	color: #e0e0e0;
+	margin: 0 9.5px;
+	transition: .5s;
+
+}
+
+.media-icons ul li a:hover {
+  background: #e0e0e0;
+  color: #262626;
+}
+
+.media-icons ul li a:before {
+  content: '';
+  position:absolute;
+  transform: scaleY(2);
+  opacity: 0;
+  transition: .5s;
+  z-index: -1;
+}
+
+.media-icons ul li a:hover:before {
+  transform: scaleY(1.2);
+  opacity: 1;
+}
+
+.media-icons ul li a:after {
+
+  position: absolute;
+  background: #e0e0e0;
+  color: #262626;
+  transform: scale(0);
+  transition: .5s;
+  z-index: -1;
+}
+
+.media-icons ul li a:hover:after {
+  transform: scale(1);
+}
