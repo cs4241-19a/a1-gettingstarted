@@ -1,6 +1,6 @@
 const http = require('http'),
       fs   = require('fs'),
-      port = 3000
+      port = 3000 
 
 const server = http.createServer( function( request,response ) {
   switch( request.url ) {
@@ -11,6 +11,18 @@ const server = http.createServer( function( request,response ) {
       sendFile( response, 'index.html' )
       break
     case '/DrawMode.js':
+      sendFile( response, 'DrawMode.js' )
+      break
+    case '/MV.js':
+      sendFile( response, 'MV.js' )
+      break
+    case '/initShaders.js':
+      sendFile( response, 'initShaders.js' )
+      break
+    case '/webgl-utils.js':
+      sendFile( response, 'webgl-utils.js' )
+      break
+    case '/style.css':
       sendFile( response, 'style.css' )
       break
     default:
