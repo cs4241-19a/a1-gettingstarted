@@ -1,0 +1,37 @@
+.experience {
+    padding-top: 1vh;
+    padding-bottom: 3vh;
+    box-shadow: 0 0 15px rgba(74, 73, 69,0.8);
+}
+
+
+.collapsible {
+    background-color: ghostwhite;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    font-family: Corbel, serif;
+    font-size: calc(1.5vw + 1vh);
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    padding-left: calc(1vh + 1vw);
+    text-align: left;
+    outline: none;
+}
+
+.active, .collapsible:hover {
+    border-bottom: 2px solid gray;
+    border-bottom-width: medium;
+    text-align: left;
+}
+
+.collapsibleContent {
+    padding: 0 2vw;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.collapsibleContent p {
+    text-align: left;
+}
