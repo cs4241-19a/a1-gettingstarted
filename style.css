@@ -5,11 +5,9 @@
 
 .wrapper > div{
   background:	#66A5AD;
-  color: #003B46
-}
-.wrapper > div:nth-child(odd){
-  background:#07575B;
-  color: #C4DFE6
+  color: #003B46;
+      border-style: dotted dotted none dotted;
+  border-width: 15px;
 }
 
 canvas{ 
@@ -17,5 +15,7 @@ canvas{
 }
 
 body{
-  
+  background: #07575B;
+  margin: 5% 15%;
+
 }
