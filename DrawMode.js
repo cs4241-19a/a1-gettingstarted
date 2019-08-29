@@ -283,37 +283,39 @@ function keyPressEvent(event){
     var key = event.key;
     switch(key){
         case 'r':   //adds red to color
-            if(currentColor[0] !== 1)
-                currentColor[0] += 0.1
-            renderDrawing();
+            add(0);
             break;
         case 'R':   //subtract red from color
-            if(currentColor[0] !== 0)
-                currentColor[0] -= 0.1;
-            renderDrawing();
+            subtract(0);
             break;
         case 'g':   //adds green to color
-            if(currentColor[1] !== 1)            
-                currentColor[1] += 0.1;
-            renderDrawing();
+            add(1);
             break;
         case 'G':   //subtracts green from color
-            if(currentColor[1] !== 0) 
-                currentColor[1] -= 0.1;
-            renderDrawing();
+            subtract(1);
             break;
         case 'b':   //adds blue to color
-            if(currentColor[2] !== 1)            
-                currentColor[2] += 0.1;
-            renderDrawing();
+            add(2);
             break;
         case 'B':   //subtracts blue from color
-            if(currentColor[2] !== 0) 
-                currentColor[2] -= 0.1;
-            renderDrawing();
+            subtract(2);
             break;
         case 'n':  //sets up for a new polyline
             newline = true;
             break;
     }
+}
+
+function add(c){
+    if(currentColor[c] !== 1)
+        currentColor[c] += 0.1
+    renderDrawing();
+    document.getElementById("rgb").innerText = "Red: " + currentColor[0] + " | Green: " + currentColor[1] + " | Blue: " + currentColor[2];
+}
+
+function subtract(c){
+    if(currentColor[c] !== 0)
+      currentColor[c] -= 0.1
+    renderDrawing();
+    document.getElementById("rgb").innerText = "Red: " + currentColor[0] + " | Green: " + currentColor[1] + " | Blue: " + currentColor[2];
 }
