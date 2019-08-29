@@ -71,14 +71,18 @@ There are sections detailing the courses I have taken and currently taken, and a
 
 ## Technical Achievements
 
-I successfully imported the Bootstrap library (https://getbootstrap.com/) and utilized its components (Containers, Columns, Cards, etc)
-I also created a customized scrollbar for this assignment, which required me research about Webkit CSS extensions (https://developer.mozilla.org/en-US/docs/Web/CSS/WebKit_Extensions).
+-I successfully imported the Bootstrap library (https://getbootstrap.com/) and utilized various components (Containers, Columns, Cards, etc)
+-I also created a customized scrollbar for this assignment, which required me research about Webkit CSS extensions (https://developer.mozilla.org/en-US/docs/Web/CSS/WebKit_Extensions).
 I got inspiration as to how to create my own scrollbar from W3 Schools (https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp)
+-I determined how to load images for this assignment.  One way is to use the image's CDN after uploading to the assets folder in glitch.
+I created a separate images/assets folder to store my images so I can use a file path instead of a CDN (learned how to do it from https://support.glitch.com/t/assets-folder-path/4638/7)
+-I wanted to include an animated slideshow of my summer travels at the end, so I researched how to do it and drew inspiration from here: https://codepen.io/fcalderan/pen/jqpzd
 
-- **Proved P=NP**: Using a combination of...
-- **Solved AI**: ...
 
 ### Design Achievements
-- **Re-vamped Apple's Design Philosophy**: Shown in `style.css`, the code...
+-Although I used the Bootstrap library, I wanted my assignment to have a different background color and font that the library used because I felt the backgrounds and fonts the library provided did not reflect my personality and what I wanted to portray for my assignment.
+I learned how to override default settings to set my background to pale pink and the font to the Georgia font from reviewing information from https://css-tricks.com/snippets/css/style-override-technique/
+-To go with what I said earlier about how I created the customized scrollbar under technical achievements, I also wanted the scrollbar to be a part of the overall theme of my page, which was why I decided to design the scrollbar to match the page.
+
 
 
