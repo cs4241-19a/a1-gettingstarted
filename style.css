@@ -1,0 +1,39 @@
+
+body {
+    background-color: yellow;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+h1 {
+    text-align: center;
+  }
+h2 {
+    font-size: 14pt;
+  }
+  .column {
+    float: left;
+    width: 50%;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .row {
+      padding-left: 10px;
+  }
+  .center {
+    display: block;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #dogmsg {
+      text-align: center;
+  }
+
+  #funfact {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+  }

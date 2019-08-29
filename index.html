@@ -3,32 +3,29 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
-    <style type="text/css">
-    
-      h1 {
-        text-align: center;
-      }
-    
-    </style>
+    <link href="style.css" rel="stylesheet" type="text/css">
     <script src='test.js' type='text/javascript'></script>
   </head>
   <body>
     <h1>Information about Elizabeth Kirschner</h1>
-    <p>
-      WPI Class of 2021
-    </p>
-    <p>
-      Double major in Computer Science & Interactive Media & Game Development
-    </p>
-    <p>
-      Previous Coursework: 1102,2102,2303,2011,2022,3041,3013,2223
-    </p>
-    <p>
-      Member of WPI's women's varsity track & field
-      Equipment Manager of women's club rugby
-    </p>
-
-    <h2>Experience</h2>
+    <div class="row">
+    <div class="column">
+      <h2>About me</h2>
+      <p>WPI Class of 2021</p>
+      <p>
+        Double major in Computer Science & Interactive Media & Game Development
+      </p>
+      <p>
+         Previous Coursework: 1102, 2102, 2303, 2011, 2022, 3041, 3013, 2223
+      </p>
+      <p>
+         Member of WPI's Women's Varsity Track & Field Team
+         <br>
+         Equipment Manager of Women's Club Rugby
+      </p>
+    </div>
+    <div class="column">
+    <h3>Experience</h2>
     <p>
       HTML: Only a little
       <br>
@@ -36,7 +33,7 @@
       <br>
       Java: lots of experiene.
       <br>
-      javascript: only a little,  I used javascript with the mini game engine Perlenspiel
+      Javascript: only a little,  I used javascript with the mini game engine Perlenspiel
       <br>
       Ruby: None
       <br>
@@ -45,9 +42,18 @@
       Unit Testing: just a little
     </p>
 
-    <h3>Work Experience</h3>
+    <h4>Work Experience</h3>
     <ul>
       <li>Software Engineering Internship at Rocket Software</li>
     </ul>
+  </div>
+</div>
+<img src="my_dog.jpg" class="center" alt="My dog" width="256" height="260">
+<p id="dogmsg">Here is a picture of my dog, she's pretty cute :)</p>
+<p id="funfact">
+  Fun Fact: I started using yellow for everything as a joke and now it's my favorite color. (Yes it's gross, I still love it) 
+  <br>
+  P.S. Yes, this is comic sans, I couldn't help myself ¯\_(ツ)_/¯
+</p>
   </body>
 </html>
