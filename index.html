@@ -99,30 +99,32 @@
       </div>
       <div class="draw">
         <h1>Draw Something! Polyline Art</h1>
-        <div class=""
-        <h3>Intructions:</h3>
-        <p>
-          To draw, you simply click within the canvas to create points.
-          The initial point will not be visible on the canvas.
-          The second point will connect to the first point.
-          The third point will connect to the second point and so on and so forth.
-        </p>
+        <div class="text">
+          <h3>Intructions:</h3>
+          <p>
+            To draw, you simply click within the canvas to create points.
+            The initial point will not be visible on the canvas.
+            The second point will connect to the first point.
+            The third point will connect to the second point and so on and so forth.
+          </p>
 
-        <h3>Some neat features:</h3>
-        <p>
-          Press <b>'r'</b> to increase the red in the color of the lines<br>
-          Press <b>'R'</b> to decrease the red in the color of the lines<br>
-          Press <b>'g'</b> to increase the green in the color of the lines<br>
-          Press <b>'G'</b> to decrease the green in the color of the lines<br>
-          Press <b>'b'</b> to increase the blue in the color of the lines<br>
-          Press <b>'B'</b> to decrease the blue in the color of the lines<br>
-          Press <b>'n'</b> to draw a new polyline<br>
-        </p>
-
-        <p id="rgb">Red: 0 | Green: 0 | Blue: 0</p>
-        <button type="button" onclick="resetCanvas()">Reset</button><br>
-        <canvas id="webglDraw" width="500" height="500">Please use a browser that supports the "canvas" tag.</canvas>
-
+          <h3>Some neat features:</h3>
+          <p>
+            Press <b>'r'</b> to increase the red in the color of the lines<br>
+            Press <b>'R'</b> to decrease the red in the color of the lines<br>
+            Press <b>'g'</b> to increase the green in the color of the lines<br>
+            Press <b>'G'</b> to decrease the green in the color of the lines<br>
+            Press <b>'b'</b> to increase the blue in the color of the lines<br>
+            Press <b>'B'</b> to decrease the blue in the color of the lines<br>
+            Press <b>'n'</b> to draw a new polyline<br>
+          </p>
+        </div>
+        <div class="canvas">
+          <p id="rgb">Red: 0 | Green: 0 | Blue: 0</p>
+          <button type="button" onclick="resetCanvas()">Reset</button><br>
+          <canvas id="webglDraw" width="500" height="500">Please use a browser that supports the "canvas" tag.</canvas>
+        </div>
+        
         <script type = "text/javascript">
           document.getElementById('webglDraw').addEventListener("click", drawPolylines);
         </script>

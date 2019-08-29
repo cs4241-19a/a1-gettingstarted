@@ -4,12 +4,18 @@
 }
 
 .wrapper > div{
-  background:#eee;
+  background:	#66A5AD;
+  color: #003B46
 }
 .wrapper > div:nth-child(odd){
-  background:#ddd;
+  background:#07575B;
+  color: #C4DFE6
 }
 
 canvas{ 
   border: 2px solid black; 
+}
+
+body{
+  
 }
