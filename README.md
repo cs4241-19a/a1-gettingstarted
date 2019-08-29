@@ -9,7 +9,7 @@ You can view the deployed project at: https://glitch.com/~a1-mmdanke
 ### Design Achievements
 - **Re-vamped Apple's Design Philosophy**: Shown in `style.css`, the code...
 
-The Resources I used:
+###The Resources I Used:
 1)w3schools.com was a great resource that helped me play around with the general format of the page. I was able to adapt elements, especially from this template page: https://www.w3schools.com/w3css/w3css_templates.asp. I however used the layouts to help me understand how grids were formatted and added more grids, deleted elements, and changed other specifications(color, font, etc...) to make it my own.
 
 2)codeacademy was another great site and helped me gain an understanding of html and css:https://www.codecademy.com/pro/membership?gclid=Cj0KCQjw753rBRCVARIsANe3o47oig5r48EDbLoEf_2HybVmk3KZbQ-q6G-AnOr6ovkTpqpYaaDzOEcaAk-cEALw_wcB.
