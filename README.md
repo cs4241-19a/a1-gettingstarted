@@ -7,7 +7,7 @@ https://a1-yicxxxx.glitch.me/
 This Assignment includes a simple website
 
 ## Technical Achievements
-- <div> sepreate all the contents into several different parts
+- (div) sepreate all the contents into several different parts
    ="container"
    ="menu"
    ="header"
