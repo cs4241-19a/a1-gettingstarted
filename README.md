@@ -18,8 +18,7 @@ the website can have more uniform style and look more appealing to the user. I s
 formats and tutorials to be able to make the website look more colorful and include more features.
 - **Hyperlinks on Icons**: I found and made use of icons from fontawesome(link https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css)
 to make the website look more interesting and I have also added a hyperlink and hover color to this icon that goes to
-https://en.wikipedia.org/wiki/Computer_science, which is the wikipedia link for computer science, however the link seems to
-not work on glitch but it does work if you open the index.html file in chrome.
+https://en.wikipedia.org/wiki/Computer_science, which is the wikipedia link for computer science.
 
 ### Design Achievements
 - **Tooltips**: Shown in `index.html`, the items in the course list each have a tooltip 
