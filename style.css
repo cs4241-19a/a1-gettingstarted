@@ -1,3 +1,4 @@
-#webgl{
-  position: fixed;
+.wrapper{
+  display: grid;
+  grid-template-colums: 70% 30%
 }
