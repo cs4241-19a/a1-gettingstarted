@@ -4,7 +4,7 @@ Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 ##README
 
 Caitlin Enright
-http://a1-charlieroberts.glitch.me
+https://a1-cenright71925.glitch.me/index.html
 
 This project shows some basic information about myself as a student at WPI.
 
