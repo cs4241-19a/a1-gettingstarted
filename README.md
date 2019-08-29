@@ -1,6 +1,7 @@
+Manasi Danke
+
 Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 
-Manasi Danke
 You can view the deployed project at: https://glitch.com/~a1-mmdanke
 
 ## Technical Achievements
