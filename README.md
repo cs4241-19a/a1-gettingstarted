@@ -2,7 +2,7 @@ Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 ===
 
 Max Westwater
-http://a1-mhwestwater.glitch.me
+http://a1-max5254.glitch.me
 
 This project shows ...
 
