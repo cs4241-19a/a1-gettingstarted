@@ -26,9 +26,11 @@ __Technical Achievement__:
   - animate.css
   - particles.js
   - typeit.js 
+    
     Particularly, learned how to use particle.js as background but only for the main page and modified the options. 
-- Currently working on inserting a sticky section title with Waypoint but got stuck and could not figure out why... 
+
 - animated widget box of coursework
 - Fixed bugs with the original template where the email hyperlink malfunctions if the previous textbox inline is not long enough
+*Currently working on inserting a sticky section title with Waypoint but got stuck and could not figure out why... 
 
 
