@@ -1,28 +1,286 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+<head>
+  <title>CS4241 Assignment 1</title>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
-  </body>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="cards.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+</head>
+
+<body>
+<script src="scripts.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    delay: 250,
+    disable: 'mobile'
+  });
+</script>
+<nav class="nav_bar">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#education">Education</a>
+  <a href="#courses">Courses</a>
+  <a href="#skills">Skills</a>
+  <a href="#experience">Experience</a>
+  <a href="#contact_strip">Contact</a>
+</nav>
+
+<!--First image and title-->
+<div class="first" id="home">
+  <!--Title of the page-->
+  <div class="titleBox" data-aos="fade-in">
+    <h1 class="titleText">Hello,<br/> I'm Petra</h1>
+    <p class="subtitle">Now that you're here, try scrolling down!</p>
+
+  </div>
+</div>
+<div class="about" id="about" data-aos="fade-in">
+  <h2>About Me</h2>
+  <p data-aos="fade-in">
+    Hi, I'm Petra! I'm studying CS and Math here at WPI. I love learning about all the different ways these two fields interact with each other to produce really cool outputs.
+
+    I am still trying to find my place within the Software Developer/Data Science community, and exploring as much as I can in the meanwhile.
+
+    Aside from nerding out during the day, I love traveling, taking photos, and playing basketball.
+    Scroll down to find out some more about me!
+  </p>
+</div>
+<!--Div for second photo-->
+<div class="second"><div class="school">
+  <h2 data-aos="fade-in" id="education">Education</h2>
+  <div class="school_tile_container">
+    <div class="school_tile" id="koliqi" data-aos="fade-in">
+      <h3>Ernest Koliqi High School</h3>
+      <h4>Tirana, Albania</h4>
+      <h5>High School Diploma</h5>
+      <h5>2013 - 2016</h5>
+    </div>
+    <div class="school_tile" id="wpi" data-aos="fade-in">
+      <h3>Worcester Polytechnic Institute</h3>
+      <h4>Worcester, MA, USA</h4>
+      <h5>Bachelor's Degree in Computer Science and Math</h5>
+      <h5>2016 - 2020</h5>
+    </div>
+  </div>
+
+</div></div>
+
+
+<!--Div for Table of Contents-->
+<div class="courses" id="courses" data-aos="fade-in">
+  <h2 data-aos="fade-in">Previous Computer Science Courses at WPI</h2>
+  <p>Over my four years at WPI, I have learned a lot. Here are some of the CS classes I have taken - Hover over them to discover their names!</p>
+  <div class="tile_container">
+    <div class="tile square" data-aos="fade-in">
+      <figcaption>
+        <h3 class="cardTitle" id="CS1101">CS 1101</h3>
+        <p class="hover">Introduction To Programming Design</p>
+      </figcaption>
+    </div>
+    <div class="tile square" data-aos="fade-in">
+      <figcaption>
+        <h3 class="cardTitle" id="CS2102">CS 2102</h3>
+        <p class="hover">Object Oriented Design Concepts</p>
+      </figcaption>
+    </div>
+    <div class="tile square" data-aos="fade-in">
+      <figcaption>
+        <h3 class="cardTitle" id="CS2223">CS 2223</h3>
+        <p class="hover oneliner">Algorithms</p>
+      </figcaption>
+    </div>
+  </div>
+
+  <div class="tile_container">
+    <div class="tile square" data-aos="fade-in">
+      <figcaption>
+        <h3 class="cardTitle" id="CS2303">CS 2303</h3>
+        <p class="hover">Systems Programming Concepts</p>
+      </figcaption>
+    </div>
+    <div class="tile square" data-aos="fade-in">
+      <figcaption>
+        <h3 class="cardTitle" id="CS3013">CS 3013</h3>
+        <p class="hover oneliner">Operating Systems</p>
+      </figcaption>
+    </div>
+    <div class="tile square" data-aos="fade-in">
+      <figcaption>
+        <h3 class="cardTitle" id="CS3043">CS 3043</h3>
+        <p class="hover">Social Implications of Information Processing</p>
+      </figcaption>
+    </div>
+  </div>
+
+  <div class="tile_container">
+    <div class="tile square" data-aos="fade-in">
+      <figcaption>
+        <h3 class="cardTitle" id="CS4445">CS 4445</h3>
+        <p class="hover">Data Mining & Knowledge Discovery in Databases</p>
+      </figcaption>
+    </div>
+    <div class="tile square" data-aos="fade-in">
+      <figcaption>
+        <h3 class="cardTitle" id="CS584">CS 584</h3>
+        <p class="hover">Algorithms: Design and Analysis</p>
+      </figcaption>
+    </div>
+    <div class="tile square" data-aos="fade-in">
+      <figcaption>
+        <h3 class="cardTitle" id="CS3733">CS 3733</h3>
+        <p class="hover oneliner">Software Engineering</p>
+      </figcaption>
+    </div>
+  </div>
+</div>
+
+
+<!--Third image-->
+<div class="third"></div>
+<!--Skills matrix info-->
+<div class="skills" id="skills" data-aos="fade-in">
+  <h2 data-aos="fade-in">My Computer Science Skills</h2>
+  <table>
+    <tr data-aos="fade-in">
+      <th></th>
+      <th>Classes/School Projects</th>
+      <th>Personal Projects</th>
+      <th>Research</th>
+      <th>Work/Internship Experience</th>
+      <th>Near Future Projects</th>
+    </tr>
+    <tr data-aos="fade-in">
+      <td class="colHeaders"><h4>HTML</h4></td>
+      <td></td>
+      <td><i class="fas fa-check-circle"></i></td>
+      <td></td>
+      <td></td>
+      <td><i class="fas fa-check-circle"></i></td>
+
+    </tr>
+    <tr data-aos="fade-in">
+      <td class="colHeaders"><h4>CSS</h4></td>
+      <td></td>
+      <td><i class="fas fa-check-circle"></i></td>
+      <td></td>
+      <td></td>
+      <td><i class="fas fa-check-circle"></i></td>
+
+    </tr>
+    <tr data-aos="fade-in">
+      <td class="colHeaders"><h4>Java</h4></td>
+      <td><i class="fas fa-check-circle"></i></td>
+      <td><i class="fas fa-check-circle"></i></td>
+      <td></td>
+      <td><i class="fas fa-check-circle"></i></td>
+      <td><i class="fas fa-check-circle"></i></td>
+
+    </tr>
+    <tr data-aos="fade-in">
+      <td class="colHeaders"><h4>Javascript</h4></td>
+      <td></td>
+      <td><i class="fas fa-check-circle"></i></td>
+      <td></td>
+      <td></td>
+      <td><i class="fas fa-check-circle"></i></td>
+
+    </tr>
+    <tr data-aos="fade-in">
+      <td class="colHeaders"><h4>Ruby</h4></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+
+    </tr>
+    <tr data-aos="fade-in">
+      <td class="colHeaders"><h4>Python</h4></td>
+      <td><i class="fas fa-check-circle"></i></td>
+      <td></td>
+      <td><i class="fas fa-check-circle"></i></td>
+      <td></td>
+      <td><i class="fas fa-check-circle"></i></td>
+
+    </tr>
+    <tr data-aos="fade-in">
+      <td class="colHeaders"><h4>Unit Testing</h4></td>
+      <td><i class="fas fa-check-circle"></i></td>
+      <td><i class="fas fa-check-circle"></i></td>
+      <td></td>
+      <td></td>
+      <td><i class="fas fa-check-circle"></i></td>
+    </tr>
+  </table>
+</div>
+
+<!--Fourth image-->
+<div class="third"></div>
+<div class="experience" id="experience">
+  <h2 data-aos="fade-in">Work & Project Experience</h2>
+  <p style="text-align: center" data-aos="fade-in">I am lucky to have been given the opportunity to develop some of my skills by doing research and interning. If you're curious, click on an item below to learn more.</p>
+  <button class="collapsible" onclick="collapse(this)" data-aos="fade-in">
+    Developing an Interactive Analytics Platform
+      <small>WPI & VMWare<br/>September - December 2019</small>
+  </button>
+  <div class="collapsibleContent">
+    <p>• Develop a framework for integrating VMWare's data analytics platform with Jupyter Notebooks for easy access by VMWare software engineers
+      <br/> •Tools and Skills: Java, Python, Jupyter Notebooks, Data Analysis, Github, Machine Learning</p>
+  </div>
+  <button class="collapsible" onclick="collapse(this)" data-aos="fade-in">
+    Software Engineering Intern
+      <small>Dell EMC<br/>May - August 2019</small>
+  </button>
+  <div class="collapsibleContent">
+    <p>• Designed a tool that will parse Java code to find a the structure of a state machine defined in the code. This includes states, transitions, and methods called within
+      each. Then the tool will interactively visualize the SM structure and methods.
+      <br/>• Tools and Skills: Java, JavaParser, Swing, RxJava, Agile, Software design patterns, Graph Theory, Github, Linux</p>
+  </div>
+  <button class="collapsible" onclick="collapse(this)" data-aos="fade-in">
+    Assistant Lead Software Engineer
+      <small>WPI & Brigham & Women's Hospital<br/>May - August 2019</small>
+  </button>
+  <div class="collapsibleContent">
+    <p>• Part of a team that designed a kiosk application to help users navigate through the hospital, book service requests, see employee availability
+      and employee information, see room availability, and book rooms.
+      <br/>• Tools and Skills: Java, JavaFx, SQL, Python, API integration, Software design patters, Agile, Github</p>
+  </div>
+  <button class="collapsible" onclick="collapse(this)" data-aos="fade-in">
+    Research on Calculating Pattern Uniformity
+    <small>WPI, Air Force Research Lab, Naval Research Lab<br/>May 2018 - June 2019</small>
+  </button>
+  <div class="collapsibleContent">
+    <p>• Designed a tool that will calculate uniformity of a pattern given a matrix, used to quantitatively analyze heating uniformity.
+      <br/>• Tools and Skills: Matlab, Linear Algebra, Statistics, Numerical Methods</p>
+  </div>
+  <button class="collapsible" onclick="collapse(this)" data-aos="fade-in">
+    Peer Learning Assistant
+    <small>WPI Math Department<br/>February 2017 - November 2018</small>
+  </button>
+  <div class="collapsibleContent">
+    <p>• Worked closely with students taking various introductory Mathematics courses to help them better understand the material learned in class.
+      <br/>• Tools and Skills: Creating and maintaining professional relationships, Calculus, Linear Algebra</p>
+  </div>
+
+</div>
+
+
+<div class="third"></div>
+<div id="connect">
+  <h2 id="connectHeader">Let's Connect</h2>
+  <p>I love meeting new people!</p>
+  <nav class="contact_strip" id="contact_strip">
+    <a class="connectLink" href="https://www.facebook.com/petrakumi"><i class="fab fa-facebook contactIcons"></i></a>
+    <a class="connectLink" href="https://www.linkedin.com/in/petrakumi/"><i class="fab fa-linkedin-in contactIcons"></i></a>
+    <a class="connectLink" href="https://www.instagram.com/petrakumi/"><i class="fab fa-instagram contactIcons"></i></a>
+    <a class="connectLink" href="mailto:pkumi@wpi.edu"><i class="fas fa-envelope contactIcons"></i></a>
+  </nav>
+</div>
+</body>
 </html>

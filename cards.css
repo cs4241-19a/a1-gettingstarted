@@ -1,0 +1,89 @@
+.tile_container {
+    display: flex;
+    justify-content: space-around;
+    margin: 2vh 2vw;
+}
+
+.tile {
+    font-family: Corbel, serif;
+    position: relative;
+    overflow: hidden;
+    margin-left: 2vw;
+    min-width: 20vw;
+    max-width: 30vw;
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+.tile * {
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.tile.square {
+    height: 10vw;
+    width: 20vw;
+    background-color: gold;
+    max-width: 100%;
+    vertical-align: center;
+}
+.tile figcaption {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.tile h3 {
+    font-family: Corbel, serif;
+    letter-spacing: 5px;
+    font-size: 3vw;
+    margin: 0;
+    padding-top: calc(1vw + 1.5vh);
+}
+
+.tile p.hover {
+    padding-top: calc(4vw + 4.5vh);
+    /*padding-left: 1vw;*/
+    /*padding-right: 1vw;*/
+    text-align: center;
+    vertical-align: center;
+    font-weight: 400;
+    font-size: 2vw;
+    letter-spacing: 1px;
+
+}
+/*some of the hover text is a one liner, so when text was pushed up it did not center
+hence needed more padding than others*/
+.tile p.oneliner {
+    padding-top: calc(5vw + 5vh);
+    letter-spacing: 1px;
+}
+
+.tile:hover figcaption,
+.tile.hover figcaption {
+    top: 1vh;
+    bottom: 1vh;
+    right: 1vw;
+    left: 1vw;
+    letter-spacing: 1px;
+}
+/*moves the card title up on hover*/
+.tile:hover .cardTitle,
+.tile.hover .cardTitle {
+    -webkit-transform: translateY(calc(-7vw - 7vh));
+    transform: translateY(calc(-7vw - 7vh));
+}
+/*moves up the info that becomes visible on hover*/
+.tile:hover .hover,
+.tile.hover .hover {
+    -webkit-transform: translateY(calc(-7vw - 7vh));
+    transform: translateY(calc(-7vw - 7vh));
+}
