@@ -15,8 +15,8 @@ This Assignment includes a simple website
    ="footer"<br>
 
 ### Design Achievements
-- Added in-line style sheet, including:
-   =different size of the title (h1)(h7)
-   =different font (kbd)
-   =(del) to make it interesting to read
-   =background-color
+- Added in-line style sheet, including:<br>
+   =different size of the title (h1)(h7)<br>
+   =different font (kbd)<br>
+   =(del) to make it interesting to read<br>
+   =background-color<br>
