@@ -43,6 +43,14 @@ body {
     height: 80%;
 }
 
+.full-height-70 {
+    height: 70%;
+}
+
+.full-height-60 {
+    height: 60%;
+}
+
 .full-height-50 {
     height: 50%;
 }
@@ -51,7 +59,7 @@ body {
     height: 40%;
 }
 
-.text-example {
+.center-text {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,5 +98,9 @@ p {
     }
     .only-desktop {
         display: none!important;
+    }
+    
+    h1 {
+        font-size: 3.5em;
     }
 }

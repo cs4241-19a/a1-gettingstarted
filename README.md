@@ -12,6 +12,6 @@ This project shows ...
 
 ### Design Achievements
 - **Minimal dependencies**: The site was designed to be simple yet aesthetically pleasing. It still feels interactive due to the transitions and dynamic name display.
-- **Mobile friendly**: The site was designed to look good whether on a phone or desktop.
+- **Mobile friendly**: The site was designed to look good whether on a phone or desktop. (browser compatibility is a separate issue...)
 
 
