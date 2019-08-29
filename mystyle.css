@@ -5,12 +5,14 @@ body {
 
 button{
   background-color:rgba(0,0,0,0);
-  border-color:red;
   border-radius:3em;
-  
+  border:3px solid;
   font-size:25px;
   font-family: Georgia, serif;
   font-weight:bold;
+  animation-name: changeBackgroundColor;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
 
 button:hover {
@@ -24,16 +26,16 @@ button:hover {
   margin: 20px 250px 0px 250px;
   background: rgba(255, 255, 255, 0.6);
   height:800px;
-  animation-name: changeBackgroundColor;
-  animation-duration: 3s;
-
 }
 
 
 
 @keyframes changeBackgroundColor {  /*from dark grey to light grey*/
-  from {background-color: #a8a8a8;}
-  to {background-color: #dcdcdc;}
+   0%   {border-color:red;}
+  25%  {border-color:yellow;}
+  50%  {border-color:blue; }
+  75%  {border-color:green;}
+  100% {border-color:red;}
 }
 
 h1 {

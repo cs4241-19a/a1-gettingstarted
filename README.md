@@ -7,7 +7,7 @@ https://a1-yangjack1998.glitch.me/
 This project shows the basic information of Yicheng Yang
 
 ## Technical Achievements
-- **Applied CSS**: Added a requeset.url case to `server.js` so that the style sheet could be accessed. Applied different style to different elements in the webpage including font, color, align, etc. For the same type of elements, created different classes so that they can be divided into more specific groups. In addition, CSS animations were added to the webpage to change the background color.  
+- **Applied CSS**: Added a requeset.url case to `server.js` so that the style sheet could be accessed. Applied different style to different elements in the webpage including font, color, align, etc. For the same type of elements, created different classes so that they can be divided into more specific groups. In addition, CSS animations were added to the webpage to change the border color of Fun Fact to make it more fun.  
 
 - **Applied <Button> tag**: A button was added as the title of Fun Fact. Once the user clicks on the button, the fun fact will appear(from transparent to not transparent. To achieve this, element id were given to the element that were going to be changed. In this way, these elements can be found and modified when button is clicked.
 
