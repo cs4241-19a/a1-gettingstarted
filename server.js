@@ -10,6 +10,10 @@ const server = http.createServer( function( request,response ) {
     case '/index.html':
       sendFile( response, 'index.html' )
       break
+    // This is the case I added to run my CSS file
+    case '/style.css':
+      sendFile( response, 'style.css')
+      break
     default:
       response.end( '404 Error: File Not Found' )
   }
@@ -22,4 +26,4 @@ const sendFile = function( response, filename ) {
      file = content
      response.end( content, 'utf-8' )
    })
-}
+} 
