@@ -1,28 +1,92 @@
 <!doctype html>
 <html lang="en">
+  
   <head>
-    <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <!-- Edit style of collapsible component  w/ hover and content box - code modified from w3schools.com -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    .collapsible {
+      background-color: #AD74C8;
+      color: black;
+      cursor: pointer;
+      padding: 20px;
+      width: 100%;
+      text-align: left;
+      font-size: 15px;
+      border: 1px solid;
+      margin-top: 20px;
+    }
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+    .collapsible:hover {
+      background-color: #7F5592;
+    }
+
+    .content {
+      padding: 0 18px;
+      display: none;
+      overflow: hidden;
+      background-color: #DFDAE1;
+ 
+    }
+    .collapsible:after {
+      content: '\25bc'; 
+      font-size: 15px;
+      color: black;
+      float: right;
+    }
+      
+    .active:after {
+    content: "\25b2";  */
+     }
+      
+    </style>
+
+  </head>
+
+  <body>
+
+    <h1>Shauna Sullivan '21</h1>
+
+    <!-- Create collasible box content - code modified from w3schools.com-->
+    <button class="collapsible">Self Introduction</button>
+    <div class="content">
+      <p> Hi, I'm Shauna! Academically, I am interested in learning to navigate the line between business and technology. (Hence, why I am learning business analytics!) Personally, I enjoy dancing, reading, traveling and baking. </p>
+    </div>
+    
+    <button class="collapsible">Major</button>
+    <div class="content">
+      <p>Currently, I am a BSMS student. My Bachelor's degree is in Business with a Business Analytics concentration. My graduation date should be May 2021. My Master's degree is in Management, which I should finish up in August 2021.</p>
+    </div>
+    
+    <button class="collapsible">Computer Science Classes</button>
+    <div class="content">
+      <p>Previous CS classes I have taken here at WPI include CS 1004, CS 2301, and CS 2119.</p>
+    </div>
+
+    <h1>Experience</h1>
+
+    <button class="collapsible">Technologies</button>
+    <div class="content">
+      <p> I have had a lot of experience in the following languages: Java and Python. I have had no experience in the following technologies: HTML, CSS, Javascript, Ruby, and unit testing.</p>
+    </div>
+
+    <!-- Allows collapsible action - code used from w3schools.com -->
+    <script> 
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+    </script>
+
   </body>
 </html>
