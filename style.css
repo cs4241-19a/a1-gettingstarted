@@ -1,3 +1,4 @@
+/* CSS files add styling rules to your content */
 body{
   background-color: #89cff0;
 }
@@ -24,4 +25,9 @@ body {
 	font-weight: 800;
 	padding: 3px 10px 2px;
 }
-
+button {
+    margin: auto;
+    display: block;
+    background-color: white;
+    color: black;
+}
