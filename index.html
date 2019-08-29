@@ -1,36 +1,106 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>CS4241 Assignment 1</title>
+    
+    <!--
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    
+    <script>
+      $(document).ready(function(){
+      $("#Yes").click(function(){
+      $("p").yes();
+        });
+      $("#Nah").click(function(){
+      $("p").nah();
+        });
+      });
+    </script>
+    -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
+    <title>CS4241 Assignment 1</title>
+    <link href="./styles.css" rel="stylesheet" type="text/css">
+    
+    
+    <div class="navbar">
+      <ul>
+        <a href="https://www.linkedin.com/in/justin-amevor-897178128/">LinkedIn</a>
+        <a href="https://github.com/jamevor">Github</a>
+      </ul>
+      <p> <i> Warning: Clicking links will exit page </i> </p>
+    </div>
   </head>
+  
+  
+  <div class= "allbody">
   <body>
     <h1>Information about Justin Amevor</h1>
     <p>
-      I am from Worcester and I go to WPI
+      This is my favorite song!
     </p>
-    <p>
-      I am a senior Computer Science major.
-    </p>
-    <p>
-      I have had two internships in software development and testing
-    </p>
+    <div class= "music">
+    <audio controls>
+    <source src="https://cdn.glitch.com/0a9376cf-8155-415a-ac46-5351009c3b6f%2FDreamsAndNightmaresInstrumental.mp3?v=1567012637001" type="audio/mpeg">
+    </audio>
+    </div>
+    
+    <!--
+    <p>Do you want to learn about me?</p>
 
-    <h2>Experience</h2>
+<button id="Yes">Yes</button>
+<button id="Nah">Nah</button>
+    -->
+    
+    <div class= "myinfo">
+      <p> 
+        I am from Worcester, Massachusetts and I go to WPI.
+      </p>
+      <p>
+        I am a senior majoring in computer science.
+      </p>
+      <p>
+        I have had two internships in software development and testing.
+      </p>
+    </div>
+    
+    
+    <h2 >My Experience</h2>
     <p>
-      I have taken CS1101, CS2102, CS3133, Database 1 and 2, Algortithms, Systems Programming, and HCI
-      My expirence in the following languages is as follows
-      HTML-some
-      CSS-some
-      Java-some
-      Javascript-a little
-      Ruby-none
-      Python-a little
-      unit testing- some
+      I have taken CS1101, CS2102, CS3133, Database 1 and 2, Algortithms, Systems Programming, and HCI.
+      My expirence in the following languages is as follows:
     </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+    
+    <div class= "table">
+          <table style="width:100%">
+        <tr>
+          <th style= "background-color: green;">Much Knowlege</th>
+          <th style= "background-color: yellow;">Some Knowlege</th> 
+          <th style= "background-color: red;">No Clue</th>
+        </tr>
+        <tr>
+          <td>Python </td>
+          <td>HTML</td>
+          <td>Ruby</td>
+
+        </tr>
+        <tr>
+          <td>Unit Testing</td>
+          <td>CSS</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Java</td>
+          <td>Javascript</td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+    
+    <footer>
+      <img src="https://cdn.glitch.com/0a9376cf-8155-415a-ac46-5351009c3b6f%2FDlb-mxlU0AE9_sA.jpg?v=1567028513900" style="width:400px;height:300px;">
+    </footer>
+    
   </body>
+    </div>
 </html>
