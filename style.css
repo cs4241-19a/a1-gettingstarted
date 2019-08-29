@@ -1,0 +1,30 @@
+body {
+    background-image: linear-gradient(#FFFFF2, #DDD4FF);
+  }
+  h1 {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Righteous', cursive;
+    text-align: center;
+  }
+  h2 {
+    font-family: 'Righteous', cursive;
+    border: 5px solid #FFEF7E;
+    text-align: center;
+  }
+  p {
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.4em;
+    text-align: center;
+  }
+  h3 {
+    text-align: center;
+  }
+  #canvas-container {
+     width: 100%;
+     text-align:center;
+  }
+  
+  canvas {
+     display: inline;
+  }
