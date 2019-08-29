@@ -62,12 +62,17 @@ If you need a Git/GitHub refreseher, see [GitHub Bootcamp](https://help.github.c
 Sample Readme (delete the above when you're ready to submit, and modify the below so with your links and descriptions)
 ---
 
-Charlie Roberts
+Janette Fong
 http://a1-charlieroberts.glitch.me
 
-This project shows ...
+This assignment shows information about myself, including my year and major.
+
+There are sections detailing the courses I have taken and currently taken, and also my prior experiences with technologies and work.
 
 ## Technical Achievements
+
+I successfully imported the Bootstrap library and utilized some of its components 
+
 - **Proved P=NP**: Using a combination of...
 - **Solved AI**: ...
 
