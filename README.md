@@ -15,6 +15,7 @@ For some reason, Glitch doesn't want to use my latest code and keeps rewinding b
 
 __Design Achievement__:
 - Self-picked every single color used in this project and made up an overall cohesive color palette
+- Modified an animated staggering bar chart using another color scheme (original here: https://codepen.io/vajkri/pen/NxzZwL)
 - Most elements are animated while the original template is pretty much static (the original template can be found here for comparison: https://startbootstrap.com/previews/resume/)
 
 
@@ -25,8 +26,9 @@ __Technical Achievement__:
   - animate.css
   - particles.js
   - typeit.js 
-  Particularly, learned how to use particle.js as background but only for the main page. 
+  Particularly, learned how to use particle.js as background but only for the main page and modified the options. 
 - Currently working on inserting a sticky section title with Waypoint but got stuck and could not figure out why... 
-- Modified an animated staggering bar chart (original here: https://codepen.io/vajkri/pen/NxzZwL)
+- animated widget box of coursework
+- Fixed bugs with the original template where the email hyperlink malfunctions if the previous textbox inline is not long enough
 
 
