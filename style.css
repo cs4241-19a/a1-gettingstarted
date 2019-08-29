@@ -1,0 +1,56 @@
+ body{
+        background-color: coral;
+      }
+      .divchange {
+        
+          border: 1px solid #555;
+        }
+       #div2{
+          background-color: blue;
+       }
+body {
+  margin: 0;
+}
+
+.allbody{
+  margin-left:167px;
+}
+
+.navbar {
+  width: 130px;
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  left: 10px;
+  background: #eee;
+  overflow-x: hidden;
+  padding: 8px 10px;
+  background-color: #ADD8E6;
+}
+
+.navbar a {
+  padding: 6px 8px 6px 1px;
+  text-decoration: none;
+  font-size: 21px;
+  color: #000000
+  display: block;
+}
+
+table, th, td {
+  border: 2px solid black;
+}
+
+.myinfo{
+  border-style: solid;
+  border-color: red green blue yellow;
+}
+
+.music{
+      padding-bottom: 20px
+}
+.table{
+  padding-bottom: 20px;
+}
+
+
+
