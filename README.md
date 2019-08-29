@@ -24,7 +24,7 @@ color scheme, animation speed, auto-scroll behavior, divs to display.
 - I paid attention to minor details to improve interactivity, such as color changes on hover.
 - The website is responsive and adapts to mobile version (through use of bootstrap).
 - All the CSS is custom coded for this site, including a custom font from [dafont](https://www.dafont.com/).
-- Added soft synthetic sound to further the user experience.
+- Added soft synthetic sound to further the user experience from [freesound](https://freesound.org/people/eardeer/sounds/415328/).
 - Used FontAwesome icons for personal links in the footer.
 
 
