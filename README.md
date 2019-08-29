@@ -15,7 +15,7 @@ You can view the deployed project at: https://glitch.com/~a1-mmdanke
 -Learned how to use css to change padding, position,color, size parameters and other specifications-especially for the layout of the page and for the format of buttons and the process bar. 
 -Learned how to change the server.js file to implement the css file.
 -Used a table to choose my course experience and chose bootstrap to help it look more visally appealing.
--Used ordered lists(<ol> <li> </li></ol>, underlined items<u></u>, breaks<br></br>, and different heading sizes to create titles and group text accordingly so that it is easier to read.
+-Used ordered lists, underlined items, breaks, and different heading sizes to create titles and group text accordingly so that it is easier to read.
 -Learned to implement a progress bar to represent prior knowledge of Webware that included shading, percentage, and a different progress color.
 
 
