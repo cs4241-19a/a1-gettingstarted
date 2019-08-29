@@ -24,6 +24,44 @@ body {
   color: white;
   text-align: center;
 }
+
+.skills{
+  text-align: left;
+  width: 500px;
+  margin: 60px auto; 
+  color: white;
+  list-style: none;
+}
+
+.skills h3{ /*trying to make it look like h2*/
+  font-size: 25px;
+  text-align: center;
+}
+
+.skills li{
+  margin: 20px 0;
+}
+
+.bar{
+  background: #4E577D;
+  display: block;
+  height: 2px;
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 0 5px #9CBDF9;
+}
+
+.bar span{
+  height: 2px;
+  float: left;
+  background: #305B96;
+}
+
+.html{
+  width: 65
+}
+
 .footer {
   padding: 11px; 
   text-align:center;
