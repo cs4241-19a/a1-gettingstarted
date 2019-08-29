@@ -1,4 +1,4 @@
-Kaitlin McDermott a1-kaitlinmcdermott.glitch.me
+Kaitlin McDermott http://a1-kaitlinmcdermott.glitch.me
 
 This project incldues some basic information about myself.
 
