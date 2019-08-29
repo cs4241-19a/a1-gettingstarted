@@ -2,3 +2,8 @@ body{
   background-color: DarkSlateGray;
   color: BlanchedAlmond;
 }
+
+.content{
+  border-radius: 1px;
+  border-color: BlanchedAlmond;
+}
