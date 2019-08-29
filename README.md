@@ -63,9 +63,9 @@ Sample Readme (delete the above when you're ready to submit, and modify the belo
 ---
 
 Jeffrey Xiao
-http://a1-charlieroberts.glitch.me
+https://a1-jyxiao.glitch.me
 
-This project shows ...
+This project shows a bare-bones version of a personal website/portfolio for Jeffrey Xiao.
 
 ## Technical Achievements
 - Applied concepts of "class selector" and "tag selector" from CSS selectors
