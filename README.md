@@ -12,6 +12,8 @@ This project is assignment 1 for CS4241. It creates a simple webpage with the fo
 - **Work History**
     A breif summary of the past few jobs I've had
 
+Most of the information required is under education for Worcester Polytechnic Institute!
+
 ## Technical Achievements
 - **Converted standard Node JS server to Express JS server**: 
     Installed express using the node package manager, created dependency
