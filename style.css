@@ -148,7 +148,7 @@ p {
 }
 
 .first {
-    background-image: url('gradient photo_edited_edited.png');
+    background-image: url('title_picture.png');
     height: calc(60vh + 30vw);
     background-attachment: fixed;
     background-position: center;
