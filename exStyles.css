@@ -3,7 +3,9 @@ body{
   color: BlanchedAlmond;
 }
 
-.content{
-  border-radius: 1px;
+.contentBox{
+  border-width: 1px;
+  border-style: solid;
   border-color: BlanchedAlmond;
+  border-radius: 2px;
 }
