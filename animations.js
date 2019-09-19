@@ -6,7 +6,8 @@ var messages = [
     ["Hello.", `I'm Jyan.`],
     ["Hola.", "Yo soy Jean Claude."],
     ["Saluton.", "Mi nomiĝas Johano."],
-    ["Xin chào.", "Tôi tên là Rohn."]
+    ["Xin chào.", "Tôi tên là Rohn."],
+    ["你好！", "我叫张坚。"]
 ]
 
 var phase = 0;
@@ -23,7 +24,7 @@ function writeName() {
     } else {
         i = 0;
         j = 0;
-        if (phase === 3) {
+        if (phase === (messages.length - 1)) {
             phase = 0
         } else {
             phase++;
