@@ -121,6 +121,10 @@ p {
     color:#AC2B37
 }
 
+a {
+    color:#AC2B37
+}
+
 .not-too-wide {
     margin: auto;
     max-width: 85%;
@@ -128,4 +132,12 @@ p {
 
 .space-out-paragraphs-20px p {
     margin-bottom: 20px;
+}
+
+.space-out-paragraphs-20px h1 {
+    margin-bottom: 20px;
+}
+
+.space-out-divs div {
+    margin-bottom: 40px;
 }
