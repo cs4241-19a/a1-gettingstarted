@@ -49,6 +49,6 @@ window.onload = function() {
     setTimeout(function() {
         document.getElementById("keep-scrolling").style.opacity = "0";
     }, 4500)
-    document.querySelector(".email").textContent = "jzarate@wpi.edu"
-    document.querySelector(".email").href = "email://jzarate@wpi.edu"
+    document.querySelectorAll(".email").forEach(n => n.textContent = "jzarate@wpi.edu")
+    document.querySelectorAll(".email").forEach(n => n.href = "mailto: jzarate@wpi.edu")
 }
