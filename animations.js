@@ -39,6 +39,8 @@ function writeName() {
 
 
 window.onload = function() {
+    document.getElementById("write-name-1").innerHTML = ""
+    document.getElementById("write-name-2").innerHTML = ""
     writeName();
     document.getElementById("body").classList.add("background");
     setTimeout(function() {
