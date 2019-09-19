@@ -35,6 +35,10 @@ body {
     height: 100%;
 }
 
+.full-height-140 {
+    height: 110%;
+}
+
 .full-height-110 {
     height: 110%;
 }
@@ -103,12 +107,25 @@ p {
     .only-desktop {
         display: none!important;
     }
-    
+
     h1 {
         font-size: 3em;
     }
-    
+
     h2 {
         font-size: 1.5em;
     }
+}
+
+.wpi-color {
+    color:#AC2B37
+}
+
+.not-too-wide {
+    margin: auto;
+    max-width: 85%;
+}
+
+.space-out-paragraphs-20px p {
+    margin-bottom: 20px;
 }
