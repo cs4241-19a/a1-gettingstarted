@@ -1,6 +1,8 @@
 Corrin M Courville ~cmcourville
 https://a1-cmcourville.glitch.me/
 
+https://cmcourville.github.io/a1-cmcourville/
+
 
 This project shows the the tile of the page, basic information about myself, the courses I've taken here at WPI, as well as work experience and skills. 
 
