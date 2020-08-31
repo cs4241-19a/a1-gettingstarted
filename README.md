@@ -39,6 +39,7 @@ This assignment requires that your website is both contained in a GitHub reposit
         * Ruby
         * Python
         * unit testing
+3. Complete some technical and/or design achievements (see below).
 3. Test your project to make sure that when someone goes to your main page, it displays correctly. You can do this locally by simply running `node server.js` from within the assignment directory.
 
 4. Modify the README file according to the specification below.
@@ -64,6 +65,19 @@ By default Glitch often assigns your application a random name. To change it, cl
 The name scheme should be `a1-yourGitHubUsername`.
 The `a1` will need to be updated to `a2`, `a3`, and so on in future projects.
 
+Achievements
+---
+Below are some suggested technical and design achievements. You can use these to help boost your grade up to an A and customize the assignment to your personal interests. These are recommended acheivements, but feel free to create/implement your own... just make sure you thoroughly describe what you did in your README and why it was challenging. ALL ACHIEVEMENTS MUST BE DESCRIBED IN YOUR README IN ORDER TO GET CREDIT FOR THEM.
+
+*Technical*
+1. (max 5 points) Style your page using CSS. Each style rule you apply will get you 1 extra point for a maximum of 5 points. Be sure to describe your style rules in your README.
+2. (5 points) Add a simple JavaScript animation to the page.
+3. (max 5 points) Experiment with other HTML tags (links, images, tables etc.) Each extra tag you use will get you 1 extra point for a maximum of 5 points. Be sure to describe the links you use in your README.
+
+*Design*
+1. (10 points) Create a color palette using [color.adobe.com](https://color.adobe.com). Use all the colors in the palette in your webpage by implementing the appropriate CSS. Add a small screenshot of the color wheel for your color palette to your repo.
+2. (5 points) Use a font from [Goolge Fonts](https://fonts.google.com) in your website.
+
 Resources
 ---
 
@@ -71,7 +85,7 @@ If you need a JavaScript/HTML/CSS refresher, see [HTML & CSS](https://wpi.primo.
 
 If you need a Git/GitHub refreseher, see [GitHub Bootcamp](https://help.github.com/categories/bootcamp/), the [GitHub Guides](https://guides.github.com/) (especially the ones on Hello World, and Understanding the GitHub Flow, and Forking Projects), and [CodeSchool's Try Git Course](https://www.codeschool.com/courses/try-git).
 
-Sample Readme (delete the above when you're ready to submit, and modify the below so with your links and descriptions)
+Sample Readme (delete the above when you're ready to submit, and modify the text below with your links and descriptions)
 ---
 
 Charlie Roberts
@@ -80,10 +94,9 @@ http://a1-charlieroberts.glitch.me
 This project shows ...
 
 ## Technical Achievements
-- **Proved P=NP**: Using a combination of...
-- **Solved AI**: ...
+- **Styled page with CSS**: Added rules for the p, li, and a selectors...
 
 ### Design Achievements
-- **Re-vamped Apple's Design Philosophy**: Shown in `style.css`, the code...
+- **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
 
 
