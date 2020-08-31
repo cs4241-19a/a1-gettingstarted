@@ -14,11 +14,11 @@ In other words, don't just get your website up and done. You will need skills wi
 Assignment details
 ---
 
-This assignment requires that your website is both contained in a GitHub repository and hosted in Glitch. There are three ways to do this:
+This assignment requires that your website is both contained in a GitHub repository and hosted in Glitch. There are two ways to do this:
 
-1. Clone this repo to your computer, make changes locally on your computer, push the repo onto GitHub, and then import your GitHub repo into Glitch.
-2. Clone this repo directly to Glitch, use the Glitch editor to make changes, and then export your repo from Glich to GitHub.
-3. Same as #1, bu instead of importing from Github to Glitch you just upload the files (or copy/paste) them directly to Glitch.
+1. Fork this repo and clone it to your computer, make changes locally on your computer, push the repo onto GitHub, and then import your GitHub repo into Glitch.
+2. Fork this repo and then import it directly to Glitch, use the Glitch editor to make changes, and then export your repo from Glitch back to GitHub.
+3. Same as #1, but instead of importing from Github to Glitch you just upload the files (or copy/paste) them directly to Glitch.
 
 ## Option 1 - Clone to computer, push to Github, import to Glitch (recommended)
 
@@ -39,16 +39,16 @@ This assignment requires that your website is both contained in a GitHub reposit
         * Ruby
         * Python
         * unit testing
-3. Complete some technical and/or design achievements (see below).
-3. Test your project to make sure that when someone goes to your main page, it displays correctly. You can do this locally by simply running `node server.js` from within the assignment directory.
+4. Complete some technical and/or design achievements (see below).
+5. Test your project to make sure that when someone goes to your main page, it displays correctly. You can do this locally by simply running `node server.js` from within the assignment directory.
 
-4. Modify the README file according to the specification below.
-5. Commit and push all your changes to GitHub. 
-6. Deploy your project to Glitch. You can do this by [importing the repo from GitHub](https://medium.com/glitch/import-code-from-anywhere-83fb60ea4875)
-7. Ensure that your project has the proper naming scheme (guide follows) so we can find it.
-8. Create and submit a Pull Request to the original repo.
+6. Modify the README file according to the specification below.
+7. Commit and push all your changes to GitHub. 
+8. Deploy your project to Glitch. You can do this by [importing the repo from GitHub](https://medium.com/glitch/import-code-from-anywhere-83fb60ea4875)
+9. Ensure that your project has the proper naming scheme (guide follows) so we can find it.
+9. Create and submit a Pull Request to the original repo.
 
-## Option 2 - Clone to Glitch, edit on Glitch, and then export to GitHub
+## Option 2 - Fork repo and import to Glitch, edit on Glitch, and then export back to GitHub
 Most of these steps are the same as option 1, except that you being by creating a new project Glitch using this repo as a staring point (just choose New Project > Import from GitHub for this and then paste in the link to your repo). At the end, you can export your Glitch project to GitHub by [following these instructions](https://www.youtube.com/watch?time_continue=77&v=aWJFbtrgW4E&feature=emb_logo). *Note that the location of the projecct export feature in Glitch has moved from what they show in this video.* It's now located in Tools > Import and Export (tools is located in the bottom left of the Glitch editor).
 
 ## Option 3 - Clone to computer, edit locally, push to GitHub, upload to Glitch
