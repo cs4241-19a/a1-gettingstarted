@@ -14,7 +14,13 @@ In other words, don't just get your website up and done. You will need skills wi
 Assignment details
 ---
 
-Do the following to complete this assignment:
+This assignment requires that your website is both contained in a GitHub repository and hosted in Glitch. There are three ways to do this:
+
+1. Clone this repo to your computer, make changes locally on your computer, push the repo onto GitHub, and then import your GitHub repo into Glitch.
+2. Clone this repo directly to Glitch, use the Glitch editor to make changes, and then export your repo from Glich to GitHub.
+3. Same as #1, bu instead of importing from Github to Glitch you just upload the files (or copy/paste) them directly to Glitch.
+
+## Option 1 - Clone to computer, push to Github, import to Glitch (recommended)
 
 1. Fork the starting project code in GitHub. This repo contains:
     * the server code, `server.js`
@@ -40,6 +46,12 @@ Do the following to complete this assignment:
 6. Deploy your project to Glitch. You can do this by [importing the repo from GitHub](https://medium.com/glitch/import-code-from-anywhere-83fb60ea4875)
 7. Ensure that your project has the proper naming scheme (guide follows) so we can find it.
 8. Create and submit a Pull Request to the original repo.
+
+## Option 2 - Clone to Glitch, edit on Glitch, and then export to GitHub
+Most of these steps are the same as option 1, except that you being by creating a new project Glitch using this repo as a staring point (just choose New Project > Import from GitHub for this and then paste in the link to your repo). At the end, you can export your Glitch project to GitHub by [following these instructions](https://www.youtube.com/watch?time_continue=77&v=aWJFbtrgW4E&feature=emb_logo). *Note that the location of the projecct export feature in Glitch has moved from what they show in this video.* It's now located in Tools > Import and Export (tools is located in the bottom left of the Glitch editor).
+
+## Option 3 - Clone to computer, edit locally, push to GitHub, upload to Glitch
+This is the same as option 1, except that for step 6 (Deploy to Glitch) you simply upload each file to your Glitch repository (using New File > Upload a File).
 
 Naming and URL Scheme
 ---
