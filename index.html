@@ -70,11 +70,16 @@
   var i = 0;
   var txt = 'INFORMATION ABOUT PRADNYA MAHURKAR';
   var speed = 150;
+  let color = [0, 100, 200]
+  let val = 50
+  var x = Math.floor(Math.random() * 256);
+  var y = Math.floor(Math.random() * 256);
+  var z = Math.floor(Math.random() * 256);
   
   function write() {
     if (i , txt.length) {
       document.getElementById("type").innerHTML += txt.charAt(i);
-      i++;
+      document.getElementById("type").style.color = getRandomColor();
       setTimeout(write, speed)
     }
   }
