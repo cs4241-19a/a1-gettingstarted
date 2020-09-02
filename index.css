@@ -1,0 +1,109 @@
+/*
+Color Wheel Palatte
+-------------------
+White:  #FFFFFF
+Gold:   #DEC945
+Green:  #A6BC17
+Orange: #FC8E0D
+Brown:  #C2780A 
+*/
+
+body {
+	background-color: #FC8E0D;
+}
+
+h1 {
+	font-family: 'Alegreya SC', serif;
+	font-size: 70px;
+	color: #000000;
+	text-align: center;
+	line-height: 80%;
+}
+
+h2.title {
+	font-family: 'Alegreya SC', serif;
+	font-size: 30px;
+	font-weight: normal;
+	color: black;
+	text-align: center;
+	line-height: 10%;
+}
+
+button {
+	color: black;
+	background-color: #FFFFFF;
+	padding: 15px 32px;
+	font-family: 'Alegreya SC', serif;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	margin: auto;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+p.class {
+	font-family: 'Alegreya SC', serif;
+	font-size: 30px;
+	font-weight: normal;
+	color: black;
+	text-align: center;
+	line-height: 10%;
+}
+p.def {
+	font-family: 'Alegreya SC', sans-serif;
+	font-size: 20px;
+	color: black;
+	text-align: center;
+}
+
+ul {
+	font-family: 'Alegreya SC', sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	color: black;
+}
+
+hr.s1 {
+	border: 3px solid #FFFFFF;
+	border-radius: 5px;
+}
+hr.s2 {
+	border: 3px solid #DEC945;
+	border-radius: 5px;
+}
+hr.s3 {
+	border: 3px solid #A6BC17;
+	border-radius: 5px;
+}
+
+div.columnl {
+	float: left;
+	width: 59%;
+}
+div.columnr {
+	float: left;
+	width: 40%;
+}
+div.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+img {
+	float: left;
+	width: 30%;
+	height: 30%;
+	border: 5px solid #C2780A;
+	margin: 5px;
+}
+
+p.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%
+}

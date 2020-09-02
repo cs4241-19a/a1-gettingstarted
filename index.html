@@ -1,28 +1,84 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
+
+<head>
+  <title>CS4241 Assignment 1</title>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@400&family=Oswald&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+  <h1>Nicole Conill</h1>
+
+  <hr class="s1">
+  <hr class="s2">
+  <hr class="s3">
+
+  <button onClick="this.style.visibility='hidden'; displayInfo()">
+    Click to Learn About Me!
+  </button>
+
+  <div id = "myInfo" style="display: none">
+
+    <p class="class" id="info">
+      WPI Class of 2022<br>
     </p>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
+    <p class="def">
+      Major: Computer Science<br>
+      Concentration: Cybersecurity<br>
+      Minor: Law & Technology<br>
     </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
-  </body>
+
+    <div class="row">
+      <div class="columnl">
+        <h2 class ="title">Previous CS Courses:</h2>
+        <ul>
+          <li>1101: Introduction to Program Design</li>
+          <li>2011: Introduction to Machine Organization & Assembly</li>
+          <li>2102: Object-Oriented Design Concepts</li>
+          <li>2223: Algorithms</li>
+          <li>2303: Systems Programming Concepts</li>
+          <li>3041: Human-Computer Interaction</li>
+          <li>3516: Computer Networks</li>
+          <li>3733: Software Engineering</li>
+          <li>4801: Introduction to Cryptograhy & Communication Security</li>
+        </ul>
+      </div> 
+
+      <div class="columnr">
+        <h2 class ="title">Proficiencies:</h2>
+        <ul>
+          <li>HTML - a lot</li>
+          <li>CSS - a lot</li>
+          <li>Java - some</li>
+          <li>JavaScript - some</li>
+          <li>Ruby - none</li>
+          <li>Python - a lot</li>
+          <li>Unit Testing - some</li>
+        </ul>
+      </div>
+    </div>
+
+    <img src="MePic1.png" width="600" height="500">
+    <img src="MePic2.png" width="600" height="500">
+    <img src="MePic3.png" width="600" height="500">
+
+  </div>
+
+  <script>
+    function displayInfo() {
+      var x = document.getElementById("myInfo");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+  </script>
+
+
+</body>
 </html>
