@@ -30,8 +30,9 @@
   <body>
     <header>
       <h1 id="type"></h1>
-      <img src="pngfind.com/pngs/m/346-3464557_wpi-logo-wpi-worcester-polytechnic-institute-hd-png.png" alt="WPI logo">
     </header>
+    
+    <img src="https://cdn.glitch.com/9bfc28d3-d11e-4914-82cf-3900fa459aa7%2FWPI_Inst_Prim_FulClr.png?v=1599069669110" alt="WPI logo" style="width:100%px;height:250px;">
     <p>
       Hi! My name is <a href="https://www.linkedin.com/in/pradnyamahurkar/">Pradnya Mahurkar</a>. I am a student in the WPI Class of 2022.
     </p>
@@ -105,13 +106,12 @@
 <script>
   var tracker = 0;
   var heading = 'INFORMATION ABOUT PRADNYA MAHURKAR';
-  var speed = 150;
   
   function write() {
     if (tracker , heading.length) {
       document.getElementById("type").innerHTML += heading.charAt(tracker);
       tracker++;
-      setTimeout(write, speed)
+      setTimeout(write, 50)
     }
   }
   
