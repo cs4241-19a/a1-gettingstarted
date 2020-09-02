@@ -1,0 +1,35 @@
+h1 {
+    background-color: #4D9958;
+}
+
+h2 {
+    background-color: #997854;
+}
+
+p {
+    background-color: #E6AE73;
+}
+
+body {
+    background-color: #8BE698;
+}
+
+ul {
+    background-color: #B7A1E6;
+}
+
+#animate {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+
+#container {
+    width: 900px;
+    height: 400px;
+    position: relative;
+    background: white;
+}
+
+
+

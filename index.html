@@ -2,13 +2,14 @@
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
+    <link rel="stylesheet" href="stylesheet.css">
     <meta charset="utf-8">
   </head>
   <body>
     <h1>Information about Ioannis Kyriazis (class of 2021)</h1>
     <p>
       Hello, I am a senior at WPI. I like to spend time with my family and friends, skateboard, read, and watch youtube
-      and netflix.
+      and netflix. <a href="www.ioannis.ky">Here</a> is my personal website.
     </p>
     <p>
       I am majoring in Computer Science. I am pursuing two minors. One in Writing and Rhetoric, the other in Electrical
@@ -41,5 +42,26 @@
         <li>Accelerated Intro to Program Design</li>
       </ul>
     </ul>
+  <p>Click <button onclick="myMove()"> here</button> to send the skateboard</p>
+  <div id="container">
+    <img src = "skateboard.png" id = "animate">
+  </div>
+  <script>
+    function myMove() {
+      var elem = document.getElementById("animate");
+      var pos = 0;
+      var id = setInterval(frame, 5);
+      function frame() {
+        if (pos == 350) {
+          clearInterval(id);
+        } else {
+          pos++;
+          elem.style.top = pos + "px";
+          elem.style.left = pos + "px";
+        }
+      }
+    }
+  </script>
+
   </body>
 </html>
