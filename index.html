@@ -15,13 +15,17 @@
         color: dimgray;
         border: 2px solid powderblue;
       }
+        
+      table, th, td {
+        border: 2px solid black;
+      }
     </style>
     <meta charset="utf-8">
   </head>
   <body>
     <h1 id="type"></h1>
     <p>
-      Hi! My name is Pradnya Mahurkar. I am a student in the WPI Class of 2022.
+      Hi! My name is <a href="https://www.linkedin.com/in/pradnyamahurkar/">Pradnya Mahurkar</a>. I am a student in the WPI Class of 2022.
     </p>
     <p>
       My Major is Computer Science
@@ -44,7 +48,7 @@
     </p>
 
     <h2>Experience</h2>
-    <p>
+<!--     <p>
       <ul>
         <li>HTML - A lot</li>
         <li>CSS - A lot</li>
@@ -54,7 +58,42 @@
         <li>Python - A lot</li>
         <li>Unit Testing - Some</li>
       </ul>  
-    </p>
+    </p> -->
+
+<table style="width:100%">
+  <tr>
+    <th>TECHNOLOGY/METHODS</th>
+    <th>EXPERIENCE</th> 
+  </tr>
+  <tr>
+    <td>HTML</td>
+    <td>A lot</td> 
+  </tr>
+  <tr>
+    <td>CSS</td>
+    <td>A lot</td> 
+  </tr>
+  <tr>
+    <td>Java</td>
+    <td>A lot</td> 
+  </tr>
+  <tr>
+    <td>JavaScript</td>
+    <td>Some</td> 
+  </tr>
+  <tr>
+    <td>Ruby</td>
+    <td>None</td> 
+  </tr>
+  <tr>
+    <td>Python</td>
+    <td>A lot</td> 
+  </tr>
+  <tr>
+    <td>Unit Testing</td>
+    <td>Some</td> 
+  </tr>
+</table>
 
     <h2>
       Working experience
@@ -67,14 +106,14 @@
     </ul>
   </body>
 <script>
-  var i = 0;
+  var tracker = 0;
   var heading = 'INFORMATION ABOUT PRADNYA MAHURKAR';
   var speed = 150;
   
   function write() {
-    if (i , heading.length) {
-      document.getElementById("type").innerHTML += heading.charAt(i);
-      i++;
+    if (tracker , heading.length) {
+      document.getElementById("type").innerHTML += heading.charAt(tracker);
+      tracker++;
       setTimeout(write, speed)
     }
   }
