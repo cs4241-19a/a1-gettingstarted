@@ -19,9 +19,11 @@ ul {
 }
 
 #animate {
-    width: 50px;
+    width: 130px;
     height: 50px;
     position: absolute;
+    top: 350px;
+    left: 0px;
 }
 
 #container {
@@ -31,5 +33,21 @@ ul {
     background: white;
 }
 
+#me {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 180px;
+    left: -25px;
+}
+
+#rock {
+    width: 50px;
+    height: 25px;
+    position: absolute;
+    background-color: black;
+    top: 375px;
+    left: 375px;
+}
 
 

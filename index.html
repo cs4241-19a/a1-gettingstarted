@@ -42,23 +42,61 @@
         <li>Accelerated Intro to Program Design</li>
       </ul>
     </ul>
-  <p>Click <button onclick="myMove()"> here</button> to send the skateboard</p>
+  <p>Click <button onclick="myMove()"> here</button> to make me ollie over da box.</p>
   <div id="container">
     <img src = "skateboard.png" id = "animate">
+    <img src = "me.png" id = "me">
+    <div id = "rock"></div>
   </div>
   <script>
     function myMove() {
-      var elem = document.getElementById("animate");
-      var pos = 0;
+      var board = document.getElementById("animate");
+      var rock = document.getElementById("rock");
+      var me = document.getElementById("me");
+      var xpos = 0;
+      var ypos = 375;
+      var mxpos = -25;
+      var mypos = 180;
+
       var id = setInterval(frame, 5);
       function frame() {
-        if (pos == 350) {
+        if (xpos == 750) {
           clearInterval(id);
         } else {
-          pos++;
-          elem.style.top = pos + "px";
-          elem.style.left = pos + "px";
+          xpos++;
+          mxpos++;
+          board.style.left = xpos + "px";
+          me.style.left = mxpos + "px";
+          if (xpos > 230 && xpos < 260) {
+            ollie();
+          }
+          if (xpos > 260 && xpos < 290) {
+            ypos -= 3;
+            mypos -= 3;
+            board.style.top = ypos + "px";
+            me.style.top = mypos + "px";
+
+          }
+          if (xpos > 380 && xpos < 410) {
+            ypos += 2;
+            mypos += 3;
+            ollieLevel();
+            board.style.top = ypos + "px";
+            me.style.top = mypos + "px";
+          }
         }
+      }
+      theta = 0;
+      function ollie() {
+        board.style.transform = 'rotate(' + theta + 'deg)';
+        me.style.transform = 'rotate(' + theta + 'deg)';
+
+        theta--;
+      }
+      function ollieLevel() {
+        board.style.transform = 'rotate(' + theta + 'deg)';
+        me.style.transform = 'rotate(' + theta + 'deg)';
+        theta++;
       }
     }
   </script>
