@@ -32,7 +32,7 @@ The project itself was a single page website that was meant to be an introductio
     - Border-radius - The way that I made the image of myself a circle was achieved with this
     - Text-justify - The justified margins of the description text was made with this css
     - Font-family - This is how I got the text to be 'Source Sans Pro' (backup is sans serif if it cannot load)
-    - List-style-type - I used some unordered lists in my site; I set this parameter to None so the bullets wouldn't show up
+    - Color - This was used for changing the color of text between sections
     - **It is worth mentioning that most of the styling of this site was done through the library Bootstrap and I don't take credit for all of that styling; however, the above styling was done by myself with inline styling and some in another CSS file**
 - **Experimented with HTML tags (5pts; 1 per element)**
     - Nav - Used for the navbar at the top of the page, the styling was done using Bootstrap, a CSS library
