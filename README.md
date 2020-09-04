@@ -20,6 +20,9 @@ This project shows my basic understanding of CSS, JavaScript, and HTML. Using th
   - Set the font family of p to Assistant (A Google font).
 2. Added a simple JavaScript animation
   - With the help of the tutorials on W3Schools, I was able to create a simple JavaScript for my heading where individual letters get placed in order. The code is placed under the "script" tag in the index.html file.
+  - The function is given a string and it outputs them as the heading by placing the characters 1 by 1 and gives a typing effect
+3. Experiment with HTML Tags
+  - 
   
 
 ### Design Achievements
