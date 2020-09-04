@@ -8,19 +8,15 @@ body {
 }
 
 h1 {
-	font-size: 52px;
-}
-
-#github-label {
-	padding-left: 14px;
+	font-size: 64px;
 }
 
 h2 {
-	font-size: 48px;
+	font-size: 52px;
 }
 
 p {
-	font-size: 32px;
+	font-size: 36px;
 }
 
 a {
@@ -39,13 +35,45 @@ li {
 table {
 	width: 384px;
 	height: 32px;
-	border: 1px solid #333;
 }
 
-th,
-td {
-	border: 1px solid #333;
+h3 {
+	font-size: 32px;
+}
+
+th {
+	border: 3px solid rgba(51, 51, 51, 1);
 	font-size: 32px;
 	text-align: center;
-	padding: 0px;
+}
+td {
+	border: 2px solid rgba(51, 51, 51, 0.8);
+	font-size: 24px;
+	text-align: center;
+}
+
+#header {
+	text-align: center;
+	padding-bottom: 32px;
+}
+
+#github-label {
+	padding-left: 18px;
+}
+
+#experience-label {
+	text-align: center;
+}
+
+#coursework-label {
+	text-align: center;
+}
+
+#coursework {
+	display: flex;  
+	flex-wrap: wrap;
+}
+
+#work-exp {
+	padding-bottom: 16px;
 }
