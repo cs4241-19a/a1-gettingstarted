@@ -3,16 +3,31 @@
 	<head>
 		<title>CS4241 Assignment 1</title>
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
-    	<link rel="stylesheet" href="style.css" >
+		<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Anton">
+    	<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
+	<script src="script.js"></script>
 	<body>
-		<h1>Information about Luke Bodwell</h1>
+		<div class="wrapper"></div>
+		<h1>Luke Bodwell</h1>
 		<p>WPI Class of 2022</p>
 		<p>Major: Computer Science/IMGD Tech</p>
-		<p>[Other things]</p>
-
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6">
+					<p>Check out my GitHub:</p>
+				</div>
+				<div class="col-xs-6">
+					<a href="https://github.com/lbodwell">
+						<img alt="GitHub" src="https://jszym.com/images/github.svg" width="64" height="64">
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="foo">
+			
+		</div>
 		<h2>Experience</h2>
 		<p>WPI Coursework</p>
 		<ul>
@@ -29,6 +44,7 @@
 			<li>IMGD 1001: The Game Development Process</li>
 			<li>IMGD 2030: Game Audio I</li>
 			<li>IMGD 1000: Critical Studies of Interactive Media and Games</li>
+			<li>IMGD 2900: Digital Game Design</li>
 			<li>MU 3614: Topics in MIDI</li>
 			<li>MU 3620: Electronic Music Composition</li>
 		</ul>
@@ -37,5 +53,42 @@
 			<li>Shawnee Peak</li>
 			<li>Freelance Development</li>
 		</ul>
+		<table>
+			<thead>
+				<tr>
+					<th colspan="2">Technologies Experience</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>HTML</td>
+					<td>A lot</td>
+				</tr>
+				<tr>
+					<td>CSS</td>
+					<td>Some</td>
+				</tr>
+				<tr>
+					<td>Java</td>
+					<td>A lot</td>
+				</tr>
+				<tr>
+					<td>JavaScript</td>
+					<td>A lot</td>
+				</tr>
+				<tr>
+					<td>Ruby</td>
+					<td>None</td>
+				</tr>
+				<tr>
+					<td>Python</td>
+					<td>Some</td>
+				</tr>
+				<tr>
+					<td>Unit Testing</td>
+					<td>Some</td>
+				</tr>
+			</tbody>
+		</table>
 	</body>
 </html>

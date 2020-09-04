@@ -18,7 +18,7 @@ http.createServer((req, res) => {
 			}
 		});
 	} else {
-		console.log("Error 405. Method not allowed");
+		console.log("Error 405. Method not allowed. ");
 		res.writeHead(405);
 		res.end("Error 405. Method not allowed.");
 	}
