@@ -19,7 +19,8 @@ This project shows my basic understanding of CSS, JavaScript, and HTML. Using th
   - Set the header to be displayed as a block.
   - Set the font family of p to Assistant (A Google font).
 2. Added a simple JavaScript animation
-  - With the help of 
+  - With the help of the tutorials on W3Schools, I was able to create a simple JavaScript for my heading where individual letters get placed in order. The code is placed under the "script" tag in the index.html file.
+  
 
 ### Design Achievements
 - **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
