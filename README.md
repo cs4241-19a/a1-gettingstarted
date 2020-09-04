@@ -43,5 +43,5 @@ The project itself was a single page website that was meant to be an introductio
 
 ### Design Achievements
 
-- **Created and used a color palette using <a href="https://color.adobe.com">color.adobe.com</a>:**
+- **Created and used a color palette using <a href="https://color.adobe.com">color.adobe.com</a> (10pts):**
   <img src="https://cdn.glitch.com/c755789f-d276-469c-acdc-1ca78634323b%2Fpalette.jpg?v=1599241720762" alt="picture of color palette">
