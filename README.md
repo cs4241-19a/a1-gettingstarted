@@ -1,77 +1,46 @@
-Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
-===
+# Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 
-*DUE: Thursday, August 29th by 11:59 AM (before the start of class!)*  
 
-This assignment is a "warm-up" exercise. 
-You will simply deploy the starting Web site that you will use this term to [Glitch](http://www.glitch.com/). 
+## Description
 
-Treat this assignment as a chance to get up to speed on Git, GitHub, and Glitch. 
-If you already know these, great. 
-However, if you're new to them, spend several hours practicing, experimenting, and reading documentation. 
-In other words, don't just get your website up and done. You will need skills with these tools throughout the rest of the course.
+Connor Burri:
+<a href="https://a1-cjburri.glitch.me/">Glitch Site</a>
 
-Assignment details
+This project is a warmup exercise for CS4241 (Webware) that is meant as a introduction for deploying a website that will be used for the term on <a href="https://www.glitch.com">Glitch</a>.
+
+The goal of this project was to get more acclimated to Git, Github and Glitch for source code management and deployment. As well as getting familiar with HTML, CSS and JS for the actual source code itself. By the end of this project, we should start to become familiar with the full web tech-stack (which I have successfully done).
+
+The project itself was a single page website that was meant to be an introduction to ourselves, specifically citing:
+
+<ol>
+  <li>Name</li>
+  <li>Class</li>
+  <li>Majors and Minors</li>
+  <li>Previous Courses</li>
+  <li>And experiences in certain technologies</li>
+</ol>
+
 ---
 
-Do the following to complete this assignment:
+## Achievements
 
-1. Fork the starting project code in GitHub. This repo contains:
-    * the server code, `server.js`
-    * A starting `index.html` file that you will edit as described below
-    * A package.json file that helps configure Glitch
-    * This README
-2. Edit `index.html` to show the following information about you:
-    * your name and class at WPI (e.g. class of 2020) Note: Do not put any contact or personal information that you do not potentially want other people outside of this class to see.
-    * your major(s) and minor(s)
-    * previous computer science courses that you have taken at WPI
-    * your experience with the following technologies and methods (none, some, a lot)
-        * HTML
-        * CSS
-        * Java
-        * JavaScript
-        * Ruby
-        * Python
-        * unit testing
-3. Test your project to make sure that when someone goes to your main page, it displays correctly. You can do this locally by simply running `node server.js` from within the assignment directory.
+### Technical Achievements
 
-4. Modify the README file according to the specification below.
-5. Commit and push all your changes to GitHub. 
-6. Deploy your project to Glitch. You can do this by [importing the repo from GitHub](https://medium.com/glitch/import-code-from-anywhere-83fb60ea4875)
-7. Ensure that your project has the proper naming scheme (guide follows) so we can find it.
-8. Create and submit a Pull Request to the original repo.
-
-Naming and URL Scheme
----
-
-You must use a consistent naming scheme for all projects in this course.
-If we can't find it, we can't grade it.
-
-By default Glitch often assigns your application a random name. To change it, click on the project dropdown menu in the upper left corner of Glitch. You will then see an additional text field displaying the project name in the resulting menu; click here to edit the name.
-
-The name scheme should be `a1-yourGitHubUsername`.
-The `a1` will need to be updated to `a2`, `a3`, and so on in future projects.
-
-Resources
----
-
-If you need a JavaScript/HTML/CSS refresher, see [Technology Fundamentals by Scott Murray](http://chimera.labs.oreilly.com/books/1230000000345/ch03.html#_html) and/or [JavaScript Codeacademy](https://www.codecademy.com/en/tracks/javascript).
-
-If you need a Git/GitHub refreseher, see [GitHub Bootcamp](https://help.github.com/categories/bootcamp/), the [GitHub Guides](https://guides.github.com/) (especially the ones on Hello World, and Understanding the GitHub Flow, and Forking Projects), and [CodeSchool's Try Git Course](https://www.codeschool.com/courses/try-git).
-
-Sample Readme (delete the above when you're ready to submit, and modify the below so with your links and descriptions)
----
-
-Charlie Roberts
-http://a1-charlieroberts.glitch.me
-
-This project shows ...
-
-## Technical Achievements
-- **Proved P=NP**: Using a combination of...
-- **Solved AI**: ...
+- **Styled page with CSS (5pts; 1 per element)**:
+    - Background-color - I used this a handful of times to make the background of my Divs match the pallete I had
+    - Border-radius - The way that I made the image of myself a circle was achieved with this
+    - Text-justify - The justified margins of the description text was made with this css
+    - Font-family - This is how I got the text to be 'Source Sans Pro' (backup is sans serif if it cannot load)
+    - Color - This was used for changing the color of text between sections
+    - **It is worth mentioning that most of the styling of this site was done through the library Bootstrap and I don't take credit for all of that styling; however, the above styling was done by myself with inline styling and some in another CSS file**
+- **Experimented with HTML tags (5pts; 1 per element)**
+    - Nav - Used for the navbar at the top of the page, the styling was done using Bootstrap, a CSS library
+    - Div - This was mainly used for hierarchy of the page, I used the column/row feature a lot (provided by Bootstrap)
+    - Span - This was used for the badges at the bottom of the page that have the course ID's as well as my proficiency in a language (None, Some, A Lot) housed within them (styling from Bootstrap)
+    - Image - This was the image of myself in the top right, used it to make the project a little more personal
+    - Link - I used the link tag in the head to get Bootstrap, Fonts, and my own CSS file into the project
 
 ### Design Achievements
-- **Re-vamped Apple's Design Philosophy**: Shown in `style.css`, the code...
 
-
+- **Created and used a color palette using <a href="https://color.adobe.com">color.adobe.com</a> (10pts):**
+  <img src="https://cdn.glitch.com/c755789f-d276-469c-acdc-1ca78634323b%2Fpalette.jpg?v=1599241720762" alt="picture of color palette">
