@@ -2,6 +2,7 @@
 Joseph Cybul
 
 https://a1-jcybul.glitch.me/
+
 This project shows how to create a basic nodeJS server and link a html file to it for a basic website. It uses some external sources, like css styling sheets pictures. The objective is to introduce the basic idea of website creation with html. Styling with css and server creation with nodeJS.
 
 ## Technical Achievements
