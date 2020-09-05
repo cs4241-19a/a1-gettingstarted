@@ -30,6 +30,6 @@ This project shows ...
 - **Edited server.js**: Added cases to the switch statement inside http.createServer in order to add support for my external image and .css files.
 
 ### Design Achievements
-- **Used a custom color palette from color.adobe.com**: You can find the color palette [here](https://github.com/alexmhunt/a1-gettingstarted/blob/master/colorpalette.png) in the repo.
+- **Used a custom color palette from color.adobe.com**: You can find the color palette [here](https://github.com/alexmhunt/a1-gettingstarted/blob/master/colorpalette.png) in the repo. I used CSS styles to add these colors to the page using the h1, h2, h3, body, and li selectors.
 
 
