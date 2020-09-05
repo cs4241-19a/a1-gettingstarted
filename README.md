@@ -27,8 +27,9 @@ This project shows ...
   - address: For my email address at the top.
   - select: To create a small drop-down menu in the "Memes" section at the bottom. Currently does nothing.
   - (The <iframe> tag was copied from YouTube's video embed, so it's not my work. I just put the video embed there for fun.)
+- **Edited server.js**: Added cases to the switch statement inside http.createServer in order to add support for my external image and .css files.
 
 ### Design Achievements
-- **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
+- **Used a custom color palette from color.adobe.com**: You can find the color palette [here](https://github.com/alexmhunt/a1-gettingstarted/blob/master/colorpalette.png) in the repo.
 
 
