@@ -1,0 +1,38 @@
+body{
+  font-family: 'Lato', sans-serif;
+}
+h1{
+  padding: 8px;
+  background-color: #AEB7FD; 
+}
+h2{
+  padding: 5px;
+  background-color: #9DB7E3;
+}
+p{
+  padding: 4px;
+  background-color: #B8E2FA;
+}
+li{
+  margin: 1px;
+  padding: 2px;
+  background-color: #AEFDEF;
+}
+job{
+  display: block;
+  margin: 6px;
+  padding: 2px;
+  font-weight: bold;
+  background-color: #9DDCE3;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: center;
+}
+th{
+  background-color: #9DDCE3;
+}
