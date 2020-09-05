@@ -1,15 +1,13 @@
 
-Sample Readme (delete the above when you're ready to submit, and modify the text below with your links and descriptions)
----
+Joseph Cybul
 
-Charlie Roberts
-http://a1-charlieroberts.glitch.me
-
-This project shows ...
+This project shows how to create a basic nodeJS server and link a html file to it for a basic website. It uses some external sources, like css styling sheets pictures. The objective is to introduce the basic idea of website creation with html. Styling with css and server creation with nodeJS.
 
 ## Technical Achievements
-- **Styled page with CSS**: Added for the body background color.
-- **Styled page with CSS**: Added a rule for Heading 1. 
+- **Styled page with CSS**: Created style rules for headers, the body of the page a
+
+
+
 
 ### Design Achievements
-- **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
+- **Used the Times New Roman Font from Google Fonts**: for styling all mi text I used Times New Roman font
