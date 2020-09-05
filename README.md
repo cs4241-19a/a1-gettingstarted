@@ -14,9 +14,9 @@ This project shows ...
   - And this
 - **Styled page with CSS**: Added rules for the following selectors:
   - body
-    -background color #95C0E0
-    -center-aligned text
-    -Arial font
+    - background color #95C0E0
+    - center-aligned text
+    - Arial font
   -headers:
     -h1: color #052B47, 36px size font
     -h2: color #3A454D
