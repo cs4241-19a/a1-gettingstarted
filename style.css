@@ -1,0 +1,36 @@
+body{
+    background-color: #95C0E0;
+    text-align: center;
+    font-family: Arial;
+}
+
+h1{
+    color:#052B47;
+    font-size:36px;
+    
+}
+
+h2{
+    color: #3A454D;
+
+}
+h3{
+    text-align: left;
+    color: #0E77C7;
+}
+
+ul{
+    text-align: left;
+}
+
+li{
+    color: #0A5894;
+}
+
+table{
+    border: 5px solid #DDDDDD;
+}
+
+th{
+    border: 1px solid #000000;
+}
