@@ -11,7 +11,6 @@ const server = http.createServer( function( request,response ) {
       sendFile( response, 'index.html' )
       break
     default:
-      //response.end( index, 'utf-8')
       response.end( '404 Error: File Not Found' )
   }
 })
