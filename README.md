@@ -13,7 +13,7 @@ This project shows ...
   - Like this
   - And this
 - **Styled page with CSS**: Added rules for the following selectors:
-  -body
+  - body
     -background color #95C0E0
     -center-aligned text
     -Arial font
