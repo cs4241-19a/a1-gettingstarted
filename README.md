@@ -8,6 +8,10 @@ http://a1-charlieroberts.glitch.me
 This project shows ...
 
 ## Technical Achievements
+- Dashes work just as well
+- And if you have sub points, put two spaces before the dash or star:
+  - Like this
+  - And this
 - **Styled page with CSS**: Added rules for the following selectors:
   -body
     -background color #95C0E0
