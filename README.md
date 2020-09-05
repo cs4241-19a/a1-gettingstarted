@@ -1,5 +1,5 @@
 Adrianna Staszewska 
-https://glitch.com/~a1-adriannastaszewska
+https://a1-adriannastaszewska.glitch.me
 
 ## Technical Achievements
 - **Created table for Experience section**: Used table, tr and td tags to create a table structure 
