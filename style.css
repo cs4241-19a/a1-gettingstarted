@@ -1,0 +1,36 @@
+body {
+  background-color: #32C6DB;
+}
+h1 {
+   color: #3D9EFF; font-family: 'Times New Roman', serif; font-size: 45px;
+   animation-duration: 3s;
+  animation-name: slidein;
+  }
+h2 {
+     color: #3D9EFF; font-family: 'Times New Roman', serif; font-size: 30px;
+    }
+listH
+{
+  color: #3D9EFF; font-family: 'Times New Roman', serif; font-size: 15px;
+}
+h3 {
+  color: #3D9EFF;
+  font-family: 'Times New Roman', serif;
+  font-size: 18px;
+}
+p {
+  color: black;
+
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
