@@ -24,7 +24,7 @@ This project shows ...
   - image: Photo of myself
   - link (a): Links to my IMGD4000 project page. Can be found right under the table of CS classes I've taken.
   - table: Forms a table of all the CS classes I've taken.
-  - address: For my email address at the top.
+  - address: For my email address under my photo.
   - select: To create a small drop-down menu in the "Memes" section at the bottom. Currently does nothing.
   - (The <iframe> tag was copied from YouTube's video embed, so it's not my work. I just put the video embed there for fun.)
 - **Edited server.js**: Added cases to the switch statement inside http.createServer in order to add support for my external image and .css files.
