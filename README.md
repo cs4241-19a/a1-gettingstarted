@@ -9,6 +9,7 @@ This project shows ...
 
 ## Technical Achievements
 - **Styled page with CSS**: Added rules for the following selectors:
+  -Test
   -body
     -background color #95C0E0
     -center-aligned text
