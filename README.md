@@ -3,7 +3,7 @@ Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 ---
 
 Alex Hunt
-http://a1-charlieroberts.glitch.me
+https://a1-alexmhunt.glitch.me
 
 This project shows ...
 
