@@ -5,9 +5,9 @@ This project shows how to create a basic nodeJS server and link a html file to i
 
 ## Technical Achievements
 - **Styled page with CSS**: Created style rules for headers, the body of the page and paragraphs;
-- **Added an animation**: Included a slide animation when the page is first opened everything slides in from the left side of the browser.
+- **Added an animation**: Included a slide animation when the page is first opened the title slides from the right, and when reloaded everything slides in from the left side of the browser.
 - **Added an image tag**: Included on the web page an image tag, to have an image of myself on the top of the webpage.
-- **Added hyperlinks**: On the companies I have worked for listed on the page I added hyperlinks to visit their webpages 
+- **Added hyperlinks**: On the companies I have worked for listed on the page I added hyperlinks to visit their webpages
 
 ### Design Achievements
 - **Used the Times New Roman Font from Google Fonts**: for styling all mi text I used Times New Roman font
