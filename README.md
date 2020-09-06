@@ -8,7 +8,7 @@ This assignment includes a simple website created with my information. I've take
 
 ### Technical Achievements
 - **Page Styling with CSS**: Inside file "style.css", rules were set separately for headings(1,2,3); table; list; button(before click and hover); division. Color, font, border, paddings were modified in almost every rule.
-- **JavaScript Animation**: Animation was added on buttons, which were designed to be collapsible. The code of this animation was written in "animation.js". For this achievement, I wrote the onclick event listener based on the reference from *w3schools*: [Link](https://www.w3schools.com/howto/howto_js_collapsible.asp), but slightly simplified.
+- **JavaScript Animation**: Animation was added on buttons, which were designed to be collapsible. The code of this animation was written in scripts of "index.html". For this achievement, I wrote the onclick event listener based on the reference from *w3schools*: [Link](https://www.w3schools.com/howto/howto_js_collapsible.asp), but slightly simplified.
 - **Other HTML Tags**: Inside the web page, link, image, table, button and division tags were used.
 
 ### Design Achievements
