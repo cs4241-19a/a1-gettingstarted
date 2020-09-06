@@ -1,0 +1,23 @@
+h1 {
+  color: #faecb5;
+  font-family: "Cousine", serif;
+  font-weight: bold;
+}
+
+h2 {
+  color: #f2d972;
+  font-style: italic;
+}
+
+body {
+  background-color: #131aa8;
+  padding: 1em;
+}
+
+main {
+  background-color: #5d64fb;
+}
+
+li > ul > li {
+  font-size: 14px;
+}

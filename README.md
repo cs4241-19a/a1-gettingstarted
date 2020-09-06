@@ -1,77 +1,21 @@
-Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
-===
+# Assignment 1
 
-*DUE: Thursday, August 29th by 11:59 AM (before the start of class!)*  
+Matthew Kaminski [http://a1-matkam7.glitch.me](http://a1-matkam7.glitch.me)
 
-This assignment is a "warm-up" exercise. 
-You will simply deploy the starting Web site that you will use this term to [Glitch](http://www.glitch.com/). 
+This project is my submission for Assignment 1 of Webware, which contains a bit about me and my experience.
 
-Treat this assignment as a chance to get up to speed on Git, GitHub, and Glitch. 
-If you already know these, great. 
-However, if you're new to them, spend several hours practicing, experimenting, and reading documentation. 
-In other words, don't just get your website up and done. You will need skills with these tools throughout the rest of the course.
+Technical Achievements
 
-Assignment details
----
+- **Styled page with CSS**: Added rules for h1, h2, body, main, and li > ul > li. h1 is a different color, font, and is bold, h2 is a different color and italics, body is a different color with padding, main is a different color, and li > ul > li makes sub-bullets a smaller font size.
 
-Do the following to complete this assignment:
+- **Add a simple JavaScript animation to the page**: Added a button that moves a circle left and right.
 
-1. Fork the starting project code in GitHub. This repo contains:
-    * the server code, `server.js`
-    * A starting `index.html` file that you will edit as described below
-    * A package.json file that helps configure Glitch
-    * This README
-2. Edit `index.html` to show the following information about you:
-    * your name and class at WPI (e.g. class of 2020) Note: Do not put any contact or personal information that you do not potentially want other people outside of this class to see.
-    * your major(s) and minor(s)
-    * previous computer science courses that you have taken at WPI
-    * your experience with the following technologies and methods (none, some, a lot)
-        * HTML
-        * CSS
-        * Java
-        * JavaScript
-        * Ruby
-        * Python
-        * unit testing
-3. Test your project to make sure that when someone goes to your main page, it displays correctly. You can do this locally by simply running `node server.js` from within the assignment directory.
+- **Experiment with other HTML tags**: (5 total) Added img for an image (color wheel), button for the animation, br for line spacing, svg > circle for the animation, and main for the website box.
+  
+- **Modified server.js to include more files**: Added additional files to the server, specifically the image used, javascript file, and css file. This was a simple tweak, but this is my first time messing around with javascript servers.
 
-4. Modify the README file according to the specification below.
-5. Commit and push all your changes to GitHub. 
-6. Deploy your project to Glitch. You can do this by [importing the repo from GitHub](https://medium.com/glitch/import-code-from-anywhere-83fb60ea4875)
-7. Ensure that your project has the proper naming scheme (guide follows) so we can find it.
-8. Create and submit a Pull Request to the original repo.
+Design Achievements
 
-Naming and URL Scheme
----
+- **Create a color palette using color.adobe.com.**: Self explanatory, but the color wheel is also part of the website.
 
-You must use a consistent naming scheme for all projects in this course.
-If we can't find it, we can't grade it.
-
-By default Glitch often assigns your application a random name. To change it, click on the project dropdown menu in the upper left corner of Glitch. You will then see an additional text field displaying the project name in the resulting menu; click here to edit the name.
-
-The name scheme should be `a1-yourGitHubUsername`.
-The `a1` will need to be updated to `a2`, `a3`, and so on in future projects.
-
-Resources
----
-
-If you need a JavaScript/HTML/CSS refresher, see [Technology Fundamentals by Scott Murray](http://chimera.labs.oreilly.com/books/1230000000345/ch03.html#_html) and/or [JavaScript Codeacademy](https://www.codecademy.com/en/tracks/javascript).
-
-If you need a Git/GitHub refreseher, see [GitHub Bootcamp](https://help.github.com/categories/bootcamp/), the [GitHub Guides](https://guides.github.com/) (especially the ones on Hello World, and Understanding the GitHub Flow, and Forking Projects), and [CodeSchool's Try Git Course](https://www.codeschool.com/courses/try-git).
-
-Sample Readme (delete the above when you're ready to submit, and modify the below so with your links and descriptions)
----
-
-Charlie Roberts
-http://a1-charlieroberts.glitch.me
-
-This project shows ...
-
-## Technical Achievements
-- **Proved P=NP**: Using a combination of...
-- **Solved AI**: ...
-
-### Design Achievements
-- **Re-vamped Apple's Design Philosophy**: Shown in `style.css`, the code...
-
-
+- **Used the Cousine Font from Google Fonts**: I used Roboto as the font for the header of my website.
