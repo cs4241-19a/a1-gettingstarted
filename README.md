@@ -1,27 +1,32 @@
-CS4241 Webware Project1
-Author: Mingxi Liu
+# CS4241 Webware Project1
 
-How to serve:
+* Author: Mingxi Liu
+
+* Glitchme Link: http://a1-mliu4.glitch.me
+
+## How to serve:
+```
   $node server.js
+```
   and go to http://localhost:3000/
 
-Technical Achievements:
-  -Style my page using CSS
-   ->flexbox
-   ->gradient
-   ->box-shadow
-   ->background image
-   ->margin, padding
-  -Other HTML tags
-   -><center>
-   ->links(links for Google Font and BootstrapCDN)
-   -><div class>, <div id>
-   -><ul> and <li>
-   -><nav>
-  -Navbar and Progress bars
-  -JS Animation: mouse click animation
+## Technical Achievements:
+  ##### Style my page using CSS
+   - flexbox
+   - gradient
+   - box-shadow
+   - background image
+   - margin, padding
+  ##### Other HTML tags
+   - center
+   - links(links for Google Font and BootstrapCDN)
+   - div class, div id
+   - ul and li
+   - nav
+  ##### Navbar and Progress bars
+  ##### JS Animation: mouse click animation
 
-Design Achievements:
-  -Color Palette(colorwheel.png in the repo)
-  -Use a font from Google Fonts
-  -Gradient navbar and background image
+## Design Achievements:
+  ##### Color Palette(colorwheel.png in the repo)
+  ##### Use a font from Google Fonts
+  ##### Gradient navbar and background image
