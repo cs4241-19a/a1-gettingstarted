@@ -12,6 +12,15 @@
         document.getElementById("eWork").style.display = "none";
         document.getElementById("eP").style.display = "none";
         document.getElementById("eL").style.display = "none";
+        document.getElementById("mWork").style.display = "none";
+      }
+      function showMoreM(e) {
+        e.preventDefault();
+        if (document.getElementById("mWork").style.display == "block") {
+          document.getElementById("mWork").style.display = "none";
+        } else {
+          document.getElementById("mWork").style.display = "block";
+        }
       }
       function showMoreC(e) {
         e.preventDefault();
@@ -23,7 +32,10 @@
       }
       function showMoreP(e) {
         e.preventDefault();
-        if (document.getElementById("pWork").style.display == "block" && document.getElementById("pL").style.display == "block") {
+        if (
+          document.getElementById("pWork").style.display == "block" &&
+          document.getElementById("pL").style.display == "block"
+        ) {
           document.getElementById("pWork").style.display = "none";
           document.getElementById("pL").style.display = "none";
         } else {
@@ -47,15 +59,15 @@
           document.getElementById("eL").style.display = "block";
         }
       }
-    var count = 0;
-    function rotateImage(){
-      if(count%2 == 1){
-        document.getElementById("chikaD").style.transform ='rotate(360deg)';
-      }else{
-      document.getElementById("chikaD").style.transform ='rotate(180deg)';
+      var count = 0;
+      function rotateImage() {
+        if (count % 2 == 1) {
+          document.getElementById("chikaD").style.transform = "rotate(360deg)";
+        } else {
+          document.getElementById("chikaD").style.transform = "rotate(180deg)";
+        }
+        count = count + 1;
       }
-      count = count + 1;
-    }
     </script>
   </head>
   <body onload="hideElements();">
@@ -70,8 +82,8 @@
       src="https://media-exp1.licdn.com/dms/image/C4E03AQHK7uj3iPTEnQ/profile-displayphoto-shrink_400_400/0?e=1605139200&v=beta&t=muMKR-IMHiVnyydxpEid0wb1w35ejs5bsAe6uA6LoVE"
     />
 
-    <h3>Major:</h3>
-    <p>
+    <h3 onclick="showMoreM(event);">Major:</h3>
+    <p id="mWork">
       Computer Science Major
     </p>
     <h3 onclick="showMoreC(event);">Coursework:</h3>
@@ -104,7 +116,9 @@
     <p id="eP">
       Working experience
     </p>
-    <a id="eL" href="http://linkedin.com/in/sean-morrissey-31726a159/">Linked In</a>
+    <a id="eL" href="http://linkedin.com/in/sean-morrissey-31726a159/"
+      >Linked In</a
+    >
     <ul id="eWork">
       <li>MyDigitalTat2</li>
       <li>Chipotle</li>

@@ -1,4 +1,6 @@
-Sean Morrissey https://semorrissey-a1-semorrissey-1.glitch.me
+Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
+===
+Sean Morrissey https://a1-semorrissey.glitch.me
 
 This project shows ...
 
