@@ -1,0 +1,84 @@
+ @import url('https://fonts.googleapis.com/css?family=Gayathri&display=swap');
+a:link {
+  text-decoration: none;
+  font-style: oblique;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px white;
+  animation-name: linkChange;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+body {
+  font-family: 'Gayathri';
+  background: red;
+  animation-name: colorChange;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+
+h1,
+h3,
+p,
+li {
+  color: black;
+  text-shadow: 2px 2px 4px white;
+}
+
+h3:hover {
+  color: white;
+}
+
+p,
+li {
+  tetx-align: center;
+  font-style: italic;
+}
+
+#chikaD {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+  background-color: white;
+}
+
+@keyframes colorChange {
+  0% {
+    background-color: #ffc936;
+  }
+  20% {
+    background-color: #c08cff;
+  }
+  40% {
+    background-color: #37fa75;
+  }
+  60% {
+    background-color: #5febf5;
+  }
+  80% {
+    background-color: #c8db33;
+  }
+  100% {
+    background-color: #ffc936;
+  }
+}
+@keyframes linkChange {
+  0% {
+    color: #1a1a26;
+  }
+  20% {
+    color: #626673;
+  }
+  40% {
+    color: #a60303;
+  }
+  60% {
+    color: #730202;
+  }
+  80% {
+    color: #0d0d0d;
+  }
+  100% {
+    color: #1a1a26;
+  }
+}

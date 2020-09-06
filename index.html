@@ -1,27 +1,113 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript">
+      function hideElements() {
+        document.getElementById("cWork").style.display = "none";
+        document.getElementById("pWork").style.display = "none";
+        document.getElementById("pL").style.display = "none";
+        document.getElementById("eWork").style.display = "none";
+        document.getElementById("eP").style.display = "none";
+        document.getElementById("eL").style.display = "none";
+      }
+      function showMoreC(e) {
+        e.preventDefault();
+        if (document.getElementById("cWork").style.display == "block") {
+          document.getElementById("cWork").style.display = "none";
+        } else {
+          document.getElementById("cWork").style.display = "block";
+        }
+      }
+      function showMoreP(e) {
+        e.preventDefault();
+        if (document.getElementById("pWork").style.display == "block" && document.getElementById("pL").style.display == "block") {
+          document.getElementById("pWork").style.display = "none";
+          document.getElementById("pL").style.display = "none";
+        } else {
+          document.getElementById("pWork").style.display = "block";
+          document.getElementById("pL").style.display = "block";
+        }
+      }
+      function showMoreE(e) {
+        e.preventDefault();
+        if (
+          document.getElementById("eWork").style.display == "block" &&
+          document.getElementById("eP").style.display == "block" &&
+          document.getElementById("eL").style.display == "block"
+        ) {
+          document.getElementById("eWork").style.display = "none";
+          document.getElementById("eP").style.display = "none";
+          document.getElementById("eL").style.display = "none";
+        } else {
+          document.getElementById("eWork").style.display = "block";
+          document.getElementById("eP").style.display = "block";
+          document.getElementById("eL").style.display = "block";
+        }
+      }
+    var count = 0;
+    function rotateImage(){
+      if(count%2 == 1){
+        document.getElementById("chikaD").style.transform ='rotate(360deg)';
+      }else{
+      document.getElementById("chikaD").style.transform ='rotate(180deg)';
+      }
+      count = count + 1;
+    }
+    </script>
   </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
+  <body onload="hideElements();">
+    <h1>Information about Sean Morrissey</h1>
     <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
+      Hello! My name is Sean Morrissey and I am Computer Science student at WPI.
     </p>
 
-    <h2>Experience</h2>
+    <img
+      id="chikaD"
+      onclick="rotateImage();"
+      src="https://media-exp1.licdn.com/dms/image/C4E03AQHK7uj3iPTEnQ/profile-displayphoto-shrink_400_400/0?e=1605139200&v=beta&t=muMKR-IMHiVnyydxpEid0wb1w35ejs5bsAe6uA6LoVE"
+    />
+
+    <h3>Major:</h3>
     <p>
+      Computer Science Major
+    </p>
+    <h3 onclick="showMoreC(event);">Coursework:</h3>
+    <ol id="cWork">
+      <li>CS 1102</li>
+      <li>CS 2103</li>
+      <li>CS 2011</li>
+      <li>CS 2223</li>
+      <li>CS 2303</li>
+      <li>CS 3043</li>
+      <li>CS 3133</li>
+      <li>CS 3431</li>
+      <li>CS 3733</li>
+    </ol>
+    <h3 onclick="showMoreP(event);">
+      Programming Language Experience:
+    </h3>
+    <a id="pL" href="https://github.com/semorrissey">Github</a>
+    <ul id="pWork">
+      <li>HTML: A Lot</li>
+      <li>CSS: A Lot</li>
+      <li>Java: A Lot</li>
+      <li>JavaScript: Some</li>
+      <li>Ruby: None</li>
+      <li>Python: A Lot</li>
+      <li>Unit Testing: Some</li>
+    </ul>
+
+    <h3 onclick="showMoreE(event)">Experience</h3>
+    <p id="eP">
       Working experience
     </p>
-    <ul>
-      <li>IBM/Rational</li>
+    <a id="eL" href="http://linkedin.com/in/sean-morrissey-31726a159/">Linked In</a>
+    <ul id="eWork">
+      <li>MyDigitalTat2</li>
+      <li>Chipotle</li>
       <li>WPI</li>
     </ul>
   </body>
