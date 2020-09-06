@@ -1,37 +1,97 @@
 /* style.css */
-body {
- background-color: #f4f4f4;
- font-family: Courier New;
-}
 h1 {
- color: #565b63;
+ color: #E38442;
  text-align: center;
- border: 3px outset #6d84ad;
+ border: 3px outset #FF7246;
+ font-family: 'Cinzel', serif;
+ font-weight: 900;
+ font-size: 36px;
+ text-shadow: 4px 4px 4px #aaa;
 }
 h2 {
- color: #7e8691;
+ color: #E3B342;
  text-align: left;
- border-left: 3px outset #6d84ad;
- border-top: 3px outset #6d84ad; 
+ border-left: 3px solid #FF7246;
+ border-top: 3px solid #FF7246;
  padding-left: 10px;
  padding-top: 10px;
+ font-family: 'Cinzel', serif;
+ font-weight: 600;
+ font-size: 32px;
+}
+button {
+ color: #E3B342;
+ text-align: left;
+ border-left: 3px solid #FF7246;
+ border-top: 3px solid #FF7246;
+ padding-left: 10px;
+ padding-top: 10px;
+ font-family: 'Cinzel', serif;
+ font-weight: 600;
+ font-size: 32px;
+ background: white;
+ border-bottom: 3px solid white;
+ border-right: 3px solid white;
 }
 h3{
-  color: #9fa7b3;
+  color: #FAB555;
   padding-left: 15px;
-  font-size:20px;
+  font-family: 'Cinzel', serif;
+  font-weight: 500;
+  font-size: 28px;
+  border-top: 3px dotted #FADA41;
 }
 p {
- background-color: #DodgerBlue;
- color: #333300;
  text-align: left;
- font-size: 18px;
  padding-left: 15px;
  padding-bottom: 5px;
- border-right:3px outset #6d84ad;
- border-bottom:3px outset #6d84ad;
+ border-right: 3px solid #FADA41;
+ border-bottom: 3px solid #FADA41;
+ font-family: "Cormorant", serif;
+ font-weight: 400;
+ font-size:24px;
 }
 ul{
- font-size: 18px;
  padding-left: 20px;
+ font-family: "Cormorant", serif;
+ font-weight: 400;
+ font-size:24px;
+}
+table{
+ font-family: "Cormorant", serif;
+ font-weight: 400;
+ font-size:24px;
+ background: rgba(250,218,65,0.3);
+}
+body {
+ background-color: #ffffff;
+ font-family: "Cormorant", serif;
+ font-weight: 400;
+ font-size:24px;
+ text-align: left;
+ padding-left: 15px;
+}
+button.collapse{
+ color: #E3B342;
+ text-align: left;
+ border-left: 3px solid #FF7246;
+ border-top: 3px solid #FF7246;
+ padding-left: 10px;
+ padding-top: 10px;
+ font-family: 'Cinzel', serif;
+ font-weight: 600;
+ font-size: 32px;
+ background: white;
+ border-bottom: 3px solid white;
+ border-right: 3px solid white;
+ cursor: pointer;
+ width: 100%;
+}
+button.collapse:hover {
+ background-color: rgba(250,218,65,0.3);
+}
+div.cont{
+ overflow: hidden;
+ max-height: 0;
+ transition: max-height 0.2s ease-out;
 }

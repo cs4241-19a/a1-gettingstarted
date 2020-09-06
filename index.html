@@ -3,54 +3,110 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Cinzel:900,600,500"
+          type = "text/css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Cormorant:400"
+          type = "text/css">
     <link href = "style.css"
           rel = "stylesheet"
           type = "text/css" />
   </head>
-  <body>
+  <body id="bdy">
     <h1>Information about Jialin Song class of 2021</h1> 
-    <h2>Self introduction </h2>
+    <button id="intro" class="collapse">Self introduction </button>
+    <div class="cont">
     <p>
-      I'm an international student from Shanghai, China.<br>
+      I'm Jialin Song, an international student from Shanghai, China.<br>
       I love watching Formula 1 racing and listening music.<br>
       Big fan of Max Verstappen and Lewis Hamilton.<br>
       Thanks for reading : )
     </p>
-    <h2>Majors </h2>
+    </div>
+    <br>
+    <button id="major" class="collapse">Majors </button>
+    <div class="cont">
     <p>
-      Robotics Engineering and Computer Science.<br>
+      I'm a double major in Robotics Engineering and Computer Science.<br>
     </p>
-    <h2>Other things </h2>
+    </div>
+    <br>
+    <button id="other" class="collapse">Other things </button>
+    <div class="cont">
     <p>
       I chose to take this class because I want to improve my web development skill. 
     </p>
+    </div>
+    <br>
+    <button id="exp" class="collapse">Experience</button>
+    <div class="cont">
+    <h3>Learning experience at WPI</h3>
+    Please check out my MQP about Pedestrian Avoidance for Indoor Robots:
+    <img src="Robot.png" width="500"/><br>
+    <a href="https://www.youtube.com/watch?v=6usXNrI7-Fk"> "The Dark Side :)"</a>
+    <br>
+    <br>
 
-    <h2>Experience</h2>
-    <h3>Learning experience </h3>
+    CS classes taken:
     <ul>
-      Previous CS Courses taken at WPI:
       <li>CS1101</li>
       <li>CS2011</li>
       <li>CS2102</li>
+      <li>CS2223</li>
       <li>CS2303</li>
+      <li>CS3013</li>
       <li>CS3043</li>
       <li>CS3133</li>
       <li>CS3733</li>
+      <li>CS4341</li>
+      <li>CS4342</li>
+      <li>CS4432</li>
+      <li>CS4536</li>
     </ul>
-    <ul>
-      Previous experience:
-      <li>HTML - None</li>
-      <li>CSS - Some</li>
-      <li>Java - Some</li>
-      <li>JavaScript - None</li>
-      <li>Ruby - None</li>
-      <li>Python - None</li>
-      <li>unit testing - Some</li>
-    </ul>
+
+    <h3>Previous experience in Web Development</h3>
+    <table cellpadding="3" cellspacing="3" border="2">
+      <tr>
+        <th scope="col" width="150">Knowledge</th>
+        <th scope="col">Level</th>
+      </tr>
+      <tr>
+        <td>HTML</td>
+        <td>None</td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+        <td>Some</td>
+      </tr>
+      <tr>
+        <td>Java</td>
+        <td>Some</td>
+      </tr>
+      <tr>
+        <td>JavaScript</td>
+        <td>None</td>
+      </tr>
+      <tr>
+        <td>Ruby</td>
+        <td>None</td>
+      </tr>
+      <tr>
+        <td>Python</td>
+        <td>Some</td>
+      </tr>
+      <tr>
+        <td>Unit Testing</td>
+        <td>Some</td>
+      </tr>
+    </table>
     <h3>Working experience </h3>
     <p>
       I worked as a PLA for WPI math department last year.<br>
       I received the internship from Rockwell Automation (Shanghai) for about 2 months in my freshman year.
     </p>
+    </div>
+    <br>
   </body>
+  <script src="animation.js" type="text/javascript"></script>
 </html>
