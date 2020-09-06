@@ -13,7 +13,7 @@ http.createServer((req, res) => {
 				res.end("Error 404. File not found.");
 			} else {
 				console.log(`Serving file: ${file}`);
-				res.writeHead(200)
+				res.writeHead(200);
 				res.end(data, "utf-8");
 			}
 		});

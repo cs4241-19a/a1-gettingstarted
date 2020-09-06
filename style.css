@@ -1,5 +1,5 @@
 body {
-	padding: 32px;
+	padding: 24px;
 	margin: auto;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -33,7 +33,7 @@ li {
 }
 
 table {
-	margin-top: 128px;
+	margin-top: 48px;
 	margin-bottom: 96px;
 	width: 384px;
 	height: 32px;
@@ -56,11 +56,12 @@ td {
 
 #header {
 	text-align: center;
-	margin-bottom: 32px;
+	margin-bottom: 16px;
 }
 
 #github-label {
-	margin-left: 18px;
+	margin-left: 8px;
+	margin-right: 4px;
 }
 
 #experience-label {
@@ -74,7 +75,7 @@ td {
 
 #work-exp-label {
 	text-align: center;
-	margin-left: 224px;
+	margin-left: 128px;
 }
 
 #coursework {
@@ -87,5 +88,5 @@ td {
 }
 
 #right-col-content {
-	margin-left: 192px;
+	margin-left: 128px;
 }
