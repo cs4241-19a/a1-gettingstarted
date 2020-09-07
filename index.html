@@ -71,23 +71,27 @@
 	<script>
 	var allElements = document.body.getElementsByTagName("*");
 	//using the colors #9B78F5 and #98B0FA from the color pallete, but in HSL
-	lowHue = [225, 91, 79]
-	currHue = [225, 91, 79]
-	highHue = [257, 86, 72]
-	mod = [(highHue[0]-lowHue[0])/20, (highHue[1]-lowHue[1])/20, (highHue[2]-lowHue[2])/20]
+	lowHue = [225, 91, 79];
+	currHue = [225, 91, 79];
+	highHue = [257, 86, 72];
+	mod = [(highHue[0]-lowHue[0])/20, (highHue[1]-lowHue[1])/20, (highHue[2]-lowHue[2])/20];
 	increasing = true;
 	function changeColor() {
-		currHue[0] = Math.round((currHue[0] + mod[0] * (increasing ? 1 : -1))*10)/10;
-		currHue[1] = Math.round((currHue[1] + mod[1] * (increasing ? 1 : -1))*10)/10;
-		currHue[2] = Math.round((currHue[2] + mod[2] * (increasing ? 1 : -1))*10)/10;
-		console.log(currHue);
+		currHue[0] = (currHue[0] + mod[0] * (increasing ? 1 : -1));
+		currHue[1] = (currHue[1] + mod[1] * (increasing ? 1 : -1));
+		currHue[2] = (currHue[2] + mod[2] * (increasing ? 1 : -1));
 		document.body.style.backgroundColor = "hsl(" + currHue[0] + " , " + currHue[1] + "%, " + currHue[2] + "%)";
-		if(currHue[0] == lowHue[0]) {
+		if(Math.round(currHue[0]*10)/10 == lowHue[0]) {
 			increasing = true;
-		} else if (currHue[0] == highHue[0]) {
+			currHue[0] = lowHue[0];
+			currHue[1] = lowHue[1];
+			currHue[2] = lowHue[2];
+		} else if (Math.round(currHue[0]*10)/10 == highHue[0]) {
 			increasing = false;
+			currHue[0] = highHue[0];
+			currHue[1] = highHue[1];
+			currHue[2] = highHue[2];
 		}
-		console.log([currHue[0], currHue[1], currHue[2]], highHue);
 	}
 	setInterval(function(){changeColor()}, 100);
 	for(var i=0; i<allElements.length; i++) {
