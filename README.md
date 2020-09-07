@@ -1,13 +1,8 @@
-Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
-===
 
-Sample Readme (delete the above when you're ready to submit, and modify the text below with your links and descriptions)
----
+Seungho Lee
+https://seungho715-a1-gettingstarted.glitch.me/
 
-Charlie Roberts
-http://a1-charlieroberts.glitch.me
-
-This project shows ...
+This project shows the combination of javascript, html, and css. It also makes the student practice how to use the server correctly. 
 
 ## Technical Achievements
 - **Styled page with CSS**: 
