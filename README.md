@@ -2,12 +2,20 @@
 
 http://a1-afsimoneau.glitch.me
 
-This project shows ...
+This project shows a basic HTML/CSS webpage with information about me written on it. It's animated with keyframes and has a color palette from [link](color.adobe.com).
 
 ## Technical Achievements
 
-- **Styled page with CSS**: Added rules for the p, li, and a selectors...
+**CSS Styling**
+: This page is styled with CSS and has rules for 6 tags in 5 different statements. The rules for the table and td are combined in the same statement.
+**Animation**
+: This page is not animated with JS but it is animated with CSS keyframes. Using margins and animation delays I created a "schwoop-in" animation (see the last part of style.css).
+**Different Tags**
+: This page uses divs, description lists, tables, horizontal rules and linking to expand on the tags we learned in lecture. Using [link](w3schools.com) I was able to play around with other tags and experiment with different designs.
 
 ## Design Achievements
 
-- **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
+**Color palette**
+: Using a color palette from [link](color.adobe.com) (see screenshot in repo) I created a monochromatic pastel purple theme.
+**Google Fonts Linking**
+: I chose a Montserrat font from [link](fonts.google.com) to style the page to be more asthetically pleasing instead of using a default font.
