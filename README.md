@@ -13,6 +13,9 @@ Create margin around paragraphs.
 Used font size to emphasize the important facts.
 Used background color to replace a bland, white background.
 
+- **Add a simple Javascript Animation**
+Added a rotation with the WPI logo at the bottom. 
+
 - **HTML Tags** Used style to design the web page. 
 Used strong to bold phrases. 
 Used image to load an image of myself. 

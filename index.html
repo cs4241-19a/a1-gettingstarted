@@ -2,8 +2,21 @@
 <html lang="en">
 <head>
     <title>CS4241 Assignment 1</title>
-    <link rel="stylesheet" href="./Style.css">
     <meta charset="utf-8">
+    <link rel="stylesheet" href="Style.css">
+    <script>
+        var degrees = 0;
+        function rotate(time, speed) {
+            var e = document.getElementById(time);
+            e.style.transform = "rotate(" + degrees + "deg)";
+            setTimeout('rotate(\'' + time + '\',' + speed + ')', speed);
+            degrees = degrees + 1;
+            if (degrees == 360) {
+                degrees = 1;
+            }
+        }
+    </script>
+
 </head>
 <body>
     <h1><strong>Information about Seungho Lee</strong></h1>
@@ -60,5 +73,7 @@
         Click the button
     </p>
     <button type="button" onclick="alert('Assignment 1: Hello World')"> Click me </button>
+    <img id="wpi" src="assets/wpi.png" width="300" height="350">
+    <script>rotate("wpi", 200);</script>
 </body>
 </html>
