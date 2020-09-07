@@ -1,6 +1,6 @@
 
 Seungho Lee
-https://seungho715-a1-gettingstarted.glitch.me/
+https://seungho715-a1-gettingstarted-1.glitch.me/
 
 This project shows the combination of javascript, html, and css. It also makes the student practice how to use the server correctly. 
 
