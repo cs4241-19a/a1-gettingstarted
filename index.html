@@ -5,8 +5,19 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Kite+One&family=Kufam&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    <script type="text/javascript">
+    function flipColor(){
+    	var t = document.getElementById("Experience");
+    	if(t.style.color=="black"){
+    		t.style.color="blue";
+    	}
+    	else{
+    		t.style.color="black";
+    	}
+    }
+    </script>
   </head>
-  <body>
+  <body onload="setInterval(flipColor,1000)">
     <h1>Information about Lindberg Simpson <br> WPI Class of 2022</h1>
     <p>
       Hi everyone! My name is Lindberg Simpson and I'm a Computer Science Major also pursuing a minor in ECE. <br>
@@ -15,13 +26,15 @@
     <p>
       Computer Science Major <br> Electrical and Computer Engineering Minor
     </p>
+    <div id="Experience">
     <p>
       I've taken classes like Software Engineering, Operating Systems, Machine Organization, <br>
       Systems, Foundations, and  Social Implications of  Computer Science
     </p>
-	<div id="Experience">
-    <h2>Experience</h2>
     </div>
+	
+    <h2>Experience</h2>
+
     <h3>
     Programming language experience
     </h3>
