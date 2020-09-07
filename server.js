@@ -14,7 +14,7 @@ const server = http.createServer( function( request,response ) {
         sendFile( response, 'style.css' )
         break
     case '/gompei.jpeg':
-        sendFile( response, 'gompei.jpg' )
+        sendFile( response, 'gompei.jpeg' )
         break
 
     default:
