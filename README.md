@@ -1,6 +1,6 @@
 # Assignment 1- Alex Simoneau
 
-http://a1-afsimoneau.glitch.me
+[a1-afsimoneau.glitch.me](http://a1-afsimoneau.glitch.me)
 
 This project shows a basic HTML/CSS webpage with information about me written on it. It's animated with keyframes and has a color palette from [color.adobe.com](https://color.adobe.com/create/color-wheel).
 
