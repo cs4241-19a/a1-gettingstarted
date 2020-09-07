@@ -1,21 +1,26 @@
 h1 {
     background-color: #4D9958;
+    font-family: "Agency FB";
 }
 
 h2 {
     background-color: #997854;
+    font-family: "Times New Roman";
 }
 
 p {
     background-color: #E6AE73;
+    font-family: "Bahnschrift";
 }
 
 body {
     background-color: #8BE698;
+    font-family: "Baskerville Old Face";
 }
 
 ul {
     background-color: #B7A1E6;
+    font-family: "Bernard MT Condensed";
 }
 
 #animate {
