@@ -2,27 +2,110 @@
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto">
+    <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+      }
+    </style>
     <meta charset="utf-8">
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
+    <h1>Information about Truman Larson</h1>
     <p>
-      [Self introduction]
+      Hi I'm Truman Larson class of 2022! 
     </p>
     <p>
-      [Major and other information]
+      I am a Computer Science Major with an interest in Data Science.
     </p>
     <p>
-      [Other things]
+      Previous Computor Science Courses:
     </p>
+    <ul>
+      <li>CS1102 - Advanced Into to Computer Science</li>
+      <li>CS2103 - Advanced Intro to Object Oriented Programming</li>
+      <li>CS2303 - Systems Programming</li>
+      <li>CS2011 - Intro to Machine Org and Assembly</li>
+      <li>CS2022 - Discrete Math</li>
+      <li>CS2223 - Algorithms</li>
+      <li>CS3013 - Operating Systems</li>
+      <li>CS3133 - Foundations of Computer Science</li>
+      <li>CS3431 - Database Systems I</li>
+      <li>CS3733 - Software Engineering</li>
+    </ul>
+    <p>
+      Current Computer Science Courses:
+    </p>
+    <ul>
+        <li>CS4241 - Webware</li>
+        <li>CS3516 - Computer Networks</li>
+        <li>CS4341 - Intro to AI</li>
+    </ul>
 
     <h2>Experience</h2>
     <p>
       Working experience
     </p>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>Research and Development Intership at <span style="color:rgb(161, 91, 231);">SilverTech Inc.</span> in Manchester, New Hampshire; 2 summers</li>
     </ul>
+    <p>
+      Technological Experience
+    </p>
+    <ol>
+      <li>Java - Fairly experienced (8/10)</li>
+      <li>Python - Fairly experienced (8/10)</li>
+      <li>Unit Testing - Fairly experienced (7/10)</li>
+      <li>HTML - Some experience (5/10)</li>
+      <li>CSS - Some experience (5/10)</li>
+      <li>Javascript - Some experience (5/10)</li>
+      <li>Ruby - No experience (1/10)</li>
+    </ol>
+
+    <marquee> Hello there </marquee>
+
+    <a href="www.google.com">The google</a>
+
+    <div id="circle", 
+    style = "width: 50px;
+    height: 50px;
+    position: absolute;
+    background: red;
+    border-radius: 50%;"></div>
   </body>
+
+  <script>
+      let circle = document.getElementById("circle");
+      let id = setInterval(frame, 5);
+      let active = true;
+      let pos = 1;
+      let reverse = false;
+      function frame() {
+    
+
+        if (reverse) pos--;
+        else pos++;
+
+        if (pos >= 150){
+          reverse = true;
+        }
+        if (pos <= 0){
+          reverse = false;
+        }
+
+        circle.style.left = pos + 'px';
+      }
+      circle.onclick = function(){
+        if (active){
+          clearInterval(id);
+          active = false;
+        }
+        else {
+          id = setInterval(frame, 5);
+          active = true;
+        }
+      }
+  </script>
 </html>
