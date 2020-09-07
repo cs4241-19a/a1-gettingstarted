@@ -1,28 +1,79 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
-  <head>
+<head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
+    <link rel="stylesheet" href="Style.css">
+    <script>
+        var degrees = 0;
+        function rotate(time, speed) {
+            var e = document.getElementById(time);
+            e.style.transform = "rotate(" + degrees + "deg)";
+            setTimeout('rotate(\'' + time + '\',' + speed + ')', speed);
+            degrees = degrees + 1;
+            if (degrees == 360) {
+                degrees = 1;
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <h1><strong>Information about Seungho Lee</strong></h1>
+    <img id="chris" src="assets/chris.jpg" width="300" height="350">
     <p>
-      [Self introduction]
+        <strong>class of 2024</strong>
     </p>
     <p>
-      [Major and other information]
+        CS and IMGD Major and BioInfomatics Minor
     </p>
     <p>
-      [Other things]
+        Previous Courses:
+        <ul>
+            <li>CS1101</li>
+            <li>CS2103</li>
+            <li>CS2303</li>
+            <li>CS2011</li>
+            <li>CS2022</li>
+            <li>CS2223</li>
+            <li>CS3013</li>
+            <li>CS3431</li>
+            <li>CS3733</li>
+        </ul>
+    </p>
+    <p>
+        Programming Language:
+        <ul>
+            <ul>HTML - some</ul>
+            <ul>CSS - some</ul>
+            <ul>Java - a lot</ul>
+            <ul>Javascript - none</ul>
+            <ul>Ruby - none</ul>
+            <ul>Python - some</ul>
+            <ul>unit testing - none</ul>
+        </ul>
     </p>
 
     <h2>Experience</h2>
     <p>
-      Working experience
+        Working experience
     </p>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+        <li>BaNET Information</li>
+        <li>WPI</li>
     </ul>
-  </body>
+    <p>
+        Date/Time: <span id="datetime"></span>
+    </p>
+    <script>
+        var dt = new Date();
+        document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+    </script>
+    <p>
+        Click the button
+    </p>
+    <button type="button" onclick="alert('Assignment 1: Hello World')"> Click me </button>
+    <img id="wpi" src="assets/wpi.png" width="300" height="350">
+    <script>rotate("wpi", 200);</script>
+</body>
 </html>

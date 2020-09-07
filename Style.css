@@ -1,0 +1,26 @@
+﻿@charset "utf-8";
+
+body {
+    background-color: #FFD47A;
+}
+
+h1 {
+    color: rgb(235, 126, 110);
+    border: 2px solid rgb(59, 255, 151);
+}
+
+h2 {
+    color: rgb(170, 0, 255);
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+    border: 2px solid rgb(59, 255, 151);
+}
+
+p {
+    color: rgb(170, 0, 255);
+    padding: 30px;
+    margin: 10px;
+    font: 16px Arial, san-serif;
+}
+
+
