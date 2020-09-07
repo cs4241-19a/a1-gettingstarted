@@ -1,7 +1,7 @@
 Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 
-Charlie Roberts
-http://a1-charlieroberts.glitch.me
+Truman Larson
+https://a1-trumanlarson.glitch.me
 
 This project shows basic information on the life of me, Truman Larson.
 
