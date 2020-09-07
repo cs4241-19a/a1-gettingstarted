@@ -4,6 +4,7 @@
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="/styles.css">
+    <script src="/script.js"></script>
   </head>
   <body>
     
@@ -16,9 +17,14 @@
     </address>
     
     <div id="intro">
-    <img src="https://cdn.glitch.com/923fed96-1412-4abf-b1fe-89f8fb5bce6c%2Fthumbnails%2FWeChat%20Image_20200219214101.jpg?1599478960845" 
+      <div id="img">
+        <img 
+         src="https://cdn.glitch.com/923fed96-1412-4abf-b1fe-89f8fb5bce6c%2Fthumbnails%2FWeChat%20Image_20200219214101.jpg?1599478960845" 
          alt="A image of Mine"
          />
+    <input type = "button" value = "move Right" onclick = "moveRight();" />
+      </div>
+
     <p>
       My name is Wenjing Ying. I am a Computer Science student at WPI, class of
       2021.
@@ -128,15 +134,6 @@
     </table>
     </div>
     <hr>
-
-
-  <input type="button" id="start" value="Start" />
-  <input type="button" id="stopmove" value="Stop" />
-    
-  <div id="mydiv">
-    
-  </div>
-    
 
   </body>
 </html>

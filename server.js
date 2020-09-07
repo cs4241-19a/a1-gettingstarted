@@ -12,6 +12,8 @@ const server = http.createServer( function( request,response ) {
       break
     case '/styles.css':
       sendFile( response, 'styles.css' )
+    case '/script.js':
+      sendFile( response, 'script.js' )      
       break
     default:
       response.end( '404 Error: File Not Found' )

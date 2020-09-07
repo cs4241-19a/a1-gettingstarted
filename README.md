@@ -21,7 +21,7 @@ This project shows a self introduction of mine and my experiences as well as an 
 - Added a schedule planner for me to record my daily activities with a table using the `<table>` tag
 
 > **JavaScript animation**
-- created a moving division with javascript
+- created a moving division with javascript, controlled by a button "move Right"
 
 ### Design Achievements
 - **Used the Roboto Font from Google Fonts**: I used Merriweather as the font for the headings in my site and Open Sans for the main text.
