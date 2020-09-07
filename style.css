@@ -1,0 +1,46 @@
+:root {
+  --color-A: #656B7D;
+  --color-B: #819EFD;
+  --color-C: #CDD8FD;
+  --color-D: #404E7D;
+  --color-E: #C2CDF0;
+}
+
+body {
+  color: var(--color-D);
+  font-family: "Montserrat";
+  background-color: var(--color-C);
+}
+
+div {
+  background-color: var(--color-E);
+}
+
+hr {
+  color: var(--color-B);
+}
+
+table,
+td {
+  border: 1px solid var(--color-B);
+  border-collapse: collapse;
+  text-align: center;
+}
+
+h1 {
+  animation-name: schwoop-in;
+  animation-duration: 1s;
+}
+
+@keyframes schwoop-in {
+  from {
+    margin-top: 110%;
+    height: 200%;
+  }
+
+  to {
+    margin-top: 0%;
+    height: 0%;
+    
+  }
+}
