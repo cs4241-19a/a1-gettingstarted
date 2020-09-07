@@ -1,77 +1,40 @@
 Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 ===
 
-*DUE: Thursday, August 29th by 11:59 AM (before the start of class!)*  
+**Pradnya Mahurkar**
+https://glitch.com/~a1-pradnyamahurkar
 
-This assignment is a "warm-up" exercise. 
-You will simply deploy the starting Web site that you will use this term to [Glitch](http://www.glitch.com/). 
-
-Treat this assignment as a chance to get up to speed on Git, GitHub, and Glitch. 
-If you already know these, great. 
-However, if you're new to them, spend several hours practicing, experimenting, and reading documentation. 
-In other words, don't just get your website up and done. You will need skills with these tools throughout the rest of the course.
-
-Assignment details
----
-
-Do the following to complete this assignment:
-
-1. Fork the starting project code in GitHub. This repo contains:
-    * the server code, `server.js`
-    * A starting `index.html` file that you will edit as described below
-    * A package.json file that helps configure Glitch
-    * This README
-2. Edit `index.html` to show the following information about you:
-    * your name and class at WPI (e.g. class of 2020) Note: Do not put any contact or personal information that you do not potentially want other people outside of this class to see.
-    * your major(s) and minor(s)
-    * previous computer science courses that you have taken at WPI
-    * your experience with the following technologies and methods (none, some, a lot)
-        * HTML
-        * CSS
-        * Java
-        * JavaScript
-        * Ruby
-        * Python
-        * unit testing
-3. Test your project to make sure that when someone goes to your main page, it displays correctly. You can do this locally by simply running `node server.js` from within the assignment directory.
-
-4. Modify the README file according to the specification below.
-5. Commit and push all your changes to GitHub. 
-6. Deploy your project to Glitch. You can do this by [importing the repo from GitHub](https://medium.com/glitch/import-code-from-anywhere-83fb60ea4875)
-7. Ensure that your project has the proper naming scheme (guide follows) so we can find it.
-8. Create and submit a Pull Request to the original repo.
-
-Naming and URL Scheme
----
-
-You must use a consistent naming scheme for all projects in this course.
-If we can't find it, we can't grade it.
-
-By default Glitch often assigns your application a random name. To change it, click on the project dropdown menu in the upper left corner of Glitch. You will then see an additional text field displaying the project name in the resulting menu; click here to edit the name.
-
-The name scheme should be `a1-yourGitHubUsername`.
-The `a1` will need to be updated to `a2`, `a3`, and so on in future projects.
-
-Resources
----
-
-If you need a JavaScript/HTML/CSS refresher, see [Technology Fundamentals by Scott Murray](http://chimera.labs.oreilly.com/books/1230000000345/ch03.html#_html) and/or [JavaScript Codeacademy](https://www.codecademy.com/en/tracks/javascript).
-
-If you need a Git/GitHub refreseher, see [GitHub Bootcamp](https://help.github.com/categories/bootcamp/), the [GitHub Guides](https://guides.github.com/) (especially the ones on Hello World, and Understanding the GitHub Flow, and Forking Projects), and [CodeSchool's Try Git Course](https://www.codeschool.com/courses/try-git).
-
-Sample Readme (delete the above when you're ready to submit, and modify the below so with your links and descriptions)
----
-
-Charlie Roberts
-http://a1-charlieroberts.glitch.me
-
-This project shows ...
+This project shows my basic understanding of CSS, JavaScript, and HTML. Using the 3 languages, I created a simple webpage which contains information about my courses at WPI, my experience with different coding languages/methods, and my work experience. Listed below are my technical and design achievements for this project. 
 
 ## Technical Achievements
-- **Proved P=NP**: Using a combination of...
-- **Solved AI**: ...
+1. **Styled the page using CSS**
+  - Added style to h1. Set its color to be dimgrey, set its font family to Bebas Neue (A Google font), and set its font size to be 70px.
+  - Added style to the ul. For styling purposes I added a box around it with a background of powder blue. Also added a padding of 50px to the list. Lastly, assigned it to be in the Assistant font family (A Google font).
+  - Added style to h2. Set the border to be solid 2px and powderblue in color. Set its font family to be Bebas Neue (A Google font).
+  - Added style to table, th, and td. Set the border to be solid 2px and black in color. Set its font family to be Assistant (A Google font).
+  - Set the header to be displayed as a block.
+  - Set the font family of p to Assistant (A Google font).
+2. **Added a simple JavaScript animation**
+  - With the help of the tutorials on W3Schools, I was able to create a simple JavaScript for my heading where individual letters get placed in order. The code is placed under the "script" tag in the index.html file.
+  - The function is given a string and it outputs them as the heading by placing the characters 1 by 1 and gives a typing effect
+3. **Experiment with HTML Tags**
+  - Used the link tag in HTML to link my LinkedIn Profile to my name on the Webpage
+  - Used the table tag for my experience with different coding languages and methods
+  - Used the list tag to create a list of my courses and my work experience
+  - Used the Header tag for the heading of my website
+  - Used the picture tag to specify image resources on the webpage
+  - Used the image tag to add images to the webpage
+  
 
 ### Design Achievements
-- **Re-vamped Apple's Design Philosophy**: Shown in `style.css`, the code...
-
-
+1. **Created a color palette using color.adobe.com.**
+  - **(Screenshot of the palette)** https://cdn.glitch.com/9bfc28d3-d11e-4914-82cf-3900fa459aa7%2FScreen%20Shot%202020-09-02%20at%202.44.50%20PM.png?v=1599232484630
+  - Added the following colors to the color palette:
+    - dimgrey: for the headings and the subheadings
+    - powderblue: for the boxes around the lists
+    - black: for the body of the webpage
+    - white: for the background of the page
+    - red: Made all the strings containing WPI red
+2. **Used 2 fonts from Google fonts in my webpage**
+  - Used the Assistant font for the body of the webpage
+  - Used the Bebas Neue font for the heading and subheadings of the webpage

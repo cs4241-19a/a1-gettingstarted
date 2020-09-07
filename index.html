@@ -1,28 +1,170 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <!--   Link the google fonts: Assistant and Bebas Neue   -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Assistant&family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--   Style the web page using CSS   -->
+    <style>
+      h1 {
+        color: dimgray;
+        font-family: "Bebas Neue", cursive;
+        font-size: 70px;
+      }
+
+      ul {
+        list-style-type: square;
+        background: powderblue;
+        padding: 50px;
+        font-family: "Assistant", cursive;
+      }
+
+      h2 {
+        color: dimgray;
+        border: 2px solid powderblue;
+        font-family: "Bebas Neue", cursive;
+      }
+
+      table,
+      th,
+      td {
+        border: 2px solid black;
+        font-family: "Assistant", cursive;
+      }
+
+      header {
+        display: block;
+      }
+
+      p {
+        font-family: "Assistant", cursive;
+      }
+    </style>
+    <meta charset="utf-8" />
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
+    <header>
+      <h1 id="type"></h1>
+    </header>
+    <!-- Added a link to my LinkedIn profile -->
     <p>
-      [Self introduction]
+      Hi! My name is
+      <a href="https://www.linkedin.com/in/pradnyamahurkar/">Pradnya Mahurkar</a
+      >. I am a student in the
+      <span style="color: #F51A01"><b>WPI Class of 2022</b></span
+      >.
     </p>
     <p>
-      [Major and other information]
+      My Major is Computer Science
     </p>
     <p>
-      [Other things]
-    </p>
-
-    <h2>Experience</h2>
-    <p>
-      Working experience
+      I have taken the following Computer Science courses at
+      <span style="color: #F51A01"><b>WPI</b></span
+      >:
     </p>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>CS 1101: INTRODUCTION TO PROGRAM DESIGN</li>
+      <li>CS 2102: OBJECT-ORIENTED DESIGN CONCEPTS</li>
+      <li>CS 2303: SYSTEMS PROGRAMMING CONCEPTS</li>
+      <li>CS 2022: DISCRETE MATHEMATICS</li>
+      <li>CS 2223: ALGORITHMS</li>
+      <li>CS 3013: OPERATING SYSTEMS</li>
+      <li>CS 3041: HUMAN-COMPUTER INTERACTION</li>
+      <li>CS 3043: SOCIAL IMPLICATIONS OF INFORMATION PROCESSING</li>
+      <li>CS 3133: FOUNDATIONS OF COMPUTER SCIENCE</li>
+      <li>CS 4342: MACHINE LEARNING</li>
+      <li>CS 4518: MOBILE AND UBIQUITOUS COMPUTING</li>
+    </ul>
+
+    <h2>Experience</h2>
+    <!-- Create a table for experiences using HTML -->
+    <table style="width:100%">
+      <tr>
+        <th>TECHNOLOGY/METHODS</th>
+        <th>EXPERIENCE</th>
+      </tr>
+      <tr>
+        <td>HTML</td>
+        <td>A lot</td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+        <td>A lot</td>
+      </tr>
+      <tr>
+        <td>Java</td>
+        <td>A lot</td>
+      </tr>
+      <tr>
+        <td>JavaScript</td>
+        <td>Some</td>
+      </tr>
+      <tr>
+        <td>Ruby</td>
+        <td>None</td>
+      </tr>
+      <tr>
+        <td>Python</td>
+        <td>A lot</td>
+      </tr>
+      <tr>
+        <td>Unit Testing</td>
+        <td>Some</td>
+      </tr>
+    </table>
+
+    <h2>
+      Working experience
+    </h2>
+    <!--   Create a list of work experiences   -->
+    <ul>
+      <li>
+        Robotics Software SQA Intern, Brooks Automation, Chelmsford, MA, USA,
+        05/2020 - 08/2020
+      </li>
+      <li>
+        Senior Tutor, Worcester Polytechnic Institute, Worcester, MA, USA,
+        03/2020 - 05/2020
+      </li>
+      <li>
+        Computer Science Instructor, Girls Who Code, Worcester, MA, USA, 09/2019
+        - 10/2019
+      </li>
+      <li>Summer Intern, BeaconChange, New Delhi, India, 05/2018 - 08/2018</li>
     </ul>
   </body>
+
+  <!--  use the picture tag to add multiple pictures  -->
+  <picture>
+    <img
+      src="https://cdn.glitch.com/9bfc28d3-d11e-4914-82cf-3900fa459aa7%2FWPI_Inst_Prim_FulClr.png?v=1599069669110"
+      alt="WPI logo"
+      style="width:100%px;height:250px;"
+    />
+    <img
+      src="https://cdn.glitch.com/9bfc28d3-d11e-4914-82cf-3900fa459aa7%2FBrooks_Corporate_Logo_Color_BMP.bmp?v=1599070422991"
+      alt="WPI logo"
+      style="width:100%px;height:100px;"
+    />
+  </picture>
+  <!--  Create a short JavaScript animation for the heading of the webpage  -->
+  <script>
+    var tracker = 0;
+    var heading = "Information About Pradnya Mahurkar";
+
+    function write() {
+      if (tracker < heading.length) {
+        document.getElementById("type").innerHTML += heading.charAt(tracker);
+        tracker++;
+        setTimeout(write, 90);
+      }
+    }
+
+    write();
+  </script>
 </html>
