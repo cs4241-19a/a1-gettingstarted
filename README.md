@@ -13,6 +13,3 @@ This project shows ...
 ### Design Achievements
 - **Used the Kufam, Kite One, and Yanone Kaffeesatz Fonts from Google Fonts**: I used Yanone Kaffeesatz as the font for h1 text, Kufam for the h2 text, and Kite One for the h3 text in my site.
 - **Color Palette**: Created and used this color palette throughout the website:
-￼
-
-￼
