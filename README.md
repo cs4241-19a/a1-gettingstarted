@@ -16,3 +16,5 @@ This project shows ...
 ![Color Palette](ColorPalette.png?raw=true "Color Palette")
 
 References: I mainly used www.w3schools.com for help with JavaScript and CSS rules and syntax.
+
+Note to the TA: This assignment showed up late because I made the pull request from last year's git repository instead of this one. I spoke to professor Charles about this already and he said it was fine. Thank you!
