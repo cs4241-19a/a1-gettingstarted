@@ -18,4 +18,5 @@ https://a1-adriannastaszewska.glitch.me
   - background color of courses list (#A9C3EE)
 - **Used a font from Google Fonts**: Lato 
 
-
+Notes:
+Initally submitted a pull request to the wrong repository (a19)
