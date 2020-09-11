@@ -10,9 +10,12 @@ const server = http.createServer(function (request, response) {
         case '/index.html':
             sendFile(response, 'index.html')
             break
-        case '/assets/me.jpg':
+         case '/assets/chris.jpg':
             sendFile(response, 'assets/chris.jpg')
             break
+      case '/assets/wpi.png':
+        sendFile(response, 'assets/wpi.png')
+        break;
         case '/Style.css':
             sendFile(response, 'Style.css')
             break

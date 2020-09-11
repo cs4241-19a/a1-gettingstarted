@@ -28,3 +28,7 @@ Used list to display the list of attributes in a user friendly manner.
 - **Used the Two Fonts from Google Fonts**: Used Arial font and Times New Roman font to design the project
 
 
+**NOTE**
+This is a side note that I accidentally submitted my project on 19a repository instead of 20a repository. I am submitting to the right repo, and Professor Roberts confirmed it is fine. Sorry for the extra work. 
+
+
