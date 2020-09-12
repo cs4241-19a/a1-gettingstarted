@@ -1,0 +1,52 @@
+body {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 10px;
+  padding-botton: 10px
+  }
+h1{
+  font-family: 'Merriweather', serif;
+  color: #93ADA0;
+  background-color: #204547}
+img {
+    height: auto; 
+    width: auto; 
+    max-width: 200px; 
+    max-height: 200px;
+}
+h2{
+  font-family: 'Merriweather', serif;
+  color: #93ADA0;
+  }
+p {
+  padding-left:10px;
+  font-family: 'Open Sans', sans-serif;
+  color: #204547;
+  }
+li {
+  font-family: 'Open Sans', sans-serif;
+  color: #B86E77;
+  }
+table {
+  font-family: 'Merriweather Sans', sans-serif;
+  color: #E0A8CB;
+  margin-right: auto;
+  margin-left: auto;
+}
+#experience {
+  background-color: #A8DDE0;
+}
+#intro {
+  border: dotted;
+  display: flex;
+  align-items:center;
+}
+#schedule {
+  margin-right: auto;
+  margin-left: auto;
+}
+.square{
+ width:50px;
+ height:50px;
+ background-color:green;
+}
