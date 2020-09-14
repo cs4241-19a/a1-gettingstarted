@@ -3,6 +3,8 @@ Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 Truman Larson
 https://a1-trumanlarson.glitch.me
 
+SUBMISSION NOTE: I originally submitted on the 2019 repo which is why this apears late on the 2020 repo. Sorry for the confusion!
+
 This project shows basic information on the life of me, Truman Larson.
 
 ## Technical Achievements
