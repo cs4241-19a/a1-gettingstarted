@@ -3,6 +3,7 @@
 Kirsten Hart
 https://a1-kirstenhart.glitch.me
 
+**NOTE:** Original pull request was to 19a repo on Sept. 5. Another pull request was submitted on Sept. 14 for 20a repo. 
 
 This project shows ...
 
