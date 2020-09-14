@@ -1,5 +1,5 @@
 Luke Bodwell
-http://a1-lbodwell.glitch.me
+https://a1-lbodwell.glitch.me/
 
 Note: I originally submitted a pull request to the 2019 repository. No changes to the code have been made since that original pull request. The only commit made since the assignment's due date was to update the README to include this message. Professor Roberts and both TA's were notified of this via Teams on 9/13.
 
