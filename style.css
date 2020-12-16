@@ -1,0 +1,38 @@
+body {
+	background-color: #f1f3f8;	
+}
+
+h1 {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-weight: bold condensed;
+	font-size: 50px;
+	padding:10px;
+	background-color: #ff512c;
+	text-align: center;
+}
+
+h2 {
+	font-family: 'Kufam', cursive;	
+	font-weight: bold;
+	font-size: 40px;
+	color: #54c2fa;
+	padding:10px;
+	text-decoration: underline;
+}
+
+h3 {
+	font-family: 'Kite One', sans-serif;;
+	font-size: 25px;
+	color: #FF8C23
+}
+
+p {
+	font-family: Arial;
+	font-weight: normal;
+	font-size: 18px;
+	
+}
+
+li {
+	text-shadow: 2px 2px 2px #25b818;
+}

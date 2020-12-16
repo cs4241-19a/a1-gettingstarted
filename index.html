@@ -3,26 +3,68 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kite+One&family=Kufam&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    <script type="text/javascript">
+    function flipColor(){
+    	var t = document.getElementById("Top");
+    	if(t.style.color=="white"){
+    		t.style.color="blue";
+    	}
+    	else{
+    		t.style.color="white";
+    	}
+    }
+    </script>
   </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
+  <body onload="setInterval(flipColor,1000)">
+  <div id="Top">
+    <h1>Information about Lindberg Simpson <br> WPI Class of 2022</h1>
+    </div>
     <p>
-      [Self introduction]
+      Hi everyone! My name is Lindberg Simpson and I'm a Computer Science Major also pursuing a minor in ECE. <br>
+      I hope to learn a lot from this class about developing attractive web sites.
     </p>
     <p>
-      [Major and other information]
+      Computer Science Major <br> Electrical and Computer Engineering Minor
     </p>
+    <div id="Experience">
     <p>
-      [Other things]
+      I've taken classes like Software Engineering, Operating Systems, Machine Organization, <br>
+      Systems, Foundations, and  Social Implications of  Computer Science
     </p>
-
+    </div>
+	
     <h2>Experience</h2>
-    <p>
+
+    <h3>
+    Programming language experience
+    </h3>
+    <ul>
+   		<li>HTML - Some</li>
+   		<li>CSS - Some</li>
+   		<li>Java - A lot</li>
+   		<li>JavaScript - Some</li>
+   		<li>Ruby - None</li>
+   		<li>Python - Some</li>
+   		<li>Unit Testing - Some</li>
+    </ul>
+    <h3>
       Working experience
-    </p>
+    </h3>
     <ul>
       <li>IBM/Rational</li>
       <li>WPI</li>
+      <li>International House</li>
     </ul>
+    <a href="https://www.wpi.edu">This is my school's home page!</a>
+    <br> <q>Lehr und Kunst</q> <br>
+    <img alt="" src="gompei.jpeg" width="400" height="300">
+    <br>
+    <input type="text" placeholder="this doesnt do anything">
+    <button>Button</button>
+    <table>
+    </table>
+    
   </body>
 </html>
