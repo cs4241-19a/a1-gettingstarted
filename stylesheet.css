@@ -1,0 +1,50 @@
+body {
+    background-image: linear-gradient(to bottom, rgba(255,255,0,0.5), rgba(0,0,255,0.5)),
+    url('https://cdn.glitch.com/43968700-38ca-4073-b5ba-841aa6231577%2Fa1.jpg?v=1567046487644');
+
+}
+
+h1 {
+  color:#9F2AB6;
+  position: relative;
+  margin: 0 0 .5em 0;
+  font-family:Courier;
+  text-shadow: 2px 2px #000000; 
+  padding-bottom: 2px;
+  text-align: center;
+}
+
+p{
+  color:#00000;
+  position: relative;
+  margin: 0 0 .5em 0;
+  font-family: monospace ; 
+  padding-bottom: 2px;
+  text-align: center;
+
+}
+
+h2{
+  color:#9F2AB6;
+  position: relative;
+  margin: 0 0 .5em 0;
+  font-family: Monaco; 
+}
+h2 {
+  width: 320px;
+  padding: 10px;
+  border: 5px double #000000;
+  margin: 0; 
+}
+
+li {
+  color:#000000;
+  position: relative;
+  margin: 0 0 .5em 0;
+  font-family: Monaco; 
+  padding-bottom: 2px;
+}
+
+
+
+.
