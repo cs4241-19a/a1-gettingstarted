@@ -3,26 +3,118 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Slab">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<style>
+	body {
+		background-color: #98B0FA;
+	}
+	body * {
+		display: inline-block;
+		font-family: "Josefin Slab";
+		color: #871CE0;
+	}
+	script {
+		display: none;
+	}
+	h2, h3 {
+		margin:0;
+	}
+	li {
+		display: list-item;
+	}
+	h1, h2, h3 {
+		text-shadow: 2px 2px #98B0FA;
+	}
+	</style>
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
+    <h1>Information about Margaret (Class of 2023)</h1><br>
+    <i>Computer Science major, Robotics minor</i><br>
     <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+      I enjoy programming little projects to make life easier, singing a cappella with the WPI Audiophiles, and competing with WPI's VexU team.
+    </p><br>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
+    <h2>Experience</h2><br><br>
+	<h3>
+      Class experience
+    </h3><br>
+    <ol>
+      <li>Accelerated Introduction To Program Design (CS 1102)</li><br>
+	  <li>Accelerated Object-oriented Design Concepts (CS 2103)</li><br>
+	  <li>Discrete Math (CS 2202)</li><br>
+	  <li>Systems Programming Concepts (CS 2303)</li><br>
+	  <li>Algorithms (CS 2223)</li><br>
+	</ol><br>
+	<h3>
+      Programming experience
+    </h3><br>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+      <li><strong>HTML</strong> - a lot</li><br>
+	  <li><strong>CSS</strong> - a lot</li><br>
+	  <li><strong>Java</strong> - a lot</li><br>
+	  <li><strong>JavaScript</strong> - some</li><br>
+	  <li><strong>Ruby</strong> - none</li><br>
+	  <li><strong>Python</strong> - a lot</li><br>
+	  <li><strong>Unit Testing</strong> - some</li><br>
+	</ul><br>
+	<h3>
+      Working experience
+    </h3><br>
+    <ul>
+      <li>WPI</li><br>
+	  <li>ASSISTments at WPI</li><br>
+	  <li>Vinci Robotics Academy teaching</li><br>
+	</ul>
+	<script>
+	var allElements = document.body.getElementsByTagName("*");
+	//using the colors #9B78F5 and #98B0FA from the color pallete, but in HSL
+	lowHue = [225, 91, 79];
+	currHue = [225, 91, 79];
+	highHue = [257, 86, 72];
+	mod = [(highHue[0]-lowHue[0])/20, (highHue[1]-lowHue[1])/20, (highHue[2]-lowHue[2])/20];
+	increasing = true;
+	function changeColor() {
+		currHue[0] = (currHue[0] + mod[0] * (increasing ? 1 : -1));
+		currHue[1] = (currHue[1] + mod[1] * (increasing ? 1 : -1));
+		currHue[2] = (currHue[2] + mod[2] * (increasing ? 1 : -1));
+		document.body.style.backgroundColor = "hsl(" + currHue[0] + " , " + currHue[1] + "%, " + currHue[2] + "%)";
+		if(Math.round(currHue[0]*10)/10 == lowHue[0]) {
+			increasing = true;
+			currHue[0] = lowHue[0];
+			currHue[1] = lowHue[1];
+			currHue[2] = lowHue[2];
+		} else if (Math.round(currHue[0]*10)/10 == highHue[0]) {
+			increasing = false;
+			currHue[0] = highHue[0];
+			currHue[1] = highHue[1];
+			currHue[2] = highHue[2];
+		}
+	}
+	setInterval(function(){changeColor()}, 100);
+	for(var i=0; i<allElements.length; i++) {
+		var element = allElements[i];
+		element.addEventListener('mouseenter', function(e) {
+			$(this).toggle( "pulsate",1 );
+			if(e.target.tagName != "STRONG") {
+				e.target.style.backgroundColor = "rgba(239,168,255,0.5)";
+				e.target.style.color = "#6462DE";
+			}
+			e.target.style.fontStyle = "italic";
+		});
+		element.addEventListener('mouseleave', function(e) {
+			$(this).toggle( "pulsate",1 );
+			e.target.style.color = "#871CE0";
+			if(e.target.tagName != "STRONG") {
+				e.target.style.backgroundColor = "transparent";
+			}
+			if(e.target.tagName != "I") {
+				e.target.style.fontStyle = "initial";
+			}
+		});
+	}
+	</script>
   </body>
 </html>
