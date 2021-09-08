@@ -1,11 +1,11 @@
 
 Joseph Cybul
 
-ESPECIAL NOTE:::::
+SPECIAL NOTE:::::
 
 I accidentally made the pull request on last year's repo so im doing a new one on the right repo
 
-ESPECIAL NOTE:::::
+SPECIAL NOTE:::::
 
 
 https://a1-jcybul.glitch.me/
